@@ -1,0 +1,24 @@
+{
+	"name": "parallel-coordinates",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "parcel app/index.html",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/adammertel/parallel-coordinates.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/adammertel/parallel-coordinates/issues"
+	},
+	"homepage": "https://github.com/adammertel/parallel-coordinates#readme",
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4",
+		"typescript": "^3.7.5"
+	}
+}
