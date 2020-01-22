@@ -1,0 +1,35 @@
+svg {
+	background: black;
+}
+
+.axis,
+.axis-label {
+	color: white;
+	stroke-width: 2;
+}
+
+.tick text,
+text.axis-label {
+	color: white;
+	fill: white;
+	font-weight: 600;
+	font-size: 14px;
+	stroke-width: 1;
+	font-family: monospace;
+}
+
+.line {
+	fill: none;
+	stroke: white;
+	stroke-width: 1;
+	stroke-opacity: 0.3;
+}
+
+.line.line-heretic {
+	stroke: #0000dc;
+	stroke-opacity: 0.3;
+	stroke-width: 1.5;
+}
+
+
+/*# sourceMappingURL=/app.77de5100.css.map */
