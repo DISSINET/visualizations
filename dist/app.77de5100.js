@@ -28951,7 +28951,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"app.css":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"white.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -28975,7 +28975,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var d3 = __importStar(require("d3"));
 
-require('./app.css');
+require('./white.css');
 
 var lineCurved = d3.line().x(function (d) {
   return d.x;
@@ -28989,13 +28989,15 @@ var line = d3.line().x(function (d) {
 });
 var svgW = 800;
 var svgH = 800;
-var svg = d3.select('body').append('svg').attr('width', svgW).attr('height', svgH);
-var pExtent = [[50, svgW - 50], [10, svgH - 70]];
+var svg1 = d3.select('body').append('svg').attr('width', svgW).attr('height', svgH);
+var svg2 = d3.select('body').append('svg').attr('width', svgW).attr('height', svgH);
+var svg3 = d3.select('body').append('svg').attr('width', svgW).attr('height', svgH);
+var pExtent = [[80, svgW - 50], [30, svgH - 80]];
 var peW = pExtent[0][1] - pExtent[0][0];
 var peH = pExtent[1][1] - pExtent[1][0];
 
 var parX = function parX(i) {
-  return pExtent[0][0] + peW / pars.length * i;
+  return pExtent[0][0] + peW / (pars.length - 1) * i;
 };
 
 var loadData = function loadData(next) {
@@ -29019,57 +29021,62 @@ var loadData = function loadData(next) {
 };
 
 var pars = [{
-  label: 'betweeness',
-  attr: 'betweeness',
-  scale: 'pow',
-  scalePar: 0.15
-}, {
-  label: 'degree',
-  attr: 'degree',
-  scale: 'pow',
-  scalePar: -0.2
-}, {
-  label: 'closeness',
-  attr: 'closeness',
-  scale: 'pow',
-  scalePar: 0.6
+  label: 'betweenness',
+  attr: 'betweennessstand',
+  scaleMode: 'pow',
+  scalePar: 0.2
 }, {
   label: 'weighted degree',
-  attr: 'weighteddegree',
-  scale: 'pow',
-  scalePar: 0.1
+  attr: 'wdegreestand',
+  scaleMode: 'pow',
+  scalePar: 0.5
+}, {
+  label: 'degree',
+  attr: 'degreestand',
+  scaleMode: 'pow',
+  scalePar: 0.8
 }, {
   label: 'eigencentrality',
   attr: 'eigencentrality',
-  scale: 'pow',
-  scalePar: 0.1
+  scaleMode: 'pow',
+  scalePar: 1
 }, {
-  label: 'clustering inverted',
-  attr: 'clusteringinverted',
-  scale: 'pow',
-  scalePar: 0.8
+  label: 'closeness',
+  attr: 'closenessstand',
+  scaleMode: 'pow',
+  scalePar: 1
+}, {
+  label: 'clustering',
+  attr: 'clustering',
+  scaleMode: 'pow',
+  scalePar: 1,
+  reverse: true
 }];
 
-var drawParallels = function drawParallels() {
-  loadData(function (data) {
-    console.log(data);
-    data.forEach(function (dataRecord) {
-      dataRecord.values = {};
-      pars.forEach(function (par) {
-        var value = parseFloat(dataRecord[par['attr']]);
-        dataRecord.values[par.attr] = value;
-      });
-    }); // preparing pars, adding scale
-
+var prepareData = function prepareData(data) {
+  data.forEach(function (dataRecord) {
+    dataRecord.values = {};
     pars.forEach(function (par) {
-      var vals = data.map(function (d) {
-        return d.values[par['attr']];
-      });
-      var max = Math.max.apply(Math, vals);
-      var min = Math.min.apply(Math, vals);
-      par['max'] = max;
-      par['min'] = min;
+      var value = parseFloat(dataRecord[par['attr']]);
+      dataRecord.values[par.attr] = value;
     });
+  }); // preparing pars, adding scale
+
+  pars.forEach(function (par) {
+    var vals = data.map(function (d) {
+      return d.values[par['attr']];
+    });
+    var max = Math.max.apply(Math, vals);
+    var min = Math.min.apply(Math, vals);
+    par['max'] = max;
+    par['min'] = min;
+  });
+  return data;
+};
+
+var drawParallels = function drawParallels(svg, subsets) {
+  loadData(function (records) {
+    var data = prepareData(records);
     /*
     drawing axes
     */
@@ -29081,16 +29088,22 @@ var drawParallels = function drawParallels() {
       log: function log(scalePar) {
         return d3.scaleLog();
       },
+      //pow: (scalePar) => d3.scalePow().exponent(scalePar)
       pow: function pow(scalePar) {
-        return d3.scalePow().exponent(scalePar);
+        return d3.scalePow().exponent(1);
       }
     };
     pars.forEach(function (par, pi) {
       var y1 = pExtent[1][0];
       var y2 = pExtent[1][1];
       svg.append('line').attr('x1', parX(pi)).attr('x2', parX(pi)).attr('y1', y1).attr('y2', y2).attr('stroke-width', 1).attr('class', 'axis');
-      svg.append('text').attr('x', parX(pi)).attr('y', pExtent[1][1] + (pi % 2 ? 40 : 20)).text(par.label).attr('class', 'axis-label').attr('text-anchor', 'middle');
-      par.scale = scales[par.scale](par.scalePar).range([y2, y1]).domain([par.min, par.max]);
+
+      if (pi % 2) {
+        svg.append('line').attr('x1', parX(pi)).attr('x2', parX(pi)).attr('y1', y2 + 10).attr('y2', y2 + 30).attr('stroke-width', 1).attr('class', 'aux-axis');
+      }
+
+      svg.append('text').attr('x', parX(pi)).attr('y', pExtent[1][1] + (pi % 2 ? 55 : 30)).text(par.label).attr('class', 'axis-label par-label').attr('text-anchor', 'middle');
+      par.scale = scales[par.scaleMode](par.scalePar).range([y2, y1]).domain(par.reverse ? [par.max, par.min] : [par.min, par.max]);
     });
     /*
     calculating positions
@@ -29104,15 +29117,12 @@ var drawParallels = function drawParallels() {
         });
         return par.scale(value);
       });
-      console.log(record);
     });
     /*
     drawing lines
     */
 
-    data.filter(function (r) {
-      return r.heretic !== 'h';
-    }).map(function (record, ri) {
+    data.map(function (record, ri) {
       svg.append('path').data([record.posM.map(function (m, i) {
         return {
           y: m,
@@ -29120,25 +29130,96 @@ var drawParallels = function drawParallels() {
         };
       })]).attr('d', line).attr('class', 'line');
     });
-    data.filter(function (r) {
-      return r.heretic === 'h';
-    }).map(function (record, ri) {
-      svg.append('path').data([record.posM.map(function (m, i) {
-        return {
-          y: m,
-          x: parX(i)
-        };
-      })]).attr('d', line).attr('class', 'line line-heretic');
-    }); // circles
+
+    if (subsets.includes('heretics')) {
+      data.filter(function (r) {
+        return r.heretic === 'h';
+      }).map(function (record, ri) {
+        svg.append('path').data([record.posM.map(function (m, i) {
+          return {
+            y: m,
+            x: parX(i)
+          };
+        })]).attr('d', line).attr('class', 'line line-heretic');
+      });
+    }
+
+    if (subsets.includes('female')) {
+      data.filter(function (r) {
+        return r.sex === 'f';
+      }).map(function (record, ri) {
+        svg.append('path').data([record.posM.map(function (m, i) {
+          return {
+            y: m,
+            x: parX(i)
+          };
+        })]).attr('d', line).attr('class', 'line line-female');
+      });
+    }
+
+    if (subsets.includes('male')) {
+      data.filter(function (r) {
+        return r.sex === 'm';
+      }).map(function (record, ri) {
+        svg.append('path').data([record.posM.map(function (m, i) {
+          return {
+            y: m,
+            x: parX(i)
+          };
+        })]).attr('d', line).attr('class', 'line line-male');
+      });
+    } // circles
     //seq.posM.map((m, i) => drawCircle(parX(i), m, 5, seq.color, 'white', 1.5))
 
+
     pars.forEach(function (par, pi) {
-      svg.append('g').attr('class', 'axis').call(d3.axisRight(par.scale).tickValues([par.min].concat(par.scale.ticks(5)))).attr('transform', 'translate(' + parX(pi) + ', 0)');
+      svg.append('g').attr('class', 'axis').call(d3.axisRight(par.scale).tickValues([par.min].concat(par.scale.ticks(4)))).attr('transform', 'translate(' + parX(pi) + ', 0)');
     });
-    console.log(pars);
   });
 };
-},{"d3":"../node_modules/d3/index.js","./app.css":"app.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+var rankLimit = 20;
+var colors = ['#a6cee3', '#1f78b4', '#b2df8a', '#33a02c', '#fb9a99', '#e31a1c', '#fdbf6f', '#ff7f00', '#cab2d6', '#6a3d9a', '#ffff99', '#b15928'];
+
+var drawRanks = function drawRanks() {
+  loadData(function (records) {
+    pars.forEach(function (par) {
+      par.allVals = records.map(function (d) {
+        return parseFloat(d[par['attr']]);
+      }).sort(function (a, b) {
+        return b - a;
+      });
+    });
+    console.log(pars);
+    records.forEach(function (record) {
+      record.ranks = {};
+      record.ranksSum = 0;
+      pars.forEach(function (par) {
+        var value = parseFloat(record[par['attr']]);
+        var rank = par.allVals.indexOf(value);
+        record.ranks[par.attr] = rank;
+        record.ranksSum += rank;
+      });
+    }); // drawing circles
+
+    records.forEach(function (record) {
+      pars.forEach(function (par, pi) {
+        var rank = record.ranks[par.attr];
+
+        if (rank < rankLimit) {
+          var y = rank / rankLimit * peH + pExtent[1][0];
+          var g = svg.append('g').attr('class', 'circle-group');
+          g.append('circle').attr('r', 10).attr('class', 'circle').attr('fill', 'white').attr('cy', y).attr('cx', parX(pi));
+        }
+      });
+    });
+  });
+};
+
+drawParallels(svg1, ['heretics']);
+drawParallels(svg2, ['female']);
+drawParallels(svg3, ['male']);
+},{"d3":"../node_modules/d3/index.js","./white.css":"white.css"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29166,7 +29247,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33793" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45557" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
