@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
-import { inflate } from 'zlib';
+require('d3-geo');
 
-console.log(d3.tsv);
+console.log(d3);
 
 async function loadNames() {
 	return await d3.tsv(require('./data/gui/names.tsv'));
@@ -115,6 +115,29 @@ loadNames().then((persons) => {
 				});
 			});
 			console.log(groups);
+
+			/* 
+				chart
+			*/
+			const width = 1500;
+			const height = 800;
+
+			var projection = d3.geoMercator().scale(12000).center([ 0, 44 ]);
+
+			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
+			var path = d3.geoPath().projection(projection);
+
+			Object.keys(groups).forEach((groupName) => {
+				const group = groups[groupName];
+				const xy = projection([ group.x, group.y ]);
+				svg
+					.append('circle')
+					.style('fill', 'steelblue')
+					.style('opacity', 0.4)
+					.attr('r', 3 + group.persons.length * 3)
+					.attr('cx', xy[0])
+					.attr('cy', xy[1]);
+			});
 		});
 	});
 });
