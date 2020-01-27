@@ -155,9 +155,13 @@ loadNames().then((persons) => {
 					.attr('y', (y + ty) * k)
 					.attr('width', k)
 					.attr('height', k)
-					.style('opacity', 0.8);
+					.style('opacity', 0.7);
 			});
-			console.log(d3tile);
+
+			const gCircles = svg.append('g').attr('class', 'circles');
+			const gEdges = svg.append('g').attr('class', 'edges');
+			const gLabels = svg.append('g').attr('class', 'labels');
+
 			Object.keys(groups).forEach((groupName) => {
 				const group = groups[groupName];
 				const [ x, y ] = projection([ group.x, group.y ]);
@@ -165,7 +169,7 @@ loadNames().then((persons) => {
 				const liner = d3.line().curve(d3.curveBasis).x((d) => d[0]).y((d) => d[1]);
 
 				if (x > 0 && x < width && y > 0 && y < height) {
-					svg
+					gCircles
 						.append('circle')
 						.style('fill', 'orange')
 						.style('mix-blend-mode', 'multiply')
@@ -187,8 +191,7 @@ loadNames().then((persons) => {
 
 								const edgeW = edge.length - 0.5;
 								if (edgeW) {
-									console.log(edgeW);
-									svg
+									gEdges
 										.append('path')
 										.attr('stroke-width', edgeW)
 										.attr('fill', 'none')
@@ -203,6 +206,20 @@ loadNames().then((persons) => {
 							}
 						}
 					});
+					if (group.persons.length > 5) {
+						const textSize = 8 + group.persons.length * 1.5;
+						gLabels
+							.append('text')
+							.style('font-size', textSize)
+							.text(groupName)
+							.attr('color', 'black')
+							.attr('font-weight', 1000)
+							.attr('stroke-width', textSize / 12)
+							.attr('stroke', 'white')
+							.attr('font-family', 'ubuntu')
+							.attr('x', x + textSize)
+							.attr('y', y + textSize);
+					}
 				}
 			});
 		});
