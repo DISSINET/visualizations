@@ -70,7 +70,7 @@ loadNames().then((persons) => {
 
 						if (targetPerson) {
 							person.edges.push({
-								to: targetId,
+								to: targetPerson,
 								type: sourceEdge ? 'source' : 'target'
 							});
 						}
@@ -95,6 +95,24 @@ loadNames().then((persons) => {
 						};
 					}
 				}
+			});
+
+			/* 
+				summing edges for groups
+			*/
+			Object.keys(groups).forEach((groupKey) => {
+				const group = groups[groupKey];
+				group.edges = {};
+				group.persons.forEach((person) => {
+					person.edges.forEach((personEdge) => {
+						const targetPlace = personEdge.to.place.name;
+						if (targetPlace in group.edges) {
+							group.edges[targetPlace].push(person.id);
+						} else {
+							group.edges[targetPlace] = [ person.id ];
+						}
+					});
+				});
 			});
 			console.log(groups);
 		});
