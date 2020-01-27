@@ -23,7 +23,7 @@ loadNames().then((persons) => {
 			/*
 			 geocode persons
 			*/
-			const personWithPlace = persons.filter((person) => {
+			const personWithPlace = persons.filter((person: any) => {
 				// assigning place name to person
 				const both = person.origin_or_residence;
 				const origin = person.origin;
@@ -42,7 +42,7 @@ loadNames().then((persons) => {
 					personPlace = origin;
 				}
 
-				const place = places.find((place) => place.name === personPlace);
+				const place = places.find((place: any) => place.name === personPlace);
 				if (place) {
 					person.place = {
 						name: place.name,
@@ -54,7 +54,18 @@ loadNames().then((persons) => {
 				return place;
 			});
 
-			console.log(personWithPlace);
+			/*
+				group persons based on their locality
+			*/
+			const groups: any = [];
+			personWithPlace.forEach((person: any) => {
+				if (person.place.name in groups) {
+					groups[person.place.name].push(person);
+				} else {
+					groups[person.place.name] = [ person ];
+				}
+			});
+			console.log(groups);
 		});
 	});
 });
