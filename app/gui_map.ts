@@ -10,7 +10,7 @@ async function loadPlaces() {
 	return await d3.tsv(require('./data/gui/places.tsv'));
 }
 async function loadEdges() {
-	return await d3.tsv(require('./data/gui/places.tsv'));
+	return await d3.tsv(require('./data/gui/edges.tsv'));
 }
 
 loadNames().then((persons) => {
@@ -55,14 +55,45 @@ loadNames().then((persons) => {
 			});
 
 			/*
+				getting edges for persons with place
+			*/
+			personWithPlace.forEach((person: any) => {
+				person.edges = [];
+
+				edges.forEach((edge) => {
+					const sourceEdge = edge.Source == person.id_old;
+					const targetEdge = edge.Target == person.id_old;
+
+					if (sourceEdge || targetEdge) {
+						const targetId = sourceEdge ? edge.Target : edge.Source;
+						const targetPerson = personWithPlace.find((p) => p.id_old == targetId);
+
+						if (targetPerson) {
+							person.edges.push({
+								to: targetId,
+								type: sourceEdge ? 'source' : 'target'
+							});
+						}
+					}
+				});
+			});
+
+			/*
 				group persons based on their locality
 			*/
 			const groups: any = [];
 			personWithPlace.forEach((person: any) => {
-				if (person.place.name in groups) {
-					groups[person.place.name].push(person);
-				} else {
-					groups[person.place.name] = [ person ];
+				// only known locations
+				if (person.place.x && person.place.y) {
+					if (person.place.name in groups) {
+						groups[person.place.name].persons.push(person);
+					} else {
+						groups[person.place.name] = {
+							x: parseFloat(person.place.x),
+							y: parseFloat(person.place.y),
+							persons: [ person ]
+						};
+					}
 				}
 			});
 			console.log(groups);
