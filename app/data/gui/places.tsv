@@ -1,0 +1,514 @@
+id	id_old	name	name_latin	locality_type	country_or_region	diocese	département	arrondissement	canton	commune	c_départment	c_arrondissement	c_canton	c_commune	x_coordinates	y_coordinates	localisation_certainty	localisation_notes	editor	controlled_by	pages_or_folios	references_count	pages_or_folios_not_hotspots_of_dissent	notes
+L0001	1	Abbeville					Somme				Somme	Abbeville	Abbeville	Abbeville	1.836	50.106	1	localised to the town church	Mertel	Zbíral	997	1		
+L0002	2	Ablis					Seine-et-Oise		Dourdan												335, 337, 539, 547, 549, 555, 561, 563, 859, 867, 1261	11		
+L0003	3	Adour church		church							Landes	Mont-de-Marsan	Grenade-sur-l'Adour	Grenade-sur-l'Adour	-0.428	43.777					205, 339	2		
+L0004	4	Agde					Hérault				Hérault	Béziers	Agde	Agde	3.476	43.311					201, 205, 1353, 1377, 1383, 1615	6		
+L0005	5	Agen					Lot-et-Garonne				Lot-et-Garonne	Agen	Agen	Agen	0.621	44.205					965	1		
+L0006	6	Agenais		region							Lot-et-Garonne	Agen	Agen	Agen	0.617	44.200					851	1		
+L0007	7	Aire									Marne	Reims	Reims	Reims	4.035	49.263					973	1		
+L0008	8	Airoux					Aude		Castelnaudary		Aude	Carcassonne	Castelnaudary-Nord	Airoux	1.867	43.367					583	1		
+L0009	9	Alamans castle								Pamiers											1259, 1295, 1309, 1315	4		
+L0010	10	Albi					Tarn				Tarn	Albi	Réalmont	Dénat	2.200	43.817					87, 119, 339, 397, 405, 485, 537, 543, 545, 559, 785, 787, 823, 835, 845, 851, 859, 863, 871, 959, 961, 981, 997, 999, 1029, 1103, 1105, 1109-1113, 1177, 1179, 1185, 1189, 1193, 1195, 1219-1223, 1227, 1231-1239, 1429, 1431, 1447, 1467, 1471	48		
+L0011	11	Albiac					Haute-Garonne		Caraman		Haute-Garonne	Toulouse	Caraman	Albiac	1.781	43.553					545	1		
+L0012	12	Albières					Aude		Mouthoumet		Aude	Carcassonne	Mouthoumet	Albières	2.479	42.948					871	1		
+L0013	13	Albigeois		region							Tarn	Albi	Villefranche-d'Albigeois	Villefranche-d'Albigeois	2.331	43.898					87, 177, 323, 561, 565, 909, 935, 945, 969, 973, 1075, 1087, 1105, 1233, 1443	14		
+L0014	14	Alet					Aude		Limoux						3.240	43.213					1187, 119, 1281, 1347, 1383, 1421	5		
+L0015	15	Alexandrie			northern Italy										12.039	36.801					1519	1		
+L0016	16	Alièze					Jura		Orgelet		Jura	Lons-le-Saunier	Orgelet	Alièze	5.578	46.589					985, 991, 1007, 1009, 1029, 1031, 1049, 1055, 1089	9		
+L0017	17	Alzonne					Tarn-et-Garonne		Saint-Antonin	Varen					1.903	44.183					85, 99, 205, 1447-1453, 1461-1471, 1491-1501, 1505, 1509-1515, 1531, 1537, 1539, 1543, 1547-1551, 1555-1565, 1569, 1587	37		
+L0018	18	Amiens					Somme				Somme	Péronne	Albert	Albert	2.653	50.003					853	1		
+L0019	19	Angoulême					Charente				Charente	Angoulême	Angoulême	Angoulême	0.161	45.649					961, 1029, 1111, 1219, 1221, 1225, 1233-1237	9		
+L0020	20	Annoriis/Armoriis	Annoriis/Armoriis								Ille-et-Vilaine	Rennes	Rennes	Rennes	-1.705	48.116					1233, 1253, 1257	3		
+L0021	21	Antugnac					Aude		Couiza		Aude	Limoux	Couiza	Antugnac	2.226	42.956					1347	1		
+L0022	22	Antusan					Ariège		La Bastide-de-Sérou	La Bastide-de-Sérou											1289, 1341, 1351, 1417, 1421	5		
+L0023	23	Appelle					Tarn		Puylaurens		Creuse	Aubusson	Royère-de-Vassivière	Royère-de-Vassivière	1.954	45.853					85, 99, 209, 567	2		
+L0024	24	Aragon					Aude		Alzonne		Hérault	Montpellier	Montpellier	Montpellier	3.877	43.612					1447, 1463, 1471	3		
+L0025	25	Aragon (kingdom of)		region											-0.883	41.650					1339	1		
+L0026	26	Arles					Bouches-du-Rhône				Bouches-du-Rhône	Arles	Arles	Arles	4.628	43.677					1269	1		
+L0027	27	Armagnac (former county of)		region	Gascogne						Gers	Condom	Cazaubon	Mauléon-d'Armagnac	-0.152	43.904					339, 871	2		
+L0028	28	Arnave					Ariège		Tarascon-sur-Ariège												1257	1		
+L0029	29	Arzens					Aude		Montréal		Aude	Carcassonne	Montréal	Arzens	2.217	43.200					359, 1251	2		
+L0030	30	Ascou					Ariège		Ax-les-Thermes		Ariège	Foix	Ax-les-Thermes	Ascou	1.863	42.722					85, 101, 1285, 1637	2		
+L0031	31	Astarac (county of)		region																	89, 91, 205, 339, 543, 979, 985, 1053, 1087, 1127	8		
+L0032	32	Aston					Ariège		Les Cabannes		Ariège	Foix	Les Cabannes	Aston	1.662	42.682					101, 1637	1		
+L0034	34	Auch					Gers				Gers	Auch	Auch	Auch	0.588	43.644					85-89, 93, 101, 121, 131-137, 141, 805, 961, 963, 973, 981, 985-991, 993, 1007-1029, 1033, 1041, 1045, 1049-1091, 1107, 1109, 1127, 1135, 1163, 1171, 1209, 1211, 1213, 1429, 1431, 1443, 1447, 1489, 1491, 1531, 1571, 1579	65		
+L0033	33	Auch: Auch cathedral		church							Gers	Auch	Auch	Auch	0.586	43.646			Zbíral		981, 993, 1033, 1135, 1163, 1203, 1211, 1429, 1431, 1491	10		
+L0035	35	Aude (river)		river							Aude	Limoux	Limoux	Alet-les-Bains	2.253	43.019					1203, 1205, 1249, 1259, 1297, 1421	6		
+L0036	36	Aure									Ardennes	Vouziers	Monthois	Aure	4.635	49.274					973	1		
+L0037	37	Aureville					Haute-Garonne		Castanet		Haute-Garonne	Toulouse	Castanet-Tolosan	Aureville	1.453	43.481					869	1		
+L0038	38	Auriac					Aude		Mouthoumet		Aude	Carcassonne	Mouthoumet	Auriac	2.493	42.932					1241, 1247	2		
+L0039	39	Auriac-sur-Vendinelle					Haute-Garonne		Caraman		Haute-Garonne	Toulouse	Caraman	Auriac-sur-Vendinelle	1.826	43.524					85, 103, 219, 357-361, 471, 491, 1417	7		
+L0040	40	Aurin					Haute-Garonne		Lanta		Haute-Garonne	Toulouse	Lanta	Aurin	1.684	43.537					85, 103, 635-639, 659, 707, 709, 769, 887, 893, 901-905, 919, 935, 979, 1439, 1443	17		
+L0041	41	Auterive					Haute-Garonne				Haute-Garonne	Muret	Auterive	Auterive	1.477	43.351					327	1		
+L0042	42	Auvergne (province)		region							Loire	Saint-Étienne	Pélussin	Roisey	4.622	45.391					693	1		
+L0043	43	Auvillar					Tarn-et-Garonne				Tarn-et-Garonne	Castelsarrasin	Auvillar	Auvillar	0.901	44.068					973, 1487	2		
+L0044	44	Avernes	Aveneriis				Seine-et-Oise		Marines		Val-d'Oise	Pontoise	Vigny	Avernes	1.873	49.086					969	1		
+L0045	45	Avignon					Vaucluse				Vaucluse	Avignon	Avignon	Avignon	4.806	43.948					663, 681, 785, 965, 1211, 1451, 1469, 1501, 1517	9		
+L0046	46	Avignonet-Lauragais					Haute-Garonne		Villefranche-de-Lauragais		Haute-Garonne	Toulouse	Villefranche-de-Lauragais	Avignonet-Lauragais	1.786	43.367					85, 103, 229, 231, 261, 305, 319, 569, 627, 757, 975	9		
+L0047	47	Ax																			229, 231, 319, 463, 539, 1005, 1285, 1291	8		
+L0048	48	Ax-les-Thermes					Ariège				Ariège	Foix	Ax-les-Thermes	Ax-les-Thermes	1.839	42.721					85, 93, 105, 175, 229, 231, 319, 539, 1005, 1257, 1285, 1287, 1291	9		
+L0049	49	Azas					Haute-Garonne		Montastruc-la-Conseillère		Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Azas	1.676	43.726					85, 91, 101, 351, 361, 427, 439, 441, 457, 487, 571, 573, 585, 589, 597, 627-633, 677, 741, 743, 769, 775, 787, 789, 795, 809, 873, 883, 893, 895, 977, 1095, 1439	32		
+L0050	50	Azet-Trachère					Hautes-Pyrénées		Vieille-Aure		Hautes-Pyrénées	Bagnères-de-Bigorre	Vielle-Aure	Tramezaïgues	0.290	42.797					961, 1429	2		
+L0051	51	Baccarisse									Gers	Mirande	Montesquiou	Gazax-et-Baccarisse	0.192	43.608					205	1		
+L0052	52	Bannières					Tarn		Lavaur		Tarn	Castres	Lavaur	Bannières	1.752	43.626					85, 105, 467, 655, 713, 715, 751, 769, 929, 935, 937	9		
+L0053	53	Bars					Gers		Montesquiou		Gers	Auch	Lombez	Simorre	0.733	43.454					85, 105, 991, 1027, 1029, 1041, 1063, 1065, 1089, 1443	8		
+L0054	54	Bayonne					Pyrénées-Atlantiques				Pyrénées-Atlantiques	Bayonne	Bayonne	Bayonne	-1.476	43.492					973	1		
+L0055	55	Bazas					Gironde				Gironde	Langon	Bazas	Bazas	-0.213	44.432					181, 327, 335, 539, 847	5		
+L0056	56	Béarn		region	French kingdom						Pyrénées-Atlantiques	Pau	Pau	Pau	-0.365	43.308					1573	1		
+L0057	57	Beaumont-de-Lomagne					Tarn-et-Garonne				Tarn-et-Garonne	Castelsarrasin	Beaumont-de-Lomagne	Beaumont-de-Lomagne	0.988	43.882					91, 153, 839, 841, 1039, 1089	4		
+L0058	58	Beaupuy					Haute-Garonne		Toulouse	Castelmaurou	Haute-Garonne	Toulouse	Toulouse 8e Canton	Beaupuy	1.556	43.646					579, 627	2		
+L0059	59	Beaupuy					Haute-Garonne		Verdun-sur-Garonne	Bouillac	Tarn-et-Garonne	Montauban	Verdun-sur-Garonne	Beaupuy	1.118	43.822					85, 107, 447, 487, 513, 577, 579, 627, 659, 661, 769, 873	10		
+L0060	60	Beauvais-sur-Tescou					Tarn		Salvagnac		Tarn	Albi	Salvagnac	Beauvais-sur-Tescou	1.569	43.911					85, 107, 341, 361, 371-379, 405, 409, 485, 497, 507, 567, 889-895, 927, 977, 979, 1439, 1443, 1479, 1483	24		
+L0061	61	Bellegarde					Haute-Garonne		Cadours	Bellegarde-Sainte-Marie	Haute-Garonne	Toulouse	Cadours	Bellegarde-Sainte-Marie	1.114	43.672					315	1		
+L0062	62	Belpech					Aude				Aude	Carcassonne	Belpech	Belpech	1.751	43.199					85, 107, 1257, 1279, 1289, 1299, 1303, 1311, 1315, 1331, 1333, 1341, 1369, 1389, 1417, 1421	14		
+L0063	63	Besançon					Doubs				Doubs	Besançon	Besançon	Besançon	6.023	47.238					1041, 1089, 1107, 1109, 1127, 1131, 1135, 1163, 1171, 1209, 1213, 1491	12		
+L0064	64	Béziers					Hérault				Hérault	Béziers	Béziers	Béziers	3.217	43.341					87, 125, 559, 1251, 1301, 1351, 1353, 1361, 1377, 1383, 1391, 1407, 1595, 1615, 1621	13		
+L0065	65	Bittérois		region							Hérault	Lodève	Gignac	Saint-Pargoire	3.479	43.531					657, 813	2		near Béziers
+L0066	66	Blainville					Calvados		Douvres		Calvados	Caen	Ouistreham	Blainville-sur-Orne	-0.303	49.229					561, 565	2		
+L0067	67	Boibe					Saône-et-Loire		La Chapelle-Saint-Sauveur		Saône-et-Loire	Louhans	Pierre-de-Bresse	La Chapelle-Saint-Sauveur	5.231	46.846					1127	1		
+L0068	68	Bolha																			931	1		
+L0069	69	Bonnefont					Hautes-Pyrénées		Tria		Hautes-Pyrénées	Tarbes	Trie-sur-Baïse	Bonnefont	0.347	43.251					567	1		
+L0070	70	Bordeaux					Gironde				Gironde	Bordeaux	Bordeaux	Bordeaux	-0.578	44.838					1033, 1455, 1473, 1487	4		
+L0416	416	Bordeaux: Saint-Seurin church		church			Gironde				Gironde	Bordeaux	Bordeaux	Bordeaux	-0.578	44.838					1033, 1455, 1475	3		
+L0074	74	Bossieu					Isère		La Côte-Saint-André		Isère	Vienne	La Côte-Saint-André	Bossieu	5.148	45.417					1269	1		
+L0075	75	Bouillac					Tarn-et-Garonne		Verdun-sur-Garonne		Tarn-et-Garonne	Montauban	Verdun-sur-Garonne	Bouillac	1.119	43.842					85, 109, 231, 303-307, 365, 367, 381, 397, 445, 447, 453, 487, 513, 519, 521, 531, 575, 587, 627, 645-655, 689, 765, 769, 791, 793, 809, 819, 973-977, 1141, 1161, 1441, 1443	39		
+L0076	76	Boulbonne abbey		abbey			Haute-Garonne		Cintegabelle	Cintegabelle	Haute-Garonne	Muret	Cintegabelle	Cintegabelle	1.556	43.306					1257, 1281, 1291	3		
+L0078	78	Bourges					Cher				Cher	Bourges	Bourges	Bourges	2.395	47.083					863, 871, 1219, 1221	4		
+L0079	79	Bourgogne		region	French kingdom, capital - Dijon		Côte-d'Or				Côte-d'Or	Montbard	Saulieu	Champeau-en-Morvan	4.151	47.248					85, 89, 115, 935, 1041, 1107, 1127-1131, 1171, 1491, 1499, 1537, 1547, 1565	12		
+L0080	80	Breil (forest of)									Haute-Garonne	Toulouse	Verfeil	Verfeil	1.675	43.625					711	1		near Verfeil
+L0081	81	Bresse		region	French kingdom						Ain	Bourg-en-Bresse	Saint-Trivier-de-Courtes	Cormoz	5.250	46.417					115, 931, 953, 1019, 1081, 1083, 1169	6		
+L0082	82	Bretx					Haute-Garonne		Grenade-sur-Garonne		Haute-Garonne	Toulouse	Grenade	Bretx	1.199	43.707					1039, 1089	2		
+L0083	83	Briod	Biat				Jura		Conliège		Jura	Lons-le-Saunier	Conliège	Briod	5.623	46.662					1041, 1089	2		
+L0084	84	Bruniquel					Tarn-et-Garonne		Monclar-de-Quercy		Tarn-et-Garonne	Montauban	Monclar-de-Quercy	Bruniquel	1.665	44.055					339	1		
+L0085	85	Bugnac					Haute-Garonne		Lanta		Haute-Garonne	Toulouse	Blagnac	Blagnac	1.383	43.646					85, 115, 879, 893, 913, 935, 1125, 1439	6		
+L0086	86	Buzet					Haute-Garonne		Montastruc-la-Conseillère		Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Buzet-sur-Tarn	1.632	43.779					717, 721, 897	3		
+L0088	88	Cabardès			Mas-Cabardès		Aude				Aude	Carcassonne	Mas-Cabardès	Salsigne	2.357	43.326					451	1		
+L0089	89	Cahors					Lot				Lot	Cahors	Cahors	Cahors	1.436	44.457					89, 135, 205, 207, 559-563, 599, 627, 675, 699, 703, 705, 715, 767-771, 789, 805, 821, 823, 831, 847, 859, 863, 871, 961-967, 977, 979, 1157-1161, 1467, 1501	35		
+L0090	90	Cajarc					Lot				Lot	Figeac	Cajarc	Cajarc	1.843	44.485					1449, 1467, 1493, 1515, 1537-1541, 1547, 1555, 1559, 1561, 1565	12		
+L0091	91	Camp church		church			Ariège			Pamiers	Ariège	Pamiers	Pamiers	Pamiers	1.612	43.116					1281, 1291	2		
+L0092	92	Candeil abbey		abbey							Tarn	Albi	Cadalen	Labessière-Candeil	1.981	43.799					617	1		
+L0093	93	Cantecorps					Tarn-et-Garonne		Montpezat-de-Quercy	Montpezat-de-Quercy	Tarn	Albi	Castelnau-de-Montmiral	Puycelci	1.738	43.959					577, 659	2		
+L0094	94	Canterbury			England										1.080	51.278					1437	1		
+L0096	96	Capestang					Hérault				Hérault	Béziers	Capestang	Capestang	3.045	43.328					1353, 1383, 1385, 1407	4		
+L0097	97	Caraman					Haute-Garonne				Haute-Garonne	Toulouse	Caraman	Caraman	1.758	43.531					85-91, 115, 581, 627, 797, 873	4		
+L0098	98	Carcassès		region																	331	1		
+L0099	99	Carcassonne					Aude				Aude	Carcassonne	Carcassonne	Carcassonne	2.352	43.213					87, 95, 97, 119, 141, 267, 269, 317, 339, 359, 473, 545, 547, 559, 567, 599, 711, 865, 871, 915, 973, 975, 1107, 1147, 1185-1195, 1199, 1203, 1205, 1233, 1241, 1245, 1249-1253, 1257-1267, 1277, 1281, 1297, 1305, 1313, 1321, 1333, 1341, 1343, 1361, 1369, 1377, 1383, 1385, 1397, 1409, 1417, 1421, 1469, 1601, 1605, 1613, 1615, 1625, 1637, 1639	66		
+L0100	100	Cardonac					Tarn		Cordes	Noailles	Tarn	Albi	Cordes-sur-Ciel	Noailles	2.000	44.019					87, 119, 1447, 1467, 1471, 1473	4		
+L0101	101	Cas	de Cassis				Tarn-et-Garonne		Cayluse	Espinas	Tarn-et-Garonne	Montauban	Caylus	Espinas	1.772	44.200					559, 845	2		
+L0102	102	Cassan					Hérault		Roujan	Roujan	Hérault	Béziers	Roujan	Roujan	3.288	43.509					1279, 1291	2		
+L0103	103	Cassès					Aude		Castelnaudary		Aude	Carcassonne	Castelnaudary-Nord	Les Cassés	1.868	43.426					87, 115, 479, 875, 893	3		
+L0104	104	Castelmaurou					Haute-Garonne		Toulouse		Haute-Garonne	Toulouse	Toulouse 15e Canton	Castelmaurou	1.533	43.677					87, 115, 579, 583, 627	3		
+L0105	105	Castelnau-Barbarens					Gers		Saramon		Gers	Auch	Saramon	Castelnau-Barbarens	0.723	43.574					87, 89, 117, 985, 987, 991, 1009, 1011, 1049, 1051, 1055-1061, 1089, 1107, 1127, 1135, 1213	16		
+L0106	106	Castelnaudary					Aude				Aude	Carcassonne	Castelnaudary	Castelnaudary	1.955	43.318					479, 813, 967, 1187	4		
+L0107	107	Castelsarrasin					Tarn-et-Garonne				Tarn-et-Garonne	Castelsarrasin	Castelsarrasin	Castelsarrasin	1.108	44.039					87, 117, 777, 787	2		
+L0108	108	Castres					Tarn				Tarn	Castres	Castres	Castres	2.241	43.605					205, 209, 931, 1033, 1183, 1187, 1233, 1431, 1455, 1473, 1633	11		
+L0411	411	Castres: Saint-Pierre d'Avit church		church			Tarn		Castres	Castres	Tarn	Castres	Castres	Castres	2.176	43.623					537, 545, 559, 835, 845, 853, 959, 1183, 1233, 1431, 1633	11	1233	
+L0419	419	Castres: Saint-Vincent church		church			Tarn			Castres	Tarn	Castres	Castres	Castres	2.241	43.605					209, 1033, 1455, 1473	4	209, 1033, 1455, 1473	
+L0109	109	Catalogne		region	Spain										1.669	41.836					339	1		
+L0110	110	Caufours					Tarn		Lavaur	Lavaur					1.385	44.660	3		Adam Mertel		85, 115, 349, 361, 745, 873, 883, 893, 1099	7		google maps, first occurence
+L0111	111	Caujac					Haute-Garonne		Cintegabelle		Haute-Garonne	Muret	Cintegabelle	Caujac	1.470	43.299					1601, 1613, 1621	3		
+L0112	112	Caunes					Aude		Peyriac-Minervois		Aude	Carcassonne	Peyriac-Minervois	Caunes-Minervois	2.527	43.327					565	1		
+L0113	113	Caussens					Gers		Condom		Gers	Condom	Condom	Caussens	0.424	43.943					601, 721, 771, 1443	4		
+L0114	114	Caussou					Ariège		Les Cabannes		Ariège	Foix	Les Cabannes	Caussou	1.806	42.769					117, 1637	1		
+L0115	115	Celles					Ariège		Foix		Ariège	Foix	Foix-Rural	Celles	1.687	42.917					87, 119, 1289, 1293	2		
+L0116	116	Cernon					Jura		Arinthod		Jura	Lons-le-Saunier	Arinthod	Cernon	5.650	46.402					931, 985, 989, 1007, 1009, 1013-1027, 1041, 1045-1051, 1055, 1059, 1061, 1063, 1065, 1069-1083, 1169, 1271, 1449, 1451, 1461, 1465, 1467, 1489, 1493, 1495, 1499-1513, 1517, 1537-1541, 1553, 1555, 1565, 1567, 1573-1577	60		
+L0117	117	Châlon-sur-Saône					Saône-et-Loire				Saône-et-Loire	Chalon-sur-Saône	Chalon-sur-Saône	Chalon-sur-Saône	4.852	46.780					931, 1555	2		
+L0118	118	Chalosse				Aire	Landes				Landes	Dax	Mugron	Maylis	-0.730	43.693					339	1		??? et archiprêtré
+L0480	480	Chapelle Ugolin	Capella Ugoleni	settlement																	307	1		Place not identified by the editor.
+L0120	120	Chartres					Eure-et-Loir				Eure-et-Loir	Chartres	Chartres	Chartres	1.486	48.442					1033, 1473	2		
+L0427	427	Chartres: Sainte-Marie church		church			Eure-et-Loir				Eure-et-Loir	Chartres	Chartres	Chartres	1.488	48.448					1033, 1473	2		
+L0121	121	Château					Castelnau-Barbarens ?				Gers	Auch	Saramon	Castelnau-Barbarens	0.724	43.576					987, 991	2		??? castro
+L0122	122	Château-Verdun					Ariège		Les Cabannes		Ariège	Foix	Les Cabannes	Château-Verdun	1.681	42.783					117, 1279, 1291, 1637	3		
+L0123	123	Châtillon					Jura		Combiège		Jura	Lons-le-Saunier	Conliège	Châtillon	5.728	46.658					1063, 1089	2		
+L0124	124	Chaulet					Tarn		Salvagnac	Beauvais-sur-Tescou	Tarn	Albi	Salvagnac	Beauvais-sur-Tescou	1.584	43.896					699, 769, 873, 977	4		
+L0125	125	Cintegabelle					Haute-Garonne				Haute-Garonne	Muret	Cintegabelle	Cintegabelle	1.531	43.314					87, 119, 1289, 1341, 1351, 1359, 1367, 1369, 1373, 1375, 1417, 1421, 1593	11		
+L0126	126	Clermont					Gers		Puymirol		Gers	Mirande	Mirande	Clermont-Pouyguillès	0.523	43.474					207, 339, 1437	3		
+L0127	127	Combe Guilha					undetermined														349, 361, 745, 873, 883, 893, 895, 1099	8		
+L0128	128	Combelongue abbey		abbey			Ariège		Saint-Girons	Rimont	Ariège	Saint-Girons	Saint-Girons	Rimont	1.276	42.988					1279, 1291	2		
+L0129	129	Comberouger					Tarn-et-Garonne		Verdun-sur-Garonne	Bouillac	Tarn-et-Garonne	Montauban	Verdun-sur-Garonne	Comberouger	1.103	43.861					87, 117, 445, 447, 581, 627, 765, 791, 1441, 1577, 1583	9		
+L0130	130	Comminges		region	Haute-Gascogne						Hautes-Pyrénées	Bagnères-de-Bigorre	Lannemezan	Uglas	0.461	43.157					191, 1437	2		former country in southern French kingdom
+L0131	131	Condom					Gers				Gers	Condom	Condom	Condom	0.373	43.958					471, 657	2		
+L0132	132	Coni			Italy										7.543	44.384					223, 229, 481, 501	4		
+L0133	133	Conques					Aveyron				Aveyron	Rodez	Conques	Conques	2.398	44.599					1033, 1455	2		
+L0134	134	Conques-sur-Orbiel					Aude				Aude	Carcassonne	Conques-sur-Orbiel	Conques-sur-Orbiel	2.401	43.269					863, 1251, 1473	3		
+L0135	135	Cordes					Tarn				Tarn	Albi	Cordes-sur-Ciel	Cordes-sur-Ciel	1.951	44.064					87, 97, 117, 119, 997, 999, 1029, 1031, 1103, 1109, 1113, 1177, 1185, 1189, 1219-1223, 1227-1239, 1467	21		
+L0377	377	Cordes: Saint-Dominique-le-Confesseur chapel		church			Tarn				Tarn	Albi	Cordes-sur-Ciel	Cordes-sur-Ciel	1.951	44.063					1231	1		
+L0385	385	Cordes: Saint-Jacques hospital					Tarn				Tarn	Albi	Cordes-sur-Ciel	Les Cabannes	1.944	44.072					1239	1		
+L0396	396	Cordes: Saint-Louis chapel		church			Tarn				Tarn	Albi	Cordes-sur-Ciel	Cordes-sur-Ciel	1.955	44.063					1231	1		
+L0413	413	Cordes: Saint-Pierre-Martyr chapel		church			Tarn				Tarn	Albi	Cordes-sur-Ciel	Cordes-sur-Ciel	1.952	44.063					1231	1		
+L0423	423	Cordes: Sainte-Cécile chapel		church			Tarn				Tarn	Albi	Albi	Albi	2.145	43.928					1231	1		
+L0136	136	Corrumpino				Albi					Tarn	Albi	Albi	Albi	2.131	43.949					1233	1		
+L0137	137	Corterario					Carcassonne														1253	1		in the region of Carcassonne
+L0138	138	Cossac (bridge)		bridge																	971	1		in Hers near Toulouse
+L0140	140	Cotencho																			607	1		
+L0142	142	Coustaussa					Aude		Couiza		Aude	Limoux	Couiza	Coustaussa	2.278	42.940					231, 233, 481, 527	4		
+L0143	143	Crançot					Jura		Conliège		Jura	Lons-le-Saunier	Conliège	Crançot	5.661	46.687					1089, 1171	2		
+L0145	145	Cugnaux					Haute-Garonne		Toulouse		Haute-Garonne	Toulouse	Tournefeuille	Cugnaux	1.345	43.537					863	1		
+L0433	433	Dalbade: Sainte-Marie de la Dalbade		church							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.443	43.597					861	1		church: verified in the text of the register
+L0148	148	Dax					Landes				Landes	Dax	Dax	Dax	-1.053	43.708					737	1		
+L0149	149	Dieupentale					Tarn-sur-Garonne		Grisolles		Tarn-et-Garonne	Montauban	Grisolles	Dieupentale	1.269	43.861					1437	1		
+L0150	150	Dun					Ariège		Mirepoix		Ariège	Pamiers	Mirepoix	Dun	1.799	43.028					1279, 1291	2		
+L0151	151	Endoufielle					Gers		L'Isle-Jourdain		Gers	Auch	L'Isle-Jourdain	Endoufielle	1.024	43.550					559, 853	2		
+L0152	152	Ermenonville					Oise		Nanteuil-le-Haudoin		Oise	Senlis	Nanteuil-le-Haudouin	Ermenonville	2.696	49.126					339, 656	2		
+L0153	153	Escalquens					Haute-Garonne		Montgiscard		Haute-Garonne	Toulouse	Montgiscard	Escalquens	1.562	43.518					337, 545	2		
+L0154	154	Espagne		region																	87, 129, 1573	1		
+L0157	157	Fanjeaux					Aude				Aude	Carcassonne	Fanjeaux	Fanjeaux	2.035	43.187					87, 119, 259, 305, 569	3		
+L0159	159	Feniès					Tarn		Réalmont/Carmaux	Saint-Antonin-de-Lacalm/Valderiès	Tarn	Albi	Réalmont	Saint-Antonin-de-Lacalm	2.287	43.789					1219, 1221	2		
+L0160	160	Ferrus					Haute-Garonne		Montastruc-la-Conseillère	Saint-Jean-Lherm	Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Montpitol	1.627	43.702					87, 121, 215, 227, 273, 275, 301, 305, 399, 401, 419, 435, 531, 583-587, 627, 665-669, 679, 741, 769, 781, 793, 811, 839, 977, 1439	27		
+L0161	161	Fezensaguet (viscounty of)		region			Gers				Gers	Condom	Mauvezin	Mauvezin	0.878	43.730					871	1		administrative center of the arrondissement
+L0162	162	Fillols					Haute-Garonne		Villemur	Villemur	Pyrénées-Orientales	Prades	Prades	Fillols	2.410	42.561					91, 153, 345, 569, 601, 629	4		
+L0163	163	Flaugnac					Lot		Castelnau-Montratier		Lot	Cahors	Castelnau-Montratier	Flaugnac	1.393	44.279					965	1		
+L0164	164	Fleurance					Gers				Gers	Condom	Fleurance	Fleurance	0.664	43.849					87, 121, 501, 805	2		
+L0165	165	Foix					Ariège				Ariège	Foix	Foix-Ville	Foix	1.607	42.964					87, 119, 191, 205, 1257, 1279, 1285, 1291, 1637	7		
+L0166	166	Fonsorbes					Haute-Garonne		Saint-Lys		Haute-Garonne	Muret	Saint-Lys	Fonsorbes	1.228	43.537					973	1		
+L0167	167	Forez		region	French kingdom						Loire	Montbrison	Boën	Boën	4.004	45.745					565	1		
+L0168	168	Francarville					Haute-Garonne		Caraman		Haute-Garonne	Toulouse	Caraman	Francarville	1.749	43.586					87, 119, 661, 665, 769, 1441	4		
+L0169	169	France		region							Cher	Saint-Amand-Montrond	Saulzais-le-Potier	Vesdun	2.430	46.539					177, 181, 315, 323, 335, 539, 549, 553, 561, 563, 841, 847, 855, 867, 869, 961, 969, 971, 975, 1033, 1111, 1185, 1189, 1195, 1205, 1207, 1211, 1219, 1221, 1225, 1235, 1237, 1241, 1247, 1249, 1255, 1265, 1277, 1281, 1289, 1293, 1339, 1351, 1417, 1425, 1429, 1435, 1473, 1527, 1535, 1587, 1593, 1611	53		
+L0170	170	Frontignan					Hérault				Hérault	Montpellier	Frontignan	Frontignan	3.755	43.448					1257	1		
+L0171	171	Fumel					Lot-et-Garonne				Lot-et-Garonne	Villeneuve-sur-Lot	Fumel	Fumel	0.967	44.498					191, 565	2		
+L0172	172	Gaillac					Tarn				Tarn	Albi	Gaillac	Gaillac	1.897	43.901					1487	1		
+L0173	173	Gaillac-Toulza					Haute-Garonne		Cintegabelle		Haute-Garonne	Muret	Cintegabelle	Gaillac-Toulza	1.471	43.255					339, 707, 971	3		
+L0174	174	Galice			Spain										-7.836	42.793					1447, 1519, 1527, 1531	4		
+L0177	177	Gardas					Haute-Garonne		Fronton		Haute-Garonne	Toulouse	Fronton	Gargas	1.468	43.756					179, 201	2		
+L0176	176	Gardouch					Haute-Garonne		Villefranche-de-Lauragais		Haute-Garonne	Toulouse	Villefranche-de-Lauragais	Gardouch	1.684	43.391					331, 871	2		
+L0178	178	Garrigues					Tarn		Lavaur		Tarn	Castres	Lavaur	Garrigues	1.718	43.694					87, 91, 99, 125, 207, 209, 443, 589, 627, 635, 677, 795, 873, 1441	10		
+L0179	179	Gascogne		region	French kingdom						Gers	Mirande	Plaisance	Izotges	-0.022	43.661					223, 381, 471, 487, 513, 991, 1021, 1041, 1047, 1049, 1127, 1131, 1573, 1581	14		
+L0180	180	Gaudiès					Ariège		Saverdun		Ariège	Pamiers	Saverdun	Gaudiès	1.731	43.175					85, 107, 181, 335, 337, 539, 565	5		
+L0181	181	Gaudoux					Gers		Auch-Nord	Preignan	Gers	Auch	Auch-Nord-Ouest	Preignan	0.651	43.729					87, 125, 931, 985, 1017-1021, 1029, 1043, 1047-1051, 1061, 1069-1073, 1077, 1129, 1447, 1489, 1491, 1531, 1567, 1573, 1581	23		
+L0182	182	Gaujan					Gers		Lombez		Gers	Auch	Lombez	Gaujan	0.723	43.408					1373	1		
+L0183	183	Gauré					Haute-Garonne		Verfeil		Haute-Garonne	Toulouse	Verfeil	Gauré	1.642	43.612					87, 127, 179, 201, 589, 627, 873, 1437	6		
+L0184	184	Gênes			Italy										9.088	44.448					233, 265, 481	3		
+L0185	185	Genève			Switzerland										6.144	46.204					931, 935	2		
+L0186	186	Gérone			Catalonia										2.789	42.120					1305	1		
+L0187	187	Gignac 					Hérault				Hérault	Lodève	Gignac	Gignac	3.551	43.653					87, 125, 1621	1		
+L0188	188	Glatens					Tarn-et-Garonne		Beaumont		Tarn-et-Garonne	Castelsarrasin	Beaumont-de-Lomagne	Lamothe-Cumont	0.918	43.894					339, 485, 543	3		
+L0189	189	Gragnague					Haute-Garonne		Verfeil		Haute-Garonne	Toulouse	Verfeil	Gragnague	1.584	43.682					179, 853	2		
+L0190	190	Grandselve					Tarn-et-Garonne		Verdun-sur-Garonne	Bouillac	Tarn-et-Garonne	Montauban	Verdun-sur-Garonne	Bouillac	1.140	43.856					447, 581, 659, 791	4		
+L0191	191	Grandvaux					Saône-et-Loire		Palinges		Saône-et-Loire	Charolles	Palinges	Grandvaux	4.265	46.510					985, 1061, 1077, 1491, 1539, 1555	6		
+L0192	192	Graulhet					Tarn		Graulhet		Tarn	Castres	Graulhet	Graulhet	1.990	43.763					1437	1		
+L0193	193	Grèce		region											23.212	38.256					1351	1		
+L0194	194	Grenade					Haute-Garonne				Haute-Garonne	Toulouse	Grenade	Grenade	1.295	43.769					93, 127, 353, 361, 447, 873	4		
+L0195	195	Grèzac					Lot-et-Garonne		Penne d'Agenais	Auradou	Lot-et-Garonne	Villeneuve-sur-Lot	Penne-d'Agenais	Auradou	0.791	44.359					853	1		
+L0197	197	Herment					Puy-de-Dôme				Puy-de-Dôme	Clermont-Ferrand	Herment	Herment	2.570	45.754					693	1		??? Ermencs
+L0470	470	Holy Land		region											35.224	31.779					1247	1		
+L0198	198	Hounoux					Aude		Alaigne		Aude	Limoux	Alaigne	Hounoux	2.001	43.129					1357, 1601	2		
+L0202	202	Italie		region											14.188	41.703					1147, 1601	2		
+L0203	203	Jérusalem													35.219	31.773					1351, 1357, 1379	3		
+L0201	201	L' Isle-Jourdain					Gers				Gers	Auch	L'Isle-Jourdain	L'Isle-Jourdain	1.089	43.612					205, 543, 565, 843, 1039, 1375	6		
+L0077	77	La Boulouze	Lanabela				Gers		Samatan	Saysses-Savès	Manche	Avranches	Saint-Ovin	Saint-Ovin	-1.212	48.678					1053, 1089	2		
+L0095	95	La Capelle (parish)					Tarn		Castelnau-de-Montmirail	Puycelsi	Tarn	Albi	Castelnau-de-Montmiral	Puycelci	1.738	43.959					823	1		
+L0119	119	La Chapelle-Saint-Sauveur					Saône-et-Loire		Pierre-de-Bresse		Saône-et-Loire	Louhans	Pierre-de-Bresse	La Chapelle-Saint-Sauveur	5.269	46.844					1127	1		
+L0139	139	La Côte-Saint-André					Isère				Isère	Vienne	La Côte-Saint-André	La Côte-Saint-André	5.261	45.394					1267-1271	3		
+L0141	141	La Courtine					Jura		Conliège	Beaumardiès	Côte-d'Or	Montbard	Semur-en-Auxois	Massingy-lès-Semur	4.396	47.524					1041, 1089	2		place destroyed
+L0175	175	La Garde					Haute-Garonne		Verfeil	Verfeil	Ariège	Pamiers	Mirepoix	Lagarde	1.935	43.049					87, 121, 181, 183, 207, 215, 223, 225, 265, 271-277, 305, 349, 351, 363, 373-377, 401, 407, 411, 419-429, 433, 439, 471, 475, 485, 491, 497, 519, 525, 579-591, 601, 603, 609, 619, 621, 627, 633, 657, 663, 665, 671, 673, 677, 719, 743, 767-771, 775, 793, 811, 815, 819, 821, 831, 833, 873, 881, 883, 927, 977, 995, 1029, 1031, 1097, 1109, 1125, 1439, 1441	82		
+L0196	196	La Grimaudiè					Tarn-et-Garonne		Montclar-de-Quercy		Tarn-et-Garonne	Montauban	Monclar-de-Quercy	Monclar-de-Quercy	1.561	43.981					87, 127, 675, 769, 979	3		
+L0293	293	La Motte					Tarn		Lavaur	Saint-Sulpice-la-Pointe	Tarn	Castres	Lautrec	Vénès	2.227	43.719					89, 139, 877, 893	2		
+L0348	348	La Rabine					Tarn-et-Garonne		Monclar-de-Quercy												91, 147, 599, 627, 805, 827, 831, 977, 979, 1157, 1161	9		
+L0448	448	La Sauzière					Haute-Garonne		Montastruc-la-Conseillère		Tarn	Albi	Salvagnac	La Sauzière-Saint-Jean	1.629	43.969					717	1		near Buzet
+L0452	452	La Selve					Haute-Garonne		Caraman	Caraman	Haute-Garonne	Toulouse	Caraman	Caraman	1.711	43.557					581, 627, 873	3		
+L0461	461	La Soulade					Haute-Garonne		Montastruc-la-Conseillère	Montpitol	Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Montpitol	1.638	43.704					91, 153, 729, 771, 781, 787, 1441	5		
+L0486	486	La Valette					Tarn-et-Garonne		Montaigu-de-Quercy	Roquecor					944.000	44.322					963	1		
+L0204	204	Labastide									Hautes-Pyrénées	Bagnères-de-Bigorre	La Barthe-de-Neste	Labastide	0.353	43.036					559	1		
+L0205	205	Labécède-Lauragais									Aude	Carcassonne	Castelnaudary-Nord	Labécède-Lauragais	2.003	43.391					747, 749, 761, 1037	4		
+L0206	206	Labruguière					Tarn				Tarn	Castres	Labruguière	Labruguière	2.264	43.539					1015, 1029, 1031, 1441, 1583, 1585	6		
+L0207	207	Laburat					Ariège		Tarascon-sur-Ariège	Capoulet-Junac											1637	1		
+L0208	208	Ladevèze					Gers		Marciac		Gers	Mirande	Marciac	Ladevèze-Ville	0.058	43.536					973	1		
+L0209	209	Ladros				Urgel															89, 129, 1285	1		
+L0210	210	Lagassié					Tarn		Lavaur	Garrigues	Tarn	Castres	Anglès	Anglès	2.610	43.558					85, 99, 443, 487, 769	3		
+L0211	211	Lamazuge					Gers		Marciac	Laveraët	Gers	Mirande	Marciac	Laveraët	0.195	43.528					89, 135, 1017, 1029, 1033, 1071, 1073, 1089, 1441, 1443, 1447, 1489, 1531	11		
+L0212	212	Lanet					Aude		Mouthoumet		Aude	Carcassonne	Mouthoumet	Lanet	2.495	42.964					559	1		
+L0213	213	Lanta					Haute-Garonne				Haute-Garonne	Toulouse	Lanta	Lanta	1.656	43.561					89, 129, 501, 503, 543, 635, 657, 675, 685, 687, 699, 701, 715-719, 753, 769, 771, 789, 793, 801-805, 809, 811, 821-831, 887, 897, 977, 1279, 1439	34		
+L0214	214	Lartigue					Gers		Saramon		Gers	Auch	Saramon	Lartigue	0.721	43.530					85, 101, 1059, 1061, 1073, 1089, 1571, 1583, 1585	7		
+L0215	215	Lasbordes					Haute-Garonne		Prunet		Haute-Garonne	Toulouse	Caraman	Prunet	1.718	43.573					659	1		
+L0216	216	Latoue					Haute-Garonne		Aurignac		Haute-Garonne	Saint-Gaudens	Aurignac	Latoue	0.786	43.168					961, 1029	2		
+L0217	217	Laurac					Aude		Fanjeaux		Aude	Carcassonne	Fanjeaux	Laurac	1.976	43.229					339	1		
+L0218	218	Lautrec					Tarn				Tarn	Castres	Lautrec	Lautrec	2.138	43.705					189, 339, 559, 565, 843, 851	6		
+L0219	219	Lavalette					Haute-Garonne		Verfeil		Haute-Garonne	Toulouse	Verfeil	Lavalette	1.595	43.638					433	1		
+L0220	220	Lavallée					Tarn		Lavaur		Tarn	Albi	Castelnau-de-Montmiral	Puycelci	1.719	43.972					93, 163, 621, 629, 865, 1439	4		
+L0221	221	Lavaur					Tarn				Tarn	Castres	Lavaur	Lavaur	1.820	43.700					85-93, 105, 145, 163, 349, 361, 589, 597, 621, 655, 851, 859, 863, 871, 973, 979, 1437, 1439, 1441	15		
+L0222	222	Laveraët					Gers		Marciac		Gers	Mirande	Marciac	Laveraët	0.214	43.530					1045, 1489	2		
+L0223	223	Lavit					Tarn-et-Garonne				Tarn-et-Garonne	Castelsarrasin	Lavit	Lavit	0.919	43.957					93, 173, 763, 771, 805, 811	4		
+L0072	72	Le Born					Haute-Garonne		Villemur		Haute-Garonne	Toulouse	Villemur-sur-Tarn	Le Born	1.545	43.884					85, 89, 93, 111, 141, 163, 191, 217, 219, 223-227, 287-295, 307, 341, 345, 349, 353, 363-373, 379, 393, 411, 475, 485, 495-503, 507, 509, 531, 567, 573, 575, 595, 601, 627, 643, 639-645, 699, 707, 765, 769, 775, 777, 787, 789, 795, 809, 823, 829, 891, 909, 925, 927, 929, 935, 941, 943, 947-951, 977, 979, 997, 1029, 1101, 1109, 1139, 1153, 1155, 1157, 1161, 1439, 1441, 1445, 1451, 1453, 1457, 1459, 1471, 1475, 1477, 1481, 1483, 1531	93		
+L0073	73	Le Bosc					Ariège		Foix		Ariège	Foix	Foix-Rural	Le Bosc	1.460	42.947					1299, 1417, 1421	3		
+L0087	87	Le Cabanial					Haute-Garonne		Caraman		Haute-Garonne	Toulouse	Caraman	Le Cabanial	1.876	43.514					85, 115, 267, 269, 305	3		
+L0144	144	Le Cros					Hérault		Le Caylar		Hérault	Lodève	Le Caylar	Le Cros	3.365	43.869					331, 1289, 1383, 1385, 1417, 1421	6		
+L0158	158	Le Fau	de Faucio				Lot		Figeac		Lot	Figeac	Figeac-Est	Prendeignes	2.097	44.686					969	1		
+L0249	249	Le Mas-Saintes-Puelles					Aude		Castelnaudary		Aude	Carcassonne	Castelnaudary-Sud	Mas-Saintes-Puelles	1.876	43.313					89, 131, 209	1		
+L0343	343	Le Puy					Haute-Loire				Haute-Loire	Le Puy-en-Velay	Le Puy-en-Velay	Le Puy-en-Velay	3.884	45.044					209, 1033, 1179, 1455, 1473	5		
+L0446	446	Le Sarret					Gers		Marciac	Pallane											1089, 1443	2		??? lieu-dit de Lartigue (place of Lartigue)
+L0462	462	Le Soulié					Hérault		La Salvetat		Hérault	Béziers	La Salvetat-sur-Agout	Le Soulié	2.690	43.552					1253	1		
+L0493	493	Le Vaux									Haute-Garonne	Toulouse	Revel	Vaux	1.836	43.457					1105	1		
+L0224	224	Lectoure					Gers				Gers	Condom	Lectoure	Lectoure	0.626	43.933					485, 559, 567, 763, 767, 771, 787, 789, 805, 831	10		
+L0225	225	Lérida			Spain										0.627	41.618					1039	1		
+L0071	71	Les Bordes									Loiret	Orléans	Ouzouer-sur-Loire	Les Bordes	2.402	47.815						0		
+L0199	199	Les Hugous					Haute-Garonne		Lanta	Tarabel											87, 95, 127, 355, 357, 361, 363, 449, 451, 455, 461-465, 471, 487, 489, 523, 531, 567, 591, 593, 627, 631, 679-683, 745, 753, 769, 847, 901, 911, 933, 979, 1031, 1097, 1109, 1439	35		
+L0200	200	Les Ilhes					Aude		Mas-Cabardès		Aude	Carcassonne	Mas-Cabardès	Les Ilhes	2.378	43.351					1253	1		
+L0342	342	Les Pujols					Haute-Garonne		Lanta	Sainte-Foy d'Aigrefeuille	Ariège	Pamiers	Pamiers-Est	Les Pujols	1.718	43.087					91, 553, 1637	2		
+L0359	359	Les Rougès					Tarn-et-Garonne		Monclar-de-Quercy		Tarn-et-Garonne	Montauban	Caussade	Monteils	1.555	44.162					87, 91, 127, 149, 501, 675, 699, 701, 705, 715, 769, 771, 801, 805, 809, 821, 823, 827, 831	15		
+L0226	226	Lescar					Pyrénées-Atlantiques				Pyrénées-Atlantiques	Pau	Lescar	Lescar	-0.434	43.333					845	1		
+L0227	227	Lézat					Ariège		Le Fossat		Ariège	Pamiers	Le Fossat	Lézat-sur-Lèze	1.348	43.277					201, 205, 543, 559, 565, 843	6		
+L0228	228	Lias of Armagnac					Gers		Cazaubon		Gers	Condom	Cazaubon	Lias-d'Armagnac	-0.073	43.864					583, 627	2		
+L0229	229	Limoges					Haute-Vienne				Haute-Vienne	Limoges	Limoges	Limoges	1.263	45.835					975, 995, 1033, 1035, 1095, 1111, 1119, 1121, 1127, 1137, 1163, 1175, 1183, 1225, 1235, 1237, 1253, 1431, 1455, 1473, 1633, 1635	22		
+L0395	395	Limoges: Saint-Léonard church		church			Haute-Vienne				Haute-Vienne	Limoges	Saint-Léonard-de-Noblat	Saint-Léonard-de-Noblat	1.490	45.837					1033, 1455, 1473	3		
+L0400	400	Limoges: Saint-Martial and Saint-Léonard church		church			Haute-Vienne				Haute-Vienne	Limoges	Limoges	Limoges	1.260	45.831					1033, 1455, 1473	3		
+L0230	230	Limoux					Aude				Aude	Limoux	Limoux	Limoux	2.218	43.054					89, 129, 161, 185, 231, 233, 237, 243, 249, 261, 293, 313, 315, 421, 449, 467, 471, 481, 737, 915, 943, 1443	19		
+L0231	231	Lodève					Hérault				Hérault	Lodève	Lodève	Lodève	3.317	43.732					967, 1353, 1377, 1383, 1621	5		
+L0232	232	Lomagne									Tarn-et-Garonne	Castelsarrasin	Lavit	Lachapelle	0.841	43.977					93, 173, 771, 805	2		small country of the former Gascony in the Bas-Armagnac
+L0233	233	Lombardie		region	Italy										9.823	45.667					181, 183, 223, 225, 229, 231, 233, 261, 309, 451, 477-481, 501, 615, 801, 1001-1005, 1037, 1099, 1105, 1147	23		
+L0234	234	Lombers					Tarn		Réalmont		Tarn	Albi	Réalmont	Lombers	2.151	43.805					189, 205, 339, 543	4		
+L0235	235	Longepierre	Lonc Pueth				Saône-et-Loire		Verdun-sur-le-Doubs		Saône-et-Loire	Chalon-sur-Saône	Verdun-sur-le-Doubs	Longepierre	5.209	46.936					1579	1		
+L0236	236	Lons-le-Saulnier					Jura				Jura	Lons-le-Saunier	Lons-le-Saunier	Lons-le-Saunier	5.556	46.674					89, 129, 931, 935	2		
+L0237	237	Lordat					Ariège		Les Cabannes		Ariège	Foix	Les Cabannes	Axiat	1.752	42.776					89, 129, 1285	1		
+L0238	238	Lotharingie		region	former kingdom of Lorraine										6.092	49.844					1269-1273	3		
+L0239	239	Lugan					Tarn		Lavaur		Tarn	Castres	Lavaur	Lugan	1.716	43.734					89, 131, 349, 351, 361, 425-437, 443, 487, 589, 595, 621, 633, 683, 741, 769, 771, 897, 921, 977, 1439	24		
+L0240	240	Lugo			Spain, Galice										-7.558	43.009					87, 129, 1447, 1519, 1527, 1531	4		
+L0241	241	Lunel					Hérault				Hérault	Montpellier	Lunel	Lunel	4.134	43.675					1325, 1333, 1343, 1353, 1355, 1385, 1407, 1625	8		
+L0242	242	Maguelonne					Bouches-du-Rhône		Saintes-Maries	Saintes-Maries	Bouches-du-Rhône	Arles	Saintes-Maries-de-la-Mer	Saintes-Maries-de-la-Mer	4.405	43.482					191, 339, 1343, 1353, 1385, 1615, 1625	7		
+L0243	243	Majorque (island)		region	Baleares										2.977	39.600					1195, 1339, 1415	3		
+L0244	244	Marciac					Gers				Gers	Mirande	Marciac	Marciac	0.161	43.524					89, 131, 135, 1013-1017, 1027, 1029, 1041, 1045, 1067-1075, 1089, 1171, 1219, 1441, 1443, 1489, 1491, 1443, 1489, 1491, 1571-1579, 1583, 1585	29		
+L0245	245	Marlhac					Tarn		Cadalen	Técou	Tarn	Albi	Cadalen	Técou	1.932	43.816					89, 133, 617	1		
+L0246	246	Marnhiac					Tarn-et-Garonne		Monclar-de-Quercy		Tarn-et-Garonne	Montauban	Monclar-de-Quercy	Monclar-de-Quercy	1.613	43.982					89, 135, 699, 703, 705, 769, 821, 1441	6		
+L0247	247	Marquefave					Haute-Garonne		Carbonne		Haute-Garonne	Muret	Carbonne	Marquefave	1.246	43.316					1281	1		
+L0248	248	Marseille					Bouches-du-Rhône				Bouches-du-Rhône	Marseille	Marseille, 1er arrondissement	Marseille, 1er arrondissement	5.375	43.302					1303, 1305, 1311, 1313, 1317, 1321, 1323, 1333, 1341, 1343, 1347, 1353, 1361, 1367, 1369, 1373, 1377, 1383, 1385, 1391, 1407, 1605, 1615, 1621, 1625	25		
+L0250	250	Mascarville					Haute-Garonne		Caraman		Haute-Garonne	Toulouse	Caraman	Mascarville	1.759	43.555					89, 133, 213, 227, 567, 605	4		
+L0251	251	Maureville					Haute-Garonne		Caraman		Haute-Garonne	Toulouse	Caraman	Maureville	1.703	43.523					89, 139, 603, 605, 607, 639, 707, 709, 731-735, 751, 769, 773, 815, 917, 919, 935, 979, 1099, 1109, 1439	20		
+L0252	252	Mazères					Ariège		Saverdun		Ariège	Pamiers	Saverdun	Mazères	1.677	43.252					89, 141, 1279, 1311, 1417, 1421, 1423, 1637, 1639	7		
+L0253	253	Mazères					Gers		Saramon		Gers	Auch	Saramon	Lartigue	0.707	43.551					89, 101, 133, 985, 987, 991, 1007-1011, 1029, 1049, 1051, 1055-1061, 1067, 1089, 1107, 1109, 1127, 1135, 1441, 1443	21		
+L0254	254	Meilhan					Gers		Lombez		Gers	Auch	Lombez	Meilhan	0.684	43.424					1209	1		
+L0255	255	Melgueil/Maugio					Hérault				Hérault	Montpellier	Mauguio	Mauguio	4.010	43.616					1281	1		
+L0256	256	Melun					Seine-et-Marne				Seine-et-Marne	Melun	Melun	Melun	2.659	48.536					973	1		
+L0257	257	Merles					Tarn-et-Garonne		Auvillars		Tarn-et-Garonne	Castelsarrasin	Auvillar	Merles	0.970	44.059					89, 135, 373, 485, 639, 641, 795, 809, 877, 891, 893, 899, 933, 977, 1441, 1443	14		
+L0258	258	Mervans	Marnencs				Saône-et-Loire		Saint-Germain-du-Bois		Saône-et-Loire	Louhans	Saint-Germain-du-Bois	Mervans	5.187	46.799					1127	1		
+L0259	259	Messia					Jura		Lons-le-Saulnier		Jura	Lons-le-Saunier	Lons-le-Saunier-Sud	Messia-sur-Sorne	5.513	46.663					1163	1		
+L0260	260	Mezens					Tarn		Rabastens		Tarn	Albi	Rabastens	Mézens	1.671	43.789					89, 137, 399-403, 485, 979, 1439	6		
+L0261	261	Mirande					Gers				Gers	Mirande	Mirande	Mirande	0.404	43.515					89, 137, 1013, 1015, 1027, 1029, 1083, 1091, 1441, 1443, 1579, 1581	10		
+L0262	262	Mirepoix					Ariège				Ariège	Pamiers	Mirepoix	Mirepoix	1.874	43.088					87, 89, 141, 961, 975, 1029, 1089, 1199, 1257, 1277, 1281, 1289, 1291, 1299, 1311, 1315, 1331, 1341, 1351, 1357, 1359, 1367, 1389, 1417-1425, 1429, 1593, 1639	28		
+L0263	263	Mirepoix (parish of)									Aude	Limoux	Alaigne	Alaigne	2.092	43.102					1085	1		
+L0264	264	Mirepoix-sur-Tarn					Haute-Garonne		Villemur-sur-Tarn		Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Bessières	1.572	43.814					89, 137, 223, 279, 281, 283, 307, 409, 475, 593, 623, 627, 629, 689-697, 763, 769, 793, 873, 979, 1149, 1161, 1439	24		
+L0265	265	Mireval-Lauragais					Aude		Castelnaudary		Aude	Carcassonne	Castelnaudary-Sud	Mireval-Lauragais	1.959	43.256					865, 871, 973	3		
+L0266	266	Moissac					Tarn-et-Garonne				Tarn-et-Garonne	Castelsarrasin	Moissac	Moissac	1.087	44.104					565, 1487	2		
+L0267	267	Moncassis					Tarn-et-Garonne		Verdun-sur-Garonne	Mas-Grenier											545	1		
+L0268	268	Monclar-de-Quercy					Tarn-et-Garonne				Tarn-et-Garonne	Montauban	Monclar-de-Quercy	Monclar-de-Quercy	1.585	43.967					87-91, 135, 147, 149, 201, 501, 599, 675, 699, 703, 705, 715, 769, 771, 801, 805, 809, 821, 823, 827, 831, 979, 1157, 1161	20		
+L0269	269	Mongausy					Gers		Lombez		Gers	Auch	Lombez	Mongausy	0.806	43.508					89, 141, 987, 1021, 1029, 1033, 1055, 1077, 1087, 1091, 1129, 1441	10		
+L0270	270	Monlaur					Gers		Masseube		Gers	Mirande	Masseube	Monlaur-Bernet	0.512	43.351					191	1		
+L0271	271	Mont	Monte Burgundi				undetermined				Puy-de-Dôme	Clermont-Ferrand	Rochefort-Montagne	Mont-Dore	2.809	45.575					1587	1		
+L0273	273	Montaigut					Puy-de-Dôme		Herment		Puy-de-Dôme	Issoire	Champeix	Montaigut-le-Blanc	3.090	45.586					693	1		
+L0274	274	Montaillou					Ariège		Ax-les-Thermes		Ariège	Foix	Ax-les-Thermes	Montaillou	1.898	42.787					89, 141, 493, 1255, 1259, 1261, 1285, 1289, 1293, 1295, 1425, 1637	10		
+L0275	275	Montastruc-la-Conseillère					Haute-Garonne				Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Montastruc-la-Conseillère	1.590	43.719					89, 143, 499, 531, 689, 805	4		
+L0276	276	Montauban					Tarn-et-Garonne				Tarn-et-Garonne	Montauban	Montauban	Montauban	1.355	44.018					89, 141, 381, 505, 859, 863, 871, 961, 967, 975-979, 1029, 1033, 1109, 1121, 1123, 1151, 1159, 1161, 1429, 1445, 1451, 1453, 1457, 1471, 1475, 1481, 1485, 1531	28		
+L0277	277	Montaudran					Haute-Garonne		Toulouse	Toulouse	Haute-Garonne	Toulouse	Toulouse	Toulouse	1.491	43.574					89, 143, 463, 465, 487	3		
+L0278	278	Montaussel					Tarn		Lugan		Haute-Garonne	Toulouse	Caraman	Beauville	1.768	43.474					89, 143, 595, 627	2		
+L0279	279	Montaut					Gers		Lombez	Pellefigue	Gers	Mirande	Miélan	Montaut	0.420	43.394					331, 353, 873, 1085	4		
+L0280	280	Montcabrier					Tarn		Lavaur		Tarn	Castres	Lavaur	Montcabrier	1.731	43.627					277, 279, 305	3		
+L0281	281	Montégut					Haute-Garonne		Revel		Haute-Garonne	Toulouse	Revel	Montégut-Lauragais	1.922	43.479					89, 139, 197, 221, 231-235, 239, 243, 245, 249, 455, 477, 481, 487, 517, 939, 1137, 1161	17		
+L0282	282	Montesquieu					Haute-Garonne		Villefranche-de-Lauragais		Haute-Garonne	Toulouse	Villefranche-de-Lauragais	Montesquieu-Lauragais	1.629	43.417					339	1		
+L0283	283	Montfavès					Lot-et-Garonne		Villeneuve-sur-Lot	Villeneuve-sur-Lot											863	1		
+L0284	284	Montferran					Haute-Garonne		Verfeil												585	1		
+L0285	285	Montgaillard					Tarn		Salvagnac		Tarn	Albi	Salvagnac	Montgaillard	1.595	43.908					89, 141, 313, 595, 627, 699, 769, 873, 977	7		
+L0286	286	Montignac					Dordogne				Dordogne	Sarlat-la-Canéda	Montignac	Montignac	1.164	45.064					1461, 1501	2		
+L0287	287	Montlaur					Haute-Garonne		Montgiscard		Haute-Garonne	Toulouse	Montgiscard	Montlaur	1.571	43.488					543, 651, 653, 1257	4		
+L0288	288	Montmajour					Bouches-du-Rhône				Bouches-du-Rhône	Arles	Arles	Arles	4.664	43.706					1033, 1473	2		
+L0410	410	Montmajour: Saint-Pierre church		church			Bouches-du-Rhône				Bouches-du-Rhône	Arles	Arles	Arles	4.664	43.706					1033, 1473	2	1033	
+L0289	289	Montolieu					Aude		Alzonne		Aude	Carcassonne	Alzonne	Montolieu	2.216	43.310					565	1		
+L0290	290	Montpellier					Hérault				Hérault	Montpellier	Montpellier	Montpellier	3.877	43.612					89, 143, 209, 1033, 1455, 1473, 1613	5		
+L0437	437	Montpellier: Sainte-Marie-des-Tables church		church			Hérault				Hérault	Montpellier	Montpellier	Montpellier	3.879	43.612					209, 1033, 1455, 1473	4		
+L0291	291	Montpitol					Haute-Garonne		Montastruc-la-Conseillère	Saint-Jean-Lherm	Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Roquesérière	1.650	43.705					87, 125, 301, 589, 627, 677, 679, 769, 853, 875, 977	9		Gascognia
+L0292	292	Montréal					Aude				Aude	Carcassonne	Montréal	Montréal	2.143	43.199					89, 141, 975, 1241, 1289, 1347, 1351, 1353, 1357, 1397, 1417, 1593	10		
+L0294	294	Mouragnes					Tarn-et-Garonne		Castelsarrasin	Labastide-du-Temple											545, 561, 565	3		
+L0295	295	Moussoulens					Aude		Alzonne		Aude	Carcassonne	Alzonne	Moussoulens	2.230	43.280					1251	1		
+L0296	296	Moustier-Ventadour					Corrèze		Egletons		Corrèze	Ussel	Meymac	Darnets	2.105	45.396					339, 545	2		
+L0297	297	Najac					Aveyron				Aveyron	Villefranche-de-Rouergue	Najac	Najac	1.979	44.220					1589	1		
+L0299	299	Narbonnaise (region)		region					Narbonne		Hérault	Montpellier	Montpellier	Montpellier	3.867	43.590					1357, 1369, 1595	3		
+L0300	300	Narbonne		city			Aude				Aude	Narbonne	Narbonne	Narbonne	3.004	43.184					89, 143, 231, 851, 1033, 1251, 1253, 1301, 1305, 1307, 1309, 1313, 1317, 1321, 1323, 1331, 1333, 1339, 1341, 1343, 1347, 1351-1357, 1361, 1367-1379, 1383, 1385, 1391, 1397, 1401, 1403, 1407-1413, 1455, 1473, 1593, 1595, 1601, 1605, 1613, 1615, 1621-1625	52		
+L0407	407	Narbonne: Saint-Paul church		church			Aude				Aude	Narbonne	Narbonne	Narbonne	3.000	43.182					1033, 1455, 1473	3	1033	
+L0301	301	Navarre			French kingdom										-1.834	42.627					969, 1237, 1281	3		
+L0302	302	Niaux					Ariège		Tarascon-sur-Ariège		Ariège	Foix	Tarascon-sur-Ariège	Niaux	1.592	42.813					1637	1		
+L0303	303	Nivernais		region	French kingdom, capital - Nevers		Nièvre				Nièvre	Nevers	Saint-Saulge	Crux-la-Ville	3.513	47.160					327	1		
+L0304	304	Noailles					Tarn		Cordes		Tarn	Albi	Cordes-sur-Ciel	Noailles	1.984	44.010					1467	1		
+L0305	305	Noé					Haute-Garonne		Carbonne		Haute-Garonne	Muret	Carbonne	Noé	1.275	43.354					559	1		
+L0306	306	Nouaillac					Lot-et-Garonne		Penne d'Agenais	Penne d'Agenais	Lot-et-Garonne	Villeneuve-sur-Lot	Villeneuve-sur-Lot-Sud	Sainte-Colombe-de-Villeneuve	0.680	44.341					965	1		
+L0307	307	Novare		city	Italy										8.619	45.442					1527	1		
+L0308	308	Orgelet					Jura				Jura	Lons-le-Saunier	Orgelet	Orgelet	5.610	46.518					1163	1		
+L0309	309	Orgueil					Tarn-et-Garonne		Grisolles		Tarn-et-Garonne	Montauban	Grisolles	Orgueil	1.410	43.905					559	1		
+L0310	310	Ornolac					Ariège		Tarascon-sur-Ariège		Ariège	Foix	Tarascon-sur-Ariège	Ornolac-Ussat-les-Bains	1.632	42.819					89, 143, 1285	1		
+L0311	311	Padoue		city	Italy										11.880	45.402					499	1		
+L0312	312	Pallane					Gers		Marciac		Gers	Mirande	Marciac	Pallanne	0.250	43.506					1073, 1583	2		
+L0436	436	Pallane: Sainte-Marie-de-Pallane church		church			Gers				Gers	Mirande	Marciac	Pallanne	0.251	43.507					1041	1		
+L0313	313	Palleville					Tarn		Dourgne		Tarn	Castres	Dourgne	Palleville	1.999	43.502					89, 143, 219, 227, 567	3		
+L0314	314	Pamiers					Ariège				Ariège	Pamiers	Pamiers	Pamiers	1.617	43.116					85-93, 101, 105, 117, 119, 141-147, 151, 161, 173, 175, 231, 327, 539, 1185, 1203, 1205, 1255-1261, 1265, 1271, 1277-1297, 1309, 1343, 1347, 1351, 1355, 1357, 1371, 1377, 1397, 1417, 1425, 1437, 1633, 1637, 1639	38		
+L0368	368	Pamiers: Saint-Antonin church		church					Pamiers		Ariège	Pamiers	Pamiers	Pamiers	1.609	43.114					1287	1	1287	
+L0390	390	Pamiers: Saint-Jean-martyr cemetery		cemetary			Ariège				Ariège	Pamiers	Pamiers	Pamiers	1.616	43.120					1257, 1277, 1289	3		
+L0315	315	Paris					Aude		Chalabre	Sainte											1253	1		
+L0316	316	Paris		city			Seine				Paris	Paris, 4e arrondissement	Paris, 4e arrondissement	Paris, 4e arrondissement	2.352	48.857					277, 339, 1335, 1411, 1437	5		
+L0397	397	Paris: Saint-Louis church		church			Seine				Paris	Paris, 4e arrondissement	Paris, 4e arrondissement	Paris, 4e arrondissement	2.358	48.851					1033, 1473	2	1033, 1473	
+L0317	317	Parme		city	Italy										10.333	44.800					1257	1		
+L0318	318	Pausade (the crossing of)					Gers														1045, 1063, 1089, 1171	4		??? le forc de Pausadier, place disappeared in the north of Marciac
+L0319	319	Pavie		city			Gers		Auch		Gers	Auch	Auch-Sud-Ouest	Pavie	0.593	43.611					1577	1		
+L0320	320	Pech (parish)					Ariège		Vernaux		Ariège	Foix	Les Cabannes	Pech	1.688	42.783					1259	1		
+L0321	321	Péchermier		part of settlement			Tarn-et-Garonne		Castelsarrasin	Castelsarrasin					1.121	44.048	2		Adam Mertel		777, 779	2		former suburb of Castelsarrasin
+L0322	322	Pennautier					Aude		Carcassonne		Aude	Carcassonne	Carcassonne 2e Canton-Nord	Pennautier	2.319	43.246					1253	1		
+L0323	323	Périgueux					Dordogne				Dordogne	Périgueux	Périgueux	Périgueux	0.709	45.191					181, 1461, 1501	3		
+L0441	441	Périgueux: Sainte-Radegonde church		church			Dordogne														181	1		
+L0324	324	Perles-et-Castelet					Ariège		Ax-les-Thermes		Ariège	Foix	Ax-les-Thermes	Perles-et-Castelet	1.787	42.744					91, 145, 213-217, 221, 231-235, 239, 243-249, 253, 277, 319, 327, 491, 657, 887, 1145	20		
+L0325	325	Pézenas					Hérault				Hérault	Béziers	Pézenas	Pézenas	3.417	43.457					1409	1		
+L0328	328	Plagne					Haute-Garonne		Cazères		Haute-Garonne	Muret	Cazères	Plagne	1.060	43.157					845, 853	2		
+L0329	329	Plaigne					Aude		Belpech		Aude	Carcassonne	Belpech	Plaigne	1.813	43.173					871	1		
+L0330	330	Pontgibaud					Puy-de-Dôme				Puy-de-Dôme	Riom	Pontgibaud	Pontgibaud	2.852	45.832					439, 441, 487, 585, 589, 621, 677, 741	8		
+L0331	331	Porto			Portugal										-8.615	41.153					1179	1		
+L0332	332	Poudis					Tarn		Lavaur	Lavaur	Tarn	Castres	Puylaurens	Poudis	1.985	43.521					91, 145, 597, 627	2		
+L0333	333	Poulan-Pouzols					Tarn		Réalmont		Tarn	Albi	Réalmont	Poulan-Pouzols	2.117	43.859					149, 1105, 1109	2		
+L0334	334	Pouyloubrin	de Podio Lobri				Gers		Saramon		Gers	Auch	Saramon	Pouy-Loubrin	0.605	43.474					413, 801, 1439	3		
+L0335	335	Pouzols	de Pozolis				Aude		Ginestas or Hérault	Gignac	Hérault	Lodève	Gignac	Pouzols	3.513	43.617					961, 991, 1029, 1429	4		
+L0337	337	Prades (Prades d'Alliou)					Ariège		Tarascon-sur-Ariège		Pyrénées-Orientales	Prades	Prades	Prades	2.423	42.617					91, 147, 213, 231-235, 239, 243, 245, 249, 319, 1005, 1255, 1285, 1289, 1293, 1295, 1425	16		
+L0338	338	Prouille					Aude				Aude	Limoux	Alaigne	Lasserre-de-Prouille	2.084	43.179					191, 207, 331, 339	4		
+L0339	339	Provence		region	French kingdom						Alpes-de-Haute-Provence	Digne-les-Bains	Les Mées	Les Mées	5.977	44.031					1033, 1455, 1473	3		
+L0340	340	Prunet 					Haute-Garonne		Caraman		Haute-Garonne	Toulouse	Caraman	Prunet	1.731	43.569					91, 145, 221, 261, 263, 305, 355, 467-475, 487, 533, 655, 659, 663, 665, 709-715, 733, 769, 795, 855, 879, 881, 885-889, 893, 945, 1119, 1441	33		
+L0341	341	Puicheric					Aude		Peyriac-Minervois		Aude	Carcassonne	Peyriac-Minervois	Puichéric	2.624	43.223					1257	1		
+L0434	434	Puy: Sainte-Marie-du-Puy church		church							Haute-Loire	Le Puy-en-Velay	Le Puy-en-Velay	Le Puy-en-Velay	3.885	45.045					209, 841, 1033, 1455, 1473	5		
+L0438	438	Puy: Sainte-Marie-du-Puy church		church			Haute-Loire			Puy	Haute-Loire	Le Puy-en-Velay	Le Puy-en-Velay	Le Puy-en-Velay	3.885	45.045					209, 841, 1033, 1455, 1473	5		
+L0344	344	Puycelsi					Tarn		Castelnau-de-Montmirail		Tarn	Albi	Castelnau-de-Montmiral	Puycelci	1.710	43.993					559, 627, 767, 823, 831	5		
+L0345	345	Quié					Ariège		Tarascon-sur-Ariège		Ariège	Foix	Tarascon-sur-Ariège	Quié	1.594	42.847					91, 147, 229, 1257, 1279, 1285, 1637	5		
+L0346	346	Rabastens					Tarn				Tarn	Albi	Rabastens	Rabastens	1.724	43.822					91, 93, 137, 149, 171, 207, 315, 391, 397, 399, 405-409, 429, 439, 441, 459, 485, 785, 787, 859, 863, 871, 979, 1105, 1109	21		
+L0347	347	Rabat-les-trois-Seigneurs					Ariège		Tarascon-sur-Ariège		Ariège	Foix	Tarascon-sur-Ariège	Rabat-les-Trois-Seigneurs	1.553	42.855					91, 151, 1257, 1281, 1285	3		
+L0349	349	Raissac-d'Aude					Aude		Narbonne		Aude	Narbonne	Narbonne-Ouest	Raissac-d'Aude	2.880	43.228					1251	1		
+L0350	350	Reims					Marne				Marne	Châlons-en-Champagne	Châlons-en-Champagne 3e Canton	Fagnières	4.327	48.971					1041, 1129, 1171	3		
+L0351	351	Rieux					Haute-Garonne				Haute-Garonne	Muret	Rieux-Volvestre	Rieux-Volvestre	1.200	43.256					151, 207, 323, 331, 339, 543, 961, 973, 981, 1029, 1033, 1277, 1353, 1377, 1385, 1417, 1429, 1433, 1593, 1601, 1611, 1621, 1637	22		
+L0352	352	Rivière					Tarn-et-Garonne		Verdun-sur-Garonne												561	1		
+L0353	353	Rocamadour					Lot		Gramat		Lot	Gourdon	Gramat	Rocamadour	1.617	44.800					209, 841, 1033, 1455, 1473	5		
+L0428	428	Rocamadour: Sainte-Marie church		church			Lot														1033, 1455, 1473	3		
+L0354	354	Rodez					Aveyron				Aveyron	Rodez	Rodez	Rodez	2.573	44.357					99	0		
+L0355	355	Rodez: Rodez cathedral		church							Aveyron	Rodez	Rodez	Rodez	2.574	44.351					1429, 1431, 1447-1455, 1461-1467, 1471, 1473, 1475, 1491, 1495, 1499, 1501, 1505, 1509, 1511, 1515, 1531, 1535-1539, 1543, 1547-1551, 1555-1563, 1569, 1589, 1591	38		
+L0429	429	Rodez: Sainte-Marie church		church			Aveyron				Aveyron	Rodez	Rodez	Rodez	2.567	44.350					1455	1		
+L0356	356	Rome			Italy										12.497	41.890					501, 1129, 1337, 1413	4		
+L0357	357	Roqueserière					Haute-Garonne		Montastruc-la-Conseillère		Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Roquesérière	1.637	43.733					91, 149, 597, 627, 633, 719, 771, 921, 935	7		
+L0358	358	Roquevidal					Tarn		Cuq-Toulza		Tarn	Castres	Cuq-Toulza	Roquevidal	1.863	43.626					91, 149, 179, 207, 747, 771, 1035	5		
+L0360	360	Royère					Haute-Vienne		Nexon	La Roche-l'Abeille	Haute-Vienne	Limoges	Nexon	La Roche-l'Abeille	1.270	45.584					1225, 1235, 1237	3		
+L0361	361	Sabaillan					Gers		Lombez		Gers	Auch	Lombez	Sabaillan	0.813	43.443					1437	1		
+L0362	362	Sabartès					Ariège				Ariège	Foix	Tarascon-sur-Ariège	Tarascon-sur-Ariège	1.568	42.849					89-93, 105, 231, 317, 319, 419, 453, 463, 501, 521, 539, 663, 665, 755, 917, 1005, 1007	15		former region of the county of Foix, in the S.-E., region of Sabart
+L0363	363	Saint-Amans-sur-Ariège					Ariège		Pamiers		Ariège	Pamiers	Pamiers-Ouest	Saint-Amans	1.549	43.157					1377	1		
+L0364	364	Saint-Anatoly					Haute-Garonne		Lanta	Lanta	Haute-Garonne	Toulouse	Lanta	Lanta	1.695	43.578					91, 153, 885, 893, 977	3		
+L0365	365	Saint-André parish							Maureville												139, 707	1		
+L0369	369	Saint-Antonin parish					Tarn		Montgaillard		Tarn	Albi	Réalmont	Saint-Antonin-de-Lacalm	2.306	43.787					699	1		
+L0370	370	Saint-Arthème					Lozère														1593, 1611	2		
+L0371	371	Saint-Brieuc					Côtes-du-Nord				Côtes-d'Armor	Saint-Brieuc	Saint-Brieuc	Saint-Brieuc	-2.771	48.513					1123	1		
+L0372	372	Saint-Caprais-de-Lerm					Lot-et-Garonne		Puymirol		Lot-et-Garonne	Agen	Puymirol	Saint-Caprais-de-Lerm	0.744	44.214					851	1		
+L0373	373	Saint-Cirgues					Tarn		Valence		Tarn	Albi	Valence-d'Albigeois	Saint-Cirgue	2.372	43.967					1001	1		
+L0375	375	Saint-Denis					Aude		Saissac		Aude	Carcassonne	Saissac	Saint-Denis	2.221	43.360					451, 471	2		
+L0376	376	Saint-Denis-sur-Seine					Seine				Seine-Saint-Denis	Saint-Denis	Saint-Denis	Saint-Denis	2.354	48.936					1033, 1473	2		
+L0378	378	Saint-Émilion					Gironde		Libourne		Gironde	Libourne	Libourne	Saint-Émilion	-0.156	44.893					331	1		
+L0380	380	Saint-Félix-Lauragais					Haute-Garonne		Revel		Haute-Garonne	Toulouse	Revel	Saint-Félix-Lauragais	1.888	43.449					85-89, 139, 201, 477, 939, 1183, 1431, 1633	6		
+L0381	381	Saint-Gaudens					Haute-Garonne				Haute-Garonne	Saint-Gaudens	Saint-Gaudens	Saint-Gaudens	0.724	43.109					845, 853	2		
+L0382	382	Saint-Geniès					Lot		Montcuq	Montcuq											863	1		
+L0383	383	Saint-Gilles-du-Gard					Gard				Gard	Nîmes	Saint-Gilles	Saint-Gilles	4.432	43.679					209, 1033, 1455, 1473	4		
+L0384	384	Saint-Guilhem-le-Désert					Hérault		Aniane		Hérault	Lodève	Aniane	Saint-Guilhem-le-Désert	3.549	43.734					1033, 1455, 1473	3		
+L0386	386	Saint-Jacques de Compostelle													-8.545	42.880					569, 837, 839, 1519, 1527	5		place of pilgrimage
+L0387	387	Saint-Jean					Haute-Garonne		Verfeil	Verfeil	Haute-Garonne	Toulouse	Toulouse 15e Canton	Saint-Jean	1.505	43.664					91, 155, 415, 485, 603, 725, 771, 781, 787, 797, 873, 879, 881, 893, 939, 975, 977, 995, 1441	17		
+L0388	388	Saint-Jean-le-Comtal					Gers		Auch		Gers	Auch	Auch-Sud-Ouest	Saint-Jean-le-Comtal	0.521	43.578					91, 155, 989, 991, 1023, 1025, 1029, 1033, 1077-1083, 1089, 1091, 1441, 1443	14		
+L0389	389	Saint-Jean-Lherm					Haute-Garonne		Montastruc-la-Conseillère		Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Saint-Jean-Lherm	1.610	43.704					91, 153, 417, 419, 485, 583, 729, 771, 977, 1439	8		
+L0391	391	Saint-Jory					Haute-Garonne		Fronton		Haute-Garonne	Toulouse	Fronton	Saint-Jory	1.371	43.742					853	1		
+L0392	392	Saint-Julia					Haute-Garonne		Revel		Haute-Garonne	Toulouse	Revel	Saint-Julia	1.898	43.490					1281, 1291	2		
+L0393	393	Saint-Laurent-la-Roche					Jura		Beaufort		Jura	Lons-le-Saunier	Beaufort	Saint-Laurent-la-Roche	5.513	46.600					1057, 1089, 1107, 1109, 1127, 1129	6		
+L0394	394	Saint-Léon					Haute-Garonne		Nailloux		Haute-Garonne	Toulouse	Nailloux	Saint-Léon	1.562	43.400					559, 845	2		
+L0398	398	Saint-Lys					Haute-Garonne		Toulouse		Haute-Garonne	Muret	Saint-Lys	Saint-Lys	1.177	43.514					559	1		
+L0399	399	Saint-Malo					Ile-et-Vilaine				Ille-et-Vilaine	Saint-Malo	Saint-Malo	Saint-Malo	-2.004	48.646					1123	1		
+L0401	401	Saint-Martial																			1033, 1455, 1473	3		
+L0402	402	Saint-Martin					Haute-Garonne		Villefranche-de-Lauragais	Prunet	Haute-Garonne	Toulouse	Caraman	Prunet	1.731	43.569					889	1		
+L0403	403	Saint-Martin-Lalande					Aude		Castelnaudary		Aude	Carcassonne	Castelnaudary-Sud	Saint-Martin-Lalande	2.020	43.299					923, 935	2		
+L0404	404	Saint-Martory					Haute-Garonne				Haute-Garonne	Saint-Gaudens	Saint-Martory	Saint-Martory	0.934	43.139					845	1		
+L0405	405	Saint-Maximin					Var				Var	Brignoles	Saint-Maximin-la-Sainte-Baume	Saint-Maximin-la-Sainte-Baume	5.864	43.451					1033, 1455, 1473	3		
+L0439	439	Saint-Maximin: Sainte-Marie-Madeleine church		church			Var				Var	Brignoles	Saint-Maximin-la-Sainte-Baume	Saint-Maximin-la-Sainte-Baume	5.864	43.453					1033, 1455, 1473	3		
+L0406	406	Saint-Papoul					Aude		Castelnaudary		Aude	Carcassonne	Castelnaudary-Nord	Saint-Papoul	2.037	43.331					197, 213, 221, 231-251, 255-259, 263, 289, 299, 305, 319, 359, 363, 449, 451, 455, 463, 465, 469, 471, 477-483, 535, 547, 599, 629, 657, 681, 761, 819, 901, 923, 935-939, 961, 967, 977, 979, 1141, 1147, 1159, 1161, 1185, 1187, 1203, 1205, 1429, 1437	62		
+L0408	408	Saint-Paul-Cap-de-Joux					Tarn				Tarn	Castres	Saint-Paul-Cap-de-Joux	Damiatte	1.975	43.648					91, 157, 209	1		
+L0409	409	Saint-Paul-d' Arnave					Ariège		Tarascon		Ariège	Foix	Tarascon-sur-Ariège	Arnave	1.637	42.852					1007	1		
+L0414	414	Saint-Serge parish					Tarn		??? Lagassié		Tarn-et-Garonne	Montauban	Saint-Antonin-Noble-Val	Varen	1.894	44.158					769	1		
+L0417	417	Saint-Sulpice-la-Pointe					Tarn		Lavaur		Tarn	Castres	Lavaur	Saint-Sulpice	1.686	43.773					89, 91, 139, 215, 277, 279, 297, 305, 345, 399, 407-413, 421, 425, 431, 451, 485, 489, 491, 497, 579, 587, 595, 601, 629, 719-725, 743, 771, 837, 839, 873, 877, 893, 897, 933, 977, 1443	39		
+L0418	418	Saint-Urcisse					Tarn		Salvagnac		Tarn	Albi	Salvagnac	Saint-Urcisse	1.614	43.939					925, 935, 1153	3		
+L0420	420	Saint-Yrieix-la-Perche					Haute-Vienne				Haute-Vienne	Limoges	Saint-Yrieix-la-Perche	Saint-Yrieix-la-Perche	1.203	45.513					1431, 1633, 1635	3		
+L0421	421	Sainte-Apollonie					Haute-Garonne		Lanta	Aurin											639, 905	2		
+L0425	425	Sainte-Foi-de-Conques					Aude				Aveyron	Rodez	Conques	Conques	2.398	44.599					863, 1033, 1455, 1473	4		
+L0426	426	Sainte-Foy-d' Aigrefeuille					Haute-Garonne		Lanta		Haute-Garonne	Toulouse	Lanta	Sainte-Foy-d'Aigrefeuille	1.610	43.544					93, 153, 299, 307, 453, 487, 553, 907, 935, 1439, 1443	9		
+L0442	442	Saissac					Aude				Aude	Carcassonne	Saissac	Saissac	2.169	43.360					331, 479, 493, 629, 813, 1145, 1147, 1161	8		
+L0443	443	Salieth					Haute-Garonne								0.960	43.104	3		Adam Mertel		91, 603-607, 629, 659, 709, 731-737, 771, 797, 811, 873, 979, 1443	16		Located to Salies-du-Salat
+L0444	444	Samatan					Gers				Gers	Auch	Samatan	Samatan	0.931	43.492					559, 843, 853, 1435	4		
+L0445	445	Sancto Ivenna	Sancto Ivenna				undetermined														745	1		
+L0447	447	Sault (country of)		region	former region contiguous to the county of Foix						Aude	Limoux	Axat	Le Clat	2.159	42.787					331	1		
+L0449	449	Saverdun					Ariège				Ariège	Pamiers	Saverdun	Saverdun	1.575	43.236					91, 151, 453, 1001-1005, 1029, 1031, 1281, 1289, 1377, 1417	10		
+L0450	450	Savèse													7.338	46.250					331	1		former region
+L0451	451	Ségreville					Haute-Garonne		Caraman	Caraman	Haute-Garonne	Toulouse	Caraman	Ségreville	1.743	43.491					91, 151, 603-607, 731-737, 771, 811, 909, 935, 945, 1443	13		
+L0453	453	Senil					Tarn		Lavaur	Garrigues	Tarn	Castres	Lavaur	Garrigues	1.695	43.696					91, 151, 423, 677, 727, 771, 795	5		
+L0454	454	Sérignac					Tarn-et-Garonne		Beaumont		Tarn-et-Garonne	Castelsarrasin	Beaumont-de-Lomagne	Sérignac	1.023	43.922					91, 153, 1039, 1089	2		
+L0455	455	Sérignan					Hérault		Béziers		Hérault	Béziers	Béziers 4e Canton	Sérignan	3.278	43.281					209, 1033, 1455, 1473	4		
+L0430	430	Sérignan: Sainte-Marie church		church			Hérault				Hérault	Béziers	Béziers 4e Canton	Sérignan	3.284	43.281					209, 1033, 1455, 1473	4		
+L0456	456	Serviès-en-Val					Aude		Lagrasse		Aude	Carcassonne	Lagrasse	Serviès-en-Val	2.521	43.090					851, 859	2		
+L0457	457	Seysses-Saves					Gers		Auch		Gers	Auch	Samatan	Seysses-Savès	1.042	43.507					1053	1		
+L0458	458	Sicile		region											14.155	37.588					229, 231, 233, 309, 319, 481, 501, 1339, 1373, 1401, 1415	11		
+L0459	459	Sorèze					Tarn		Dourgne		Tarn	Castres	Dourgne	Sorèze	2.067	43.454					91, 153, 357, 727, 771, 979	4		
+L0460	460	Souillac					Lot				Lot	Gourdon	Souillac	Souillac	1.479	44.901					1033, 1455, 1473	3		
+L0431	431	Souillac: Sainte-Marie church		church			Lot				Lot	Gourdon	Souillac	Souillac	1.477	44.894					1033, 1455, 1473	3		
+L0463	463	Tarabel					Haute-Garonne		Lanta		Haute-Garonne	Toulouse	Lanta	Tarabel	1.677	43.513					85, 91, 145, 157, 523, 553, 591, 593, 611, 659, 679, 751, 761, 771, 801, 815, 833, 847, 879, 887, 907, 911, 913, 919, 935, 943, 1097, 1109, 1125, 1439	26		
+L0464	464	Tarascon					Bouches-du-Rhône				Bouches-du-Rhône	Arles	Tarascon	Tarascon	4.660	43.806					1033, 1455, 1473	3		
+L0465	465	Tarascon-sur-Ariège					Ariège				Ariège	Foix	Tarascon-sur-Ariège	Tarascon-sur-Ariège	1.607	42.848					93, 161, 453, 1007, 1257, 1285, 1637	5		
+L0440	440	Tarascon: Sainte-Marthe church		church			Bouches-du-Rhône				Bouches-du-Rhône	Arles	Tarascon	Tarascon	4.656	43.805					1033, 1455, 1473	3		
+L0466	466	Tarn (river)		river							Tarn	Albi	Valence-d'Albigeois	Cadix	2.471	43.945					93, 617, 691	2		
+L0467	467	Tauriac					Tarn		Salvagnac		Tarn	Albi	Salvagnac	Beauvais-sur-Tescou	1.593	43.885					85, 373, 379, 485, 497	4		
+L0468	468	Técou					Tarn		Cadalen		Tarn	Albi	Cadalen	Técou	1.951	43.844					617	1		
+L0469	469	Termes					Aude		Mouthoumet		Aude	Carcassonne	Mouthoumet	Termes	2.563	43.001					1281	1		
+L0471	471	Tescou (river)		river							Tarn	Albi	Salvagnac	Montgaillard	1.593	43.917					347, 393, 487	3		tributary of the Tarn
+L0472	472	Tignac					Ariège		Ax-les-Thermes		Ariège	Foix	Ax-les-Thermes	Tignac	1.796	42.747					93, 161, 1287, 1289, 1293, 1295, 1637	5		
+L0473	473	Toulousain		region							Haute-Garonne	Toulouse	Toulouse 8e Canton	Balma	1.506	43.605					203, 561, 565, 925, 965, 967	6		
+L0474	474	Toulouse					Haute-Garonne				Haute-Garonne	Toulouse	Toulouse	Toulouse	1.444	43.604					89, 91, 95, 97, 129, 159, 177-183, 187-191, 197-211, 221-227, 231, 233, 267, 277, 299, 301, 307-313, 319, 323, 327, 331-341, 355, 361, 363, 367, 369, 381, 411, 413, 427, 433, 449-457, 461, 465, 469, 471, 479, 481, 485-489, 499, 507, 515, 517, 523, 531, 533, 537, 539, 543-549, 553, 555, 559-569, 605-611, 615, 621, 629, 637, 649, 651, 663, 669, 677-681, 691, 701, 703, 707, 709, 713, 715, 731, 733, 737, 747, 753-757, 761, 765, 767, 773, 777, 779, 785-791, 795, 799, 801, 805, 807, 813-819, 823, 827, 831, 835-847, 851, 853, 859-875, 879, 883, 885, 893-897, 901, 907, 915-919, 923-929, 933-953, 959-983, 991-995, 1001, 1003, 1007-1013, 1017, 1021, 1023, 1027, 1029, 1033, 1035, 1039, 1047, 1053, 1057, 1059, 1075, 1083, 1087-1091, 1095, 1097, 1109, 1111, 1119, 1121, 1127, 1131-1163, 1171, 1175, 1183, 1185, 1189, 1207, 1209, 1213, 1217, 1219, 1233, 1237, 1241, 1257, 1261-1265, 1277, 1281, 1315, 1331, 1343, 1347, 1351, 1355, 1357, 1367, 1397, 1421, 1423, 1429-1447, 1451, 1455, 1465, 1473, 1477, 1483-1487, 1491, 1495, 1515, 1533, 1545, 1549, 1551, 1555-1563, 1569, 1573, 1575, 1579, 1583, 1587, 1591, 1607, 1611, 1613, 1633-1637	314		
+L0155	155	Toulouse: bastide of Estoile		part of settlement																	611	1		
+L0147	147	Toulouse: church of Daurade		church							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.440	43.601					459, 557, 861	3		
+L0146	146	Toulouse: Les Cuisines quarter		part of settlement							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.443	43.604					205, 313, 777	3		
+L0272	272	Toulouse: Montaigon																			307	Loading...		
+L0298	298	Toulouse: Narbonne Castle					Haute-Garonne	Toulouse													551, 557, 863	Loading...		
+L0326	326	Toulouse: Pierre street		part of settlement							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.436	43.603					465	Loading...		
+L0327	327	Toulouse: Pierre-Saint-Géraud street		part of settlement																	355	Loading...		
+L0336	336	Toulouse: Pouzonville (gate of)									Haute-Garonne	Toulouse	Toulouse	Toulouse	1.449	43.604					225, 307, 457	Loading...		
+L0366	366	Toulouse: Saint-Antoine chapel		church							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.444	43.596					973	Loading...		
+L0374	374	Toulouse: Saint-Cyprien suburb		part of settlement							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.435	43.599					451, 455, 1097	Loading...		
+L0379	379	Toulouse: Saint-Étienne cathedral		church							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.450	43.600					177, 179, 189, 201-205, 309, 331, 335, 339, 361, 363, 543, 547, 557-561, 565, 629, 677, 737, 747, 835, 837, 843, 851, 861, 863, 867, 869, 895, 961, 979, 993, 1033, 1119, 1151, 1213, 1429, 1437, 1443, 1455, 1473, 1477, 1485, 1487, 1549, 1573, 1575, 1579, 1583	Loading...		
+L0412	412	Toulouse: Saint-Pierre-des-Cuisines church		church							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.436	43.604					861	Loading...		
+L0415	415	Toulouse: Saint-Sernin church		church							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.442	43.608					179, 361, 543, 557, 629, 861, 895, 973, 981, 1033, 1151, 1257, 1445, 1455	Loading...		
+L0422	422	Toulouse: Sainte-Catherine suburb		part of settlement																	455	Loading...		
+L0424	424	Toulouse: Sainte-Croix church		church																	779	Loading...		
+L0435	435	Toulouse: Sainte-Marie-de la Daurade church		church							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.440	43.601					459, 557	Loading...		
+L0156	156	Toulouse: street of Estoile		part of settlement							Haute-Garonne	Toulouse	Toulouse	Toulouse	1.453	43.602					299	Loading...		
+L0475	475	Toulouse: Tounis									Haute-Garonne	Toulouse	Toulouse	Toulouse	1.440	43.596					159, 185, 189, 211, 221, 227, 301, 307, 341, 979	Loading...		
+L0476	476	Tourmont	Toro				Jura		Poligny		Jura	Lons-le-Saunier	Poligny	Tourmont	5.683	46.861					1491	Loading...		
+L0477	477	Trébons					Haute-Garonne		Villefranche-de-Lauragais		Haute-Garonne	Toulouse	Villefranche-de-Lauragais	Trébons-sur-la-Grasse	1.724	43.451					1429, 1535, 1591	Loading...		
+L0478	478	Tulle					Corrèze				Corrèze	Tulle	Tulle	Tulle	1.766	45.267					1225, 1235, 1237, 1253, 1281	Loading...		
+L0479	479	Tusculum		city	Italy										12.710	41.798					663, 665	Loading...		in Latium; today Frascati
+L0481	481	Unac					Ariège		Les Cabannes		Ariège	Foix	Les Cabannes	Unac	1.776	42.762					129, 1257, 1637	Loading...		
+L0482	482	Urgel (diocese of)		region											1.458	42.358					89, 1285	Loading...		
+L0483	483	Usco																			871	Loading...		
+L0484	484	Ussat					Ariège		Tarascon-sur-Ariège		Ariège	Foix	Tarascon-sur-Ariège	Ussat	1.620	42.831					1257	Loading...		
+L0485	485	Vacquiers					Haute-Garonne		Fronton		Haute-Garonne	Toulouse	Fronton	Vacquiers	1.480	43.779					93, 163, 295, 307, 413, 415, 485, 801, 979, 1139, 1161, 1439	Loading...		
+L0487	487	Valle Brito	Valle Brito																		1123	Loading...		
+L0488	488	Vallebrario	Vallebrario																		1253	Loading...		
+L0489	489	Varennes					Tarn-et-Garonne		Villebrumier		Tarn-et-Garonne	Montauban	Villebrumier	Varennes	1.498	43.901					89, 93, 139, 163, 343, 379, 383, 485, 569, 873, 889, 893, 917, 919, 977, 997, 1029, 1099, 1251	Loading...		
+L0490	490	Varilhes					Ariège				Ariège	Pamiers	Varilhes	Varilhes	1.627	43.044					93, 173, 1285	Loading...		
+L0491	491	Vauré					Haute-Garonne		Revel		Haute-Garonne	Toulouse	Revel	Revel	1.990	43.474					85, 107, 221, 265, 305, 357	Loading...		
+L0492	492	Vauret					Gard														209, 1033, 1473	Loading...		
+L0432	432	Vauvert: Sainte-Marie church		church			Gard				Gard	Nîmes	Vauvert	Vauvert	4.277	43.692					1033, 1473	Loading...		
+L0494	494	Vaychis					Ariège				Ariège	Foix	Ax-les-Thermes	Tignac	1.804	42.742					93, 175, 1289, 1291	Loading...		
+L0495	495	Vendine					Haute-Garonne		Caraman		Haute-Garonne	Toulouse	Caraman	Vendine	1.768	43.589					863, 869	Loading...		
+L0496	496	Verdun-Lauragais	Verdunetum				Aude		Castelnaudary-Nord		Aude	Carcassonne	Castelnaudary-Nord	Verdun-en-Lauragais	2.059	43.367					93, 165, 213, 223, 227, 235-257, 305, 317, 319, 355, 359, 411, 451, 471, 479, 483, 487, 493, 525-531, 547, 549, 569, 611-615, 625, 629, 751, 757, 759, 771, 783, 797-801, 811-815, 831, 837, 839, 843, 875, 921, 935, 979, 1037, 1141-1147, 1161, 1439, 1441	Loading...		
+L0497	497	Verdun-sur-Garonne					Tarn-et-Garonne				Tarn-et-Garonne	Montauban	Verdun-sur-Garonne	Verdun-sur-Garonne	1.237	43.852					93, 163, 231, 301-309, 347, 353, 447, 561, 565, 575, 627, 631, 645-649, 655, 659, 769, 773, 791, 793, 809, 863, 871, 975, 977, 1441	Loading...		
+L0498	498	Verfeil					Haute-Garonne				Haute-Garonne	Toulouse	Verfeil	Verfeil	1.661	43.657					87-93, 155, 173, 181, 275, 301, 339, 415, 421, 471, 475, 485, 519, 585-589, 595, 603, 619, 629, 665, 671, 673, 679, 711, 713, 725, 767, 771, 781, 787, 793, 797, 819, 853, 865, 871, 873, 879, 881, 893, 939, 975, 977, 995, 1095, 1097, 1109, 1441	Loading...		
+L0499	499	Verfeil-sur-Seye					Tarn-et-Garonne		Saint-Antonin		Tarn-et-Garonne	Montauban	Saint-Antonin-Noble-Val	Verfeil	1.877	44.187					1501	Loading...		
+L0500	500	Verlhac-Tescou					Tarn-et-Garonne		Villebrumier		Tarn-et-Garonne	Montauban	Villebrumier	Verlhac-Tescou	1.539	43.929					93, 169, 295, 297, 307, 345, 347, 361, 381, 385-397, 413, 485, 497, 501, 511, 531, 599, 615, 617, 629, 705, 761, 771, 801, 809, 837, 839, 977, 979, 1439	Loading...		
+L0501	501	Vernaux					Ariège		Les Cabannes		Ariège	Foix	Les Cabannes	Vernaux	1.758	42.772					93, 173, 1259, 1637	Loading...		
+L0502	502	Verniolle					Ariège		Varilhes		Ariège	Pamiers	Varilhes	Verniolle	1.640	43.080					1257, 1279, 1291	Loading...		
+L0503	503	Vertus					Tarn-et-Garonne		Rabastens	Rabastens	Tarn	Albi	Rabastens	Rabastens	1.738	43.860					93, 171, 315	Loading...		
+L0504	504	Vidal/Prats Vidals					Haute-Garonne		Montastruc-la-Conseillère	Monpitol	Haute-Garonne	Toulouse	Montastruc-la-Conseillère	Montpitol	1.653	43.704					589, 627, 977	Loading...		
+L0505	505	Viella	Viella				Gers		Lombez	Pellefigue					775.000	43.478					93, 171, 1085, 1091, 1163	Loading...		
+L0506	506	Vienne					Isère				Isère	Vienne	Vienne	Vienne	4.877	45.527					93, 175, 565, 607-611, 975, 987, 1007, 1009, 1013, 1021, 1027, 1033, 1049-1053, 1059, 1077, 1079, 1087, 1265, 1269, 1309, 1315, 1329, 1335, 1365, 1411, 1413, 1455, 1473	Loading...		
+L0367	367	Vienne: Saint-Antoine church		church					Vienne		Vienne	Châtellerault	Châtellerault-Nord	Saint-Sauveur	0.624	46.808					1033, 1455, 1473	Loading...	1033	
+L0507	507	Villardonnel					Aude		Mas-Cabardès		Aude	Carcassonne	Mas-Cabardès	Villardonnel	2.311	43.336					1241	Loading...		
+L0508	508	Villebrumier					Tarn-et-Garonne				Tarn-et-Garonne	Montauban	Villebrumier	Villebrumier	1.454	43.907					93, 171, 617, 629, 873	Loading...		
+L0509	509	Villelongue					Aude		Limoux		Aude	Limoux	Limoux	Villelongue-d'Aude	2.095	43.055					205, 339, 543, 561, 565	Loading...		
+L0510	510	Villemagne					Aude		Castelnaudary-Nord		Aude	Carcassonne	Castelnaudary-Nord	Villemagne	2.112	43.359					93, 171, 221, 225, 341, 359, 361	Loading...		
+L0511	511	Villemartin					Aude		Limoux		Aude	Limoux	Limoux	Gaja-et-Villedieu	2.199	43.083					1253	Loading...		
+L0512	512	Villemur					Haute-Garonne								550.000	43.256					91, 93, 153, 173, 193, 217, 225, 227, 283-287, 307, 345, 361, 509, 531, 569, 601, 691, 827, 829, 839, 873, 929, 977, 1151, 1153, 1161, 1257, 1445, 1485, 1487, 1531	Loading...		
+L0513	513	Villette					Tarn-et-Garonne		Salvagnac	Montgaillard	Tarn	Albi	Salvagnac	Montgaillard	1.617	43.904					559	Loading...		

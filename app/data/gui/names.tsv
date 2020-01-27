@@ -1,0 +1,1034 @@
+id	id_old	label	collective	name	connector1	family_name	maiden_family_name	connector2	surname	name_french	name_alternative	connector1_french	family_name_french	family_name_alternative	maiden_family_name_french	connector2_french	surname_french	surname_alternative	senior_or_junior	alias	origin_or_residence	origin	residence	age	age_class	sex	dissident_minister	deathbed_consolament	order	dead	occupation_or_office	occupation_general	occupation_type	education	network	relations	notes	pages_or_folios	entry_main_editor
+P0367	367	Raimond Carlat 								Raimond			Carlat								Alet					m	no		OFM			friar	churchperson		d		apostate	1347	Tereza Menšíková
+P0183	183	Barthélemy 								Barthélemy											Alet					m	no		none								religious	1187, 1199	Tereza Menšíková
+P0509	509	Barthélemy Desvignes 								Barthélemy			Desvignes	de Na Bernarde							Alzonne					m	no		none							sonofID_508 (Pierre Desvignes)		99, 1447, 1461, 1465, 1501, 1515, 1531	Tereza Menšíková
+P0722	722	Guillaume Gari 								Guillaume			Gari								Alzonne					m	no		none	1								99, 1461, 1495, 1499, 1513, 1537-1543, 1547, 1551, 1557, 1561	Tereza Menšíková
+P1044	1044	Guillaume Mathieu 								Guillaume			Mathieu								Alzonne					m	no		none	1								99, 1447, 1463, 1511, 1515, 1531	Tereza Menšíková
+P1174	1174	Guillaume Odet 								Guillaume			Odet								Alzonne					m	no		none									101, 1555, 1557, 1561	Tereza Menšíková
+P1170	1170	Jean Odet 								Jean			Odet								Alzonne					m	no		none									101, 1493, 1587	Tereza Menšíková
+P1380	1380	Jean Rouan 								Jean			Rouan								Alzonne					m	no		none									99, 1447, 1509, 1531	Tereza Menšíková
+P1102	1102	Michel 								Michel											Alzonne		Alzonne			m	no		none	1							I went through some mentions, he really does not have a surname, he is Burgundus but this is all as identification.	101, 1499, 1505-1509, 1539-1543, 1561	David Zbíral
+P0012	12	Pierre Aimon 								Pierre			Aimon								Alzonne					m	no		none							sonofID_10 (Michel Aimon), husbandofID_13 (Martine Aimon), husbandofID_19 ((unknown first name) Aimon)		99, 1445, 1449-1453, 1463, 1465, 1491, 1497, 1503, 1515, 1531, 1539, 1541, 1555, 1561, 1563, 1569	Tereza Menšíková
+P0077	77	Pierre Aragon 								Pierre			Aragon								Alzonne					m	no		none	1						husbandofID_78 (Jeanne Aragon)			Tereza Menšíková
+P0369	369	Pierre Carrot 								Pierre			Carrot						Sr		Alzonne					m	no		none									99, 1501, 1537, 1541, 1545, 1547, 1561	Tereza Menšíková
+P1511	1511	Durand Teisseyre 								Durand			Teisseyre								Appelle					m	no		none									99, 209	Tereza Menšíková
+P0476	476	Pierre Cristol 								Pierre			Cristol								Appelle					m	no		none									99, 209, 567	Tereza Menšíková
+P0763	763	Gérard 								Gérard											Arles		Arles			m	v		none		Waldensian brother	Waldensian brother	dissident minister					1271	Tereza Menšíková
+P1482	1482	Philippe Sicre 								Philippe			Sicre								Ascou					m	no		none									101, 1285	Tereza Menšíková
+P1496	1496	Raimond Sicre 								Raimond			Sicre								Ascou					m	no		none									101, 1637	Tereza Menšíková
+P1296	1296	Bernard 								Bernard											Aston					m	no		none										Tereza Menšíková
+P0620	620	Adam 								Adam											Auriac-sur-Vendinelle					m	no		none										Tereza Menšíková
+P0929	929	Pierre 								Pierre											Auriac-sur-Vendinelle					m	no		none										Tereza Menšíková
+P0761	761	Pierre Gautier 								Pierre			Gautier								Auriac-sur-Vendinelle					m	no		none									103, 357, 361	Tereza Menšíková
+P0573	573	Rixende Durand 								Rixende			Durand		de Moure						Aurin					f	no		none							wifeofID_572 (Bernard Durand), daughterofID_1155 (Guillaume de Moure), daughterofID_1156 (Guillemette de Moure)		105, 887, 893, 895	Tereza Menšíková
+P0855	855	Raimond Guiraud 								Raimond			Guiraud								Aurin, parish Sainte-Apollonie					m	no		none	1								635, 637, 659, 707, 769, 901, 1439	Tereza Menšíková
+P1207	1207	Amiel de Perles								Amiel						de	Perles				Auterive					m	h		none		Good Christian	Good Christian	dissident minister		d			145, 191, 197, 213-217, 221, 231-235, 239-259, 263, 271, 275-285, 289-295, 299, 301, 319, 327-331, 349, 355, 359, 365, 369-379, 391, 393, 405-413, 421, 425-437, 445, 449-453, 463, 467-471, 475, 491, 497, 509, 525, 529, 535, 573, 575, 591, 593, 601, 613, 639-647, 657, 667, 683, 685, 691, 715, 719-723, 743, 753, 759, 775, 783, 795, 809, 819, 823, 827, 877, 879, 887, 897, 899, 909-913, 921, 927, 943, 947, 949, 995, 997, 1005, 1145, 1459, 1477-1481	Tereza Menšíková
+P1334	1334	Ponce de na Rica								Ponce						de na	Rica				Avignonet					m	h		none		Good Christian	Good Christian	dissident minister		d	brotherofID_1331 (Pierre de Na Rica)	Checked; he is Good Christian, cited with Pons den Balle, sent with him to Sicily to the Cathar "archdeacon".	229, 231, 261, 319	Tereza Menšíková
+P1331	1331	Pierre de na Rica								Pierre						de na	Rica		Jr		Avignonet					m	no		none							sonofID_1332 (Pons de na Rica)		103, 261, 305, 569, 975	Tereza Menšíková
+P0139	139	Pierre Autier 		Petrus		Auterii				Pierre			Autier								Ax-les-Thermes					m	h		none		Good Christian, former notary	Good Christian	dissident minister		d			105, 183, 187, 191, 197, 211-219, 223, 231-235, 239, 243-255, 259-265, 271-285, 289-305, 311, 319, 329, 341-351, 355-359, 363-455, 459-477, 481, 495, 497, 501-527, 533, 535, 539-543, 547, 573-587, 591-595, 599-605, 615-619, 623, 625, 631, 635, 639-671, 675, 679-707, 711-729, 733, 741-745, 751-755, 759-767, 775, 777, 781, 785, 789-797, 801-805, 809-813, 819-829, 839, 841, 849, 855-859, 877, 881-893, 897-901, 909, 915, 917, 921, 925-929, 939-949, 995, 997, 1001-1007, 1097-1101, 1107, 1119, 1457, 1459, 1477-1483, 1517	Tereza Menšíková
+P0318	318	Arnaud 								Arnaud											Ax-les-Thermes					m	no		none										Tereza Menšíková
+P0315	315	Guillaume Bourguignon 								Guillaume			Bourguignon								Ax-les-Thermes					m	no		none										Tereza Menšíková
+P1124	1124	Guillaume Mondon 								Guillaume			Mondon								Ax-les-Thermes					m	no		none									105, 1285	Tereza Menšíková
+P1528	1528	Pierre Tignac 								Pierre			Tignac								Ax-les-Thermes					m	no		none	1									Tereza Menšíková
+P0061	61	Raimond d'Andorre								Raimond 						d'	Andorre	Andorran			Ax-les-Thermes					m	no		none							husbandofID_62 (Vésiade d'Andorre/Andorran)			Tereza Menšíková
+P1564	1564	Raimond Vayssière 								Raimond			Vayssière								Ax-les-Thermes					m	no		none										Tereza Menšíková
+P0187	187	Sibille d'en Bayle 								Sibille		d'en	Bayle								Ax-les-Thermes					f	no		none									1005	Tereza Menšíková
+P0661	661	Arnaud 								Arnaud											Azas					m	no		none										Tereza Menšíková
+P0133	133	Arnaud Auriol 								Arnaud			Auriol								Azas					m	no		none									103, 621, 629	Tereza Menšíková
+P0833	833	Bernard Guilhem 								Bernard			Guilhem							Fizansa	Azas					m	no		none	1								633, 769, 775, 1095	Tereza Menšíková
+P0151	151	Elie Barbier 								Elie			Barbier								Azas					m	no		none									103, 883, 893, 1439	Tereza Menšíková
+P0009	9	Guillaume Aimar 								Guillaume			Aimar								Azas					m	no		none									103, 573, 627, 631, 633	Tereza Menšíková
+P0549	549	Guillaume Dubosc 								Guillaume			Dubosc								Azas					m	no		none	1								457, 621	Tereza Menšíková
+P0152	152	Hélis Barbier 								Hélis			Barbier		Gasc						Azas					f	no		none							wifeofID_151 (Elie Barbier), daughterofID_738 (Pierre Gasc), daughterofID_739 (Jeanne Gasc)		103, 883, 885, 893, 895, 1439	Tereza Menšíková
+P0738	738	Pierre Gasc 								Pierre			Gasc							Faysses	Azas					m	no		none	1								427, 631, 775, 789, 809	Tereza Menšíková
+P1254	1254	Pierre Raimond de Pontgibaud								Pierre Raimond						de	Pontgibaud				Azas					m	no		none									101, 439, 441, 487, 583, 589, 621, 677, 741	Tereza Menšíková
+P1216	1216	Adhémar Peyre 								Adhémar			Peyre								Bannières					m	no		none							sonofID_1215 (Bertrand Peyre)		105, 467, 655, 657, 713, 715, 751, 769, 929, 935, 937	Tereza Menšíková
+P1215	1215	Bernard Peyre 								Bernard			Peyre								Bannières near Lavaur					m	no		none									655	Tereza Menšíková
+P1205	1205	Perrin de la Pergue								Perrin						de la	Pergue				Bars					m	no		none										Tereza Menšíková
+P1526	1526	Thibaud 								Thibaud											Bars					m	no		none									105, 991, 1065, 1089, 1443	Tereza Menšíková
+P1290	1290	Jeanne Proault 								Jeanne			Proault								Beaumont-de-Lomagne		Beaumont-de-Lomagne			f	no		none							daughterofID_1289 (Vital Proault)		161, 839, 841	Tereza Menšíková
+P1059	1059	Gilles Maurel 								Gilles			Maurel								Beaupuy					m	no		none									577, 659	Tereza Menšíková
+P0783	783	Raimond de Gomairac								Raimond						de	Gomairac				Beaupuy near Castelmaurou					m	no		none									107, 579, 627	Tereza Menšíková
+P0046	46	Arnaud Maurand 								Arnaud			Maurand								Beaupuy near Grandselve					m	no		none							husbandofID_45 (Raimonde Maurand)			Tereza Menšíková
+P0667	667	Bernard Ferrand 								Bernard			Ferrand								Beauvais-sur-Tescou					m	no		none										Tereza Menšíková
+P0668	668	Peirone Ferrand 								Peirone			Ferrand		Durand						Beauvais-sur-Tescou					f	no		none							wifeofID_667 (Bernard Ferrand), daughterofID_574 (Gayssie Durand), daughterofID_575 Nonne Durand)		109, 891, 893, 977	Tereza Menšíková
+P1561	1561	Sanche de Varennes								Sanche						de	Varennes				Beauvais-sur-Tescou					m	no		none										Tereza Menšíková
+P0580	580	Dominique Durand Bastier 								Dominique			Durand Bastier								Beauvais-sur-Tescou, Rabastens	Beauvais-sur-Tescou	Rabastens			m	no		none									107, 391, 405, 429, 439, 485, 979, 1439	Tereza Menšíková
+P0574	574	Gayssie Durand 								Gayssie			Durand								Beauvais-surTescou					m	no		none								Sex checked, p. 379 clearly male (has wife Bonne).	107, 341, 361, 379, 485, 567, 891, 893, 1441	Tereza Menšíková
+P0931	931	Raimond Julia 								Raimond			Julia								Béguin, Mazères					m	no		none									141, 1637	Tereza Menšíková
+P1248	1248	Arnaud Pons 								Arnaud			Pons								Belpech					m	no		none						d		Beguin burned in Narbonne; mentioned as burned but uncertain whether known personally to the two deponents. But his deposition is brought by Beguins to Cintegabelle so I keep him.	1339, 1341, 1369	Tereza Menšíková
+P0914	914	Bernard de na Jaime								Bernard						de na	Jaime			Germain	Belpech					m	b		OFM		Franciscan tertiary	tertiary			d			107, 1289, 1331-1341, 1417, 1421	David Zbíral
+P1083	1083	Pierre de Mazères								Pierre						de	Mazères			Na Brus	Belpech					m	b		OFM		minister of Beguins	minister	dissident minister		d		"minister Beguinorum".	107, 1289, 1311-1315, 1417, 1421	David Zbíral
+P0344	344	Raimond de Buc								Raimond						de	Buc				Belpech					m	no		none						d		PG classifies him as Beguin but this is not visible at p. 107 or 1289; it can be inferred from the fact that others from Belpech are Béguins but there is an example in GuiSent where sb shares Beguin beliefs and even wears special dress but he is said not to be Beguin => I don’t consider him Beguin.	107, 1289	David Zbíral
+P0290	290	Raimond du Bosc								Raimond						du	Bosc		Jr		Belpech					m	b		OFM			friar	dissident minister		d	sonofID_291 (Raimond du Bosc)		1299, 1303-1309, 1417, 1421	David Zbíral
+P0605	605	Raimond Estève du Cros								Raimond			Estève			du	Cros				Belpech		Belpech			m	b		OFM		Franciscan tertiary	tertiary			d			107, 1289, 1383-1389, 1417, 1421	David Zbíral
+P1542	1542	Pierre Trencavel 								Pierre			Trencavel								Béziers					m	b		OFM		Franciscan tertiary	tertiary			d		Characterized as Beguin and tertiary (p. 1351).	1351, 1367, 1595	Tereza Menšíková
+P0518	518	Ricarde Domergue 								Ricarde			Domergue		Dous						Born					f	no		none	1					d	widowofID_517 (Guillaume Domergue), sisterofID_897 (Etiennette Ichier), daughterofID_540 (Pierre Dous)		111, 191, 193, 213, 289, 643, 795, 1453	Tereza Menšíková
+P0293	293	Arnaud Bou 								Arnaud			Bou						Sr		Born					m	no		none									111, 363-369, 485, 763, 765, 1457	Tereza Menšíková
+P0596	596	Faure family 	y							Faure family										Espan	Born						no		none									113, 345, 411, 413, 449, 639, 699, 809, 909, 943, 997, 1101, 1477	Tereza Menšíková
+P0544	544	Guillaume Dubosc 								Guillaume			Dubosc								Born					m	no		none	1								111, 113, 289, 307, 643, 769, 979, 1445, 1451, 1453, 1457	Tereza Menšíková
+P0521	521	Guillaume Pierre Domergue 								Guillaume Pierre			Domergue								Born					m	no		none	1								113, 941, 1483	Tereza Menšíková
+P0598	598	Jean Espinet 								Jean			Espinet								Born					m	no		none									775	Tereza Menšíková
+P0653	653	Jean Faure 								Jean			Faure							Espan (?)	Born					m	no		none							sonofID_646 (Bernard Faure), sonofID_647 (Ayceline Faure)		113, 1155, 1161	Tereza Menšíková
+P0192	192	Pierre de Baysses								Pierre						de	Baysses		Sr		Born					m	no		none									113, 573, 627, 641, 643, 769, 977, 1445, 1453, 1457	Tereza Menšíková
+P0523	523	Pierre Domergue 								Pierre			Domergue								Born					m	no		none	1								1475	Tereza Menšíková
+P0163	163	Raimond Barrau 								Raimond			Barrau								Born					m	no		none							sonofID_161 (Durand Barrau)		111, 221, 223, 227, 567	Tereza Menšíková
+P0908	908	Raimond Ivernat 								Raimond			Ivernat								Born					m	no		none							sonofID_906 (Ponce Ivernat)		111, 219, 225, 925-929, 935, 1101	Tereza Menšíková
+P1473	1473	Sicard Teisseyre de la Bouisse								Sicard			Teisseyre			de la	Bouisse				Born					m	no		none	1							PG has Teisseyre as alias but p. 495 uses it regularly as a family name. Surname according to p. 369 and 777.	369, 495, 777	Tereza Menšíková
+P1132	1132	Vital de Montaut								Vital						de	Montaut				Born					m	no		none							sonofID_1133 (Vital), nephewofID_161 (Durand Barrau)		111, 127, 353, 361, 873	Tereza Menšíková
+P0651	651	Hispa Faure 								Hispa			Faure							Espan (?)	Born, Vacquiers		Vacquiers			m	no		none							sonofID_646 (Bernard Faure), sonofID_647 (Ayceline Faure)		163, 295, 307, 413, 485, 979, 1139, 1161, 1439	Tereza Menšíková
+P1116	1116	Arnaud Molinier 								Arnaud			Molinier								Bouillac					m	no		none	1								109, 651, 655, 769, 791, 809, 977, 1441	Tereza Menšíková
+P1139	1139	Guillaume de Montlaur								Guillaume						de	Montlaur				Bouillac					m	no		none									109, 111, 653, 769, 791	Tereza Menšíková
+P1571	1571	Guillaume Verdun 								Guillaume			Verdun						Sr		Bouillac					m	no		none									109, 647, 791, 793, 809	Tereza Menšíková
+P1576	1576	Pierre Verdun 								Pierre			Verdun								Bouillac					m	no		none	1								575	Tereza Menšíková
+P1456	1456	Raimond Sartre 								Raimond			Sartre								Bouillac		Bouillac			m	no		none							soninlawofID_139 (Pierre Autier)		447, 449, 513, 519-523, 655	David Zbíral
+P1523	1523	Raimond Teulier 								Raimond			Teulier								Bouillac					m	no		none							sonofID_1522 (Etienne Teulier)		109, 111, 575, 627, 631, 649, 653, 769, 975, 977, 1443	Tereza Menšíková
+P1579	1579	Raimond Verdun 								Raimond			Verdun							Monet	Bouillac					m	no		none									109, 231, 305, 309	Tereza Menšíková
+P0323	323	Sanche Bourrel 								Sanche			Bourrel								Bouillac					m	no		none									109, 111, 303-307, 445, 447, 453, 519, 531, 649-653, 791, 809, 1141, 1161	Tereza Menšíková
+P0616	616	Aimonet Faure 								Aimonet			Faure								Briod, Jura					m	no		none	1								1041, 1089	Tereza Menšíková
+P0494	494	Bernard 								Bernard											Bugnac					m	no		none	1									Tereza Menšíková
+P0674	674	Pierre Fils 								Pierre			Fils						Sr		Bugnac near Tarabel					m	no		none									115, 879, 911, 1439	Tereza Menšíková
+P0675	675	Pierre Fils 								Pierre			Fils						Jr		Bugnac near Tarabel					m	no		none							sonofID_674 (Pierre Fils)		115, 879, 893, 1439	Tereza Menšíková
+P0079	79	(father of Guillaume and Jeanne Mathieu) Mathieu 								(father of Guillaume and Jeanne Mathieu)			Mathieu								Burgundy					m	no		none	1									Tereza Menšíková
+P0420	420	Agnès Chavoat 								Agnès			Chavoat		Bonin						Burgundy					f	no		none							wifeofID_419 (Jean Chavoat), daughterofID_282 (Bonin/Bonnet)		171, 1085, 1091	Tereza Menšíková
+P0287	287	Etienne Bordet 								Etienne			Bordet								Burgundy					m	v		none		barber, Waldensian brother	barber, Waldensian brother	dissident minister					1049, 1461-1465, 1501, 1513, 1517, 1537, 1545, 1549, 1567	Tereza Menšíková
+P1292	1292	Gérard le Provençal								Gérard						le	Provençal				Burgundy					m	v		none		Waldensian brother	Waldensian brother	dissident minister					931, 985, 1011, 1051, 1055, 1057, 1061, 1069, 1075, 1077, 1451, 1493, 1503, 1537, 1539, 1553, 1565, 1577	Tereza Menšíková
+P0844	844	Guillaume 								Guillaume											Burgundy		Ax-lesThermes			m	no		none										Tereza Menšíková
+P0950	950	Huguette de Lamazugue								Huguette						de	Lamazugue				Burgundy					f	no		none							wifeofID_949 (Bertrand de Lamazugue)		135, 1017, 1029, 1033, 1441	Tereza Menšíková
+P1538	1538	Jacquette Tisserand 								Jacquette			Tisserand								Burgundy					f	no		none							widowofID_1537 (Philippe/Philippot Tisserand)		133, 1577, 1579, 1583	Tereza Menšíková
+P1462	1462	Jean Savorel 								Jean			Savorel								Burgundy					m	v		none		Waldensian brother	Waldensian brother	dissident minister					1085	Tereza Menšíková
+P1555	1555	Jean Valedié 								Jean			Valedié								Burgundy					m	no		none							relativeorcousinofID_475 (Jacques de Creyssan)		1467	Tereza Menšíková
+P0923	923	Jeanquet 								Jeanquet											Burgundy					m	v		none		Waldensian brother	Waldensian brother	dissident minister					1129	Tereza Menšíková
+P0952	952	Le Petit de Lamazugue								Le Petit						de	Lamazugue				Burgundy					m	v		none		Waldensian brother	Waldensian brother	dissident minister			sonofID_948 (Pierre de Lamazugue)		931, 985, 987, 1007, 1009, 1015-1021, 1049, 1051, 1059, 1065-1073, 1077, 1489, 1573, 1577, 1581	Tereza Menšíková
+P0013	13	Martine Aimon 								Martine			Aimon								Burgundy					f	no		none							wifeofID_12 (Pierre Aimon)		99, 1493, 1539-1543, 1563	Tereza Menšíková
+P1195	1195	Peironet le Bourguignon								Peironet						le	Bourguignon				Burgundy					m	v		none		Waldensian brother	Waldensian brother	dissident minister					985	Tereza Menšíková
+P1463	1463	Perrin Savorel 								Perrin			Savorel								Burgundy					m	v		none		Waldensian brother	Waldensian brother	dissident minister					931, 985, 1049, 1057, 1061, 1069, 1075, 1081, 1493, 1539, 1575	Tereza Menšíková
+P0413	413	Roger Châtillon 								Roger			Châtillon								Burgundy					m	no		none								passing through Pausade (Bars)	107, 1063, 1089	Tereza Menšíková
+P1507	1507	Pierre Tardieu 								Pierre			Tardieu								Cabanial					m	no		none									115, 267, 269, 305, 357	Tereza Menšíková
+P0184	184	Barthélemy 								Barthélemy											Cajarc					m	v		none		Waldensian brother	Waldensian brother	dissident minister				Also p. 1497 (missing, added by DZ).	1011-1021, 1027, 1061, 1069, 1073, 1075, 1085, 1449, 1461, 1467, 1469, 1489-1497, 1503, 1507-1511, 1515, 1517, 1537-1541, 1547, 1555, 1559, 1561, 1565, 1573-1577	Tereza Menšíková
+P1467	1467	Bernard de la Selve								Bernard						de la	Selve				Caraman					m	no		none										Tereza Menšíková
+P0734	734	Guillaume Garric 								Guillaume			Garric								Carcassonne					m	no		none					professor of laws	d			97, 119, 1241-1251	Tereza Menšíková
+P0473	473	Jean Creyssan 								Jean			Creyssan								Cardonac					m	no		none	1								1467	Tereza Menšíková
+P0621	621	Arnaud Faure 								Arnaud			Faure							Teisseyre	Cassès					m	no		none	1								875	Tereza Menšíková
+P0622	622	Pierre Bertrand Faure 								Pierre Bertrand			Faure								Cassès					m	no		none							sonofID_621 (Arnaud Faure)		115, 875, 893	Tereza Menšíková
+P1225	1225	Jean Philibert 								Jean			Philibert								Castelnau-Barbarens		Castelnau-Barbarens			m	no		none		priest of Chapelle-Saint-Sauveur	priest	churchperson		d	sonofID_1224 (Ponce Philibert)		117, 1127-1135, 1209-1213	Tereza Menšíková
+P1598	1598	Vidal de Toulouse								Vidal						de	Toulouse				Castelsarrasin					m	no		none									117, 777	Tereza Menšíková
+P1233	1233	Pierre 								Pierre	Perret										castle, Mazères					m	no		none										Tereza Menšíková
+P0504	504	Déodat 								Déodat											Castres					m	no		none								religious	1187	Tereza Menšíková
+P0452	452	Raimond de Combe Guilha								Raimond						de	Combe Guilha				Caufours					m	no		none	1								115, 349, 361, 873, 1099	Tereza Menšíková
+P0199	199	Guillemette Bec 								Guillemette			Bec								Caussou					f	no		none									117, 1637	Tereza Menšíková
+P1513	1513	Raimond Teisseyre 								Raimond			Teisseyre								Celles					m	no		none	1								1293	Tereza Menšíková
+P0407	407	Jean de Châlon								Jean						de	Châlon				Chalo/Chabilone/Chabileto					m	v		none		Waldensian majoral	Waldensian majoral	dissident minister				In Latin, de Chalo/Chabilone/Chabileto.	931, 1555	Tereza Menšíková
+P1172	1172	Humbert Odet le Champenois								Humbert			Odet			le	Champenois				Champagne					m	v		none		Waldensian brother	Waldensian brother	dissident minister			sonofID_1170 (Jean Odet), sonofID_1171 (Ermenie Odet)	Family name at p. 1493.	985, 1009, 1019, 1023, 1041, 1065, 1069, 1075-1079, 1083, 1129, 1493, 1537, 1553, 1577	Tereza Menšíková
+P0387	387	Bernard Cathala 								Bernard			Cathala								Château-Verdun					m	no		none									117, 1637	Tereza Menšíková
+P1359	1359	Ponce Roquefort 								Ponce			Roquefort								Château-Verdun					m	no		none									117, 1637	Tereza Menšíková
+P1089	1089	Jean Mercadier 								Jean			Mercadier								Chaulet					m	no		none							sonofID_1088 (Raimond Mercadier)		141, 699, 769, 873, 977	Tereza Menšíková
+P1368	1368	Guillaume Ros 								Guillaume			Ros								Cintegabelle					m	b		OFM		Franciscan tertiary	tertiary			d		Characterized as Beguin and as "saying he is" Franciscan tertiary (p. 1593)	119, 1289, 1357-1367, 1417, 1421, 1423, 1593, 1609, 1611	Tereza Menšíková
+P0354	354	Pierre Calvet 								Pierre			Calvet								Cintegabelle					m	b		OFM		Franciscan tertiary	tertiary			d	sonofID_355 (Raimond)	Characterized as Beguin, I keep this but do not put him as "dissident minister".	119, 1289, 1367, 1371, 1471, 1421	David Zbíral
+P0789	789	Jean Goujon 								Jean			Goujon								Cintegabelle					m	no		none							fatherofID_972 (Marie Lasserre)		1373	Tereza Menšíková
+P1537	1537	Philippe Tisserand 								Philippe	Philippot		Tisserand								Comberouger					m	no		none							sonofID_1535 (Richier Tisserand), sonofID_1536 (Poncie Tisserand)		1577, 1583	Tereza Menšíková
+P1607	1607	Raimond Vidal 								Raimond			Vidal								Comberouger quarter					m	no		none	1								581, 1441	Tereza Menšíková
+P0781	781	Bernard de Goch								Bernard						de	Goch			Guillaume de Saint-Cirgues	Cordes					m	h		none		Good Christian	Good Christian	dissident minister		d		Checked; becomes Good Christian in Lombardy and comes back (p. 1001), travels under the name Guillaume de Saint-Cirgues (p. 1001).	999, 1001, 1113, 1115, 1177	Tereza Menšíková
+P1118	1118	Benoît Molinier 								Benoît			Molinier								Cordes					m	no		none									117, 1113-1119	Tereza Menšíková
+P1180	1180	Bernard Ouvrier 								Bernard			Ouvrier	Obrier							Cordes					m	no		none									117, 1103, 1109	Tereza Menšíková
+P0306	306	Durand Bouisse 								Durand			Bouisse								Cordes					m	no		none									117, 999, 1001, 1029, 1031	Tereza Menšíková
+P0395	395	Guillaume Cavalier 								Guillaume			Cavalier								Cordes					m	no		none									117, 1177-1183	Tereza Menšíková
+P0642	642	Pierre Faure 								Pierre			Faure								Cotencho					m	no		none	1								607	Tereza Menšíková
+P1623	1623	Ponce Vincendat 								Ponce			Vincendat								Crançot					m	no		none	1								1089, 1171	Tereza Menšíková
+P1286	1286	Guillaume Proault 								Guillaume			Proault								Cuisines, Toulouse					m	no		none						d		PG has p. 313, 315, 777, but he appears only at p. 777, definitely not at p. 313 and 315.	777	Tereza Menšíková
+P1283	1283	Arnaud Proault 								Arnaud			Proault								Cuisines, Toulouse					m	no		none	1									Tereza Menšíková
+P0193	193	Peirone de Baysses								Peirone					Domergue	de	Baysses				du Born (?)					f	no		none							wifeofID_192 (Pierre de Baysses)		113, 643, 769, 1457	Tereza Menšíková
+P1512	1512	Isarn Teisseyre 								Isarn			Teisseyre								Fanjeaux					m	no		none									569, 571	Tereza Menšíková
+P1600	1600	Isarn Vidal 								Isarn			Vidal								Fanjeaux					m	no		none		weaver	weaver	craftsman					119, 259, 305	Tereza Menšíková
+P0820	820	Arnaud Guilabert 								Arnaud			Guilabert								Ferrus					m	no		none	1									Tereza Menšíková
+P0814	814	Bernard Guilabert 								Bernard			Guilabert								Ferrus					m	no		none	1								121, 273, 305	Tereza Menšíková
+P0818	818	Pierre Guilabert 								Pierre			Guilabert								Ferrus					m	no		none							sonofID_816 (Vital Guilabert), sonofID_817 (Guillemette Guilabert)		121, 215, 227, 583, 587, 627, 793, 811, 1439	Tereza Menšíková
+P0816	816	Vital Guilabert 								Vital			Guilabert								Ferrus					m	no		none							sonofID_814 (Bernard Guilabert), sonofID_815 (Blanche Guilabert)		121, 215, 227, 275, 305, 399, 435, 519, 585, 587, 627, 667, 671, 729, 1439	Tereza Menšíková
+P0669	669	Pierre des Fillols								Pierre						des	Fillols	de Sulholet			Fillols near Villemur					m	no		none									153, 345, 361, 363, 569, 601, 629	Tereza Menšíková
+P0919	919	Jean de Jean								Jean						de	Jean			Josse	Fleurance					m	no		none								Jewish convert	805	Tereza Menšíková
+P0595	595	Bérenger Escoulan 								Bérenger			Escoulan								Foix					m	no		none									119, 1285	Tereza Menšíková
+P1601	1601	Pierre Vidal 								Pierre			Vidal								Foix					m	no		none									119, 1637	Tereza Menšíková
+P0863	863	Guillaume Guiraud 								Guillaume			Guiraud								Garrigues					m	no		none										Tereza Menšíková
+P0319	319	Guillemette Bourrel 								Guillemette			Bourrel								Garrigues					f	no		none									125, 207	Tereza Menšíková
+P0181	181	Jean Barrot 								Jean			Barrot								Garrigues					m	no		none									125, 209	Tereza Menšíková
+P0396	396	Martin Cavalier 								Martin			Cavalier								Garrigues					m	no		none									125, 207	Tereza Menšíková
+P1398	1398	Pierre de Saint-Laurent								Pierre						de	Saint-Laurent				Garrigues					m	no		none									125, 179	Tereza Menšíková
+P1310	1310	Pierre Raynaud 								Pierre			Raynaud								Garrigues					m	no		none								No page reference in the index. Is it not Pierre Raimond of Garrigues?		Tereza Menšíková
+P0597	597	Ponce Espigati 								Ponce			Espigati								Garrigues					m	no		none									125, 207	Tereza Menšíková
+P1452	1452	Audry Sartre 								Audry			Sartre								Gaudoux					m	no		none									1019, 1029, 1441	Tereza Menšíková
+P1234	1234	Hugonin Pifaud 								Hugonin	Hugues		Pifaud								Gaudoux					m	v		none		Waldensian brother	Waldensian brother	dissident minister					1009, 1019, 1021, 1047, 1077, 1093, 1133, 1171	Tereza Menšíková
+P1631	1631	Guillaume 								Guillaume											Gauré					m	no		none										Tereza Menšíková
+P1257	1257	Guillaume Porchier 								Guillaume			Porchier								Genève					m	no		none	1								931, 935	Tereza Menšíková
+P0865	865	Jean Guiraud 								Jean			Guiraud								Gignac					m	no		none	1								1621	Tereza Menšíková
+P1133	1133	Vital 								Vital											Grenade					m	no		none										Tereza Menšíková
+P1361	1361	Arnaud Roques 								Arnaud			Roques								Grimaudié near Rougès					m	no		none									675, 769	Tereza Menšíková
+P0884	884	Adam 								Adam											Hugous					m	no		none	1									Tereza Menšíková
+P0879	879	Ponce Hugou 								Ponce			Hugou								Hugous					m	no		none							sonofID_874 (Raimond Hugou)		127, 357, 451, 465, 523, 531, 591, 593, 627, 631, 679-683, 745, 911, 1097	Tereza Menšíková
+P0872	872	Arnaud Hugou 								Arnaud			Hugou								Hugous near Tarabel					m	no		none	1								127, 683, 769, 977, 1097, 1109	Tereza Menšíková
+P1383	1383	Jean Rouget 								Jean			Rouget								La Côte-Saint-André					m	no		none									1269	Tereza Menšíková
+P0617	617	Perrin Faure 								Perrin			Faure							Botin	La Courtine	La Courtine	Bars			m	no		none							sonofID_616 (Aimonet Faure)		131, 1041, 1043, 1089, 1091	Tereza Menšíková
+P0051	51	Bernard Amiel 								Bernard			Amiel								La Garde de Verfeil					m	no		none							husbandofID_52 (Peirone Amiel)		123, 131, 673, 769	Tereza Menšíková
+P0055	55	Ponce Amiel 								Ponce			Amiel								La Garde de Verfeil					m	no		none									121, 181, 189, 429, 675	Tereza Menšíková
+P1200	1200	Raimond Pellicier 								Raimond			Pellicier						Sr		La Garde, Vefeil					m	no		none	1								123, 671, 673, 769, 793, 811, 1441	Tereza Menšíková
+P0788	788	Etienne 								Etienne											La Garde, Verfeil					m	no		none										Tereza Menšíková
+P0804	804	Guillaume Gui 								Guillaume			Gui						Sr		La Garde, Verfeil					m	no		none	1								833	Tereza Menšíková
+P1097	1097	Guillaume Mercadier 								Guillaume			Mercadier						Sr		La Garde, Verfeil					m	no		none	1								123, 1097, 1109	Tereza Menšíková
+P1219	1219	Raimond Peyre 								Raimond			Peyre								La Garde, Verfeil					m	no		none	1								157, 411, 491	Tereza Menšíková
+P0297	297	Arnaud Boué 								Arnaud			Boué								la Motte near Saint-Sulpice-la-Pointe					m	no		none									139, 877, 893	Tereza Menšíková
+P1161	1161	Bernard Nègre 								Bernard			Nègre								La Soulade					m	no		none									153, 729, 771, 781, 787	Tereza Menšíková
+P1326	1326	Pierre Arnaud Rialh 								Pierre Arnaud			Rialh								La Soulade					m	no		none										Tereza Menšíková
+P1328	1328	Vital Rialh 								Vital			Rialh								La Soulade					m	no		none									399, 781, 787	Tereza Menšíková
+P0066	66	Pierre André 								Pierre			André								Labécède, Toulouse, l'Estoile		l'Estoile			m	no		none							husbandofID_67 (Guillemette André)		611, 629, 747, 749, 751, 761, 1037	Tereza Menšíková
+P0057	57	Barthélemy Amillat 								Barthélemy			Amillat	Amilhac							Ladros					m	no		none		priest of Lladros in the diocese of Urgel	priest	churchperson		d		Family name alternative Amilhac added by DZ.	129, 1285	Tereza Menšíková
+P1228	1228	Guillaume de Pibres								Guillaume						de	Pibres				Lagassié near Garrigues					m	no		none									443	Tereza Menšíková
+P0949	949	Bertrand de Lamazugue								Bertrand						de	Lamazugue				Lamazugue					m	no		none							sonofID_948 (Pierre de Lamazugue)		135, 1017, 1029, 1033, 1071, 1089, 1441, 1443	Tereza Menšíková
+P0189	189	Guillaume Baynac 								Guillaume			Baynac								Lanta					m	no		none	1								113, 657, 685, 687, 793, 811, 1439	Tereza Menšíková
+P1300	1300	Pierre Rabastel 								Pierre			Rabastel								Lanta					m	no		none										Tereza Menšíková
+P0278	278	Pierre Bonet 								Pierre			Bonet							Astarac	Lanta, Toulouse	Lanta	Toulouse			m	no		none		tanner	tanner	manual worker					129, 161, 753, 771, 979	Tereza Menšíková
+P0423	423	Huguet Le Chrétien 								Huguet		Le	Chrétien								Lartigue					m	no		none	1								101, 1059, 1061, 1089	Tereza Menšíková
+P0118	118	Jean Atteffin 								Jean			Atteffin								Lartigue					m	no		none									1571, 1583	Tereza Menšíková
+P0082	82	Raimond Aribaud 								Raimond			Aribaud								Lavallée					m	no		none							husbandofID_83 (Peirone/Petrone Aribaud)		621, 629, 1439	Tereza Menšíková
+P0059	59	Raimond Andegaud 								Raimond			Andegaud						Jr		Lavaur					m	no		none							husbandofID_60 (Aladaycis Andegaud)		349	Tereza Menšíková
+P1624	1624	Gérard Vincendat 								Gérard			Vincendat								Laveraët near Marciac					m	no		none							sonofID_1623 (Ponce Vincendat)		133, 1045, 1047, 1089, 1091	Tereza Menšíková
+P0540	540	Pierre Dous 								Pierre			Dous						Sr		Lavit, Montastruc					m	no		none	1							formerly in Montastruc	173, 365, 369, 763, 805, 811	Tereza Menšíková
+P0536	536	Guillaume de Mazères								Guillaume						de	Mazères				Le Born		Le Born			m	no		none							sonofID_532 (Domergue de Mazères), sonofID_534 (Raimonde de Mazères)	Surname added according to the name of his father and to p. 638 (even if PG puts a comma, i.e. thoughts of it more as place of origin than surname; but in case of his brother Bernard p. 877, the edits it as surname).	135, 639, 641, 769, 809	David Zbíral
+P0907	907	Pierre Ivernat 								Pierre			Ivernat								Le Born		Le Born			m	no		none							sonofID_906 (Ponce Ivernat)		113, 1153, 1155, 1161	Tereza Menšíková
+P0316	316	Aude Bourrel 								Aude	Arnaude		Bourrel							Jacquette	Limoux					f	h		none		Good Christian	Good Christian	dissident minister		d		413 supplied by DZ; unnamed female heretic named with Jacques Autier and Philippe d'Alayrac; this must be her.	129, 231, 233, 299, 301, 309, 313, 315, 319, 413, 455, 481, 483, 517, 799	Tereza Menšíková
+P1223	1223	Guillaume Peyre 								Guillaume			Peyre								Limoux					m	no		none									421, 917	Tereza Menšíková
+P0394	394	Guillaume Pierre Cavalier 								Guillaume Pierre			Cavalier								Limoux					m	no		none									449	Tereza Menšíková
+P0700	700	Martin Francès 								Martin			Francès								Limoux					m	no		none									129, 293, 449, 451, 813, 823, 927, 943, 997	Tereza Menšíková
+P1153	1153	Pierre Mounier 								Pierre			Mounier								Limoux					m	no		none									915, 917	Tereza Menšíková
+P0471	471	Ponce Coutellier 								Ponce			Coutellier								Limoux, Toulouse	Limoux	Toulouse			m	no		none			combmaker	craftsman					129, 161, 915, 917, 935, 1441	Tereza Menšíková
+P1065	1065	Philippa Maurel 								Philippa			Maurel		Vidal						Limoux, Tounis, Toulouse (origin?)					f	no		none							widowofID_1064 (Raimond Maurel), daughterofID_1066 (Pierre Vidal), daughterofID_1067 (Fabrisse ???Vidal)		159, 185-189, 461	Tereza Menšíková
+P0614	614	Peret Faro 								Peret			Faro								Logepierre	Logepierre				m	no		none									1573, 1583	Tereza Menšíková
+P1335	1335	Richard 								Richard											Lombard of Alexandria					m	no		none									1519	Tereza Menšíková
+P1258	1258	Etienne Porchier 								Etienne			Porchier								Lons-le Saulnier					m	v		none		Waldensian brother	Waldensian brother	dissident minister				Waldensis reconverted to Catholicism; but the mentions I have seen (I have not seen all) still are related to the network "d".	129, 931-935, 1007-1013, 1027, 1047-1061, 1071, 1077, 1079, 1085, 1087, 1129, 1133, 1169, 1269, 1573	David Zbíral
+P0447	447	Arnaud Cogul 								Arnaud			Cogul								Lordat					m	no		none									129, 1285	Tereza Menšíková
+P1127	1127	Guillaume Monge 								Guillaume			Monge							Peytes	Lugan					m	no		none	1								741	Tereza Menšíková
+P1265	1265	Guillaume Pourcel 								Guillaume			Pourcel								Lugan					m	no		none	1								425	Tereza Menšíková
+P1012	1012	Pierre de Lugo								Pierre						de	Lugo				Lugo in Galice					m	no		none							sonofID_1628 (Vivian)	Spaniard	129, 1447, 1519, 1523-1527, 1531	Tereza Menšíková
+P1227	1227	Philippe 								Philippe											Mallorca					m	no		none									1339, 1415	Tereza Menšíková
+P0694	694	Formont 								Formont	Formond										Marciac					m	no		none							sonofID_614 (Peret Faro)		131, 133, 1013, 1029, 1573, 1575, 1579, 1583	Tereza Menšíková
+P0119	119	Garnier Atteffin 								Garnier			Atteffin								Marciac					m	v		none		Waldensian brother	Waldensian brother	dissident minister			sonofID_118 (Jean Atteffin), brotherofID_120 (Pierre Atteffin)		1017, 1019, 1061, 1065, 1069, 1073, 1077, 1079, 1269, 1489, 1493, 1573	Tereza Menšíková
+P1082	1082	Guillaume de Mazères								Guillaume						de	Mazères			Goran/Na Gentille	Marciac					m	no		none									131, 1067, 1089, 1443, 1573	Tereza Menšíková
+P0368	368	Guyot Carretier 								Guyot	Guinou/Guyou		Carretier								Marciac					m	no		none									131, 1069, 1089, 1443	Tereza Menšíková
+P1192	1192	Humbert de Pavie								Humbert						de	Pavie				Marciac					m	no		none										Tereza Menšíková
+P1590	1590	Jean Vertellier 								Jean			Vertellier							Calamandria	Marciac					m	no		none									133, 1075, 1089, 1443	Tereza Menšíková
+P0940	940	Monet de Labruguière								Monet	Raimond					de	Labruguière			la Laca	Marciac					m	no		none									131, 1015, 1029, 1031, 1441	Tereza Menšíková
+P0564	564	Perret 								Perret											Marciac					m	no		none										Tereza Menšíková
+P0120	120	Pierre Atteffin 								Pierre			Atteffin								Marciac					m	no		none							sonofID_118 (Jean Atteffin)		133, 1571, 1573, 1583, 1585	Tereza Menšíková
+P0489	489	Jourdain 								Jourdain											Marlhac, Verfeil		Verfeil			m	no		none	1									Tereza Menšíková
+P1369	1369	Bernard Ros 								Bernard			Ros								Marnhiac					m	no		none	1								149, 407, 699, 703, 705, 979, 1441	Tereza Menšíková
+P0053	53	Bernard Amiel 								Bernard			Amiel								Mas-Saintes-Puelles					m	no		none									209	Tereza Menšíková
+P0122	122	Arnaud Audian 								Arnaud			Audian								Mascarville					m	no		none	1								605	Tereza Menšíková
+P0624	624	Arnaud Faure 								Arnaud			Faure								Mascarville					m	no		none	1									Tereza Menšíková
+P0159	159	Bernard Baron 								Bernard			Baron								Mazères					m	b		OFM		Franciscan tertiary	tertiary			d		Designated as "Beguinus"; I follow that.	141, 1423, 1425, 1637, 1639	Tereza Menšíková
+P0031	31	Bérard d'Alièze								Bérard	Béraud/Bernard					d'	Alièze				Mazères	Burgundy	Mazères			m	no		none		coachman	coachman	service provider					133, 985, 991, 1007, 1009, 1029, 1031	Tereza Menšíková
+P1078	1078	Bernard de Mazères								Bernard						de	Mazères				Mazères					m	no		none									987, 1441	Tereza Menšíková
+P0538	538	Gérard de las Donas								Gérard						de las	Donas				Mazères					m	no		none									133, 135, 1011, 1029, 1031, 1051, 1089, 1441	Tereza Menšíková
+P0035	35	Guénard d'Alièze								Guénard						d'	Alièze				Mazères	Burgundy	Mazères			m	no		none									133, 1049, 1055, 1089, 1443	Tereza Menšíková
+P1532	1532	Martin Tisserand 								Martin			Tisserand								Mazères					m	no		none										Tereza Menšíková
+P1594	1594	Peirone 								Peirone											Mazères					f	no		none							wifeofID_1593 (Vianet)		135, 1057, 1089	Tereza Menšíková
+P0037	37	Raimond d'Alièze								Raimond	Aimon/Ymonet					d'	Alièze				Mazères	Burgundy	Mazères			m	no		none									135, 1055, 1089	Tereza Menšíková
+P0327	327	Bernard Bousquet 								Bernard			Bousquet								Merles					m	no		none									135, 137, 373, 485, 899, 933, 1443, 1477	Tereza Menšíková
+P0535	535	Bernard de Mazères								Bernard						de	Mazères				Merles					m	no		none							sonofID_532 (Domergue de Mazères), sonofID_534 (Raimonde de Mazères)	Surname added according to p. 877.	135, 809, 877, 893, 977	David Zbíral
+P0657	657	Hugues Fays 								Hugues			Fays								Merles					m	no		none										Tereza Menšíková
+P0418	418	Pierre Chavoat 								Pierre			Chavoat								Messia near Orgelet					m	no		none									1163	Tereza Menšíková
+P0632	632	Guillaume Faure 								Guillaume			Faure								Mézens					m	no		none									137, 403, 485	Tereza Menšíková
+P1237	1237	Humbert Pipier 								Humbert	Berret/Berthet		Pipier							Charpentier	Mirande					m	no		none									137, 141, 1027, 1029, 1083, 1087, 1091, 1441, 1443	Tereza Menšíková
+P1211	1211	Perrot 								Perrot											Mirande					m	no		none								Relation not altogether clear: he married "his sister" but whose - the deponents (ID_???) or the last mentioned (ID_???)?	1581	Tereza Menšíková
+P0559	559	Arnaud Duprat 								Arnaud			Duprat								Mirepoix-sur-Tarn					m	no		none							sonofID_558 (Thomas Duprat)		139, 689, 695, 769, 979, 1439	Tereza Menšíková
+P0561	561	Arnaud Duprat 								Arnaud			Duprat						Jr		Mirepoix-sur-Tarn					m	no		none							sonofID_558 (Thomas Duprat)		623	Tereza Menšíková
+P0038	38	Guillaume Aliguier 								Guillaume			Aliguier						Sr		Mirepoix-sur-Tarn					m	no		none									137, 139, 223, 279, 281, 307, 409, 447, 475, 521, 593, 623, 627, 645, 649, 689-697, 763, 765, 793, 795, 1149, 1161	Tereza Menšíková
+P1544	1544	Guillaume Turques 								Guillaume			Turques								Mirepoix-sur-Tarn					m	no		none	1								691, 979	Tereza Menšíková
+P1052	1052	Hugues Maurand 								Hugues			Maurand							Mathieu	Mirepoix-sur-Tarn					m	no		none									137, 283, 307, 623, 629, 631, 689, 693-697, 769	Tereza Menšíková
+P1313	1313	Jean Raynes 								Jean			Raynes								Monferran near Verfeil					m	no		none	1						fatherofID_817 (Guillemette Guilabert)		585	Tereza Menšíková
+P0156	156	Etienne Barguignol 								Etienne			Barguignol								Mongausy					m	no		none										Tereza Menšíková
+P1534	1534	Mondon Tisserand 								Mondon	Monidon		Tisserand								Mongausy		Mongausy			m	v		none		Waldensian brother	Waldensian brother	dissident minister					987, 1007, 1011, 1013, 1017, 1021, 1023, 1027, 1055-1061, 1067-1079, 1083, 1087, 1129, 1489	Tereza Menšíková
+P0795	795	Jean de Gratalou								Jean						de	Gratalou			Rouget	Montagausy					m	no		none									141, 987, 1021, 1029, 1033, 1441	Tereza Menšíková
+P0556	556	Etienne Duprat 								Etienne			Duprat								Montaigon, Toulouse					m	no		none										Tereza Menšíková
+P0360	360	Jean Capus 								Jean			Capus								Montaigut close to Herment (Puy-de-Dôme, ch.-l. cant.), Mirepoix-sur-Tarn					m	no		none									137, 139, 593, 623-631, 693, 695, 769, 979, 1439	Tereza Menšíková
+P0626	626	Arnaud Faure 								Arnaud			Faure								Montaillou					m	no		none									141, 1259	Tereza Menšíková
+P1521	1521	Bernard 								Bernard											Montaillou					m	no		none										Tereza Menšíková
+P0144	144	Guillaume Autier 								Guillaume			Autier								Montaillou					m	no		none									141, 1259	Tereza Menšíková
+P0186	186	Guillaume Bayle 								Guillaume			Bayle								Montaillou					m	no		none									141, 1637	Tereza Menšíková
+P0211	211	Guillaume Benet 								Guillaume			Benet								Montaillou					m	no		none									141, 1259, 1261	Tereza Menšíková
+P0696	696	Guillaume Fort 								Guillaume			Fort								Montaillou					m	no		none									141, 1261-1265	Tereza Menšíková
+P0830	830	Guillaume Guilabert 								Guillaume			Guilabert								Montaillou					m	no		none	1								141, 1425, 1427	Tereza Menšíková
+P1074	1074	Guillaume Maurs 								Guillaume			Maurs								Montaillou					m	no		none									141, 1289, 1293, 1295	Tereza Menšíková
+P0829	829	Jean 								Jean											Montaillou					m	no		none										Tereza Menšíková
+P0444	444	Pierre 								Pierre											Montaillou					m	no		none										Tereza Menšíková
+P1000	1000	Pierre 								Pierre											Montaillou					m	no		none										Tereza Menšíková
+P1347	1347	Raimond Rocat 								Raimond			Rocat								Montaillou					m	no		none									141, 493-497, 811	Tereza Menšíková
+P0558	558	Thomas Duprat 								Thomas			Duprat								Montastruc-la-Conseillère					m	no		none									689, 979	Tereza Menšíková
+P1353	1353	Roland de Valle Brito								Roland	Rioland					de	Valle Brito				Montauban, Saint-Malo	Saint-Malo	Montauban			m	no		none									141, 1123-1127	David Zbíral
+P0320	320	Pierre Bourrel 								Pierre			Bourrel						Sr		Montaudran					m	no		none									143, 463, 465, 487	Tereza Menšíková
+P0683	683	Jeanne Fogassier 								Jeanne			Fogassier								Montaudran, Toulouse					f	no		none									465	Tereza Menšíková
+P0136	136	Durand Auroux 								Durand			Auroux								Montaussel near Verfeil					m	no		none	1								595, 597	Tereza Menšíková
+P0773	773	Bernarde Germain 								Bernarde			Germain		Audoy						Montégut					f	no		none							daughterofID_772 (Guillaume Germain), widowofID_774 (Guillaume Germain), nieceofID_123 (Bernard Audoy)		139, 477, 479, 487	Tereza Menšíková
+P0774	774	Guillaume Germain 								Guillaume			Germain								Montégut					m	no		none										Tereza Menšíková
+P0123	123	Bernard Audouy 								Bernard			Audouy							Messire Bernard	Montégut near Saint-Félix					m	h		none		Good Christian	Good Christian	dissident minister		d			139, 197, 211, 221, 231-235, 239, 243, 245, 249, 253, 255, 259, 265, 267, 277, 299-303, 319, 451, 455, 457, 463, 477-481, 487, 517, 529, 901, 939, 1137, 1161 	Tereza Menšíková
+P1134	1134	Guillaume de Montégut								Guillaume						de	Montégut				Montégut near Saint-Félix					m	no		none									221, 939, 941	Tereza Menšíková
+P1285	1285	Bernard Bastide 								Bernard			Bastide								Montgaillard					m	no		none	1									Tereza Menšíková
+P1086	1086	Arnaud Mercadier 								Arnaud			Mercadier								Montgaillard near Le Born					m	no		none	1								595	Tereza Menšíková
+P1088	1088	Raimond Mercadier 								Raimond			Mercadier								Montgaillard near Le Born					m	no		none	1								699	Tereza Menšíková
+P0508	508	Pierre Desvignes 								Pierre			Desvignes								Montignac					m	no		none	1								1461, 1501	Tereza Menšíková
+P0871	871	Pierre de l' Hôpital								Pierre						de l'	Hôpital			Chrétien	Montpellier		Caujac, Narbonne			m	b		OFM		Franciscan tertiary	tertiary	dissident minister		d	sonofID_870 (Raimond de l' Hôpital)	Characterized as Beguin (p. 1341) and as OFM tertiary (p. 1621). Definitely classifiable as dissident minister (full-time member). Montpellier as origin: see under ID_870.	143, 1341, 1347, 1369, 1371, 1601, 1603, 1613-1619, 1621, 1627, 1631, 1633	David Zbíral
+P1605	1605	Raimond Vidal 								Raimond			Vidal								Montpitol, near Verfeil					m	no		none										Tereza Menšíková
+P0497	497	Raimond Déjean 								Raimond			Déjean								Montréal					m	no		OFM			friar	churchperson		d		apostate	1347	Tereza Menšíková
+P1388	1388	Pierre Ruffat 								Pierre			Ruffat								Narbonne					m	no		none						d		At p. 1593-1595, characterized (if the order of names is kept) as having the faith of Beguins but not being one.	1351, 1593	Tereza Menšíková
+P1287	1287	Martin Proault 								Martin			Proault								of the gate of Pouzonville in Toulouse					m	no		none	1					d		"d" network - his first wife shows him a heretic in her house (p. 456), i.e. he is aware of the factus hereticorum, although probably not very active.	159, 161, 195, 311-315, 451, 457, 461, 487, 549, 621, 839, 1441	Tereza Menšíková
+P0941	941	Raimond de Laburat								Raimond						de	Laburat				Ouié					m	no		none									147, 1637	Tereza Menšíková
+P0345	345	Germain de Bugarail								Germain						de	Bugarail				Palleville					m	no		none									143, 219, 227, 567	Tereza Menšíková
+P0005	5	Guillaume Agasse 								Guillaume			Agasse								Pamiers					m	no		none		clerc, commander of the Pamiers leprosarium	clerc	churchperson		d			101, 1289, 1293, 1295	Tereza Menšíková
+P1320	1320	Perrin Régier 								Perrin			Régier	Ragier/Ressegayre							Pauligne					m	no		none									133, 1583, 1585	Tereza Menšíková
+P0088	88	Guillaume Arnaud 								Guillaume			Arnaud								Péchermier					m	no		none	1						fatherofID_1599 (Guiraude Vidal)		777	Tereza Menšíková
+P0089	89	Guillaume Arnaud 								Guillaume			Arnaud								Péchermier					m	no		none							brotherofID_88 (Guillaume Arnaud)		779	Tereza Menšíková
+P0137	137	Arnaud Auroux 								Arnaud			Auroux								Poudis near Lavaur					m	no		none							sonofID_136 (Durand Auroux)		145, 583, 597, 627, 631	Tereza Menšíková
+P0565	565	Guillaume Dural 								Guillaume			Dural	Durand							Poulan-Pouzols, Tarn, Rabastens		Rabastens			m	no		none									149, 1105-1111	Tereza Menšíková
+P0348	348	Bernard 								Bernard											Prades, Alliou					m	no		none										Tereza Menšíková
+P1027	1027	Prades Malet 								Prades			Malet								Prades, Alliou					m	no		none									147, 1285	Tereza Menšíková
+P0349	349	Raimond 								Raimond											Prades, Alliou					m	no		none										Tereza Menšíková
+P1107	1107	Raimond Miguel 								Raimond			Miguel								Prades, Alliou					m	no		none									147, 1285	Tereza Menšíková
+P1460	1460	Raimond Savignan 								Raimond			Savignan								Prades, Alliou					m	no		none	1									Tereza Menšíková
+P1435	1435	Pierre Sanchès 								Pierre			Sanchès								Prunet					m	no		none						d			145, 147, 263, 305, 355, 469-475, 533, 711-715, 769, 879, 945, 979	Tereza Menšíková
+P1422	1422	Arnaud de la Salvetat								Arnaud						de la	Salvetat		Sr		Prunet					m	no		none									145, 355, 361, 467, 469, 473, 487, 1441	Tereza Menšíková
+P0339	339	Guillaume Brus 								Guillaume			Brus						Sr		Prunet					m	no		none	1								145, 147, 475, 487, 709, 1119, 1121, 1441	Tereza Menšíková
+P0970	970	Pierre Raimond de Lasbordes								Pierre Raimond						de	Lasbordes				Prunet					m	no		none									659	Tereza Menšíková
+P1428	1428	Raimond de la Salvetat								Raimond						de la	Salvetat			Chamo	Prunet					m	no		none							sonofID_1422 (Arnaud de la Salvetat), sonofID_1423 (Bonne de la Salvetat)		145, 469, 473, 487, 657	Tereza Menšíková
+P1429	1429	Raimond de la Salvetat								Raimond						de la	Salvetat		Sr		Prunet					m	no		none									145, 261, 263, 305, 471, 473, 665, 687, 711, 769, 795, 1119	Tereza Menšíková
+P0338	338	Hugues Brosson 								Hugues			Brosson								Puycelsi					m	no		none							fatherofID_961 (Jeanne de Lanta)		823	Tereza Menšíková
+P0080	80	Guillaume de Area								Guillaume						de	Area				Quié					m	no		none									147, 1285	Tereza Menšíková
+P1339	1339	Guillemette Rigaud 								Guillemette			Rigaud							Pelaprat	Rabastens					f	no		none							daughterofID_1340 (Mathieu)	Pelaprat is alias of her husband	149, 785, 787	Tereza Menšíková
+P1373	1373	Raimond Ros 								Raimond			Ros								Rabastens					m	no		none		fisherman	fisherman	production worker			sonofID_1369 (Bernard Ros), sonofID_1370 (Guillemette Ros)		149, 405-409, 485, 785	Tereza Menšíková
+P1021	1021	P. Magre 								P.			Magre								Rabat-les-Trois-Seigneurs					m	no		none									1285	Tereza Menšíková
+P0299	299	Bertrand Boué 								Bertrand			Boué								Rabine					m	no		none		baker (manufacturer of cakes)	baker	manufacturer/qualified worker			fatherofID_420 (Agnès Chavoat)		147, 599, 627, 977	Tereza Menšíková
+P0249	249	Guillaume Bertric 								Guillaume			Bertric								Rabine					m	no		none	1								1157, 1161	Tereza Menšíková
+P0304	304	Raimond Bouérot 								Raimond			Bouérot								Rabine					m	no		none	1						fatherofID_299 (Bertrand Boué)			Tereza Menšíková
+P1509	1509	Bernard Teisseyre 								Bernard			Teisseyre								Roqueserière					m	no		none									149, 597, 627, 921, 935	Tereza Menšíková
+P1446	1446	Raimond Sans 								Raimond			Sans								Roqueserière					m	no		none									149, 633, 719	Tereza Menšíková
+P0890	890	Arnaude Hugou 								Arnaude			Hugou								Roquevidal		Toulouse			f	no		none							widowofID_889 (Raimond Hugou), sisterofID_1530 (Bernard Tilhols), sisterofID_1531 (Ponce Tilhols)		149, 747-751, 761, 771, 773, 1037	Tereza Menšíková
+P0887	887	Bernard Hugou 								Bernard			Hugou								Roquevidal					m	no		none	1								149, 179	Tereza Menšíková
+P0958	958	Raimond de Lanta								Raimond						de	Lanta				Rougès					m	no		none	1								149, 501, 699, 715, 719, 769, 789, 801, 803, 809, 821-829, 897	Tereza Menšíková
+P0310	310	Jean 								Jean											Saint-Anatoly					m	no		none	1						fatherofID_309 (Pierre Bourgade)			Tereza Menšíková
+P0841	841	Bernard Guillaume 								Bernard			Guillaume								Saint-Denis near Saissac					m	no		none									451, 471	Tereza Menšíková
+P1212	1212	Jean Le Petit 								Jean		Le	Petit								Saint-Jean-le-Comtal					m	no		none						d		No page references in the original index but supplied; in all but one only as identification of his wife. However, 1025 he and his husband receive Waldensians in their house => dissident network.	155, 1025, 1029, 1033, 1441	Tereza Menšíková
+P0259	259	Adhémar Bojon 								Adhémar			Bojon								Saint-Jean-le-Comtal					m	no		none									155, 989, 991	Tereza Menšíková
+P0399	399	Gui de Cernon								Gui						de	Cernon			Vianet	Saint-Jean-le-Comtal					m	no		none	1								1077, 1079	Tereza Menšíková
+P1591	1591	Vincent Vertellier 								Vincent			Vertellier								Saint-Jean-le-Comtal					m	no		none										Tereza Menšíková
+P1454	1454	Hugues Sartre 								Hugues	Huguet/Hugonin		Sartre								Saint-Jean-le-Comtal, Mirande		Mirande			m	no		none						d			137, 1023, 1029, 1033, 1083, 1089, 1441, 1443	Tereza Menšíková
+P0527	527	Bonne Domergue 								Bonne			Domergue		Guilabert						Saint-Jean-Lherm					f	no		none							widowofID_526 (Guillaume Domergue), daughterofID_814 (Bernard Guilabert), daughterofID_815 (Blanche Guilabert)		153, 417, 419, 485, 583, 1483	Tereza Menšíková
+P0526	526	Guillaume Domergue 								Guillaume			Domergue						Jr		Saint-Jean-Lherm					m	no		none	1								153, 417, 485, 729, 771, 977, 1439	Tereza Menšíková
+P1593	1593	Vianet 								Vianet											Saint-Laurent-la-Roche					m	no		none									135, 1057, 1089, 1107, 1109	Tereza Menšíková
+P0125	125	Guillaume Audric 								Guillaume			Audric								Saint-Martin-la-Lande					m	no		none	1								923, 935	Tereza Menšíková
+P1450	1450	Bertrand Sartre 								Bertrand			Sartre								Saint-Papoul					m	no		none									157, 599, 1147, 1149, 1161	Tereza Menšíková
+P0178	178	Martin Barrière 								Martin			Barrière								Saint-Papoul					m	no		none										Tereza Menšíková
+P1108	1108	Raimond Miguel 								Raimond			Miguel								Saint-Papoul					m	no		none									923, 935, 937	Tereza Menšíková
+P1245	1245	Pierre Guillaume Polier 								Pierre Guillaume			Polier								Saint-Paul-Cap-de-Joux					m	no		none									157, 209	Tereza Menšíková
+P0392	392	Adhémar de Caussens								Adhémar						de	Caussens				Saint-Sulpice-la-Pointe					m	no		none									157, 601, 721, 771, 1443	Tereza Menšíková
+P1220	1220	Baragnone Peyre 								Baragnone			Peyre								Saint-Sulpice-la-Pointe					f	no		none							widowofID_1219 (Raimond Peyre)		157, 345, 407-413, 421, 423, 451, 491, 495, 577, 595, 601, 661, 699, 721, 723, 729, 743, 837, 897	Tereza Menšíková
+P1217	1217	Bertrand Peyre de Montcabrier								Bertrand			Peyre			de	Montcabrier				Saint-Sulpice-la-Pointe					m	no		none									157, 279, 305	Tereza Menšíková
+P0393	393	Etiennette de Caussens								Etiennette					Peyre	de	Caussens				Saint-Sulpice-la-Pointe					f	no		none							wifeofID_392 (Adhémar de Caussens), daughterofID_1219 (Raimond Peyre), daughterofID_1220 (Baragnone Peyre)		157, 601, 721, 723, 771, 1443	Tereza Menšíková
+P1218	1218	Guillaume Peyre de Montcabrier								Guillaume			Peyre			de	Montcabrier				Saint-Sulpice-la-Pointe					m	no		none							brotherofID_1217 (Bertrand Peyre)		157, 277, 305, 839	Tereza Menšíková
+P1314	1314	Ponce Raynes 								Ponce			Raynes						Sr		Saint-Sulpice-la-Pointe					m	no		none	1								157, 491, 497, 719, 897, 933	Tereza Menšíková
+P0906	906	Ponce Ivernat 								Ponce			Ivernat								Saint-Urcisse	Saint-Urcisse				m	no		none									219, 225, 925, 935, 1153, 1161	Tereza Menšíková
+P1184	1184	Raimond Pagès 								Raimond			Pagès								Sainte-Foy-d' Aigrefeuille					m	no		none										Tereza Menšíková
+P1479	1479	Pierre Sicard 								Pierre			Sicard								Salieth					m	no		none									659	Tereza Menšíková
+P1484	1484	Pierre Sicre 								Pierre			Sicre						Sr		Salieth					m	no		none	1								151, 603-609, 709, 731-737, 797, 811, 1443	Tereza Menšíková
+P0920	920	Jean 								Jean	Jeannot									Le Fol	Sarret, Lartigue		Sarret, Lartigue			m	no		none									131, 1073, 1089, 1443	Tereza Menšíková
+P0964	964	Pierre de Lanta								Pierre						de	Lanta				Sauzière near Buzet		the farm in Sauzière near Buzet			m	no		none							sonofID_960 (Arnaud de Lanta), sonofID_961 (Jeanne de Lanta)		149, 503, 701, 717, 719, 769, 771, 803, 805, 809, 823, 825, 829	Tereza Menšíková
+P1519	1519	Mathieu Terré 								Mathieu			Terré								Saverdun		Saverdun			m	b		OFM		Franciscan tertiary	tertiary			d	sonofID_1518 (Pierre Terré)	Characterized as Beguin (p. 151, 1377) and OFM tertiary (1377).	151, 1289, 1377-1383, 1417, 1421	David Zbíral
+P0892	892	Jacques Hugou 								Jacques			Hugou								Saverdun					m	no		none	1								1001, 1003	Tereza Menšíková
+P0027	27	Raimond d'Albigeois								Raimond						d'	Albigeois				Ségreville					m	no		none									151, 909, 935, 945, 1443	Tereza Menšíková
+P0897	897	Etiennette Ichier 								Etiennette			Ichier								Sénil					f	no		none							widowofID_896 (Pierre Ichier), sisterofID_518 (Ricarde Domergue)		151, 423, 677, 679, 727, 795	Tereza Menšíková
+P0896	896	Pierre Ichier 								Pierre			Ichier						Sr		Sénil					m	no		none	1								423, 795	Tereza Menšíková
+P0333	333	Jacob 								Jacob											Sérignac					m	no		none	1									Tereza Menšíková
+P0307	307	Huguet de la Boulouze								Huguet						de la	Boulouze				Seysses-Savès					m	no		none									135, 1053, 1089	Tereza Menšíková
+P1025	1025	Raimond Maistre 								Raimond			Maistre								Sicily		Sicily			m	h		none		Good Christian	Good Christian	dissident minister		d		Checked, he really is a Good Christian.	231	Tereza Menšíková
+P0630	630	Arnaud Faure 								Arnaud			Faure								Sorèze					m	no		none	1								727	Tereza Menšíková
+P0673	673	Pierre Fils 								Pierre			Fils								Tarabel					m	no		none		novice of a Good Christian	dissident novice			d		Fugitive, novice of Pierre Sans (751, 817). All mentions checked quickly and he does not seem to be never mentioned as Good Christian or as having received the consolament - he was only novice.	611, 637, 659, 681, 751, 761, 801, 815, 817, 833, 879, 911, 913, 919	Tereza Menšíková
+P0490	490	Barthélemy Déjean 								Barthélemy			Déjean								Tarabel					m	no		none	1								159, 887, 907, 911, 913, 935, 943, 945	Tereza Menšíková
+P1155	1155	Guillaume de Moure								Guillaume						de	Moure		Sr		Tarabel					m	no		none	1								157, 611, 629, 631, 751, 771, 815, 817, 911, 935	Tereza Menšíková
+P0210	210	Pierre Benech 								Pierre			Benech								Tarabel					m	no		none									159, 943	Tereza Menšíková
+P0279	279	Pierre Bonet 								Pierre			Bonet							Boué	Tarabel					m	no		none									751, 833	Tereza Menšíková
+P1494	1494	Ponce Sicre 								Ponce			Sicre								Tarascon					m	no		none										Tereza Menšíková
+P1459	1459	Arnaud Savignan 								Arnaud			Savignan								Tarascon-sur-Ariège					m	no		none									161, 1285, 1637	Tereza Menšíková
+P1349	1349	Guillaume 								Guillaume											Tarascon-sur-Ariège					m	no		none										Tereza Menšíková
+P1163	1163	Guillaume de Niaux								Guillaume						de	Niaux				Tarascon-sur-Ariège					m	no		none									101, 1637	Tereza Menšíková
+P0981	981	Bernard Laufre 								Bernard			Laufre								Tignac					m	no		none									163, 1637	Tereza Menšíková
+P0916	916	Jean Jauffre 								Jean			Jauffre								Tignac					m	no		none									163, 1293, 1295	Tereza Menšíková
+P0081	81	Raimond de Area								Raimond						de	Area			Bort/Bor	Tignac					m	no		none									161, 1289, 1293, 1295	Tereza Menšíková
+P0786	786	Bernard de Gomerville								Bernard						de	Gomerville				Toulouse					m	no		none			money-changer	service provider		d			161, 753-757, 771	Tereza Menšíková
+P0206	206	Bernard Belot 								Bernard			Belot								Toulouse					m	no		none									819	Tereza Menšíková
+P0171	171	Bernard du Barri								Bernard						du	Barri	de Contrast			Toulouse					m	no		none									159, 211, 225, 341	Tereza Menšíková
+P0993	993	Bernard Leret 								Bernard			Leret								Toulouse					m	no		none									451, 453, 753	Tereza Menšíková
+P1409	1409	Bernarde de Sainte-Foy								Bernarde						de	Sainte-Foy				Toulouse		Toulouse			f	no		none							widowofID_1408 (Bernard de Sainte-Foy), sisterofID_1152 (Guillemette Moulier)		159, 299, 307, 463	Tereza Menšíková
+P1522	1522	Etienne Teulier 								Etienne			Teulier								Toulouse					m	no		none	1								649	Tereza Menšíková
+P0167	167	Gentille Barre 								Gentille			Barre		Guilabert						Toulouse					f	no		none							widowofID_168 (Pierre Barre), daughterofID_814 (Bernard Guilabert), daughterofID_815 (Blanche Guilabert)		161, 453, 455, 515-519, 531, 669	Tereza Menšíková
+P0791	791	Guillaume Granet 								Guillaume			Granet								Toulouse					m	no		none									943	Tereza Menšíková
+P0891	891	Guillaume Hugou 								Guillaume			Hugou							Sartre	Toulouse					m	no		none							sonofID_889 (Raimond Hugou), sonofID_890 (Arnaude Hugou)		161, 1035-1039, 1089	Tereza Menšíková
+P0168	168	Pierre Barre 								Pierre			Barre								Toulouse					m	no		none										Tereza Menšíková
+P0495	495	Pierre Déjean 								Pierre			Déjean							Barutel	Toulouse					m	no		none									161, 609, 629, 873	Tereza Menšíková
+P0586	586	Pierre Élie 								Pierre			Élie								Toulouse					m	no		none								from the quarter Sainte-Catherine in Toulouse	455	Tereza Menšíková
+P0777	777	Pierre Gilbert 								Pierre			Gilbert								Toulouse					m	no		none									195	Tereza Menšíková
+P1151	1151	Pierre Moulier 								Pierre			Moulier								Toulouse					m	no		none	1									Tereza Menšíková
+P0877	877	Pierre Raimond Hugou 								Pierre Raimond			Hugou								Toulouse		Toulouse			m	no		none							sonofID_874 (Raimond Hugou)		95, 127, 161, 449, 453, 455, 461-465, 471, 487, 489, 523, 679, 753, 847, 849, 901, 933, 979, 1031, 1097	Tereza Menšíková
+P0747	747	Raimond Gasc 								Raimond			Gasc						Jr		Toulouse		Toulouse			m	no		none							sonofID_741 (Raimond Gasc), sonofID_742 (Bernarde Gasc)		161, 427, 433, 493-497, 547, 659, 819, 821, 839, 841, 943	Tereza Menšíková
+P0888	888	Toulsaine Hugou 								Toulsaine			Hugou								Toulouse		Toulouse			f	no		none							widowofID_887 (Bernard Hugou)		149, 179, 207	Tereza Menšíková
+P0173	173	Guillaume Raimond du Barri								Guillaume Raimond						du	Barri	de Contrast			Toulouse (Pouzonville gate)					m	no		none										Tereza Menšíková
+P0886	886	Guillaume Hugou 								Guillaume			Hugou								Toulouse, street Pierre-Saint-Géraud	Hugous	Toulouse, street Pierre-Saint-Géraud			m	no		none									127, 355, 361, 567, 749	Tereza Menšíková
+P0390	390	Bernard Caulier 								Bernard			Caulier								Tounis, Toulouse					m	no		none									979	Tereza Menšíková
+P1570	1570	Bernard Verdun 								Bernard			Verdun								Tounis, Toulouse		Tounis, Toulouse			m	no		none		dyer of Montpitol	dyer	manual worker					159, 301, 307	Tereza Menšíková
+P0006	6	Mathieu Aicart 								Mathieu			Aicart								Tounis, Toulouse					m	no		none									159, 211, 227, 341	Tereza Menšíková
+P0010	10	Michel Aimon 								Michel			Aimon								Tourmont					m	no		none	1						husbandofID_11 (Perrette Aimon)		1491	Tereza Menšíková
+P1408	1408	Bernard de Sainte-Foy								Bernard						de	Sainte-Foy				Ugolin Chapel					m	no		none	1								159, 299, 307, 453, 487, 1439	Tereza Menšíková
+P1270	1270	Jean de Pouyloubrin								Jean						de	Pouyloubrin				Vacquiers					m	no		none	1								163, 413, 801, 1439	Tereza Menšíková
+P1068	1068	Guillaume de Maureville								Guillaume						de	Maureville		Sr		Varennes					m	no		none	1								139, 707, 917, 919, 935, 1099, 1109	Tereza Menšíková
+P0769	769	Jean 								Jean											Varennes					m	no		none		servant of Bernard Gasc (ID_745)	servant	servant			fatherofID_768 (Robert Géraud)			Tereza Menšíková
+P0741	741	Raimond Gasc 								Raimond			Gasc								Varennes					m	no		none	1								161, 163, 383, 943	Tereza Menšíková
+P0766	766	Raimond Géraud 								Raimond			Géraud								Varennes					m	no		none									163, 997, 1029	Tereza Menšíková
+P1395	1395	Raimond de Saint-Gilles								Raimond						de	Saint-Gilles				Vauré					m	no		none									265, 305	Tereza Menšíková
+P0944	944	Pierre Lafont 								Pierre			Lafont								Vaychis					m	no		none						d			175, 1289, 1291	Tereza Menšíková
+P0261	261	Bernard Bolha 								Bernard			Bolha								Verdun-Lauragais					m	no		none						d			165, 167, 241, 251, 255, 257, 305, 837, 1439	Tereza Menšíková
+P1549	1549	Pierre Usabe 								Pierre			Usabe								Verdun-Lauragais					m	no		none						d			167, 169, 251, 253, 305, 527-531, 625, 799, 843	Tereza Menšíková
+P0636	636	Guillaume Faure 								Guillaume			Faure							Bachelier	Verdun-Lauragais					m	no		none	1								167, 479-483, 487, 615, 629, 1145, 1147, 1161	Tereza Menšíková
+P0097	97	Pierre Arquier 								Pierre			Arquier								Verdun-Lauragais					m	no		none	1								921	Tereza Menšíková
+P0272	272	Pierre Bolha 								Pierre			Bolha								Verdun-Lauragais					m	no		none							sonofID_269 (Pierre Bolha)	eldest son	165, 241, 305, 629, 783, 787, 837	Tereza Menšíková
+P0550	550	Pierre Dubosc 								Pierre			Dubosc								Verdun-Lauragais					m	no		none	1								921, 935	Tereza Menšíková
+P1165	1165	Pierre Nicolau 								Pierre			Nicolau								Verdun-Lauragais					m	no		none									167, 169, 249, 305, 525, 531, 799	Tereza Menšíková
+P0244	244	Raimond Bernier 								Raimond			Bernier								Verdun-Lauragais					m	no		none	1								169, 451, 799	Tereza Menšíková
+P0681	681	Raimond Florent 								Raimond			Florent								Verdun-Lauragais					m	no		none									167, 255, 305, 839	Tereza Menšíková
+P1252	1252	Raimond Serda 								Raimond			Serda								Verdun-Lauragais		Toulouse			m	no		none										Tereza Menšíková
+P0064	64	Pierre André 								Pierre			André								Verdun-Lauragais, Castelnaudary	Verdun-Lauragais	Castelnaudary			m	no		none						d	husbandofID_ (Gensers André)		169, 355, 451, 483, 751, 759, 761, 799, 801, 813-817, 831, 1037	Tereza Menšíková
+P0937	937	Raimond Laboureur 								Raimond			Laboureur								Verdun-sur-Garonne					m	no		none									163, 575, 627, 975	Tereza Menšíková
+P1111	1111	Raimond Mir 								Raimond			Mir								Verfeil					m	no		none	1					d			173, 767, 797	Tereza Menšíková
+P0628	628	Arnaud Faure 								Arnaud			Faure								Verfeil					m	no		none									173, 1095, 1109	Tereza Menšíková
+P1022	1022	Pierre Magre 								Pierre			Magre								Verfeil					m	no		none									173, 619, 629	Tereza Menšíková
+P0431	431	Guillaume de Clairac								Guillaume						de	Clairac		Sr		Verlhac					m	no		none						d	sonofID_426 (Bernard de Clairac)		169, 297, 307, 345, 381, 383, 389, 391, 397, 485, 505, 511, 531, 615, 809, 939, 977	Tereza Menšíková
+P1262	1262	Bernard de Poste de guet								Bernard						de	Poste de guet			Vit de blé	Verlhac					m	no		none									169, 295, 307, 345, 361, 363, 385, 837, 979, 1439	Tereza Menšíková
+P0426	426	Bernard de Clairac								Bernard						de	Clairac				Verlhac-sur-Tescou					m	no		none	1								385, 389, 505, 615	Tereza Menšíková
+P1414	1414	Guillaume Salès 								Guillaume			Salès								Verlhac-sur-Tescou					m	no		none	1								393	Tereza Menšíková
+P1584	1584	Bernard 								Bernard											Vernaux					m	no		none										Tereza Menšíková
+P0204	204	Bernard de Bellegarde								Bernard						de	Bellegarde				Vertus					m	no		none									171, 315, 317	Tereza Menšíková
+P1596	1596	Arnaud Vidal 								Arnaud			Vidal								Vidal, Montpitol					m	no		none	1								125, 589, 627, 677, 769, 977	Tereza Menšíková
+P0419	419	Jean Chavoat 								Jean			Chavoat								Viella					m	v		none		Waldensian brother	Waldensian brother	dissident minister			sonofID_418 (Pierre Chavoat)		171, 1085, 1091, 1163, 1171-1175	Tereza Menšíková
+P1612	1612	Jean de Vienne								Jean						de	Vienne				Vienna					m	no		none								Citizen of Vienne; no page reference in the index.		Tereza Menšíková
+P0506	506	Vital 								Vital											Villebrumier					m	no		none										Tereza Menšíková
+P0414	414	Guillaume Chatmar 								Guillaume			Chatmar								Villemagne					m	no		none									171, 221, 225, 341, 359-363	Tereza Menšíková
+P0899	899	Géraud Isarn 								Géraud			Isarn								Villemur					m	no		none									173, 193, 217, 225, 285, 287, 307, 839, 873, 1151, 1161, 1445, 1485, 1487	Tereza Menšíková
+P1477	1477	Pierre Sicard 								Pierre			Sicard							Bouisse (de la)	Villemur		Villemur			m	no		none							sonofID_1473 (Sicard Teisseyre), sonofID_1474 (Peirone Sereine Sicard)		173, 217, 227, 283, 307, 369, 509, 511, 531, 569, 927, 929, 1483	Tereza Menšíková
+P1634	1634	(companion of Bernard de la Viguerie) 								(companion of Bernard de la Viguerie)																m	h		none		Good Christian	Good Christian	dissident minister		d	companionofID_1617 (Bernard de la Viguerie)	Not in PG name register. He seems isolated, not part of the Autier group or Aimery of Collet’s group in Albigeois, so it is unlikely that he is identical with any other heretic (i.e., the danger I am adding a Good Christians identical to some other person in the register is small).	1113, 1115	David Zbíral
+P1635	1635	(companion of Gaucelm) 								(companion of Gaucelm)																m	h		none		Good Christian	Good Christian	dissident minister		d	companionofID_753 (Gaucelm)	Not in PG name register. He seems isolated, not part of the Autier group or Aimery of Collet’s group in Albigeois, so it is unlikely that he is identical with any other heretic (i.e., the danger I am adding a Good Christians identical to some other person in the register).	737	David Zbíral
+P1633	1633	(companion of Ponce Fogassier) 	n							(companion of Ponce Fogassier)																m	h		none		Good Christian	Good Christian	dissident minister		d	companionofID_684 (Ponce Fogassier)	Not in PG name register. He seems isolated, not part of the Autier group or Aimery of Collet’s group in Albigeois, so it is unlikely that he is identical with any other heretic (i.e., the danger I am adding a Good Christians identical to some other person in the register).	181	David Zbíral
+P0448	448	Aimery de Collet								Aimery						de	Collet									m	h		none		Cathar bishop of Albigeois	Cathar bishop	dissident minister		d		Checked as Good Christian; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P0023	23	Albert 								Albert																m	h		none		Good Christian	Good Christian	dissident minister		d		Checked - heretici, adoration.	183	Tereza Menšíková
+P0618	618	Alzeu Faure 								Alzeu			Faure													m	no		none		priest	priest	churchperson		d		false informant	175, 1637	Tereza Menšíková
+P1337	1337	Amiel de Rieux								Amiel						de	Rieux									m	no		none		priest, vicar of Unac	priest, vicar	churchperson		d			129, 1637	Tereza Menšíková
+P1273	1273	André de Prades								André						de	Prades									m	h		none		Good Christian	Good Christian	dissident minister		d			197, 213, 223, 231-235, 239, 243, 245, 249, 251, 257, 259, 263, 279, 291, 295, 297, 319, 393, 475, 501, 593, 689, 947, 949, 997, 1001, 1005	Tereza Menšíková
+P0093	93	Arnaud 								Arnaud																m	h		none		Good Christian	Good Christian	dissident minister		d		Checked - Good Men called heretics.	267	Tereza Menšíková
+P0232	232	Arnaud Bernier 								Arnaud			Bernier													m	no		none						d	sonofID_230 (Raimond Bernier), sonofID_231 (Jeanne Bernier)		165, 245, 305, 839, 1439	Tereza Menšíková
+P0469	469	Arnaud Courtade 								Arnaud			Courtade													m	no		none		priest	priest	churchperson		d		false informer	175, 1637	Tereza Menšíková
+P0400	400	Arnaud de Cernon								Arnaud						de	Cernon									m	v		none		Waldensian brother	Waldensian brother	dissident minister	cleric	d	sonofID_399 (Gui de Cernon)		931, 985, 989, 1007, 1009, 1013, 1015, 1025, 1027, 1051, 1075-1079, 1449, 1461, 1465-1469, 1495, 1497, 1505, 1507, 1513, 1517, 1555, 1567	Tereza Menšíková
+P1305	1305	Arnaud Raimond 								Arnaud			Raimond													m	h		none		Good Christian	Good Christian	dissident minister		d		Checked as a Good Christian; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P1487	1487	Arnaud Sicre 								Arnaud			Sicre													m	no		none						d	sonofID_1484 (Pierre Sicre), sonofID_1486 (Ayceline Sicre)		151, 603, 605, 629, 631, 735, 873	Tereza Menšíková
+P0236	236	Ayceline Bernier 								Ayceline			Bernier													f	no		none						d	wifeofID_235 (Jean Bernier)		165, 213, 227	Tereza Menšíková
+P0180	180	Aymeri Barrot 								Aymeri			Barrot													m	h		none		Good Christian	Good Christian	dissident minister		d		Checked - heretici, adoration.	181, 183	Tereza Menšíková
+P0233	233	Bernard Bernier 								Bernard			Bernier													m	no		none						d	sonofID_230 (Raimond Bernier), sonofID_231 (Jeanne Bernier)		165, 245, 839, 1441	Tereza Menšíková
+P0026	26	Bernard d'Albigeois								Bernard						d'	Albigeois									m	v		none		Waldensian brother	Waldensian brother	dissident minister		d			931, 1075, 1087	Tereza Menšíková
+P0072	72	Bernard d'Antugnac								Bernard						d'	Antugnac									m	no		OFM			friar	churchperson		d		apostate	1347	Tereza Menšíková
+P1632	1632	Bernard de Carcassonne								Bernard						de	Carcassonne					Carcassonne				m	no		none						d		Palès-Gobilliard connects Bernard of Carcassonne knowing well Peter Autier and sympathetic of dissidence (p. 915) and a wittness, Bernard André alias of Carcassonne, canon in Narbonne (p. 1251); this is of course not the same person so I divide them.	915	David Zbíral
+P1617	1617	Bernard de la Viguerie								Bernard						de la	Viguerie									m	h		none		Good Christian	Good Christian	dissident minister		d		Checked, he is Good Christian.	1113, 1115	Tereza Menšíková
+P0935	935	Bernard de Laborderie								Bernard						de	Laborderie									m	h		none		Good Christian	Good Christian	dissident minister		d		Checked as Good Christian; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P0945	945	Bernard de Lagarrigue								Bernard						de	Lagarrigue									m	h		none		Good Christian	Good Christian	dissident minister		d		Checked as Good Christian; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P0500	500	Bernard Délicieux 								Bernard			Délicieux													m	no		OFM			friar	churchperson		d			95, 143, 1185-1205	Tereza Menšíková
+P0810	810	Bernard Gui 								Bernard			Gui													m	no		none						d	sonofID_809 (Vital Gui)		123, 587, 627, 631, 873	Tereza Menšíková
+P1469	1469	Bernard Guillaume Serda 								Bernard Guillaume			Serda													m	no		none		priest	priest	churchperson		d		false informer	175, 1637	Tereza Menšíková
+P1015	1015	Bernard Macip 								Bernard			Macip													m	no		none						d	sonofID_1013 (Bernard Macip), sonofID_1014 (Valence Macip)		131, 683, 685, 769, 977	Tereza Menšíková
+P1530	1530	Bernard Tilhols 								Bernard			Tilhols										Lombardy			m	h		none		Good Christian	Good Christian	dissident minister		d	brotherofID_890 (Arnaude Hugou), brotherofID_1531 (Ponce Tilhols)	Checked, he is Good Christian.	1037	Tereza Menšíková
+P0262	262	Bernarde Bolha 								Bernarde			Bolha													f	no		none						d	wifeofID_261 (Bernard Bolha)		167, 239, 255, 305, 837	Tereza Menšíková
+P1275	1275	Bernarde de Pradines								Bernarde					Bernier	de	Pradines									f	no		none						d	wifeofID_1274 (Hugues de Pradines), daughterofID_230 (Raimond Bernier), daughterofID_231 (Jeanne Bernier)		167, 759, 771, 979, 1439	Tereza Menšíková
+P1550	1550	Condors Usabe 								Condors			Usabe													f	no		none						d	wifeofID_1549 (Pierre Usabe)		167, 253, 305, 527, 531	Tereza Menšíková
+P1636	1636	Etiennette 								Etiennette																f	no		none						d	sisterofID_1474 (Peirone Sereine Sicard)	Not in PG name register (checked: all Etiennette, all relations of Pierre Doux who should be her brother, just like he is one of Peirone Sereine Sicard), and all people with "509" in Pages_or_folios. Probably not included because of unknown family name?	509, 511	David Zbíral
+P0778	778	Etiennette Gilbert 								Etiennette			Gilbert		Proault											f	no		none						d	wifeofID_777 (Pierre Gilbert), daughterofID_1287 (Martin Proault), daughterofID_1288 (Guillemette Proault)		159, 195, 199, 201, 1441	Tereza Menšíková
+P0753	753	Gaucelm 								Gaucelm																m	h		none		Good Christian	Good Christian	dissident minister		d		Checked: cited as heretic, has a companion.	737	Tereza Menšíková
+P0099	99	Géraud Artigues 								Géraud			Artigues													m	no		none						d	sonofID_98 (Arnaud Artigues)		155, 415, 417, 485, 619, 725, 767, 771, 881, 1441	Tereza Menšíková
+P0143	143	Guillaume Autier 								Guillaume			Autier													m	h		none		Good Christian	Good Christian	dissident minister		d	brotherofID_139 (Pierre Autier)		197, 213, 217, 231-235, 239, 243, 245, 251, 255-263, 277, 279, 285, 295, 297, 319, 341, 347, 365, 373-379, 387, 393, 397, 449, 469-475, 501, 505, 507, 521-525, 593, 657, 689, 909, 915, 917, 947, 949, 995, 997, 1001-1005	Tereza Menšíková
+P0329	329	Guillaume Bousquet 								Guillaume			Bousquet													m	h		none		Good Christian	Good Christian	dissident minister		d		Checked; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P1297	1297	Guillaume de Quié								Guillaume						de	Quié									m	no		none		cleric	cleric	churchperson		d		false witness	175, 1637	Tereza Menšíková
+P0513	513	Guillaume Didier 								Guillaume			Didier													m	h		none		Good Christian	Good Christian	dissident minister		d		Checked; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P0579	579	Guillaume Durand 								Guillaume			Durand													m	no		none						d	sonofID_577 (Raimond Durand), sonofID_578 (Arnaude Durand)		107, 377, 485, 1439	Tereza Menšíková
+P1016	1016	Guillaume Macip 								Guillaume			Macip													m	no		none						d	sonofID_1013 (Bernard Macip), sonofID_1014 (Valence Macip)		131, 427, 435, 437, 487, 1439	Tereza Menšíková
+P1419	1419	Guillaume Salès 								Guillaume			Salès										Sicily			m	h		none		Good Christian	Good Christian	dissident minister		d		Checked, he is a Good Christian.	231	Tereza Menšíková
+P0067	67	Guillemette André 								Guillemette			André		de Moure					Austorgue						f	no	y	none						d	wifeofID_66 (Pierre André), daughterofID_1155 (Guillaume de Moure), daughterofID_1156 (Guillemette de Moure)		157, 419, 611, 629, 631, 747, 749, 751, 761, 1037	Tereza Menšíková
+P1250	1250	Guillemette Ponsenc 								Guillemette			Ponsenc													f	no		none						d	widowofID_1249 (Bernard Ponsenc)		155, 257-259, 305, 925	Tereza Menšíková
+P1288	1288	Guillemette Proault 								Guillemette			Proault		Barri											f	no		none	1					d	wifeofID_1287 (Martin Proault), daughterofID_173 (Guillaume Raimond du Barri)	 	159, 213, 303, 311-315, 451, 457-461, 481, 547, 621	Tereza Menšíková
+P1455	1455	Guillemette Sartre 								Guillemette			Sartre													f	no		none						d	wifeofID_1454 (Hugues/Huguet/Hugonin Sartre)		155, 1023, 1029, 1033, 1441	Tereza Menšíková
+P0237	237	Isarn Bernier 								Isarn			Bernier													m	no		none						d	sonofID_230 (Raimond Bernier), sonofID_231 (Jeanne Bernier)		165, 247, 305, 839	Tereza Menšíková
+P0357	357	Isarn des Camps								Isarn						des	Camps									m	h		none		Good Christian	Good Christian	dissident minister		d		Checked; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P0140	140	Jacques Autier 								Jacques			Autier													m	h		none		Good Christian	Good Christian	dissident minister		d	sonofID_139 (Pierre Autier)		183, 187, 193, 197, 211-223, 231-305, 319, 345, 349, 351, 355-359, 363, 365, 371, 381, 385-391, 399-403, 407-413, 417-437, 441-457, 461, 463, 467-483, 501, 511, 515, 517, 523-529, 535, 547, 579-585, 593, 595, 601, 613, 619, 623, 645, 647, 651, 653, 657, 667-671, 679-685, 689-693, 697, 699, 711-717, 721, 723, 727, 729, 743, 753, 759, 775-779, 783, 791, 795, 797, 809, 813, 819, 823, 839, 841, 855, 881, 885, 887, 897-901, 909, 921, 925, 939, 941, 945-949, 995, 997, 1001, 1005, 1007, 1097-1101, 1119, 1477, 1483, 1485	Tereza Menšíková
+P0235	235	Jean Bernier 								Jean			Bernier													m	no		none						d	sonofID_230 (Raimond Bernier), sonofID_231 (Jeanne Bernier)		165, 213, 227, 243, 305, 839, 1439	Tereza Menšíková
+P1431	1431	Jean de la Salvetat		Iohannes				de	Salvetate	Jean						de la	Salvetat									m	no		none						d	sonofID_1429 (Raimond de la Salvetat), sonofID_1430 (Raimonde de la Salvetat)		145, 711, 769, 855-863	Tereza Menšíková
+P0457	457	Jean de na Comtesse 								Jean		de na	Comtesse													m	v		none		Waldensian brother	Waldensian brother	dissident minister	cleric	d			1009, 1027, 1049-1053, 1057, 1073-1079, 1087, 1185, 1469, 1503, 1515	Tereza Menšíková
+P1585	1585	Jean Vernet 								Jean			Vernet													m	no		none		cleric	cleric	churchperson		d			175, 1637	Tereza Menšíková
+P0231	231	Jeanne Bernier 								Jeanne			Bernier													f	no		none						d	widowofID_230 (Raimond Bernier)		169, 483, 759, 799, 839	Tereza Menšíková
+P0238	238	Laurent Bernier 								Laurent			Bernier													m	no		none						d	sonofID_230 (Raimond Bernier), sonofID_231 (Jeanne Bernier)		167, 757, 771, 1441	Tereza Menšíková
+P0990	990	Lombarde Lecger 								Lombarde			Lecger													f	no		none						d			147, 889, 893, 895	Tereza Menšíková
+P1498	1498	Matfre de Somart								Matfre						de	Somart									m	h		none		Good Christian	Good Christian	dissident minister		d		Checked, he is Good Christian.	1115	Tereza Menšíková
+P0775	775	Mathieu Germain 								Mathieu			Germain													m	h		none		Good Christian	Good Christian	dissident minister		d	sonofID_772 (Guillaume Germain), nephewofID_123 (Bernard Audoy)	Checked: cited as heretic.	231, 233, 477, 479, 939	Tereza Menšíková
+P1112	1112	Michel Mir 								Michel			Mir													m	no		none						d			173, 619, 767, 771, 977	Tereza Menšíková
+P1411	1411	P. de Sala								P.						de	Sala									m	h		none		Good Christian	Good Christian	dissident minister		d		Checked as a Good Christian; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P1008	1008	P. Loubet 								P.			Loubet													m	h		none		Good Christian	Good Christian	dissident minister		d		Checked, he really is a Good Christian.	1001	Tereza Menšíková
+P1474	1474	Peirone Sereine Sicard 								Peirone Sereine			Sicard													f	no	y	none						d	widowofID_1473 (Sicard Teisseyre), sisterofID_540 (Pierre Dous)	P. 511 added by DZ; she is even named there but not included by PG.	113, 371, 495, 509, 511, 763, 929, 1483	David Zbíral
+P0756	756	Perrin de Gaudoux								Perrin						de	Gaudoux			Perrin Wudry						m	v		none		Waldensian brother	Waldensian brother	dissident minister	cleric	d	sonofID_755 (Audry de Gaudoux)	PG messes things up totally when she refers "cf. Belis" under Gaudoux (de) Perrin, and when under Perrin without surname she refers to different Perrin as if they were the same. I went through all the references to P. Belis and P. de Gaudoux. They are different people (at p. 931 and 1049, they are cited both by the deponent, which is a clear proof). Perrin de Gaudoux is said to be cleric (p. 1021, 1489), and so just as PG, I assimilate the mentions of Perrin the cleric without surname under Perrin de Gaudoux (which is p. 1025, 1045, 1063, 1075, 1079, 1541, 1543). Problematic is Perrin without specification, which is p. 989 (here I adopt the conjecture that at p. 989 it is P. de Gaudoux; he accompanies Chrétien here but in fact both Belis and Gaudoux do), 1041 (but here, the same deponent enumerates the Waldenses he knows at 1043, and there it is Perrin de Gaudoux, so the identification is plausible), and also Perrin Wudri who teaches and walks with Guillaume Motier at p. 1013; Wudri is really his other surname (identity proven by p. 1581). Because his father is named Wudri de Gaudone (p. 1128), i.e. Wudri is the first name, Wudri is probably a form of Audry.	931, 985, 989, 1013, 1017-1021, 1025, 1041-1045, 1049, 1051, 1061-1065, 1069-1079, 1129, 1489, 1491, 1541, 1543, 1573-1577, 1581	David Zbíral
+P0470	470	Philippe de Coustaussa								Philippe						de	Coustaussa			Raimond		Talayrac				m	h		none		Good Christian	Good Christian	dissident minister		d			197, 223, 229-233, 259, 263, 275, 299-303, 319, 385-389, 413, 455, 469, 471, 481, 483, 493, 497, 501, 523-529, 547, 657, 661-665, 685, 687, 783, 793, 799, 811, 819, 843	Tereza Menšíková
+P0241	241	Pierre Bernier 								Pierre			Bernier													m	no		none						d	sonofID_239 (Bernard Bernier), sonofID_240 (Guillemette Bernier)		167, 255, 317-321, 355, 455, 471, 483, 569, 571, 615, 783, 875	Tereza Menšíková
+P1588	1588	Pierre de Vérone								Pierre						de	Vérone									m	h		none		Good Christian	Good Christian	dissident minister		d		Checked as a Good Christian; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P0530	530	Pierre Domergue d'Hunoux								Pierre			Domergue			d'	Hunoux					Narbonne				m	b		OFM		Franciscan tertiary	tertiary			d	sonofID_529 (Raimond Domergue)	Characterized as Beguin, I keep this but do not put him as "dissident minister". But p. 1396 he reads to others from Peter John Olivi. Also characterized as tertiary (p. 1601). 	143, 1347, 1369, 1601-1611, 1621	David Zbíral
+P1439	1439	Pierre Guillaume Sanchès 								Pierre Guillaume			Sanchès													m	no		none						d	sonofID_1435 (Pierre Sanchès), sonofID_1436 (Sibille Sanchès)		145, 221, 471, 475, 533, 655, 659, 663, 665, 711-715, 733, 881, 885, 887	Tereza Menšíková
+P0866	866	Pierre Guiraud 								Pierre			Guiraud										Gignac			m	b		none						d	sonofID_865 (Jean Guiraud)	Characterized as Beguin in the source. He wears the habit (p. 1621), but differentiated from tertiaries there.	125, 1347, 1601, 1603, 1621-1627, 1631, 1633	Tereza Menšíková
+P1451	1451	Pierre Raimond Sartre 								Pierre Raimond			Sartre													m	h		none		Good Christian	Good Christian	dissident minister		d	brotherofID_1450 (Bertrand Sartre)		187, 197, 211, 213, 221, 231-255, 259, 263, 277-281, 289-301, 319, 355-359, 363, 371, 415, 449-455, 463, 465, 469, 471, 479-483, 511, 517, 523, 525, 529, 535, 547, 593, 599, 613, 629, 641, 643, 647, 657, 681, 687, 699, 715, 753-765, 783, 819, 875, 901, 907, 911, 939, 943-949, 997, 1001, 1005, 1097, 1147, 1161	Tereza Menšíková
+P1441	1441	Pierre Sans 								Pierre			Sans						Jr							m	h		none		Good Christian	Good Christian	dissident minister		d	sonofID_1440 (Pierre Sans)		215, 223, 265, 275, 277, 341, 345-353, 363-387, 391-395, 401, 405-409, 413-421, 425-435, 439-443, 447, 497, 501-507, 513, 517, 519, 523, 525, 575, 579-591, 595-603, 609, 611, 615, 617, 621, 625, 627, 631-639, 649, 653, 657, 659, 663-679, 685, 697, 701-707, 719, 721, 725, 727, 731, 735, 741-745, 751, 757, 761, 763, 767, 775, 777, 781, 791-797, 805, 809, 811, 815-821, 827, 829, 849, 881, 887-893, 903, 905, 911, 913, 917-921, 939, 945, 995, 1099, 1101, 1125, 1457, 1479	Tereza Menšíková
+P1541	1541	Pierre Tort 								Pierre			Tort										Montréal			m	b		OFM		Franciscan tertiary	tertiary			d	sonofID_1540 (Mathieu Tort)	Characterized as Beguin and tertiary (p. 1351).	141, 1289, 1341, 1351, 1357, 1397, 1399, 1411, 1415, 1417, 1421, 1593	David Zbíral
+P1602	1602	Pierre Vidal 								Pierre			Vidal													m	h		none		Good Christian	Good Christian	dissident minister		d	companionofID_1305 (Arnaud Raimond)	Checked as a Good Christian; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P0188	188	Ponce d'en Bayle 								Ponce		d'en	Bayle							Ponce d'Ax						m	h		none		Good Christian	Good Christian	dissident minister		d	sonofID_187 (Sibille d'en Bayle)		229, 231, 319	Tereza Menšíková
+P0684	684	Ponce Fogassier 								Ponce			Fogassier													m	h		none		Good Christian	Good Christian	dissident minister		d		Checked: cited as heretic, has a companion (whom I added in the register).	181	Tereza Menšíková
+P1312	1312	Ponce Raynaud 								Ponce			Raynaud													m	h		none		Good Christian	Good Christian	dissident minister		d	companionofID_935 (Bernard de Laborderie)	Checked as a Good Christian; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P1531	1531	Ponce Tilhols 								Ponce			Tilhols										Lombardy			m	h		none		Good Christian	Good Christian	dissident minister		d	brotherofID_890 (Arnaude Hugou), brotherofID_1530 (Bernard Tilhols)	Checked, he is Good Christian. Page references added (not in PG) based on checking the references for his sister (nothing) and brother (1037); name Ponce under Arnaude Hugou but I did not find it under her page references.	1037	Tereza Menšíková
+P0243	243	Raimond Bernier 								Raimond			Bernier													m	no		none						d	sonofID_239 (Bernard Bernier), sonofID_240 (Guillemette Bernier)		247, 305	Tereza Menšíková
+P0074	74	Raimond d’ Antusan 								Raimond		d’	Antusan													m	b		OFM		Franciscan tertiary	tertiary			d	sonofIID_73 (Bernard d'Antusan), husbandofID_75 (Bernarde d'Antusan)		119, 1289, 1341-1351, 1357, 1417, 1421	David Zbíral
+P0499	499	Raimond Delboc 								Raimond			Delboc													m	h		none		Good Christian	Good Christian	dissident minister		d		Checked; in Albigeois, not part of the Autier circle.	997, 999, 1113, 1177, 1179	Tereza Menšíková
+P0514	514	Raimond Didier 								Raimond			Didier													m	h		none		Good Christian	Good Christian	dissident minister		d		Checked; in Albigeois, not part of the Autier circle.	997, 999	Tereza Menšíková
+P1563	1563	Raimond du Vaux								Raimond						du	Vaux									m	h		none		Good Christian	Good Christian	dissident minister		d		Checked as a Good Christian; in Albigeois, not part of the Autier circle.	1105	Tereza Menšíková
+P0577	577	Raimond Durand 								Raimond			Durand													m	no		none						d	brotherofID_574 (Gayssie Durand)		107, 371-377, 409, 485, 497, 509, 511, 785, 889-893, 977, 1439, 1441, 1479	Tereza Menšíková
+P0643	643	Raimond Faure 								Raimond			Faure													m	h		none		Good Christian	Good Christian	dissident minister		d		Checked, he really is a Good Christian.	365, 367, 373-379, 385-393, 405-409, 413, 469, 471, 497, 501, 527, 529, 547, 549, 625, 627, 657, 799, 843	Tereza Menšíková
+P0904	904	Raimond Isarn 								Raimond			Isarn										Sicily			m	h		none		"archdeacon" of Cathars of Sicily	Cathar deacon	dissident minister		d			231	Tereza Menšíková
+P0172	172	Ricarde du Barri								Ricarde						du	Barri									f	no		none						d	widowofID_173 (Guillaume Raimond du Barri)		159, 303, 311-315	Tereza Menšíková
+P1096	1096	Sanche Mercadier 								Sanche	Sanchet		Mercadier													m	h		none		Good Christian	Good Christian	dissident minister		d	sonofID_1090 (Jacques Mercadier)		343, 347, 349, 371-381, 385, 391, 393, 397, 413, 429, 497, 503, 505, 509, 577, 659, 701, 703, 707, 777, 829, 949, 1453, 1481	Tereza Menšíková
+P1014	1014	Valence Macip 								Valence			Macip													f	no		none						d	widowofID_1013 (Bernard Macip)		131, 351, 427, 433-437, 487, 685, 741	David Zbíral
+P1251	1251	Vésiade Ponsenc 								Vésiade			Ponsenc													f	no		none						d	wifeofID_1252 (Raimond Serda), daughterofID_1249 (Bernard Ponsenc), daughterofID_1250 (Guillemette Ponsenc)		155, 547-551	Tereza Menšíková
+P0124	124	Vital Audouy 								Vital			Audouy													m	no		none						d	illegitimatesonofID_123 (Bernard Audouy)	serves as ductor of his father	139, 221, 477, 479, 1137, 1159	Tereza Menšíková
+P1160	1160	 																																					
+P1637	1637	 																																					David Zbíral
+P1638	1638	 																																					David Zbíral
+P0208	208	(mother of Vital Audouy) 								(mother of Vital Audouy)																f	no		none							motherofID_124 (Vital Audouy), mistressofID_123 (Bernard Audouy)			Tereza Menšíková
+P0209	209	(wife of Guillaume Barrau) Barrau 								(wife of Guillaume Barrau)			Barrau													f	no		none							motherofID_161 (Durand Barrau), wifeofID_162 (Guillaume Barrau), sisterofID_1132 (Vital de Montaut)			Tereza Menšíková
+P0743	743	Adhémar Gasc 								Adhémar			Gasc													m	no		none	1						sonofID_741 (Raimond Gasc), sonofID_742 (Bernarde Gasc)		163, 343, 361	Tereza Menšíková
+P1360	1360	Adhémar Roques 								Adhémar			Roques													m	no		none	1						fatherofID_1412 (Guillaume Salavert)			Tereza Menšíková
+P0510	510	Agnès Desvignes 								Agnès			Desvignes		Aimon											f	no		none							daughterofID_12 (Pierre Aimon), daughterofID_13 (Martine Aimon), wifeofID_509 (Barthélemy Desvignes)		99, 1447, 1465, 1467, 1515, 1531	Tereza Menšíková
+P0060	60	Aladaycis Andegaud 								Aladaycis			Andegaud		Pourcel											f	no		none							wifeofID_59 (Raimond Andegaud), daughterofID_1266 (Guillaume Pourcel), daughterofID_1267 (Guillemette Pourcel)		131, 349, 361, 363, 1439	Tereza Menšíková
+P0134	134	Aladaycis Auriol 								Aladaycis			Auriol													f	no		none							widowofID_133 (Arnaud Auriol)		103, 621, 623, 629, 631	Tereza Menšíková
+P1581	1581	Aladaycis d'en Vernaux 								Aladaycis		d'en	Vernaux													f	no		none							wifeofID_1582 ((unknown first name) d'en Vernaux)		173, 1259	Tereza Menšíková
+P1140	1140	Aladaycis de Montlaur								Aladaycis						de	Montlaur									f	no		none							widowofID_1139 (Guillaume de Montlaur)		109, 653, 769	Tereza Menšíková
+P0658	658	Aladaycis Fays 								Aladaycis			Fays		Durand											f	no		none							wifeofID_657 (Hugues Fays), daughterofID_574 (Gayssie Durand)		137, 891, 893, 1441	Tereza Menšíková
+P1201	1201	Aladaycis Pellicier 								Aladaycis			Pellicier													f	no		none							widowofID_1200 (Raimond Pellicier)		123, 673, 769	Tereza Menšíková
+P1291	1291	Aladaycis Proault 								Aladaycis			Proault													f	no		none							wifeofID_1287 (Martin Proault), widowofID_549 (Guillaume Dubosc)	second wife of Martin Proault	161, 457-461, 487	Tereza Menšíková
+P0566	566	Aladaysic Dubosc 								Aladaysic			Dubosc		Auriol											f	no		none							daughterofID_133 (Arnaud Auriol), daughterofID_134 (Aladaycis Auriol), wifeofID_??? (Guillaume Dubosc)			Tereza Menšíková
+P0828	828	Alamande Guilabert 								Alamande			Guilabert													f	no		none							wifeofID_829 (Jean)		141, 1259	Tereza Menšíková
+P0627	627	Alaycis Faure 								Alaycis			Faure													f	no		none							wifeofID_626 (Arnaud Faure)		141, 1259	Tereza Menšíková
+P0557	557	Alexie Duprat 								Alexie			Duprat		Guilabert											f	no		none							wifeofID_556 (Etienne Duprat), daughterofID_814 (Bernard Guilabert), daughterofID_815 (Blanche Guilabert)		159, 301, 307, 839	Tereza Menšíková
+P0724	724	André Gari 								André			Gari													m	no		none							sonofID_722 (Guillaume Gari), sonofID_723 (Hélis Gari)		101, 1469, 1471, 1499, 1515, 1551, 1555, 1561	Tereza Menšíková
+P0619	619	Andrée Faure 								Andrée			Faure													f	no		none							widowofID_620 (Adam)		103, 219, 269, 357, 359, 471, 491, 495, 497	Tereza Menšíková
+P0105	105	Arnaud Artigues 								Arnaud			Artigues													m	no		none							sonofID_103 (Pierre Artigues), sonofID_104 (Guillemette Artigues)		155, 581, 585, 591, 725, 771, 797, 811, 879, 881, 893, 895, 975	Tereza Menšíková
+P0227	227	Arnaud Bernard 								Arnaud			Bernard													m	no		none									181	Tereza Menšíková
+P0295	295	Arnaud Bou 								Arnaud			Bou						Jr							m	no		none							sonofID_293 (Arnaud Bou), sonofID_294 (Raimonde Bou)		113, 369, 485, 1457	Tereza Menšíková
+P0340	340	Arnaud Brus 								Arnaud			Brus													m	no		none							sonofID_339 (Guillaume Brus)		145, 475, 477, 487, 1441	Tereza Menšíková
+P0427	427	Arnaud de Clairac								Arnaud						de	Clairac									m	no		none							sonofID_426 (Bernard de Clairac)		171, 615, 617, 629, 631, 977	Tereza Menšíková
+P1424	1424	Arnaud de la Salvetat								Arnaud						de la	Salvetat		Jr							m	no		none							sonofID_1422 (Arnaud de la Salvetat), sonofID_1423 (Bonne de la Salvetat)		145, 473, 487, 979, 1441	Tereza Menšíková
+P0960	960	Arnaud de Lanta								Arnaud						de	Lanta									m	no		none							sonofID_958 (Raimond de Lanta), sonofID_959 (Bernarde de Lanta)		149, 719, 803, 805, 809, 823, 825, 831	Tereza Menšíková
+P0488	488	Arnaud Déjean 								Arnaud			Déjean							Canhart						m	no		none							sonofID_489 (Jourdain)		133, 617, 629, 631	Tereza Menšíková
+P0852	852	Arnaud Guiraud 								Arnaud			Guiraud						Jr							m	no		none							sonofID_851 (Arnaud Guiraud)		119, 661, 663, 665, 769	Tereza Menšíková
+P0901	901	Arnaud Isarn 								Arnaud			Isarn													m	no		none							sonofID_899 (Géraud Isarn), sonofID_900 (Guillemette Isarn)		173, 217, 225, 1151, 1153, 1161, 1445, 1485-1489, 1531	Tereza Menšíková
+P1024	1024	Arnaud Maistre 								Arnaud			Maistre													m	no		none							brotherofID_1396 (Guillemette de Saint-Gilles)		265	Tereza Menšíková
+P1037	1037	Arnaud Marti 								Arnaud			Marti													m	no		none									529	Tereza Menšíková
+P1060	1060	Arnaud Maurel 								Arnaud			Maurel							Cantecorps						m	no		none							sonofID_1059 (Gilles Maurel)		107, 165, 353, 447, 487, 577, 579, 659, 769	Tereza Menšíková
+P1091	1091	Arnaud Mercadier 								Arnaud			Mercadier													m	no		none							sonofID_1090 (Jacques Mercadier)		113, 371, 485, 503, 511, 949, 951, 1441	Tereza Menšíková
+P1437	1437	Arnaud Sanchès 								Arnaud			Sanchès													m	no		none							sonofID_1435 (Pierre Sanchès), sonofID_1436 (Sibille Sanchès)		145, 713, 715, 769, 979	Tereza Menšíková
+P1475	1475	Arnaud Sicard 								Arnaud			Sicard							Bouisse (de la)						m	no		none							sonofID_1473 (Sicard Teisseyre), sonofID_1474 (Peirone Sereine Sicard)		113, 509, 777, 787	Tereza Menšíková
+P1514	1514	Arnaud Teisseyre 								Arnaud			Teisseyre													m	no		none							sonofID_1513 (Raimond Teisseyre)		119, 1289, 1293	Tereza Menšíková
+P1573	1573	Arnaud Verdun 								Arnaud			Verdun													m	no		none							sonofID_1571 (Guillaume Verdun), sonofID_1572 (Douce Verdun)		109, 647, 769	Tereza Menšíková
+P1608	1608	Arnaud Vidal 								Arnaud			Vidal													m	no		none							sonofID_1607 (Raimond Vidal)		117, 581, 627, 631, 1441	Tereza Menšíková
+P1427	1427	Arnaude de la Salvetat								Arnaude						de la	Salvetat									f	no		none							wifeofID_1426 (Pierre de la Salvetat)		145, 469, 487	Tereza Menšíková
+P0491	491	Arnaude Déjean 								Arnaude			Déjean		de Moure											f	no		none							widowofID_490 (Barthélemy Déjean), daughterofID_1155 (Guillaume de Moure), daughterofID_1156 (Guillemette de Moure)		159, 887, 907, 911, 943, 945	Tereza Menšíková
+P0578	578	Arnaude Durand 								Arnaude			Durand													f	no		none							wifeofID_577 (Raimond Durand)		107, 371, 375, 485, 889, 893	Tereza Menšíková
+P0600	600	Arnaude Espinet 								Arnaude			Espinet													f	no		none							wifeofID_599 (Raimond Espinet)		113, 645, 769, 909	Tereza Menšíková
+P0655	655	Arnaude Faure 								Arnaude			Faure													f	no		none							wifeofID_654 (Raimond Faure)		113, 909, 935, 979, 1439	Tereza Menšíková
+P0676	676	Arnaude Fils 								Arnaude			Fils													f	no		none									115, 911, 1125, 1127	Tereza Menšíková
+P0755	755	Audry de Gaudoux								Audry						de	Gaudoux									m	no		none	1								1019, 1029, 1129, 1441	Tereza Menšíková
+P0298	298	Austorgue Boué 								Austorgue			Boué		Raynes											f	no		none							wifeofID_ 297 (Arnaud Boué), daughterofID_1314 (Ponce Raynes), daughterofID_1315 (Guillemette Raynes)		139, 877, 879, 893	Tereza Menšíková
+P0894	894	Austorgue Hugou 								Austorgue			Hugou													f	no		none							wifeofID_893 (Guillaume Hugou)		151, 1003, 1005, 1029, 1031	Tereza Menšíková
+P0190	190	Ayceline Baynac 								Ayceline			Baynac													f	no		none							widowofID_189 (Guillaume Baynac)		113, 687, 793, 811	Tereza Menšíková
+P0647	647	Ayceline Faure 								Ayceline			Faure													f	no		none							widowofID_646 (Bernard Faure)		113, 789, 809, 997	Tereza Menšíková
+P0928	928	Ayceline Julia 								Ayceline			Julia													f	no		none							widowofID_929 (Pierre)		103, 357, 361	Tereza Menšíková
+P1486	1486	Ayceline Sicre 								Ayceline			Sicre													f	no		none							wifeofID_1484 (Pierre Sicre)	second wife of Pierre Sicre (#1484)	609, 731	Tereza Menšíková
+P0936	936	B. de Laborie								B.						de	Laborie									m	no		none									207	Tereza Menšíková
+P0041	41	Béatrice Aliguier 								Béatrice			Aliguier													f	no		none							daughterofID_38 (Guillaume (the elder) Aliguier), daughterofID_39 (Dominique Aliguier)		137, 281	Tereza Menšíková
+P0100	100	Béatrice Artigues 								Béatrice			Artigues													f	no		none							wifeofID_99 (Géraud Artigues)		155, 725, 771, 1441	Tereza Menšíková
+P0109	109	Béatrice Artigues 								Béatrice			Artigues													f	no		none							widowofID_108 (Ponce Artigues)		155, 939, 941	Tereza Menšíková
+P0328	328	Béatrice Bousquet 								Béatrice			Bousquet		Domergue											f	no		none							wifeofID_327 (Bernard Bousquet), daughterofID_532 ((unknown first name) Domergue), daughterofID_534 (Raimonde Domergue)		137, 899, 933, 1443	Tereza Menšíková
+P0361	361	Béatrice Capus 								Béatrice			Capus		Isarn											f	no		none							wifeofID_360 (Jean Capus), daughterofID_903 (Pierre Isarn)		139, 693, 769, 979, 1439	Tereza Menšíková
+P0946	946	Béatrice de Lagleise								Béatrice						de	Lagleise									f	no		none							widowofID_947 (Othon)		173, 1285	Tereza Menšíková
+P0317	317	Bérengère Bourrel 								Bérengère			Bourrel													f	no		none							wifeofID_318 (Arnaud)		105, 1285	Tereza Menšíková
+P1425	1425	Bermonde de la Salvetat								Bermonde						de la	Salvetat									f	no		none							wifeofID_1424 (Arnaud de la Salvetat)		145, 473, 475, 487, 979	Tereza Menšíková
+P0221	221	Bernard 								Bernard																m	v		none		Waldensian brother	Waldensian brother	dissident minister					1011, 1061	Tereza Menšíková
+P0040	40	Bernard Aliguier 								Bernard			Aliguier													m	no		none							sonofIID_38 (Guillaume (the elder) Aliguier), sonofIID_39 (Dominique Aliguier)		137, 279, 281, 305, 1149, 1151, 1161	Tereza Menšíková
+P0101	101	Bernard Artigues 								Bernard			Artigues													m	no		none							sonofID_1630 (Raimond)		155, 781, 787, 995, 1029, 1031, 1439	Tereza Menšíková
+P0169	169	Bernard Barre 								Bernard			Barre													m	no		none							sonofID_168 (Pierre Barre)		517	Tereza Menšíková
+P0324	324	Bernard Bourrel 								Bernard			Bourrel													m	no		none							sonofID_323 (Sanche Bourrel)		109, 305, 307, 445, 487, 519, 531, 575, 653	Tereza Menšíková
+P0004	4	Bernard d'en Adam 								Bernard		d'en	Adam													m	no		none										Tereza Menšíková
+P0214	214	Bernard d'Ornolac								Bernard						d'	Ornolac									m	no		none							husbandofID_213 (Guillemette Benet)			Tereza Menšíková
+P0429	429	Bernard de Clairac								Bernard						de	Clairac									m	no		none							sonofID_426 (Bernard de Clairac)		169, 171, 389, 485, 515, 761, 771, 979	Tereza Menšíková
+P0962	962	Bernard de Lanta								Bernard						de	Lanta									m	no		none							sonofID_960 (Arnaud de Lanta), sonofID_961 (Jeanne de Lanta)		149, 501, 675, 719, 803, 809, 821, 825, 829	Tereza Menšíková
+P1070	1070	Bernard de Maureville								Bernard						de	Maureville									m	no		none							sonofID_1068 (Guillaume de Maureville), sonofID_1069 (Raimonde de Maureville)		139, 919, 935, 979, 1439	Tereza Menšíková
+P1229	1229	Bernard de Pibres								Bernard						de	Pibres									m	no		none							sonofID_1228 (Guillaume de Pibres)		99, 125, 443, 487, 635, 675, 769, 1441	Tereza Menšíková
+P0572	572	Bernard Durand 								Bernard			Durand													m	no		none									887, 893	Tereza Menšíková
+P0638	638	Bernard Faure 								Bernard			Faure													m	no		none							sonofID_636 (Guillaume Faure), sonofID_637 (Rique Faure)		169, 1145, 1147, 1161	Tereza Menšíková
+P0648	648	Bernard Faure 								Bernard			Faure							Espan (?)						m	no		none							sonofID_646 (Bernard Faure), sonofID_647 (Ayceline Faure)		111, 293, 307, 1101, 1441	Tereza Menšíková
+P0725	725	Bernard Gari 								Bernard			Gari													m	no		none							sonofID_722 (Guillaume Gari), sonofID_723 (Hélis Gari)		1497	Tereza Menšíková
+P0745	745	Bernard Gasc 								Bernard			Gasc													m	no		none							sonofID_741 (Raimond Gasc), sonofID_742 (Bernarde Gasc)		163, 223, 343, 361, 379, 383, 385, 485, 569, 873	Tereza Menšíková
+P0873	873	Bernard Hugou 								Bernard			Hugou													m	no		none							sonofID_872 (Arnaud Hugou)		127, 683, 769, 977	Tereza Menšíková
+P0883	883	Bernard Hugou 								Bernard			Hugou							Adam						m	no		none							sonofID_884 (Adam)		127, 593, 627, 631, 681, 769, 977, 1439	Tereza Menšíková
+P1362	1362	Bernard Roques 								Bernard			Roques													m	no		none							sonofID_1361 (Arnaud Roques)		127, 675, 677, 705, 769, 979	Tereza Menšíková
+P1476	1476	Bernard Sicard 								Bernard			Sicard							Bouisse (de la)						m	no		none							sonofID_1473 (Sicard Teisseyre), sonofID_1474 (Peirone Sereine Sicard)		113, 369, 485, 509, 511, 703, 927, 929, 979, 1457, 1483	Tereza Menšíková
+P1489	1489	Bernard Sicre 								Bernard			Sicre													m	no		none							sonofID_1484 (Pierre Sicre), sonofID_1486 (Ayceline Sicre)		151, 607-611, 629, 873	Tereza Menšíková
+P1551	1551	Bernard Usabe 								Bernard			Usabe													m	no		none							sonofID_1549 (Pierre Usabe), sonofID_1550 (Condors Usabe)		167, 529, 531	Tereza Menšíková
+P0245	245	Bernarde Bernier 								Bernarde			Bernier													f	no		none							widowofID_244 (Raimond Bernier), sisterofID_64 (Pierre André)		169, 799	Tereza Menšíková
+P0075	75	Bernarde d’ Antusan 								Bernarde		d’	Antusan		Adam											f	no		none							wifeofID_74 (Raimond d'Antusan), daughterofID_4 (Bernard d'en Adam)		119, 1289, 1341, 1351, 1355, 1357, 1417, 1421	David Zbíral
+P0959	959	Bernarde de Lanta								Bernarde						de	Lanta									f	no		none							widowofID_958 (Raimond de Lanta)		149, 719, 803, 805, 809, 823, 825, 829	Tereza Menšíková
+P0670	670	Bernarde des Fillols								Bernarde						des	Fillols									f	no		none							wifeofID_669 (Pierre des Fillols)		153, 601, 629	Tereza Menšíková
+P0742	742	Bernarde Gasc 								Bernarde			Gasc		Clairac											f	no		none							widowofID_741 (Raimond Gasc), daughterofID_426 (Bernard de Clairac)		161, 163, 383, 485	Tereza Menšíková
+P0821	821	Bernarde Guilabert 								Bernarde			Guilabert													f	no		none							widowofID_820 (Arnaud Guilabert)		121, 669, 769	Tereza Menšíková
+P0834	834	Bernarde Guilhem 								Bernarde			Guilhem													f	no		none							widowofID_833 (Bernard Guilhem)		103, 573, 597, 633, 769	Tereza Menšíková
+P0856	856	Bernarde Guiraud 								Bernarde			Guiraud													f	no		none							widowofID_855 (Raimond Guiraud)		637, 903, 905	Tereza Menšíková
+P0878	878	Bernarde Hugou 								Bernarde			Hugou													f	no		none							wifeofID_877 (Pierre Raimond Hugou)		161, 901, 933, 979	Tereza Menšíková
+P1045	1045	Bernarde Mathieu 								Bernarde			Mathieu		Gari											f	no		none							widowofID_1044 (Guillaume Mathieu), daughterofID_722 (Guillaume Gari), daughterofID_723 (Hélis Gari)		99, 1447, 1511, 1515, 1531	Tereza Menšíková
+P1092	1092	Bernarde Mercadier 								Bernarde			Mercadier													f	no		none							wifeofID_1091 (Arnaud Mercadier)		113, 371, 485, 1441	Tereza Menšíková
+P1166	1166	Bernarde Nicolau 								Bernarde			Nicolau													f	no		none							wifeofID_1165 (Pierre Nicolau)		167, 169, 249, 305, 799	Tereza Menšíková
+P1319	1319	Bernarde Raynes 								Bernarde			Raynes		Peyre											f	no		none							wifeofID_1318 (Ponce Raynes), daughterofID_1219 (Raimond Peyre), daughterofID_1220 (Baragnone Peyre)		157, 601, 723, 771, 877	Tereza Menšíková
+P1510	1510	Bernarde Teisseyre 								Bernarde			Teisseyre													f	no		none							wifeofID_1509 (Bernard Teisseyre)		149, 921, 923, 935	Tereza Menšíková
+P1578	1578	Bernarde Verdun 								Bernarde			Verdun		Molinier											f	no		none							wifeofID_1577 (Paul Verdun), daughterofID_1116 (Arnaud Molinier), daughterofID_1117 (Condors Molinier)		109, 655, 769, 977, 1441	Tereza Menšíková
+P0588	588	Bertrand Engilbaus 								Bertrand			Engilbaus													m	no		none							uncleofID_242 (Serdane Bernier)		481, 615	Tereza Menšíková
+P0623	623	Bertrand Faure 								Bertrand			Faure													m	no		none							relativeorcousinofID_622 (Pierre Bertrand Faure)		875	Tereza Menšíková
+P1415	1415	Bertrand Salès 								Bertrand			Salès													m	no		none							sonofID_1414 (Guillaume Sales)		169, 171, 347, 361, 393, 395, 399, 485, 497, 569, 617, 763, 979	Tereza Menšíková
+P1105	1105	Bevengude Michel 								Bevengude			Michel													f	no		none							wifeofID_1104 (Pierre Michel), sisterofID_184 (Barthélemy)		101, 1505, 1527, 1559, 1561	Tereza Menšíková
+P1348	1348	Blanche de Rodes								Blanche						de	Rodes									f	no		none							wifeofID_1349 (Guillaume)		161, 1285	Tereza Menšíková
+P0175	175	Blanche du Barri								Blanche						du	Barri									f	no		none							wifeofID_174 (Jacques du Barri)		159, 213, 225	Tereza Menšíková
+P0815	815	Blanche Guilabert 								Blanche			Guilabert													f	no		none							widowofID_814 (Bernard Guilabert)		121, 273, 305, 399, 401, 419, 583, 585, 667, 669, 781, 839	Tereza Menšíková
+P1136	1136	Bon Macip de Montlaur								Bon Macip						de	Montlaur									m	no		none	1								651	Tereza Menšíková
+P0812	812	Bonassie Gui 								Bonassie			Gui		Guiraud											f	no		none							widowofID_811 (Guillaume Gui), daughterofID_851 (Arnaud Guiraud), mistressofID_673 (Pierre Fils)		167, 611, 747-751, 759, 761, 771, 815, 817, 1037, 1039	Tereza Menšíková
+P0362	362	Bonet Capus 								Bonet			Capus													m	no		none							sonofID_360 (Jean Capus), sonofID_361 (Béatrice Capus)		137, 593, 627, 873	Tereza Menšíková
+P0282	282	Bonin 								Bonin	Bonnet															m	no		none	1						fatherofID_420 (Agnès Chavoat)			Tereza Menšíková
+P1423	1423	Bonne de la Salvetat								Bonne						de la	Salvetat									f	no		none							wifeofID_1422 (Arnaud de la Salvetat)		145, 355, 361	Tereza Menšíková
+P0533	533	Bonne de Mazères								Bonne						de	Mazères									f	no		none							sisterofID_535 (Bernard Domergue)	PG misidentifies her as sister of Domergue de Mazères but p. 877 makes it clear that she is the sister of Bernard, his son. Surname added according to the name of her father.	877	David Zbíral
+P0496	496	Bonne Déjean 								Bonne			Déjean		Sicre											f	no		none							widowofID_495 (Pierre Déjean), daughterofID_1484 (Pierre Sicre)		161, 605, 609, 611, 629, 873	Tereza Menšíková
+P0575	575	Bonne Durand 								Bonne			Durand													f	no		none							wifeofID_574 (Gayssie Durand), sisterofID_525 (Peirone Domergue)		107, 379, 485, 889, 891	Tereza Menšíková
+P1524	1524	Bonne Teulier 								Bonne			Teulier		Verdun											f	no		none							wifeofID_1523 (Raimond Teulier), daughterofID_1571 (Guillaume Verdun), daughterofID_1572 (Douce Verdun)		109, 649, 769, 1443	Tereza Menšíková
+P0938	938	Braïde Laboureur 								Braïde			Laboureur		Teulier											m	no		none							wifeofID_938 (Raimond Laboureur), daughterofID_1523 (Raimond Teulier), daughterofID_1524 (Bonne Teulier)		163, 575, 577, 627, 631, 975	Tereza Menšíková
+P0562	562	Brulhes Duprat 								Brulhes			Duprat		Capus											f	no		none							wifeofID_561 (Arnaud Duprat), daughterofID_360 (Jean Capus), daughterofID_361 (Béatrice Capus)		137, 623, 629, 631	Tereza Menšíková
+P1255	1255	Brune de Pontgibaud								Brune						de	Pontgibaud									f	no		none							wifeofID_1254 (Pierre Raimond de Pontgibaud)		103, 441, 487, 677	Tereza Menšíková
+P0880	880	Brune Hugou 								Brune			Hugou													f	no		none							wifeofID_879 (Ponce Hugou)		127, 523, 525, 531, 591	Tereza Menšíková
+P0581	581	Châtelaine Durand Bastier 								Châtelaine			Durand Bastier		Clairac											f	no		none							wifeofID_580 (Dominique Durand Bastier), daughterofID_431 (Guillaume de Clairac)		109, 397, 485, 979, 1439	Tereza Menšíková
+P1076	1076	Chrétien Maynes 								Chrétien			Maynes													m	v		none		Waldensian brother	Waldensian brother	dissident minister					931, 985, 989, 1007-1015, 1019, 1021, 1025, 1027, 1043, 1051, 1055, 1059, 1065, 1069-1081, 1085, 1129, 1469, 1489, 1555, 1571, 1575, 1577, 1581	Tereza Menšíková
+P0652	652	Condors Faure 								Condors			Faure		Pouyloubrin											f	no		none							wifeofID_651 (Hispa Faure), daughterofID_1270 (Jean de Pouyloubrin), daughterofID_1271 (Dominique de Pouyloubrin)		163, 413, 415, 485, 979, 1439	Tereza Menšíková
+P1117	1117	Condors Molinier 								Condors			Molinier		de Montlaur											f	no		none							widowofID_1116 (Arnaud Molinier), daughterofID_1136 (Bon Macip de Montlaur)		109, 651, 769, 1441	Tereza Menšíková
+P1311	1311	Condors Raynaud 								Condors			Raynaud		Vidal											f	no		none							wifeofID_1310 (Pierre Raynaud), daughterofID_1596 (Arnaud Vidal), daughterofID_1597 (Jeanne Vidal)		125, 677, 769, 873	Tereza Menšíková
+P0482	482	Danin 								Danin																m	no		none								father of Perfect Vaudois 	1493	Tereza Menšíková
+P0532	532	Domergue de Mazères								Domergue						de	Mazères									m	no		none	1							Domergue used as first name in the records.	135, 639, 795, 809, 877, 899, 933, 977	David Zbíral
+P0039	39	Dominique Aliguier 								Dominique			Aliguier		Verdun											f	no		none							widowofID_38 (Guillaume (the elder) Aliguier), daughterofID_1571 (Guillaume Verdun), daughterofID_1572 (Douce Verdun)		139, 793	Tereza Menšíková
+P1271	1271	Dominique de Pouyloubrin								Dominique						de	Pouyloubrin									f	no		none							widowofID_1270 (Jean de Pouyloubrin)		163, 415, 801	Tereza Menšíková
+P1017	1017	Douce Macip 								Douce			Macip		Faysses											f	no		none							wifeofID_1016 (Guillaume Macip), daughterofID_1018 (Vital de Faysses)		131, 437, 487, 977, 1439	Tereza Menšíková
+P1572	1572	Douce Verdun 								Douce			Verdun													f	no		none							widowofID_1571 (Guillaume Verdun)		109, 645, 647, 791, 809	Tereza Menšíková
+P0161	161	Durand Barrau 								Durand			Barrau									Montastruc				m	no		none							sonofID_162 (Guillaume de feu), sonof#209 ((unknown first name) Barrau), uncleofID_1132 (Vital de Montaut)		143, 223, 227, 353, 499, 501, 531, 567	Tereza Menšíková
+P1609	1609	Durand Vidal 								Durand			Vidal													m	no		none							sonofID_1607 (Raimond Vidal)		117, 445, 447, 581, 763, 765, 791, 809	Tereza Menšíková
+P0014	14	Elie Aimon 								Elie			Aimon													m	no		none							sonofID_12 (Pierre Aimon), sonofID_13 (Martine Aimon)		99, 1445, 1451, 1453	Tereza Menšíková
+P0726	726	Elie Gari 								Elie			Gari													m	no		none							sonofID_722 (Guillaume Gari), sonofID_723 (Hélis Gari)		99, 1447, 1463, 1465, 1471, 1495-1499, 1531	Tereza Menšíková
+P0126	126	Ermengarde Audric 								Ermengarde			Audric													f	no		none							widowofID_125 (Guillaume Audric)		923, 935	Tereza Menšíková
+P1098	1098	Ermengarde Mercadier 								Ermengarde			Mercadier		Sans											f	no		none							widowofID_1097 (Guillaume Mercadier), daughterofID_1440 (Pierre Sans)		123, 423, 995, 1097, 1099, 1109	Tereza Menšíková
+P1374	1374	Ermengarde Ros 								Ermengarde			Ros													f	no		none							wifeofID_1373 (Raimond Ros), daughterofID_1340 (Mathieu), sisterofID_1339 (Guillemette Rigaud)		149, 405-409, 485, 785	Tereza Menšíková
+P1171	1171	Ermenie Odet 								Ermenie			Odet		Gari											f	no		none							widowofID_1170 (Jean Odet), daughterofID_732 (Gari)		101, 1587-1591	Tereza Menšíková
+P0862	862	Esclarmonde Guiraud 								Esclarmonde			Guiraud													f	no		none							wifeofID_861 (Raimond Guiraud)		105, 903, 905, 935	Tereza Menšíková
+P1495	1495	Esclarmonde Sicre 								Esclarmonde			Sicre													f	no		none							wifeofID_1494 (Ponce Sicre)		161, 1285	Tereza Menšíková
+P0260	260	Etienne Bojon 								Etienne			Bojon													m	no		none							brotherofID_259 (Adhémar Bojon)		989	Tereza Menšíková
+P0263	263	Etienne Bolha 								Etienne			Bolha													m	no		none							sonofID_261 (Bernard Bolha), sonofID_262 (Bernarde Bolha)		167, 257, 305, 837, 1439	Tereza Menšíková
+P0401	401	Etienne de Cernon								Etienne						de	Cernon									m	no		none							sonofID_399 (Gui de Cernon)		155, 1077, 1079, 1089	Tereza Menšíková
+P0511	511	Etienne Desvignes 								Etienne			Desvignes	de Na Bernarde												m	no		none							sonofID_508 (Pierre Desvignes)		99, 1447, 1461, 1465, 1471	Tereza Menšíková
+P0728	728	Etienne Gari 								Etienne			Gari													m	no		none							sonofID_722 (Guillaume Gari), sonofID_723 (Hélis Gari)		99, 1447, 1499, 1501, 1509, 1531	Tereza Menšíková
+P0425	425	Etienne Le Chrétien 								Etienne		Le	Chrétien													m	no		none							sonofID_423 (Huguet Le Chrétien), sonofID_424 (Perrette/Peirone Le Chrétien)		101, 1059, 1089	Tereza Menšíková
+P1193	1193	Etiennette de Pavie								Etiennette						de	Pavie									f	no		none							wifeofID_1192 (Humbert de Pavie)		1577	Tereza Menšíková
+P0767	767	Etiennette Géraud 								Etiennette			Géraud		Faure											f	no		none							wifeofID_766 (Raimond Géraud), daughterofID_646 (Bernard Faure), daughterofID_647 (Ayceline Faure)		163, 997, 1029	Tereza Menšíková
+P1175	1175	Etiennette Odet 								Etiennette			Odet		Aimon											f	no		none							wifeofID_1174 (Guillaume Odet), daughterofID_18 (Pierre Aimon), daughterofID_19 ((unknown first name) Aimon)		1555, 1557, 1561	Tereza Menšíková
+P0063	63	Fabrisse d'Andorre								Fabrisse						d'	Andorre	Andorran								f	no		none									105, 1285	Tereza Menšíková
+P1067	1067	Fabrisse Vidal 								Fabrisse			Vidal													f	no		none	1							Fabrissa is cited as Philippa's mother; it is not clear whether she is legally the wife of Philippa's father but I assume this in the Family name.		Tereza Menšíková
+P1610	1610	Fabrisse Vidal 								Fabrisse			Vidal		Bourrel											f	no		none							wifeofID_1609 (Durand Vidal), daughterofID_ (Sanche Bourrel)		119, 445, 791, 809	Tereza Menšíková
+P0666	666	Ferrand 								Ferrand																m	no		none								son of the King of Majorca	1195, 1197	Tereza Menšíková
+P0252	252	Fine Bertric 								Fine			Bertric		Lanta											f	no		none							wifeofID_251 (Raimond Bertric), daughterofID_958 (Raimond de Lanta), daughterofID_959 (Bernarde de Lanta)		147, 707, 825-831	Tereza Menšíková
+P0631	631	Gaillard Faure 								Gaillard			Faure													m	no		none							sonofID_630 (Arnaud Faure)		153, 727, 771, 979	Tereza Menšíková
+P0965	965	Gaillarde de Lanta								Gaillarde						de	Lanta									f	no		none							wifeofID_964 (Pierre de Lanta)		149, 717, 719, 769	Tereza Menšíková
+P1491	1491	Gaillarde Sicre 								Gaillarde			Sicre		Faure											f	no		none							wifeofID_1490 (Guillaume Sicre), daughterofID_642 (Pierre Faure)		151, 607, 629, 873	Tereza Menšíková
+P0718	718	Galtier 								Galtier																m	v		none		Waldensian brother	Waldensian brother	dissident minister					1061, 1077	Tereza Menšíková
+P1575	1575	Garsende Verdun 								Garsende			Verdun													f	no		none							wifeofID_1574 (Guillaume Verdun)		109, 645, 769, 773	Tereza Menšíková
+P0065	65	Gensers André 								Gensers			André													f	no		none							widowofID_64 (Pierre André), sisterofID_673 (Pierre Fils)		169, 759, 801	Tereza Menšíková
+P0764	764	Gérard 								Gérard																m	no		none							sonofID_694 (Formont/Formond)			Tereza Menšíková
+P0939	939	Gérard de Lartigue								Gérard						de	Lartigue			de Labruguière						m	no		none									1583, 1585	Tereza Menšíková
+P1614	1614	Gérard de Vienne								Gérard						de	Vienne									m	v		none		Waldensian brother	Waldensian brother	dissident minister					987, 1007, 1009, 1013, 1021, 1027, 1049-1053, 1059, 1077, 1079, 1087	Tereza Menšíková
+P1556	1556	Gérard Vales 								Gérard			Vales													m	v		none		Waldensian brother	Waldensian brother	dissident minister					1015	Tereza Menšíková
+P0695	695	Géraud Formont 								Géraud			Formont													m	no		none							sonofID_694 (Formont/Formond)	I take his father's name as his family name; this is often a problem with Burgundians in GuiSent, the identification with surname seems less widespread in that region.	131, 133, 1013, 1029, 1579, 1583, 1585	Tereza Menšíková
+P1453	1453	Germain Sartre 								Germain			Sartre													m	no		none							sonofID_1452 (Audry Sartre)		125, 1019, 1029, 1441	Tereza Menšíková
+P0265	265	Gilbert Bolha 								Gilbert			Bolha													m	no		none	1								237, 797, 837	Tereza Menšíková
+P1053	1053	Grande Maurand 								Grande			Maurand		Faure											f	no		none							wifeofID_1052 (Hugues Maurand), daughterofID_654 (Raimond Faure), daughterofID_655 (Arnaude Faure)		139, 697, 769	Tereza Menšíková
+P0275	275	Grazide Bolha 								Grazide			Bolha		Bolha									17		f	no		none							daughterofID_274 (Raimond Bolha)		169, 625, 629, 631	Tereza Menšíková
+P0864	864	Grazide Guiraud 								Grazide			Guiraud													f	no		none							wifeofID_863 (Guillaume Guiraud)		125, 589, 627	Tereza Menšíková
+P0999	999	Grazide Licier 								Grazide			Licier													f	no		none							widowofID_999 (Pierre)		141, 1285	Tereza Menšíková
+P1527	1527	Guillaume 								Guillaume																m	no		none							sonofID_1526 (Thibaud)		105, 991	Tereza Menšíková
+P0042	42	Guillaume Aliguier 								Guillaume			Aliguier						Jr							m	no		none							sonofIID_38 (Guillaume (the elder) Aliguier), sonofIID_39 (Dominique Aliguier)		137, 281, 305, 1149, 1151, 1161	Tereza Menšíková
+P0649	649	Guillaume Arnaud Faure 								Guillaume Arnaud			Faure													m	no		none							sonofID_646 (Bernard Faure), sonofID_647 (Ayceline Faure)		111, 113, 219, 291, 293, 307, 411, 501, 503, 531, 643, 789, 823, 927, 1101	Tereza Menšíková
+P0110	110	Guillaume Artigues 								Guillaume			Artigues													m	no		none							sonofID_108 (Ponce Artigues), sonofID_109 (Béatrice Artigues)		155, 603, 629, 631, 873	Tereza Menšíková
+P0141	141	Guillaume Autier 								Guillaume			Autier													m	no		none							sonofID_139 (Pierre Autier)		481	Tereza Menšíková
+P0191	191	Guillaume Baynac 								Guillaume			Baynac													m	no		none							sonofID_189 (Guillaume Baynac), sonofID_190 (Ayceline Baynac)		129, 657, 685, 687, 769, 977, 1439	Tereza Menšíková
+P0264	264	Guillaume Bolha 								Guillaume			Bolha													m	no		none							sonofID_261 (Bernard Bolha), sonofID_262 (Bernarde Bolha)		167, 251, 305, 837	Tereza Menšíková
+P0341	341	Guillaume Brus 								Guillaume			Brus						Jr							m	no		none							sonofID_339 (Guillaume Brus)		145, 709, 711, 769, 1441	Tereza Menšíková
+P0195	195	Guillaume de Baysses								Guillaume						de	Baysses									m	no		none							sonofID_192 (Pierre de Baysses), sonofID_193 (Peirone de Baysses)		111, 1445, 1457, 1459, 1471	Tereza Menšíková
+P0433	433	Guillaume de Clairac								Guillaume						de	Clairac		Jr							m	no		none							sonofID_431 (Guillaume de Clairac)		169, 391, 413, 485, 839, 977	Tereza Menšíková
+P0454	454	Guillaume de Combe Guilha								Guillaume						de	Combe Guilha									m	no		none									883, 893, 895	Tereza Menšíková
+P0966	966	Guillaume de Lanta								Guillaume						de	Lanta									m	no		none							illegitimatesonofID_964 (Pierre de Lanta)		149, 701, 805, 809	Tereza Menšíková
+P1157	1157	Guillaume de Moure								Guillaume						de	Moure									m	no		none							sonofID_1155 (Guillaume de Moure), sonofID_1156 (Guillemette de Moure)		157, 751, 771, 911	Tereza Menšíková
+P1412	1412	Guillaume de Salavert								Guillaume						de	Salavert									m	no		none							sonofID_1360 (Adhémar Roques)		117, 997, 999, 1029, 1031	Tereza Menšíková
+P0546	546	Guillaume Dubosc 								Guillaume			Dubosc													m	no		none							sonofID_544 (Guillaume Dubosc), sonofID_545 (Jeanne Dubosc)		111, 1445, 1451, 1453	Tereza Menšíková
+P0611	611	Guillaume Falquet 								Guillaume			Falquet													m	no		none							sonofID_1515 (Raimonde Teisseyre)		165, 223, 227, 307, 309, 419, 449, 615, 1141, 1143, 1161, 1177	Tereza Menšíková
+P0677	677	Guillaume Fizansa 								Guillaume			Fizansa													m	no		none	1								775	Tereza Menšíková
+P0772	772	Guillaume Germain 								Guillaume			Germain													m	no		none	1								139, 221, 477	Tereza Menšíková
+P0805	805	Guillaume Gui 								Guillaume			Gui						Jr							m	no		none							sonofID_804 (Guillaume Gui)		121, 123, 271, 273, 305, 833, 977	Tereza Menšíková
+P0853	853	Guillaume Guiraud 								Guillaume			Guiraud													m	no		none							sonofID_851 (Arnaud Guiraud)		119, 661-665, 769, 1441	Tereza Menšíková
+P0893	893	Guillaume Hugou 								Guillaume			Hugou													m	no		none							sonofID_892 (Jacques Hugou), nephewofID_139 (Pierre Autier)	nephew by his mother	151, 453, 1001, 1003, 1029, 1031, 1049, 1051	Tereza Menšíková
+P0902	902	Guillaume Isarn 								Guillaume			Isarn													m	no		none							sonofID_899 (Géraud Isarn), sonofID_900 (Guillemette Isarn)		173, 193, 217	Tereza Menšíková
+P1033	1033	Guillaume Margual 								Guillaume			Margual													m	no		none									115	Tereza Menšíková
+P1046	1046	Guillaume Mathieu 								Guillaume			Mathieu													m	no		none							sonofID_79 (Guillaume Mathieu), brotherofID_78 (Jeanne de Aragon)		1463	Tereza Menšíková
+P1095	1095	Guillaume Mercadier 								Guillaume			Mercadier													m	no		none							sonofID_1090 (Jacques Mercadier)		113, 503, 531, 1459	Tereza Menšíková
+P1099	1099	Guillaume Mercadier 								Guillaume			Mercadier													m	no		none							sonofID_1097 (Guillaume Mercadier), sonofID_1098 (Ermengarde Mercadier)		123, 421, 423, 485, 977, 1439	Tereza Menšíková
+P1128	1128	Guillaume Monge 								Guillaume			Monge							Peytes						m	no		none							sonofID_1127 (Guillaume Monge)		131, 351, 361, 427, 429, 439, 443, 583, 589, 595, 597, 621, 741, 743, 771, 773, 1439	Tereza Menšíková
+P1143	1143	Guillaume Morès 								Guillaume			Morès									Belpech				m	no		none	1								1315	Tereza Menšíková
+P1147	1147	Guillaume Motier 								Guillaume	Guillaumet/Guillermet		Motier													m	v		none		Waldensian brother	Waldensian brother	dissident minister					1013-1021, 1045, 1063, 1069-1077, 1489, 1573-1577, 1581	Tereza Menšíková
+P0576	576	Guillaume Pierre Durand 								Guillaume Pierre			Durand													m	no		none							sonofID_574 (Gayssie Durand), sonofID_575 (Bonne Durand)		107, 341, 361, 567	Tereza Menšíková
+P1266	1266	Guillaume Pourcel 								Guillaume			Pourcel						Sr	Calvet						m	no		none							sonofID_1265 (Guillaume Pourcel)		131, 349, 351, 363, 425-439, 443, 487, 633, 725, 775, 821, 921, 1439	Tereza Menšíková
+P1268	1268	Guillaume Pourcel 								Guillaume			Pourcel						Jr							m	no		none							sonofID_1266 (Guillaume Pourcel), sonofID_1267 (Guillemette Pourcel)		131, 427, 429, 435, 487, 685	Tereza Menšíková
+P1371	1371	Guillaume Ros 								Guillaume			Ros													m	no		none							sonofID_1369 (Bernard Ros), sonofID_1370 (Guillemette Ros)		701, 705	Tereza Menšíková
+P1483	1483	Guillaume Sicre 								Guillaume			Sicre													m	no		none							brotherofID_1484 (Pierre Sicre)	eldest son	737, 739, 771	Tereza Menšíková
+P1490	1490	Guillaume Sicre 								Guillaume			Sicre													m	no		none							sonofID_1484 (Pierre Sicre), sonofID_1486 (Ayceline Sicre)		151, 603-607, 629, 709, 731, 733, 737, 739, 771, 773	Tereza Menšíková
+P1525	1525	Guillaume Teulier 								Guillaume			Teulier													m	no		none							sonofID_1523 (Raimond Teulier), sonofID_1524 (Bonne Teulier)		111, 653, 769, 977	Tereza Menšíková
+P1545	1545	Guillaume Turques 								Guillaume			Turques													m	no		none							sonofID_1544 (Guillaume Turques)		139, 691, 769, 979, 1439	Tereza Menšíková
+P1574	1574	Guillaume Verdun 								Guillaume			Verdun						Jr							m	no		none							sonofID_1571 (Guillaume Verdun), sonofID_1572 (Douce Verdun)		109, 303, 307, 521, 531, 645, 649, 769, 773	Tereza Menšíková
+P0142	142	Guillemette 								Guillemette																f	no		none							daughterofID_139 (Pierre Autier)		577, 651	Tereza Menšíková
+P0843	843	Guillemette 								Guillemette																f	no		none							widowofID_844 (Guillaume)		105, 1287	Tereza Menšíková
+P0016	16	Guillemette Aimon 								Guillemette			Aimon		Gari											f	no		none							wifeofID_15 (Jean Aimon), daughterofID_722 (Guillaume Gari), daughterofID_723 (Hélis Gari)		101, 1449, 1451, 1557, 1561	Tereza Menšíková
+P0104	104	Guillemette Artigues 								Guillemette			Artigues													f	no		none							widowofID_103 (Pierre Artigues)		155, 581, 585, 589, 797, 811, 881	Tereza Menšíková
+P0157	157	Guillemette Barguignol 								Guillemette			Barguignol		Pipier											f	no		none							wifeofID_156 (Etienne Barguignol), daughterofID_1237 (Humbert/Berret/Berthet Pipier), daughterofID_1238 (Jeanne Pipier)		141, 1087, 1091	Tereza Menšíková
+P0212	212	Guillemette Benet 								Guillemette			Benet													f	no		none							wifeofID_211 (Guillaume Benet)		141, 1259	Tereza Menšíková
+P0213	213	Guillemette Benet 								Guillemette			Benet													f	no		none							widowofID_214 (Bernard d'Ornolac)		143, 1285	Tereza Menšíková
+P0240	240	Guillemette Bernier 								Guillemette			Bernier													f	no		none							widowofID_239 (Bernard Bernier)		167, 783, 787	Tereza Menšíková
+P0268	268	Guillemette Bolha 								Guillemette			Bolha													f	no		none							wifeofID_267 (Sicard Bolha)		165, 239, 305, 837	Tereza Menšíková
+P0273	273	Guillemette Bolha 								Guillemette			Bolha		Molinier											f	no		none							wifeofID_272 (Pierre Bolha)		167, 783, 787	Tereza Menšíková
+P0314	314	Guillemette Bourguignon 								Guillemette			Bourguignon													f	no		none							wifeofID_315 (Guillaume Bourguignon)		1287	Tereza Menšíková
+P0321	321	Guillemette Bourrel 								Guillemette			Bourrel		Bourrel											f	no		none							daughterofID_320 (Pierre Bourrel)		465	Tereza Menšíková
+P0374	374	Guillemette Carrot 								Guillemette			Carrot													f	no		none							wifeofID_373 (Jean Carrot)		101, 1551, 1561	Tereza Menšíková
+P0443	443	Guillemette Clergue 								Guillemette			Clergue													f	no		none							wifeofID_444 (Pierre)		141, 1255	Tereza Menšíková
+P0453	453	Guillemette de Combe Guilha								Guillemette					Mercadier	de	Combe Guilha									f	no		none							widowofID_452 (Raimond Combe Guilha), daughterofID_1097 (Guillaume Mercadier), daughterofID_1098 (Ermengarde Mercadier), nieceofID_1441 (Pierre Sans)		115, 349, 361, 745, 873, 1099	Tereza Menšíková
+P0784	784	Guillemette de Gomairac								Guillemette					Sans	de	Gomairac									f	no		none							wifeofID_783 (Raimond de Gomairac), daughterofID_1440 (Pierre Sans)		107, 579, 627, 873	Tereza Menšíková
+P1156	1156	Guillemette de Moure								Guillemette						de	Moure									f	no		none							widowofID_1155 (Guillaume de Moure)		157, 879, 911, 935	Tereza Menšíková
+P1230	1230	Guillemette de Pibres								Guillemette						de	Pibres									f	no		none							wifeofID_1229 (Bernard de Pibres)		125, 635, 769, 1441	Tereza Menšíková
+P1263	1263	Guillemette de Poste de guet								Guillemette					Peyre	de	Poste de guet									f	no		none							wifeofID_1262 (Bernard de Poste de guet), daughterofID_1219 (Raimond Peyre), daughterofID_1220 (Baragnone Peyre)		169, 345, 361, 363, 837	Tereza Menšíková
+P1396	1396	Guillemette de Saint-Gilles								Guillemette					Maistre	de	Saint-Gilles									f	no		none							wifeofID_1395 (Raimond de Saint-Gilles)		107, 221, 265, 305	Tereza Menšíková
+P1402	1402	Guillemette de Saint-Papoul								Guillemette						de	Saint-Papoul									f	no		none									477	Tereza Menšíková
+P0520	520	Guillemette Domergue 								Guillemette			Domergue		de Baysses											f	no		none							wifeofID_519 (Raimond Domergue), daughterofID_192 (Pierre de Baysses)		111, 193, 213, 289, 307, 979, 1439	Tereza Menšíková
+P0522	522	Guillemette Domergue 								Guillemette			Domergue		Dous											f	no		none							widowofID_521 (Guillaume Pierre Domergue), daughterofID_540 (Pierre Dous)		113, 941, 1483	Tereza Menšíková
+P0560	560	Guillemette Duprat 								Guillemette			Duprat		Espan/Faure											f	no		none							wifeofID_559 (Arnaud Duprat), daughterofID_654 (Raimond Faure), daughterofID_655 (Arnaude Faure)		139, 695, 769	Tereza Menšíková
+P0635	635	Guillemette Faure 								Guillemette			Faure		Guilabert											f	no		none							wifeofID_634 (Raimond Faure), daughterofID_814 (Bernard Guilabert), daughterofID_815 (Blanche Guilabert)		137, 401, 405, 485, 979, 1439	Tereza Menšíková
+P0650	650	Guillemette Faure 								Guillemette			Faure		de Lanta											f	no		none							widowofID_649 (Guillaume Arnaud Faure), daughterofID_958 (Raimond de Lanta), daughterofID_959 (Bernarde de Lanta)		113, 219, 413, 789, 823, 927	Tereza Menšíková
+P0748	748	Guillemette Gasc 								Guillemette			Gasc													f	no		none							wifeofID_747 (Raimond Gasc)		841	Tereza Menšíková
+P0771	771	Guillemette Germain 								Guillemette			Germain		Audoy											f	no		none	1						sisterofID_123 (Bernard Audoy)		477	Tereza Menšíková
+P0806	806	Guillemette Gui 								Guillemette			Gui													f	no		none							wifeofID_805 (Guillaume Gui)		123, 273, 305, 977	Tereza Menšíková
+P0817	817	Guillemette Guilabert 								Guillemette			Guilabert		Raynes											f	no		none							wifeofID_816 (Vital Guilabert), daughterofID_1313 (Jean Raynes)		121, 585, 627	Tereza Menšíková
+P0819	819	Guillemette Guilabert 								Guillemette			Guilabert		Auroux											f	no		none							wifeofID_818 (Pierre Guilabert), daughterofID_137 (Arnaud Auroux)		121, 583, 587, 627, 793, 811, 1439	Tereza Menšíková
+P0827	827	Guillemette Guilabert 								Guillemette			Guilabert													f	no		none							wifeofID_827 (Pierre Guilabert)		121, 667	Tereza Menšíková
+P0885	885	Guillemette Hugou 								Guillemette			Hugou													f	no		none							wifeofID_883 (Bernard Hugou)		127, 593, 627, 631	Tereza Menšíková
+P0900	900	Guillemette Isarn 								Guillemette			Isarn													f	no		none							wifeofID_899 (Géraud Isarn)		173, 193, 287, 307	Tereza Menšíková
+P1073	1073	Guillemette Mauri 								Guillemette			Mauri													f	no		none									419	Tereza Menšíková
+P1152	1152	Guillemette Moulier 								Guillemette			Moulier													f	no		none							widowofID_1151 (Pierre Moulier)		161, 457, 461, 487	Tereza Menšíková
+P1260	1260	Guillemette Portal 								Guillemette			Portal													f	no		none							sisterinlawofID_834 (Bernarde Guilhem)		633	Tereza Menšíková
+P1267	1267	Guillemette Pourcel 								Guillemette			Pourcel													f	no		none							wifeofID_1266 (Guillaume Pourcel)		131, 431, 487	Tereza Menšíková
+P1284	1284	Guillemette Proault 								Guillemette			Proault		Bastide											f	no		none							widowofID_1283 (Arnaud Proault), daughterofID_1285 (Bernard Bastide)		161, 313, 315	Tereza Menšíková
+P1315	1315	Guillemette Raynes 								Guillemette			Raynes													f	no		none							widowofID_1314 (Ponce Raynes)		157, 491, 495, 497, 719, 723, 877, 897	Tereza Menšíková
+P1317	1317	Guillemette Raynes 								Guillemette			Raynes													f	no		none							wifeofID_1316 (Jean Raynes)		157, 601, 629, 631, 723, 873	Tereza Menšíková
+P1370	1370	Guillemette Ros 								Guillemette			Ros		Bertric											f	no		none							widowofID_1369 (Bernard Ros), daughterofID_249 (Guillaume Bertric), daughterofID_250 (Lombarde Bertric)		135, 377, 699-705, 769, 809, 821, 829, 1441	Tereza Menšíková
+P1485	1485	Guillemette Sicre 								Guillemette			Sicre													f	no		none							wifeofID_1484 (Pierre Sicre)	first wife of Pierre Sicre (#1484)	797	Tereza Menšíková
+P1565	1565	Guillemette Vayssière 								Guillemette			Vayssière													f	no		none							wifeofID_1564 (Raimond Vayssière)		105, 1285	Tereza Menšíková
+P0854	854	Guiraude Guiraud 								Guiraude			Guiraud		de la Salvetat											f	no		none							wifeofID_853 (Guillaume Guiraud), daughterofID_1429 (Raimond de la Salvetat), daughterofID_1430 (Raimonde de la Salvetat)		119, 663, 665, 769, 1441	Tereza Menšíková
+P1599	1599	Guiraude Vidal 								Guiraude			Vidal		Arnaud											f	no		none							wifeofID_1598 (???Vidal Vidal), daughterofID_88 (Guillaume Arnaud)		117, 777, 779, 787	Tereza Menšíková
+P0539	539	Hélis de las Donas								Hélis						de las	Donas									f	no		none							wifeofID_538 (Gérard de las Donas)		133, 1011, 1029, 1031, 1441	Tereza Menšíková
+P0723	723	Hélis Gari 								Hélis			Gari													f	no		none							widowofID_722 (Guillaume Gari)	kinship with Creyssan	99, 1499, 1513, 1537-1543, 1547, 1551	Tereza Menšíková
+P0116	116	Henri d'Athos								Henri						d'	Athos									m	no		none		commissionar of the chapter of Auch	comimissionar	churchperson						Tereza Menšíková
+P0730	730	Hugues Gari 								Hugues	Huguet		Gari													m	v		none		Waldensian brother	Waldensian brother	dissident minister			sonofID_722 (Guillaume Gari), sonofID_723 (Hélis Gari)	burned in Avignon	1449, 1451, 1461, 1463, 1467, 1469, 1493, 1497, 1501, 1513, 1517, 1537, 1543, 1547, 1555	Tereza Menšíková
+P1372	1372	Hugues Ros 								Hugues			Ros													m	no		none							sonofID_1369 (Bernard Ros), sonofID_1370 (Guillemette Ros)		135, 701, 705, 769, 809, 979, 1441	Tereza Menšíková
+P0402	402	Huguet de Cernon								Huguet						de	Cernon									m	no		none							sonofID_399 (Gui de Cernon)		155, 1079, 1089	Tereza Menšíková
+P0951	951	Huguet de Lamazugue								Huguet						de	Lamazugue									m	no		none							sonofID_948 (Pierre de Lamazugue)		135, 1073, 1089, 1443	Tereza Menšíková
+P0370	370	Huguette Carrot 								Huguette			Carrot													f	no		none							wifeofID_369 (Pierre Carrot)		99, 1537, 1541, 1547	Tereza Menšíková
+P0474	474	Huguette Creyssan 								Huguette			Creyssan													f	no		none									1467	Tereza Menšíková
+P1613	1613	Huguette de Vienne								Huguette					Rouget	de	Vienne									f	no		none							wifeofID_1612 (Jean de Vienne), daughterofID_1383 (Jean Rouget)		175, 1265, 1269, 1273, 1275	Tereza Menšíková
+P0731	731	Huguette Gari 								Huguette			Gari													f	no		none							daughterofID_722 (Guillaume Gari), daughterofID_723 (Hélis Gari)		1537	Tereza Menšíková
+P1381	1381	Huguette Rouan 								Huguette			Rouan													f	no		none							wifeofID_1380 (Jean Rouan), daughterofID_1102 (Michel)		99, 1447, 1509, 1531, 1541, 1543	Tereza Menšíková
+P0288	288	Humbert Bordet 								Humbert			Bordet													m	v		none		Waldensian brother	Waldensian brother	dissident minister					1061	Tereza Menšíková
+P1173	1173	Humbert Odet 								Humbert			Odet						Jr							m	no		none							sonofID_1170 (Jean Odet), sonofID_1171 (Ermenie Odet)		1555	Tereza Menšíková
+P1103	1103	Isabelle 								Isabelle	Isabeau															f	no		none							widowofID_1102 (Michel)		101, 1507, 1509, 1539-1543	Tereza Menšíková
+P0270	270	Isarn Bolha 								Isarn			Bolha													m	no		none							sonofID_269 (Pierre Bolha)		165, 235, 305, 613, 837, 1439	Tereza Menšíková
+P0910	910	Jacquemin 								Jacquemin																m	v		none		Waldensian brother	Waldensian brother	dissident minister					1061, 1537, 1553	Tereza Menšíková
+P0973	973	Jacques 								Jacques																m	no		none										Tereza Menšíková
+P0475	475	Jacques Creyssan 								Jacques			Creyssan													m	no		none									119, 1447, 1467-1473	Tereza Menšíková
+P0174	174	Jacques du Barri								Jacques						du	Barri									m	no		none							sonofID_173 (Guillaume Raimond du Barri)		159, 213, 225, 301, 307, 341, 873	Tereza Menšíková
+P0857	857	Jacques Guiraud 								Jacques			Guiraud													m	no		none							sonofID_855 (Raimond Guiraud), sonofID_856 (Bernarde Guiraud)		105, 639, 769, 901, 903, 935, 979, 1439	Tereza Menšíková
+P1087	1087	Jacques Mercadier 								Jacques			Mercadier													m	no		none							sonofID_1086 (Arnaud Mercadier)		141, 595, 627	Tereza Menšíková
+P1093	1093	Jacques Mercadier 								Jacques			Mercadier													m	no		none							sonofID_1090 (Jacques Mercadier)		111, 217, 225, 241	Tereza Menšíková
+P1221	1221	Jacques Peyre 								Jacques			Peyre													m	no		none							sonofID_1219 (Raimond Peyre), sonofID_1220 (Baragnone Peyre)		157, 297, 411, 413, 485, 489, 1443	Tereza Menšíková
+P0921	921	Jean 								Jean																m	no		none							fatherofID_963 (Raimonde de Lanta)			Tereza Menšíková
+P0015	15	Jean Aimon 								Jean			Aimon													m	no		none							sonofIID_12 (Pierre Aimon), sonofIID_13 (Martine Aimon), husbandofID_16 (Guillemette Aimon)		101, 1449, 1451, 1463, 1465, 1497, 1503, 1513-1517, 1545, 1557, 1561, 1563, 1567-1571	Tereza Menšíková
+P0135	135	Jean Auriol 								Jean			Auriol													m	no		none							sonofID_133 (Arnaud Auriol), sonofID_134 (Aladaycis Auriol)		621	Tereza Menšíková
+P0179	179	Jean Barrilet 								Jean			Barrilet													m	v		none		Waldensian brother	Waldensian brother	dissident minister					931, 1041	Tereza Menšíková
+P0271	271	Jean Bolha 								Jean			Bolha													m	no		none							sonofID_269 (Pierre Bolha)		167, 613, 629, 1439	Tereza Menšíková
+P0373	373	Jean Carrot 								Jean			Carrot													m	no		none							brotherofID_369 (Pierre Carrot)		101, 1549, 1561	Tereza Menšíková
+P0409	409	Jean Chaperon 								Jean			Chaperon													m	v		none		Waldensian brother	Waldensian brother	dissident minister					985, 987, 1007, 1009, 1013, 1051, 1055-1059, 1069, 1129, 1493, 1503, 1537, 1539, 1553	Tereza Menšíková
+P0036	36	Jean d'Alièze								Jean						d'	Alièze									m	no		none							sonofIID_35 (Guénard d'Alièze)		135, 1055, 1089, 1443	Tereza Menšíková
+P0194	194	Jean de Baysses								Jean						de	Baysses									m	no		none							sonofID_192 (Pierre de Baysses), sonofID_193 (Peirone de Baysses)		113, 573, 627, 977, 1457	Tereza Menšíková
+P1040	1040	Jean de Bolha								Jean						de	Bolha									m	v		none		Waldensian brother	Waldensian brother	dissident minister			sonofID_1039 (Martin de Bolha)	Surname not in PG, taken from the surname of his father.	931, 987, 1011, 1019, 1049, 1055, 1059, 1067, 1077, 1269	Tereza Menšíková
+P0331	331	Jean de Bresse								Jean						de	Bresse									m	v		none		Waldensian brother	Waldensian brother	dissident minister			sonofID_185 (Ponce Baudet)		115, 931, 953, 957, 1019, 1081, 1083, 1169	Tereza Menšíková
+P0332	332	Jean de Bretx								Jean						de	Bretx									m	no		none							sonofID_333 (Jacob)	Jewish convert	121, 153, 1039, 1089	Tereza Menšíková
+P0382	382	Jean de Castelnau								Jean						de	Castelnau									m	v		none		Waldensian brother	Waldensian brother	dissident minister					1061	Tereza Menšíková
+P0403	403	Jean de Cernon								Jean						de	Cernon									m	v		none		Waldensian brother	Waldensian brother	dissident minister			sonofID_399 (Gui de Cernon)		985, 989, 1007, 1009, 1013, 1019-1027, 1041, 1045, 1049, 1051, 1055, 1059, 1063, 1065, 1069, 1077-1083, 1271, 1449, 1451, 1461, 1465, 1467, 1493, 1499-1513, 1517, 1537-1541, 1553, 1565, 1575	Tereza Menšíková
+P0790	790	Jean de Grandvaux								Jean						de	Grandvaux									m	v		none		Waldensian brother	Waldensian brother	dissident minister					985, 1061, 1077, 1491, 1539, 1555	Tereza Menšíková
+P1007	1007	Jean de Lotharingie								Jean						de	Lotharingie									m	v		none		Waldensian majoral	Waldensian majoral	dissident minister					1269-1273	Tereza Menšíková
+P1071	1071	Jean de Maureville								Jean						de	Maureville									m	no		none							sonofID_1068 (Guillaume de Maureville), sonofID_1069 (Raimonde de Maureville)		139, 917, 919, 935, 979, 1439	Tereza Menšíková
+P0822	822	Jean Guilabert 								Jean			Guilabert													m	no		none	1								665, 667, 977	Tereza Menšíková
+P0823	823	Jean Guilabert 								Jean			Guilabert						Jr							m	no		none							sonofID_822 (Jean Guilabert)		121, 667, 669, 769, 977, 1439	Tereza Menšíková
+P1028	1028	Jean Malifart 								Jean			Malifart													m	v		none		Waldensian brother	Waldensian brother	dissident minister					1041, 1069, 1573	Tereza Menšíková
+P1094	1094	Jean Mercadier 								Jean			Mercadier													m	no		none							sonofID_1090 (Jacques Mercadier)		113, 345, 373, 405, 595, 601, 603, 699, 891, 909, 947-951, 1477	Tereza Menšíková
+P1142	1142	Jean Moran 								Jean			Moran													m	v		none		Waldensian brother	Waldensian brother	dissident minister					931, 991, 1015, 1019, 1021, 1043, 1051, 1053, 1065-1069, 1077-1081, 1085, 1087, 1169, 1493, 1503, 1515, 1539, 1553, 1565, 1571, 1575, 1577, 1581	Tereza Menšíková
+P1316	1316	Jean Raynes 								Jean			Raynes													m	no		none							sonofID_1314 (Ponce Raynes), sonofID_1315 (Guillemette Raynes)		157, 497, 601, 629, 631, 719, 723, 771, 873, 977	Tereza Menšíková
+P0078	78	Jeanne Aragon 								Jeanne			Aragon		Mathieu											f	no		none							widowofID_77 (Pierre Aragon), daughterofID_79 ((unknown first name) Mathieu)		99, 1447, 1463, 1471	Tereza Menšíková
+P0311	311	Jeanne Bourgade 								Jeanne			Bourgade		Sanchès											f	no		none							wifeofID_309 (Pierre Bourgade), daughterofID_1435 (Pierre Sanchès), daughterofID_1436 (Sibille Sanchès)		153, 887, 893, 895, 977	Tereza Menšíková
+P0372	372	Jeanne Carrot 								Jeanne			Carrot													f	no		none							wifeofID_371 (Pierre Carrot)		101, 1559, 1561	Tereza Menšíková
+P0391	391	Jeanne Caulier 								Jeanne			Caulier		Sainte-Foy											f	no		none							wifeofID_390 (Bernard Caulier), daughterofID_1408 (Bernard de Sainte-Foy), daughterofID_1409 (Bernarde de Sainte-Foy)		161, 453, 455, 487, 979, 1439	Tereza Menšíková
+P0428	428	Jeanne de Clairac								Jeanne						de	Clairac									f	no		none							wifeofID_427 (Arnaud de Clairac)		171, 617, 629, 977	Tereza Menšíková
+P1206	1206	Jeanne de la Pergue								Jeanne						de la	Pergue									f	no		none							wifeofID_1205 (Perrin de la Pergue)		105, 1027, 1029	Tereza Menšíková
+P1468	1468	Jeanne de la Selve								Jeanne					Artigues	de la	Selve									f	no		none							wifeofID_1467 (Bernard de la Selve), daughterofID_103 (Pierre Artigues), daughterofID_104 (Guillemette Artigues)		115, 581, 627, 873	Tereza Menšíková
+P0961	961	Jeanne de Lanta								Jeanne					Brosson	de	Lanta									f	no		none							wifeofID_960 (Arnaud de Lanta), daughterofID_338 (Hugues Brosson)		149, 823-827, 831	Tereza Menšíková
+P0545	545	Jeanne Dubosc 								Jeanne			Dubosc		Domergue											f	no		none							wifeofID_544 (Guillaume Dubosc), daughterofID_518 (Ricarde Domergue), daughterofID_517 (Guillaume Domergue)		113, 169, 643, 769, 1453, 1457	Tereza Menšíková
+P0551	551	Jeanne Dubosc 								Jeanne			Dubosc		Arquier											f	no		none							widowofID_550 (Pierre Dubosc), daughterofID_97 (Pierre Arquier)		921, 935	Tereza Menšíková
+P0639	639	Jeanne Faure 								Jeanne			Faure													f	no		none							daughterofID_636 (Guillaume Faure), daughterofID_637 (Rique Faure)		167, 483, 487, 1147	Tereza Menšíková
+P0729	729	Jeanne Gari 								Jeanne			Gari		Michel											f	no		none							wifeofID_728 (Etienne Gari), daughterofID_1102 (Michel), daughterofID_1103 (Isabelle/Isabeau Michel)		99, 1447, 1505, 1509, 1531	Tereza Menšíková
+P0739	739	Jeanne Gasc 								Jeanne			Gasc							Fizansa, la Gasconne						f	no		none							widowofID_738 (Pierre Gasc), sisterofID_835 (Bernard Guilhem)		103, 631, 633, 775, 789, 809, 883	Tereza Menšíková
+P0746	746	Jeanne Gasc 								Jeanne			Gasc													f	no		none							wifeofID_745 (Bernard Gasc)		163, 343, 361, 873	Tereza Menšíková
+P0808	808	Jeanne Gui 								Jeanne			Gui													f	no		none							wifeofID_807 (Raimond Gui)		123, 215, 225, 977	Tereza Menšíková
+P0825	825	Jeanne Guilabert 								Jeanne			Guilabert													f	no		none							daughterofID_823 (Jean Guilabert), daughterofID_824 (Raimonde Guilabert)		121, 669, 977, 1439	Tereza Menšíková
+P0842	842	Jeanne Guillaume 								Jeanne			Guillaume													f	no		none							wifeofID_841 (Bernard Guillaume)		451	Tereza Menšíková
+P0909	909	Jeanne Ivernat 								Jeanne			Ivernat		Faure											f	no		none							wifeofID_908 (Raimond Ivernat), daughterofID_646 (Bernard Faure), daughterofID_647 (Ayceline Faure)		111, 219, 225, 925, 1101, 1109	Tereza Menšíková
+P1063	1063	Jeanne Maurel 								Jeanne			Maurel													f	no		none							wifeofID_1062 (Perrin Maurel)		163, 353, 361, 567	Tereza Menšíková
+P1129	1129	Jeanne Monge 								Jeanne			Monge													f	no		none							wifeofID_1128 (Guillaume Monge), daughterofID_137 (Arnaud Auroux)		131, 351, 361, 597, 1439	Tereza Menšíková
+P1238	1238	Jeanne Pipier 								Jeanne			Pipier													f	no		none							wifeofID_1237 (Humbert/Berret/Berthet Pipier)		137, 1027, 1029, 1441	Tereza Menšíková
+P1533	1533	Jeanne Tisserand 								Jeanne			Tisserand													f	no		none							wifeofID_1532 (Martin Tisserand)		133, 1011, 1029, 1031, 1441	Tereza Menšíková
+P1597	1597	Jeanne Vidal 								Jeanne			Vidal													f	no		none							widowofID_1596 (Arnaud Vidal)		125, 589, 627, 977	Tereza Menšíková
+P1321	1321	Jeannette Régier 								Jeannette			Régier	Ragier/Ressegayre												f	no		none							wifeofID_1320 (Perrin Régier/Ragier/Ressegayre)		1583	Tereza Menšíková
+P0659	659	Jeannot Fays 								Jeannot			Fays													m	no		none							sonofID_657 (Hugues Fays), sonofID_658 (Aladaycis Fays)		891	Tereza Menšíková
+P0017	17	Jeannou Aimon 								Jeannou			Aimon													m	no		none							sonofIID_12 (Pierre Aimon), sonofIID_13 (Martine Aimon)		99, 1445, 1449, 1453	Tereza Menšíková
+P0927	927	Judas 								Judas																m	no		none									1371	Tereza Menšíková
+P1592	1592	Julienne Vertellier 								Julienne			Vertellier													f	no		none							wifeofID_1591 (Vincent Vertellier)		155, 1081, 1089, 1443	Tereza Menšíková
+P0254	254	Le Blanc 								Le Blanc																m	v		none		Waldensian brother	Waldensian brother	dissident minister			companionofID_1142 (Jean Moran)		1043	Tereza Menšíková
+P0250	250	Lombarde Bertric 								Lombarde			Bertric													f	no		none							widowofID_249 (Guillaume Bertric)		147, 701-705, 805, 809, 829	Tereza Menšíková
+P0881	881	Lombarde Hugou 								Lombarde			Hugou													f	no		none							daughterofID_879 (Ponce Hugou), daughterofID_880 (Brune Hugou)		127, 591, 627, 631	Tereza Menšíková
+P1327	1327	Lombarde Rialh 								Lombarde			Rialh													f	no		none							wifeofID_1326 (Pierre Arnaud Rialh)		153, 729, 771, 1441	Tereza Menšíková
+P0972	972	Marie Lasserre 								Marie			Lasserre													f	no		none							widowofID_973 (Jacques), daughterofID_789 (Jean de Goujon)		119, 1289, 1373, 1375, 1417, 1421	Tereza Menšíková
+P1529	1529	Marquèse Tignac 								Marquèse			Tignac													f	no		none							widowofID_1528 (Pierre Tignac)		105, 1287	Tereza Menšíková
+P1039	1039	Martin de Bolha								Martin						de	Bolha									m	no		none									931	Tereza Menšíková
+P1126	1126	Martin de Mongausy								Martin						de	Mongausy									m	v		none		Waldensian brother	Waldensian brother	dissident minister					1021	Tereza Menšíková
+P1562	1562	Martine de Varennes								Martine					Durand	de	Varennes									f	no		none							wifeofID_1561 (Sanche de Varennes), daughterofID_577 (Raimond Durand)		109, 889, 893, 977	Tereza Menšíková
+P0608	608	Matheude Eugène 								Matheude			Eugène		Autier											f	no		none							wifeofID_608 (Pierre Eugène), daughterofID_139 (Pierre Autier)		1003, 1005	Tereza Menšíková
+P1340	1340	Mathieu 								Mathieu																m	no		none	1									Tereza Menšíková
+P0563	563	Mathieu Dupré 								Mathieu			Dupré													m	no		none							sonofID_564 (Perret)		107, 1067, 1089, 1443	Tereza Menšíková
+P1540	1540	Mathieu Tort 								Mathieu			Tort													m	no		none	1	cutler	cutler	craftsman					1397	Tereza Menšíková
+P1054	1054	Maurande Maurand 								Maurande			Maurand											17		f	no		none							daughterofID_1052 (Hugues Maurand), daughterofID_1053 (Grande Maurand)		137, 623, 629, 631	Tereza Menšíková
+P0346	346	Mengarde Buscail 								Mengarde			Buscail													f	no		none							wifeofID_348 (Bernard)		147, 1255, 1289, 1293, 1295	Tereza Menšíková
+P1461	1461	Mengarde Savignan 								Mengarde			Savignan													f	no		none							widowofID_1460 (Raimond Savignan)		147, 1289, 1293, 1295	Tereza Menšíková
+P0796	796	Michel de Gratalou								Michel						de	Gratalou									m	no		none							sonofID_795 (Jean de Gratalou)		141, 1021, 1029, 1033, 1441	Tereza Menšíková
+P0415	415	Michelle Chatmar 								Michelle			Chatmar													f	no		none							wifeofID_414 (Guillaume Chatmar)		171, 359-363	Tereza Menšíková
+P0757	757	Monet de Gaudoux								Monet	Raimond					de	Gaudoux									m	no		none							sonofID_755 (Audry de Gaudoux)		125, 1019, 1021, 1029, 1441	Tereza Menšíková
+P0701	701	Montolive Francès 								Montolive			Francès													f	no		none							wifeofID_700 (Martin Francès)		129, 293, 809, 943, 997	Tereza Menšíková
+P1438	1438	Na Neus Sanchès 								Na Neus			Sanchès													f	no		none							daughterofID_1435 (Pierre Sanchès), daughterofID_1436 (Sibille Sanchès)		145, 715, 769	Tereza Menšíková
+P0997	997	Navarre de Lias								Navarre					Domergue	de	Lias									f	no		none							wifeofID_998 (Pierre de Lias), daughterofID_527 (Bonne Domergue), daughterofID_526 (Guillaume Domergue)		115, 583, 627	Tereza Menšíková
+P1443	1443	Navarre Sans 								Navarre			Sans													f	no		none							wifeofID_ (Raimond Sans)		123, 419, 485, 977, 1439	Tereza Menšíková
+P1176	1176	Odolin 								Odolin																m	v		none		Waldensian brother	Waldensian brother	dissident minister					1045	Tereza Menšíková
+P0629	629	Olive Faure 								Olive			Faure													f	no		none							wifeofID_628 (Arnaud Faure)		1095	Tereza Menšíková
+P1577	1577	Paul Verdun 								Paul			Verdun													m	no		none							sonofID_1576 (Pierre Verdun)		109, 575, 627, 631, 655, 769, 977, 1441	Tereza Menšíková
+P0032	32	Paulin d'Alièze								Paulin						d'	Alièze									m	no		none							sonofIID_31 (Bérard/Béraud/Bernard d'Alièze)		133, 987, 991, 1007, 1029, 1031	Tereza Menšíková
+P1079	1079	Paulin de Mazères								Paulin						de	Mazères									m	no		none							sonofID_1078 (Bernard de Mazères)		133, 987, 991, 1441	Tereza Menšíková
+P0043	43	Peirone Aliguier 								Peirone			Aliguier													f	no		none							daughterofID_38 (Guillaume (the elder) Aliguier), daughterofID_39 (Dominique Aliguier)		137, 689, 769	Tereza Menšíková
+P0052	52	Peirone Amiel 								Peirone			Amiel		Pibres											f	no		none							wifeofID_51 (Bernard Amiel), daughterofID_1229 (Bernard Pibres), daughterofID_1230 (Guillemette Pibres)		123, 673, 769	Tereza Menšíková
+P0083	83	Peirone Aribaud 								Peirone	Petrone		Aribaud													f	no		none							wifeofID_82 (Raimond Aribaud)		163, 621, 629, 1439	Tereza Menšíková
+P0106	106	Peirone Artigues 								Peirone			Artigues		Sanchès											f	no		none							wifeofID_105 (Arnaud Artigues), daughterofID_1435 (Pierre Sanchès), daughterofID_1436 (Sibille Sanchès)		155, 879, 893, 895, 975	Tereza Menšíková
+P0033	33	Peirone d'Alièze								Peirone						d'	Alièze									f	no		none							wifeofID_32 (Paulin d'Alièze)		133, 987, 991	Tereza Menšíková
+P0437	437	Peirone de Clairac								Peirone						de	Clairac									f	no		none							wifeofID_436 (Pierre de Clairac)		169, 387, 485, 617, 979	Tereza Menšíková
+P1080	1080	Peirone de Mazères								Peirone	Peironnette				Gratalou (Rouget)	de	Mazères									f	no		none							wifeofID_1079 (Paulin de Mazères), daughterofID_795 (Jean de Gratalou)		133, 987, 991	Tereza Menšíková
+P0525	525	Peirone Domergue 								Peirone			Domergue		Guilabert											f	no		none							wifeofID_524 (Pierre Raimond Domergue)		113, 927, 1157, 1161, 1445, 1481, 1483, 1531	Tereza Menšíková
+P0860	860	Peirone Guiraud 								Peirone			Guiraud													f	no		none							wifeofID_859 (Pierre Guiraud)		105, 905, 935, 1443	Tereza Menšíková
+P1109	1109	Peirone Miguel 								Peirone			Miguel		Audric											f	no		none							wifeofID_1108 (Raimond Miguel), daughterofID_125 (Guillaume Audric), daughterofID_126 (Emergarde Audric)		157, 923, 925, 935, 937	Tereza Menšíková
+P1185	1185	Peirone Pagès 								Peirone			Pagès		Déjean											f	no		none							wifeofID_1184 (Raimond Pagès), daughterofID_490 (Barthélemy Déjean), daughterofID_491 (Arnaude Déjean)		153, 907, 935, 1443	Tereza Menšíková
+P1478	1478	Peirone Sicard 								Peirone			Sicard		Isarn (?)											f	no		none							wifeofID_1477 (Pierre Sicard), daughterofID_899 (Géraud Isarn), daughterofID_900 (Guillemette Isarn)		173, 217, 227, 569, 909, 1483	Tereza Menšíková
+P0727	727	Peironnelle Gari 								Peironnelle			Gari		Aimon											f	no		none							daughterofID_12 (Pierre Aimon), daughterofID_13 (Martine Aimon), wifeofID_726 (Elie Gari)		99, 1447, 1463, 1465, 1471	Tereza Menšíková
+P1029	1029	Perddin Malifart 								Perddin			Malifart													m	v		none		Waldensian brother	Waldensian brother	dissident minister					1019, 1057, 1061, 1075, 1537, 1555	Tereza Menšíková
+P0011	11	Perrette Aimon 								Perrette			Aimon													f	no		none							widowofID_10 (Michel Aimon)		1563	Tereza Menšíková
+P0424	424	Perrette Le Chrétien 								Perrette	Peirone	Le	Chrétien													f	no		none							widowofID_423 (Huguet Le Chrétien)		101, 1061, 1089	Tereza Menšíková
+P0203	203	Perrin Belis 								Perrin			Belis													m	v		none		Waldensian brother	Waldensian brother	dissident minister				For identity slightly messed up by PG, see Perrin de Gaudoux. It is two different people.	931, 985, 1013, 1027, 1049, 1051, 1057, 1061, 1065, 1069, 1075, 1085	David Zbíral
+P0034	34	Perrin d'Alièze								Perrin						d'	Alièze									m	no		none							sonofIID_31 (Bérard/Béraud/Bernard d'Alièze)		133, 1009, 1029, 1031	Tereza Menšíková
+P1062	1062	Perrin Maurel 								Perrin			Maurel													m	no		none							sonofID_1059 (Gilles Maurel)		107, 163, 353, 361, 567, 577, 579, 627, 631	Tereza Menšíková
+P1625	1625	Perrin Vincendat 								Perrin			Vincendat													m	no		none							sonofID_1623 (Ponce Vincendat)		133, 1045, 1047, 1171-1175	Tereza Menšíková
+P1231	1231	Pierre 								Pierre																m	v		none		Waldensian brother	Waldensian brother	dissident minister					1079	Tereza Menšíková
+P0018	18	Pierre Aimon 								Pierre			Aimon													m	no		none							sonofIID_12 (Pierre Aimon), sonofIID_13 (Martine Aimon)		1445	Tereza Menšíková
+P0044	44	Pierre Aliguier 								Pierre			Aliguier													m	no		none							sonofIID_38 (Guillaume (the elder) Aliguier), sonofIID_39 (Dominique Aliguier)		137, 593, 627	Tereza Menšíková
+P0107	107	Pierre Artigues 								Pierre			Artigues						Jr							m	no		none							sonofID_103 (Pierre Artigues), sonofID_104 (Guillemette Artigues)		155, 619, 881, 893, 895, 977	Tereza Menšíková
+P0138	138	Pierre Auroux 								Pierre			Auroux													m	no		none							sonofID_136 (Durand Auroux)		143, 595, 627, 631	Tereza Menšíková
+P0785	785	Pierre Bernard de Gomairac								Pierre Bernard						de	Gomairac									m	no		none							sonofID_783 (Raimond de Gomairac) sonofID_784 (Guillemette de Gomairac)		107, 579, 627, 873	Tereza Menšíková
+P0269	269	Pierre Bolha 								Pierre			Bolha													m	no		none	1								235, 241, 613, 629, 837, 1439	Tereza Menšíková
+P0309	309	Pierre Bourgade 								Pierre			Bourgade													m	no		none							sonofID_310 (Jean)		153, 885, 887, 893, 895, 977	Tereza Menšíková
+P0322	322	Pierre Bourrel 								Pierre			Bourrel													m	no		none							sonofID_320 (Pierre Bourrel)		465	Tereza Menšíková
+P0326	326	Pierre Bourrel 								Pierre			Bourrel													m	no		none							sonofID_323 (Sanche Bourrel)		111, 1141, 1161	Tereza Menšíková
+P0363	363	Pierre Capus 								Pierre			Capus													m	no		none							sonofID_360 (Jean Capus), sonofID_361 (Béatrice Capus)		139, 695, 769, 979, 1439	Tereza Menšíková
+P0371	371	Pierre Carrot 								Pierre			Carrot						Jr							m	no		none							sonofID_369 (Pierre Carrot), sonofID_370 (Huguette Carrot)		101, 1537, 1547, 1549, 1559, 1561	Tereza Menšíková
+P0416	416	Pierre Chatmar 								Pierre			Chatmar													m	no		none							sonofID_414 (Guillaume Chatmar), sonofID_415 (Michelle Chatmar)		171, 221, 225, 341	Tereza Menšíková
+P0196	196	Pierre de Baysses								Pierre						de	Baysses		Jr							m	no		none							sonofID_192 (Pierre de Baysses), sonofID_193 (Peirone de Baysses)		111, 641	Tereza Menšíková
+P0404	404	Pierre de Cernon								Pierre	Perrin					de	Cernon									m	v		none		Waldensian brother	Waldensian brother	dissident minister			sonofID_399 (Gui de Cernon)		1009, 1017-1021, 1045, 1047, 1055, 1063, 1069-1073, 1077, 1079, 1169, 1451, 1465, 1467, 1489, 1493, 1499-1511, 1517, 1537-1541, 1553, 1565, 1573, 1577	Tereza Menšíková
+P0434	434	Pierre de Clairac								Pierre						de	Clairac		Jr							m	no		none							sonofID_431 (Guillaume de Clairac)		171, 383, 511, 513, 531, 615, 801, 809	Tereza Menšíková
+P0436	436	Pierre de Clairac								Pierre						de	Clairac									m	no		none							sonofID_426 (Bernard de Clairac)		169, 383-389, 485, 497, 513, 615, 617, 979	Tereza Menšíková
+P1426	1426	Pierre de la Salvetat								Pierre						de la	Salvetat									m	no		none							sonofID_1422 (Arnaud de la Salvetat), sonofID_1423 (Bonne de la Salvetat)		145, 467, 469, 487, 1441	Tereza Menšíková
+P0948	948	Pierre de Lamazugue								Pierre						de	Lamazugue									m	no		none	1								1489	Tereza Menšíková
+P0953	953	Pierre de Lamazugue								Pierre						de	Lamazugue			Gaudoux						m	no		none							sonofID_948 (Pierre de Lamazugue)		135, 1447, 1489, 1491, 1531	Tereza Menšíková
+P0998	998	Pierre de Lias								Pierre						de	Lias									m	no		none										Tereza Menšíková
+P1081	1081	Pierre de Mazères								Pierre						de	Mazères									m	no		none							sonofID_1078 (Bernard de Mazères)		133, 1441	Tereza Menšíková
+P0493	493	Pierre Déjean 								Pierre			Déjean													m	no		none									159, 913, 935	Tereza Menšíková
+P0505	505	Pierre Desforges 								Pierre			Desforges	Desfarges												m	no		none							sonofID_506 (Vital)		171, 617, 629, 631, 873	Tereza Menšíková
+P0528	528	Pierre Domergue 								Pierre			Domergue													m	no		none							sonofID_526 (Guillaume Domergue), sonofID_527 (Bonne Domergue)		153, 729, 771, 977, 1439	Tereza Menšíková
+P0547	547	Pierre Dubosc 								Pierre			Dubosc													m	no		none							sonofID_544 (Guillaume Dubosc), sonofID_545 (Jeanne Dubosc)		111, 289, 307, 979	Tereza Menšíková
+P0607	607	Pierre Eugène 								Pierre			Eugène													m	no		none									1003, 1005	Tereza Menšíková
+P0640	640	Pierre Faure 								Pierre			Faure							Bachelier						m	no		none							sonofID_636 (Guillaume Faure), sonofID_637 (Rique Faure)		167, 615, 629, 1147	Tereza Menšíková
+P0751	751	Pierre Gastaud 								Pierre	Perrin		Gastaud													m	no		none							sonofID_750 (Ponce Gastaud)		107, 1289, 1389, 1397, 1417, 1421, 1423	Tereza Menšíková
+P0826	826	Pierre Guilabert 								Pierre			Guilabert													m	no		none							sonofID_822 (Jean Guilabert), brotherofID_823 (Jean Guilabert)	eldest son	121, 665, 667, 769	Tereza Menšíková
+P0859	859	Pierre Guiraud 								Pierre			Guiraud													m	no		none							sonofID_855 (Raimond Guiraud), sonofID_856 (Bernarde Guiraud)		103, 105, 637, 639, 769, 905, 935, 979, 1439, 1443	Tereza Menšíková
+P0875	875	Pierre Hugou 								Pierre			Hugou													m	no		none							sonofID_874 (Raimond Hugou)		127, 357, 361, 363, 679, 769, 977	Tereza Menšíková
+P0898	898	Pierre Ichier 								Pierre			Ichier													m	no		none							sonofID_896 (Pierre Ichier), sonofID_897 (Etiennette Ichier)		151, 727, 771	Tereza Menšíková
+P0903	903	Pierre Isarn 								Pierre			Isarn													m	no		none	1								693	Tereza Menšíková
+P1104	1104	Pierre Michel 								Pierre			Michel													m	no		none							sonofID_1102 (Michel), sonofID_1103 (Isabelle/Isabeau Michel)		101, 1501, 1505, 1507, 1537, 1539, 1543, 1545, 1559, 1561, 1567	Tereza Menšíková
+P1144	1144	Pierre Morès 								Pierre			Morès													m	b		none							sonofID_1143 (Guillaume Morès)		107, 1289, 1303, 1315, 1329, 1417, 1421	Tereza Menšíková
+P1210	1210	Pierre Perret 								Pierre	Perrin		Perret													m	no		none							sonofID_1209 (Perret)		987, 991	Tereza Menšíková
+P1432	1432	Pierre Raimond de la Salvetat								Pierre Raimond						de la	Salvetat									m	no		none		artisan	artisan	craftsman			sonofID_1429 (Raimond de la Salvetat), sonofID_1430 (Raimonde de la Salvetat)		145, 473, 795	Tereza Menšíková
+P0524	524	Pierre Raimond Domergue 								Pierre Raimond			Domergue													m	no		none							sonofID_523 (Pierre Domergue)		113, 373, 639, 927, 951, 1157, 1161, 1445, 1475, 1477, 1481, 1483, 1531	Tereza Menšíková
+P1417	1417	Pierre Salès 								Pierre			Salès													m	no		none							sonofID_1415 (Bertrand Sales), sonofID_1416 (Vidalie Sales)		169, 347, 361, 393, 397, 569	Tereza Menšíková
+P1464	1464	Pierre Scopa 								Pierre			Scopa													m	no		none									709	Tereza Menšíková
+P1492	1492	Pierre Sicre 								Pierre			Sicre													m	no		none							sonofID_1484 (Pierre Sicre), sonofID_1486 (Ayceline Sicre)		151, 603, 607, 735, 739, 771, 1443	Tereza Menšíková
+P1066	1066	Pierre Vidal 								Pierre			Vidal													m	no		none	1	carpenter of Tounis in Toulouse,	carpenter 	manual worker						Tereza Menšíková
+P0108	108	Ponce Artigues 								Ponce			Artigues													m	no		none	1								155, 603, 939	Tereza Menšíková
+P0185	185	Ponce Baudet 								Ponce			Baudet													m	no		none	1						fatherofID_331 (Jean de Bresse)			Tereza Menšíková
+P0641	641	Ponce Faure 								Ponce			Faure							Bachelier						m	no		none							sonofID_636 (Guillaume Faure), sonofID_637 (Rique Faure)		169, 1147, 1161	Tereza Menšíková
+P1019	1019	Ponce Macip 								Ponce			Macip													m	no		none							sonofID_1013 (Bernard Macip), sonofID_1014 (Valence Macip)		131, 435, 437, 443, 487	Tereza Menšíková
+P1318	1318	Ponce Raynes 								Ponce			Raynes						Jr							m	no		none							sonofID_1314 (Ponce Raynes), sonofID_1315 (Guillemette Raynes)		157, 427-431, 601, 719, 723, 771, 897, 933	Tereza Menšíková
+P0421	421	Poncet Chavoat 								Poncet			Chavoat													m	no		none							sonofID_418 (Pierre Chavoat)		1085	Tereza Menšíková
+P1213	1213	Poncie Le Petit 								Poncie		Le	Petit													f	no		none							wifeofID_1212 (Jean Le Petit)		155, 1025, 1029, 1033, 1441	Tereza Menšíková
+P1536	1536	Poncie Tisserand 								Poncie			Tisserand													f	no		none							wifeofID_1535 (Richier Tisserand)		1577	Tereza Menšíková
+P1445	1445	Pros Sans 								Pros			Sans													f	no		none							wifeofID_1444 (Vital Sans)		123, 743, 745, 771, 773, 977	Tereza Menšíková
+P0355	355	Raimond 								Raimond																m	no		none	1									Tereza Menšíková
+P0251	251	Raimond Bertric 								Raimond			Bertric													m	no		none							sonofID_249 (Guillaume Bertric), sonofID_250 (Lombarde Bertric)		147, 377, 599, 677, 703-707, 719, 805, 821-827, 831, 1157-1161	Tereza Menšíková
+P0388	388	Raimond Cathala 								Raimond			Cathala													m	no		none							sonofID_387 (Bernard Cathala)		117, 1637	Tereza Menšíková
+P0660	660	Raimond de Faysser								Raimond						de	Faysser		Jr							m	no		none							sonofID_661 (Arnaud)		101, 351, 361, 873	Tereza Menšíková
+P0464	464	Raimond de la Côte-Saint-André								Raimond						de la	Côte-Saint-André									m	v		none		Waldensian brother	Waldensian brother	dissident minister					1267, 1271	Tereza Menšíková
+P1072	1072	Raimond de Maureville								Raimond						de	Maureville									m	no		none							sonofID_1068 (Guillaume de Maureville), sonofID_1069 (Raimonde de Maureville)		139, 603-607, 639, 707, 709, 731-735, 751, 769, 773, 815, 919, 921, 1099, 1101	Tereza Menšíková
+P1333	1333	Raimond de na Rica								Raimond						de na	Rica									m	no		none							sonofID_1331 (Pierre de Na Rica)		103, 569, 571, 627, 631	Tereza Menšíková
+P0519	519	Raimond Domergue 								Raimond			Domergue													m	no		none							sonofID_517 (Guillaume Domergue), sonofID_518 (Ricarde Domergue)		111, 193, 287, 289, 307, 507, 531, 573, 643, 645, 699, 979, 1439	Tereza Menšíková
+P0541	541	Raimond Dous 								Raimond			Dous													m	no		none							sonofID_540 (Pierre Dous)		173, 763, 765, 771	Tereza Menšíková
+P0548	548	Raimond Dubosc 								Raimond			Dubosc													m	no		none							sonofID_544 (Guillaume Dubosc), sonofID_545 (Jeanne Dubosc)		111, 1445, 1457, 1471	Tereza Menšíková
+P0599	599	Raimond Espinet 								Raimond			Espinet						Sr							m	no		none							sonofID_598 (Jean Espinet)		113, 575, 627, 645, 769, 775, 787, 909	Tereza Menšíková
+P0601	601	Raimond Espinet 								Raimond			Espinet						Jr							m	no		none							sonofID_599 (Raimond Espinet), sonofID_600 (Arnaude Espinet)		113, 575, 627, 631, 645	Tereza Menšíková
+P0634	634	Raimond Faure 								Raimond			Faure													m	no		none							brotherofID_632 (Guillaume Faure)		137, 399-405, 485, 979, 1439	Tereza Menšíková
+P0654	654	Raimond Faure 								Raimond			Faure							Espan (?)						m	no		none							sonofID_646 (Bernard Faure), sonofID_647 (Ayceline Faure)		111, 113, 291, 307, 695, 697, 909, 935, 979, 1439, 1477	Tereza Menšíková
+P0740	740	Raimond Gasc 								Raimond			Gasc													m	no		none							sonofID_738 (Pierre Gasc), sonofID_739 (Jeanne Gasc)		103, 427, 631, 769, 883, 885, 977	Tereza Menšíková
+P0807	807	Raimond Gui 								Raimond			Gui													m	no		none							sonofID_804 (Guillaume Gui)		123, 215, 225, 271, 305, 587, 977	Tereza Menšíková
+P0861	861	Raimond Guiraud 								Raimond			Guiraud													m	no		none							sonofID_855 (Raimond Guiraud), sonofID_856 (Bernarde Guiraud)		103, 105, 635-639, 709, 769, 903, 935	Tereza Menšíková
+P0874	874	Raimond Hugou 								Raimond			Hugou													m	no		none	1						brotherID_872 (Arnaud Hugou)		449, 523, 531, 679, 769, 847, 977	Tereza Menšíková
+P0882	882	Raimond Hugou 								Raimond			Hugou						Jr							m	no		none							sonofID_874 (Raimond Hugou)		465	Tereza Menšíková
+P0889	889	Raimond Hugou 								Raimond			Hugou													m	no		none	1						brotherofID_887 (Bernard Hugou)		149, 747, 761, 771, 773, 1035, 1089	Tereza Menšíková
+P1064	1064	Raimond Maurel 								Raimond			Maurel													m	no		none	1	carpenter of Tounis in Toulouse	carpenter 	manual worker					185	Tereza Menšíková
+P1202	1202	Raimond Pellicier 								Raimond			Pellicier						Jr							m	no		none							sonofID_1200 (Raimond Pellicier), sonofID_1201 (Aladaycis Pellicier)		123, 427, 429, 585, 627, 671, 769, 977, 1441	Tereza Menšíková
+P1222	1222	Raimond Peyre 								Raimond			Peyre						Jr							m	no		none							sonofID_1219 (Raimond Peyre), sonofID_1220 (Baragnone Peyre)		157, 411, 485	Tereza Menšíková
+P1330	1330	Raimond Rialh 								Raimond			Rialh													m	no		none							sonofID_1328 (Vital Rialh), sonofID_1329 (Sereine Rialh)		153, 781, 787	Tereza Menšíková
+P1442	1442	Raimond Sans 								Raimond			Sans													m	no		none							sonofID_1440 (Pierre Sans)		123, 349, 419, 485, 665, 667, 673, 819, 821, 831, 883, 977, 995, 1029, 1031, 1439	Tereza Menšíková
+P1447	1447	Raimond Sans 								Raimond			Sans													m	no		none							sonofID_1446 (Raimond Sans)		719, 771	Tereza Menšíková
+P1493	1493	Raimond Sicre 								Raimond			Sicre													m	no		none							sonofID_1484 (Pierre Sicre), sonofID_1486 (Ayceline Sicre)		151, 607, 609, 733, 771, 873	Tereza Menšíková
+P1307	1307	Raimonde 								Raimonde																f	no		none							sisterofID_428 (Jeanne de Clairac)			Tereza Menšíková
+P0102	102	Raimonde Artigues 								Raimonde			Artigues		Sans											f	no		none							widowofID_101 (Bernard Artigues), daughterofID_1440 (Pierre Sans)		155, 995, 1029, 1031, 1439	Tereza Menšíková
+P0177	177	Raimonde Barrière 								Raimonde			Barrière		Sans											f	no		none							widowofID_178 (Martin Barrière), sisterofID_1450 (Bertrand Sartre), sisterofID_1451 (Pierre Raimond Sartre)		155, 599, 627	Tereza Menšíková
+P1375	1375	Raimonde Bertric 								Raimonde			Bertric		Ros											f	no		none							daughterofID_1373 (Raimond Ros), daughterofID_1374 (Ermengarde Ros)		135, 701, 703, 769, 979, 1441	Tereza Menšíková
+P0266	266	Raimonde Bolha 								Raimonde			Bolha													f	no		none							widowofID_265 (Gilbert Bolha)		169, 239, 783, 797, 811	Tereza Menšíková
+P0294	294	Raimonde Bou 								Raimonde			Bou		Domergue											f	no		none							wifeofID_293 (Arnaud Bou), daughterofID_540 (Pierre Dous)		111, 365, 367, 485, 763	Tereza Menšíková
+P0347	347	Raimonde Buscail 								Raimonde			Buscail													f	no		none							wifeofID_349 (Raimond)		147, 1425, 1427	Tereza Menšíková
+P0028	28	Raimonde d'Albigeois								Raimonde						d'	Albigeois									f	no		none							widowID_27 (Raimond d'Albigeois)		151, 909, 935, 1443	Tereza Menšíková
+P1583	1583	Raimonde d'en Vernaux 								Raimonde		d'en	Vernaux													m	no		none							wifeofID_1584 (Bernard), widowofID_1596 (Arnaud Vidal)		173, 1637	Tereza Menšíková
+P0386	386	Raimonde de Castres								Raimonde						de	Castres									f	v		none		Waldensian sister	Waldensian sister	dissident minister					931	Tereza Menšíková
+P0430	430	Raimonde de Clairac								Raimonde						de	Clairac									f	no		none							wifeofID_429 (Bernard de Clairac)		169, 761, 771	Tereza Menšíková
+P0435	435	Raimonde de Clairac								Raimonde						de	Clairac									f	no		none							wifeofID_434 (Pierre de Clairac)		171, 383, 615, 801, 809	Tereza Menšíková
+P1430	1430	Raimonde de la Salvetat								Raimonde						de la	Salvetat									f	no		none							wifeofID_1429 (Raimond de la Salvetat)		145, 263, 305	Tereza Menšíková
+P0963	963	Raimonde de Lanta								Raimonde						de	Lanta									f	no		none							wifeofID_962 (Bernard de Lanta), daughterofID_921 (Jean)		149, 821, 831	Tereza Menšíková
+P0967	967	Raimonde de Lanta								Raimonde						de	Lanta									f	no		none							daughterofID_960 (Arnaud de Lanta), daughterofID_961 (Jeanne de Lanta)		149, 715, 769	Tereza Menšíková
+P1069	1069	Raimonde de Maureville								Raimonde						de	Maureville									f	no		none							widowofID_1068 (Guillaume de Maureville)		139, 1099, 1109	Tereza Menšíková
+P0534	534	Raimonde de Mazères								Raimonde						de	Mazères									f	no		none							widowofID_532 (Domergue de Mazères)	Surname added according to the name of her husband.	135, 641, 795, 809, 877	David Zbíral
+P1120	1120	Raimonde de Momolo								Raimonde						de	Momolo									f	no		none							wifeofID_1121 (Raimond de Momolo)		103, 571, 627, 631	Tereza Menšíková
+P0498	498	Raimonde Déjean 								Raimonde			Déjean		Artigues											f	no		none							wifeofID_1631 (Guillaume), daughterofID_103 (Pierre Artigues), daughterofID_104 (Guillemette Artigues)		127, 589, 591, 627, 873	Tereza Menšíková
+P1295	1295	Raimonde des Pujols								Raimonde						des	Pujols									f	no		none							wifeofID_1296 (Bernard)		101, 1637	Tereza Menšíková
+P0512	512	Raimonde Desvignes 								Raimonde			Desvignes		Aimon											f	no		none							daughterofID_12 (Pierre Aimon), daughterofID_13 (Martine Aimon), wifeofID_511 (Etienne Desvignes)		99, 1447, 1465, 1467, 1471	Tereza Menšíková
+P0625	625	Raimonde Faure 								Raimonde			Faure													f	no		none							widowofID_624 (Arnaud Faure)		133, 213, 227, 567	Tereza Menšíková
+P0787	787	Raimonde Got 								Raimonde			Got													f	no		none							widowofID_788 (Etienne)		121, 207	Tereza Menšíková
+P0792	792	Raimonde Granet 								Raimonde			Granet		Gasc											f	no		none							wifeofID_791 (Guillaume Granet), daughterofID_741 (Raimond Gasc), daughterofID_742 (Bernarde Gasc)		547, 549, 659, 713, 819, 943	Tereza Menšíková
+P0824	824	Raimonde Guilabert 								Raimonde			Guilabert													f	no		none							wifeofID_823 (Jean Guilabert)		121, 667, 671, 769	Tereza Menšíková
+P0858	858	Raimonde Guiraud 								Raimonde			Guiraud		Maureville											f	no		none							wifeofID_857 (Jacques Guiraud), daughterofID_1068 (Guillaume de Maureville), daughterofID_1069 (Raimonde de Maureville)		105, 639, 769, 979, 1439	Tereza Menšíková
+P0876	876	Raimonde Hugou 								Raimonde			Hugou													f	no		none							wifeofID_875 (Pierre Hugou)		127, 357, 361, 363	Tereza Menšíková
+P0045	45	Raimonde Maurand 								Raimonde			Maurand		Aliguier											f	no		none							nieceofID_38 (Guillaume (the elder) Aliguier), wifeofID_46 (Arnaud Maurand)			Tereza Menšíková
+P1061	1061	Raimonde Maurel 								Raimonde			Maurel													f	no		none							wifeofID_1060 (Arnaud Maurel), nieceofID_38 (Guillaume Aliguier)		107, 447, 449, 487, 577	Tereza Menšíková
+P1100	1100	Raimonde Mercadier 								Raimonde			Mercadier													f	no		none							wifeofID_1099 (Guillaume Mercadier)		123, 423, 485, 977, 1439	Tereza Menšíková
+P1162	1162	Raimonde Nègre 								Raimonde			Nègre		Sans											f	no		none							wifeofID_1161 (Bernard Nègre), daughterofID_1440 (Pierre Sans)		153, 729, 771, 781	Tereza Menšíková
+P1488	1488	Raimonde Sicre 								Raimonde			Sicre		Audian											f	no		none							wifeofID_1487 (Arnaud Sicre), daughterofID_122 (Arnaud Audian)		151, 605, 629, 873	Tereza Menšíková
+P1515	1515	Raimonde Teisseyre 								Raimonde			Teisseyre													f	no		none							motherofID_611 (Guillaume Falquet)		165, 223, 227, 1141	Tereza Menšíková
+P1520	1520	Raimonde Testanière 								Raimonde			Testanière													f	no		none							wifeofID_1521 (Bernard)		141, 1637	Tereza Menšíková
+P1552	1552	Raimonde Usabe 								Raimonde			Usabe													f	no		none							daughterofID_1549 (Pierre Usabe), daughterofID_1550 (Condors Usabe)		169, 625, 799	Tereza Menšíková
+P1606	1606	Raimonde Vidal 								Raimonde			Vidal		Guilabert											f	no		none							wifeofID_1605 (Raimond Vidal), daughterofID_820 (Arnaud Guilabert), daughterofID_821 (Bernarde Guilabert)		125, 679, 769, 873, 977	Tereza Menšíková
+P1324	1324	Réginald 								Réginald																m	v		none		Waldensian brother	Waldensian brother	dissident minister					1503	Tereza Menšíková
+P1535	1535	Richier Tisserand 								Richier			Tisserand													m	no		none									1577	Tereza Menšíková
+P0637	637	Rique Faure 								Rique			Faure													f	no		none							widowofID_636 (Guillaume Faure)		1147	Tereza Menšíková
+P1342	1342	Robert 								Robert																m	v		none		Waldensian brother	Waldensian brother	dissident minister					1061, 1075, 1565, 1573	Tereza Menšíková
+P1343	1343	Robert 								Robert																m	no		none		lord	lord	knight/noble					1339	Tereza Menšíková
+P0682	682	Robert Fochard 								Robert			Fochard													m	v		none		Waldensian brother	Waldensian brother	dissident minister					931	Tereza Menšíková
+P0768	768	Robert Géraud 								Robert			Géraud													m	no		none							sonofID_769 (Jean)		383, 485, 569	Tereza Menšíková
+P1148	1148	Robert Motier 								Robert			Motier													m	v		none		Waldensian brother	Waldensian brother	dissident minister			brotherofID_1147 (Guillaume/Guillaumet/Guillermet Motier)		1015, 1019, 1021, 1045, 1063, 1065, 1075	Tereza Menšíková
+P1557	1557	Robert Vales 								Robert			Vales													m	v		none		Waldensian brother	Waldensian brother	dissident minister					1085	Tereza Menšíková
+P0915	915	Roux Jaubert 								Roux			Jaubert													m	v		none		Waldensian brother	Waldensian brother	dissident minister					1055, 1127	Tereza Menšíková
+P0432	432	Sapta de Clairac								Sapta						de	Clairac									f	no		none							wifeofID_431 (Guillaume de Clairac)		169, 297, 307, 617	Tereza Menšíková
+P1470	1470	Serdane 								Serdane																f	no		none							auntofID_242 (Serdane Bernier)		481, 615	Tereza Menšíková
+P0242	242	Serdane Bernier 								Serdane			Bernier		Faure					Esclarmonde						f	no		none							wifeofID_241 (Pierre Bernier), daughterofID_636 (Guillaume Faure), daughterofID_637 (Rique Faure)		167, 459, 461, 479-483, 487, 489, 615, 875, 1147	Tereza Menšíková
+P0662	662	Sereine Macip de Faysser								Sereine			Macip			de	Faysser									f	no		none							wifeofID_660 (Raimond de Faysser), daughterofID_1013 (Bernard Macip), daughterofID_1014 (Valence Macip)		101, 351, 361, 873	Tereza Menšíková
+P1203	1203	Sereine Pellicier 								Sereine			Pellicier		Artigues											f	no		none							wifeofID_1202 (Raimond Pellicier), daughterofID_103 (Pierre Artigues), daughterofID_104 (Guillemette Artigues)		123, 585, 587, 627, 977	Tereza Menšíková
+P1329	1329	Sereine Rialh 								Sereine			Rialh		Guilabert											f	no		none							wifeofID_1328 (Vital Rialh), daughterofID_814 (Bernard Guilabert), daughterofID_815 (Blanche Guilabert)		399, 401, 405	Tereza Menšíková
+P0325	325	Sibille Bourrel 								Sibille			Bourrel													f	no		none							wifeofID_324 (Bernard Bourrel)		109, 445, 487	Tereza Menšíková
+P0744	744	Sibille Gasc 								Sibille			Gasc													f	no		none							widowofID_743 (Adhémar Gasc)		163, 343, 361	Tereza Menšíková
+P1301	1301	Sibille Rabastel 								Sibille			Rabastel		de la Salvetat											f	no		none							wifeofID_1300 (Pierre Rabastel), daughterofID_1429 (Raimond de la Salvetat), daughterofID_1430 (Raimonde de la Salvetat)		129, 687, 769, 977, 1439	Tereza Menšíková
+P1418	1418	Sibille Salès 								Sibille			Salès													f	no		none							daughterofID_1415 (Bertrand Sales), daughterofID_1416 (Vidalie Sales)		169, 347, 361, 569	Tereza Menšíková
+P1436	1436	Sibille Sanchès 								Sibille			Sanchès													f	no		none							wifeofID_1435 (Pierre Sanchès)		145, 263, 305, 713, 879, 885-889	Tereza Menšíková
+P0267	267	Sicard Bolha 								Sicard			Bolha													m	no		none							sonofID_265 (Gilbert Bolha), sonofID_266 (Raimonde Bolha)		165, 237, 239, 305, 411, 471, 783, 797, 811, 837, 1439	Tereza Menšíková
+P0678	678	Toulsaine Fizansa 								Toulsaine			Fizansa													f	no		none							widowofID_677 (Guillaume Fizansa)		103, 633, 743, 775, 787	Tereza Menšíková
+P0633	633	Valence Faure 								Valence			Faure		Guilabert											f	no		none							wifeofID_632 (Guillaume Faure), daughterofID_814 (Bernard Guilabert), daughterofID_815 (Blanche Guilabert)		137, 403, 485	Tereza Menšíková
+P0062	62	Vésiade d'Andorre								Vésiade						d'	Andorre	Andorran								f	no		none							wifeofIID_61 (Raimond d'Andorre/Andorran) 		105, 1285	Tereza Menšíková
+P1416	1416	Vidalie Salès 								Vidalie			Salès													f	no		none							wifeofID_1415 (Bertrand Sales)		171, 395, 397, 485, 979	Tereza Menšíková
+P0296	296	Vital Bou 								Vital			Bou						Jr							m	no		none							sonofID_293 (Arnaud Bou), sonofID_294 (Raimonde Bou)		111, 367, 485	Tereza Menšíková
+P1208	1208	Vital de Perles								Vital						de	Perles									m	no		none							brotherofID_1207 (Amiel de Perles)		285, 509	Tereza Menšíková
+P0809	809	Vital Gui 								Vital			Gui													m	no		none							sonofID_804 (Guillaume Gui)		123, 587, 627, 833	Tereza Menšíková
+P1289	1289	Vital Proault 								Vital			Proault													m	no		none	1						sonofID_1287 (Martin Proault), sonofID_1288 (Guillemette Proault)		161, 839, 841	Tereza Menšíková
+P1444	1444	Vital Sans 								Vital			Sans													m	no		none							sonofID_1440 (Pierre Sans)		123, 125, 349, 423, 595, 619, 741-745, 771, 773, 819, 833, 883, 977	Tereza Menšíková
+P1628	1628	Vivian 								Vivian																m	no		none							fatherofID_1012 (Pierre de Lugo)		1519, 1527	Tereza Menšíková
