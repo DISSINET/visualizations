@@ -6,7 +6,7 @@ console.log('test');
 // svg params
 const svgW = 1000;
 const svgH = 600;
-const pExtent = [ [ 80, svgW - 50 ], [ 90, svgH - 80 ] ];
+const pExtent = [ [ 100, svgW - 100 ], [ 90, svgH - 80 ] ];
 const peW = pExtent[0][1] - pExtent[0][0];
 const peH = pExtent[1][1] - pExtent[1][0];
 
@@ -23,15 +23,13 @@ async function loadTable(tableUrl: string) {
 }
 
 var pars = [
+	{ label: 'betweenness', attr: 'nbetweeness' },
 	{ label: 'degree', attr: 'ndegree' },
+	{ label: 'eigenvector', attr: 'neigen' },
 	//	{ label: 'ndegree-w', attr: 'ndegree-w' },
-	{ label: 'neccentricity', attr: 'neccentricity' },
-	{ label: 'ncloseness', attr: 'ncloseness' },
-	{ label: 'nclosness-h', attr: 'nclosness-h' },
-	{ label: 'nbetweeness', attr: 'nbetweeness' },
-	{ label: 'neigen', attr: 'neigen' },
-	{ label: 'nclustering', attr: 'nclustering' },
-	{ label: 'ntriangles', attr: 'ntriangles' }
+	{ label: 'closenness', attr: 'ncloseness' },
+	{ label: 'eccentricity', attr: 'neccentricity', reverse: true },
+	{ label: 'clustering', attr: 'nclustering', reverse: true }
 ];
 
 async function getData(url) {
@@ -93,7 +91,7 @@ const drawChart = (svg: any, data: any[]) => {
 	pars.forEach((par, pi) => {
 		const x = parX(pi);
 
-		svg.append('rect').attr('x', x).attr('height', peH).attr('y', y1).attr('width', parW);
+		//svg.append('rect').attr('x', x).attr('height', peH).attr('y', y1).attr('width', parW);
 
 		//
 		if (pi % 2) {
@@ -119,19 +117,19 @@ const drawChart = (svg: any, data: any[]) => {
 	/*
     calculating positions
 		*/
-	const scale = d3.scaleLinear().range([ y2, y1 ]).domain([ 0, 1 ]);
 	data.map((record: any, ri: number) => {
 		record.posM = Object.keys(record.values).map((key, vi) => {
 			const value = record.values[key];
 			const par = pars.find((par) => par.attr === key);
-			return scale(value);
+			par.scale = d3.scaleLinear().range([ y2, y1 ]).domain(par.reverse ? [ 1, 0 ] : [ 0, 1 ]);
+			return par.scale(value);
 		});
 	});
 
 	/*
     drawing lines
   */
-	data.forEach((record: any, ri: number) => {
+	data.filter((d) => d.sex === 'm').forEach((record: any, ri: number) => {
 		svg
 			.append('path')
 			.data([
@@ -159,7 +157,7 @@ const drawChart = (svg: any, data: any[]) => {
 		svg
 			.append('g')
 			.attr('class', 'axis')
-			.call(d3.axisRight(scale).tickValues([ 0 ].concat(scale.ticks(4))))
+			.call(d3.axisRight(par.scale).tickValues([ 0 ].concat(par.scale.ticks(4))))
 			.attr('transform', 'translate(' + parX(pi) + ', 0)');
 	});
 };
