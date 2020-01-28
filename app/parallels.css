@@ -1,14 +1,13 @@
 svg {
-	background: black;
+	background: white;
 }
 
 text.title {
-	font-size: 3em;
+	font-size: 1.8em;
 	stroke: black;
 	font-weight: 500;
 	stroke-width: 0px;
-	fill: #dc0000;
-	fill: white;
+	fill: black;
 	opacity: 0.85;
 }
 
@@ -16,12 +15,12 @@ text.title {
 .aux-axis,
 .title,
 .axis-label {
-	color: white;
+	color: black;
 	stroke-width: 2;
 }
 
 .aux-axis {
-	stroke: white;
+	stroke: black;
 }
 
 .tick {
@@ -36,35 +35,33 @@ text.title {
 text.axis-label,
 .title {
 	stroke-dasharray: none;
-	fill: white;
+	fill: black;
 	stroke-opacity: 1;
 	fill-opacity: 1;
 	opacity: 1;
-	stroke: black;
+	stroke: white;
 	font-weight: 1000;
-	font-size: 22px;
+	font-size: 23px;
 	stroke-width: 2;
 	font-family: ubuntu;
 }
 
 text.axis-label {
-	fill: white;
 	opacity: 1;
-	font-size: 20px;
+	font-size: 27px;
 }
 
 .line {
 	fill: none;
-	stroke: white;
-	stroke-width: 5;
-	stroke-opacity: 0.2;
-	shape-rendering: geometricPrecision;
-	mix-blend-mode: normal;
+	stroke: #0000dc;
+	stroke-width: 3;
+	stroke-opacity: 0.3;
+	mix-blend-mode: multiply;
 }
 
 .line.line-female {
 	stroke: #dc0000;
-	stroke-opacity: 0.15;
-	mix-blend-mode: normal;
-	stroke-width: 5;
+	stroke-opacity: 0.3;
+	mix-blend-mode: multiply;
+	stroke-width: 3;
 }
