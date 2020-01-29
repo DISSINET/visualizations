@@ -180,14 +180,58 @@ loadNames().then((persons) => {
 
 			console.log(occupancyGroups);
 
+			const occupancyColors = [
+				'#8dd3c7',
+				'#ffffb3',
+				'#bebada',
+				'#fb8072',
+				'#80b1d3',
+				'#fdb462',
+				'#b3de69',
+				'#fccde5',
+				'#d9d9d9',
+				'#bc80bd',
+				'#ccebc5',
+				'#ffed6f'
+			];
+			const chordsData = [];
+			Object.keys(occupancyGroups).forEach((oKey) => {
+				const group = occupancyGroups[oKey];
+				let total = 0;
+				Object.keys(group).forEach((gKey) => {
+					if (gKey !== 'persons') {
+						total += group[gKey];
+					}
+				});
+				group.total = total;
+			});
+
+			const occNames = Object.keys(occupancyGroups)
+				.map((oName) => {
+					occupancyGroups[oName].name = oName;
+					return occupancyGroups[oName];
+				})
+				.sort((a, b) => (a.total < b.total ? 1 : -1))
+				.map((o) => o.name);
+
+			occNames.forEach((on1, oi1) => {
+				if (!chordsData[oi1]) {
+					chordsData[oi1] = [];
+				}
+				occNames.forEach((on2, oi2) => {
+					const value = occupancyGroups[on1][on2] || 0;
+					chordsData[oi1][oi2] = value;
+				});
+			});
+
 			/* 
 				drawing map
 			*/
-			const width = 2000;
-			const height = 800;
+			const width = 2500;
+			const height = 1000;
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(28000).center([ 1, 43.38 ]);
+			var projection = d3.geoMercator().scale(100000).center([ 1.68, 43.65 ]);
 
 			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
 			var path = d3.geoPath().projection(projection);
@@ -236,8 +280,8 @@ loadNames().then((persons) => {
 				.sort((a, b) => (a.persons.length > b.persons.length ? 1 : -1));
 
 			// labels settings
-			const leftLabels = [ 'Toulouse', 'Montesquieu', 'Avignonet', 'Roumens' ];
-			const topLabels = [ 'Lavaur', 'Gascogne', 'Saint-Paul-Cap-de-Joux', 'Roumens' ];
+			const leftLabels = [ 'Montesquieu', 'Roumens' ];
+			const topLabels = [ 'Lavaur', 'Gascogne', 'Saint-Paul-Cap-de-Joux', 'Roumens', 'Lanta' ];
 			const avoidLabels = [ 'Durfort', 'Pech-Luna', 'Blan' ];
 
 			groupsBySize.forEach((group) => {
@@ -245,15 +289,17 @@ loadNames().then((persons) => {
 
 				const liner = d3.line().curve(d3.curveBasis).x((d) => d[0]).y((d) => d[1]);
 
+				console.log(group.persons.map((p) => p.Occupation_type));
+
 				if (x > 0 && x < width && y > 0 && y < height) {
-					const circleSize = 1 + group.persons.length * 1.4;
+					const circleSize = 10 + group.persons.length * 2;
 					gCircles
 						.append('circle')
-						.style('fill', '#0000dc')
+						.style('fill', 'black')
 						.style('opacity', 1)
 						.attr('r', circleSize)
-						.attr('stroke-width', 2)
-						.attr('stroke', 'black')
+						.attr('stroke-width', 4)
+						.attr('stroke', 'white')
 						.attr('cx', x)
 						.attr('cy', y);
 
@@ -265,27 +311,25 @@ loadNames().then((persons) => {
 							const targetY = target.y;
 							if (targetX !== group.x) {
 								const [ ex, ey ] = projection([ targetX, targetY ]);
-								if (ex > 0 && ex < width && ey > 0 && ey < height) {
-									const d = liner([ [ x, y ], [ ex, ey + 20 ] ]);
+								//	if (ex > 0 && ex < width && ey > 0 && ey < height) {
+								const d = liner([ [ x, y ], [ ex, ey + 20 ] ]);
 
-									const edgeW = edge.length - 0.5;
-									if (edgeW) {
-										gEdges
-											.append('path')
-											.attr('stroke-width', edgeW)
-											.attr('fill', 'none')
-											.attr('stroke', 'black')
-											.attr('stroke-linecap', 'round')
-											.attr('d', function(d) {
-												const dx = x - ex;
-												const dy = y - y;
-												const dr = Math.sqrt(dx * dx + dy * dy);
-												return (
-													'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey
-												);
-											});
-									}
+								const edgeW = edge.length - 0.5;
+								if (edgeW) {
+									gEdges
+										.append('path')
+										.attr('stroke-width', edgeW)
+										.attr('fill', 'none')
+										.attr('stroke', 'black')
+										.attr('stroke-linecap', 'round')
+										.attr('d', function(d) {
+											const dx = x - ex;
+											const dy = y - y;
+											const dr = Math.sqrt(dx * dx + dy * dy);
+											return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
+										});
 								}
+								//	}
 							}
 						}
 					});
@@ -298,7 +342,7 @@ loadNames().then((persons) => {
 					});
 					const label = group.name;
 					if (avoidLabels.indexOf(label) === -1 && (group.persons.length > 5 || edgesSum > 5)) {
-						const textSize = 10 + group.persons.length * 1.5;
+						const textSize = 35 + group.persons.length * 1.5;
 
 						const left = leftLabels.includes(label);
 						const top = topLabels.includes(label);
@@ -313,8 +357,8 @@ loadNames().then((persons) => {
 							.attr('stroke-width', textSize / 12)
 							.attr('stroke', 'white')
 							.attr('font-family', 'ubuntu')
-							.attr('x', left ? x - textSize / 2 : x + textSize / 2)
-							.attr('y', top ? y - textSize / 2 : y + textSize / 2);
+							.attr('x', left ? x - textSize / 1.5 : x + textSize / 1.5)
+							.attr('y', top ? y - textSize / 1.5 : y + textSize / 1.5);
 					}
 				}
 			});
@@ -323,65 +367,23 @@ loadNames().then((persons) => {
 			chord chart
 			*/
 
-			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(1700,450)');
+			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(2100,400)');
 
-			const outerRadius = 200;
-			const innerRadius = 180;
+			const outerRadius = 350;
+			const innerRadius = 320;
 
 			const ribbon = d3.ribbon().radius(innerRadius);
 			const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
 
 			const chord = d3.chord().padAngle(0.05).sortSubgroups(d3.descending);
 
-			const colors = [
-				'#8dd3c7',
-				'#ffffb3',
-				'#bebada',
-				'#fb8072',
-				'#80b1d3',
-				'#fdb462',
-				'#b3de69',
-				'#fccde5',
-				'#d9d9d9',
-				'#bc80bd',
-				'#ccebc5',
-				'#ffed6f'
-			];
-			const chordsData = [];
-			Object.keys(occupancyGroups).forEach((oKey) => {
-				const group = occupancyGroups[oKey];
-				let total = 0;
-				Object.keys(group).forEach((gKey) => {
-					if (gKey !== 'persons') {
-						total += group[gKey];
-					}
-				});
-				group.total = total;
-			});
-
-			const occNames = Object.keys(occupancyGroups)
-				.map((oName) => {
-					occupancyGroups[oName].name = oName;
-					return occupancyGroups[oName];
-				})
-				.sort((a, b) => (a.total < b.total ? 1 : -1))
-				.map((o) => o.name);
-
-			console.log(occNames);
-
-			occNames.forEach((on1, oi1) => {
-				if (!chordsData[oi1]) {
-					chordsData[oi1] = [];
-				}
-				occNames.forEach((on2, oi2) => {
-					const value = occupancyGroups[on1][on2] || 0;
-					chordsData[oi1][oi2] = value;
-				});
-			});
-
-			console.log(chordsData);
-
 			const chords = chord(chordsData);
+			gChord
+				.append('circle')
+				.attr('r', outerRadius)
+				.attr('stroke', 'black')
+				.attr('fill', 'black')
+				.attr('stroke-width', 3);
 			const group = gChord.append('g').selectAll('g').data(chords.groups).join('g');
 
 			gChord
@@ -390,7 +392,7 @@ loadNames().then((persons) => {
 				.data(chords)
 				.join('path')
 				.attr('d', ribbon)
-				.attr('fill', (d) => colors[d.target.index])
+				.attr('fill', (d) => occupancyColors[d.target.index])
 				.attr('fill-opacity', 1)
 				.style('mix-blend-mode', 'normal');
 
@@ -400,32 +402,37 @@ loadNames().then((persons) => {
 				.data(chords)
 				.join('path')
 				.attr('d', ribbon)
-				.attr('fill', (d) => colors[d.source.index])
+				.attr('fill', (d) => occupancyColors[d.source.index])
 				//.attr('fill', '#0000dc')
 				.attr('fill-opacity', 1)
 				.style('mix-blend-mode', 'multiply');
 
 			group
 				.append('path')
-				.attr('fill', (d) => colors[d.index])
+				.attr('fill', (d) => occupancyColors[d.index])
 				.attr('d', arc)
-				.attr('stroke-width', 2)
+				.attr('stroke', 'black')
+				.attr('stroke-width', 4)
 				.attr('fill-opacity', 1)
 				.style('mix-blend-mode', 'normal');
+
 			group
 				.append('path')
-				.attr('fill', (d) => colors[d.index])
+				.attr('fill', (d) => occupancyColors[d.index])
 				.attr('d', arc)
-				.attr('stroke-width', 2)
+				.attr('stroke', 'black')
+				.attr('stroke-width', 4)
 				.attr('fill-opacity', 1)
 				.style('mix-blend-mode', 'multiply');
 
+			/*
 			group
 				.append('text')
 				.each((d) => {
 					d.angle = (d.startAngle + d.endAngle) / 2;
 				})
 				.attr('dy', '.35em')
+				.attr('font-size', 30)
 				.attr(
 					'transform',
 					(d) => `
@@ -448,6 +455,76 @@ loadNames().then((persons) => {
 						return name;
 					}
 				});
+				*/
+
+			gChord
+				.append('circle')
+				.attr('r', innerRadius)
+				.attr('stroke', 'black')
+				.attr('fill', 'none')
+				.attr('stroke-width', 4);
+
+			gChord
+				.append('circle')
+				.attr('r', outerRadius)
+				.attr('stroke', 'black')
+				.attr('fill', 'none')
+				.attr('stroke-width', 8);
+
+			/*
+				matrix chart
+			*/
+
+			/*
+			// sort people
+			console.log(placeGroups);
+			persons.sort((a, b) => (b.edges.length > a.edges.length ? 1 : -1));
+			// threshold
+			const topNo = 100;
+			const topPersons = persons.slice(0, topNo);
+			const matrixW = 800;
+			const matrixH = 800;
+			const gMatrix = svg.append('g').attr('class', 'matrix').attr('transform', 'translate(0,0)');
+
+			const sexColors = {
+				f: '#ca0020',
+				n: 'grey',
+				m: '#0571b0'
+			};
+			const margins = [ [ 20, 20 ], [ 20, 20 ] ];
+			const cellW = (matrixW - margins[0][0] - margins[0][1]) / topNo;
+			const cellH = (matrixH - margins[1][0] - margins[1][1]) / topNo;
+
+			topPersons.forEach((person1, pi1) => {
+				topPersons.forEach((person2, pi2) => {
+					const interaction = !!person1.edges.find((e) => e.to.ID === person2.ID);
+
+					const gender1 = person1.Sex;
+					const gender2 = person2.Sex;
+
+					let color = interaction ? sexColors['n'] : 'white';
+
+					if (interaction) {
+						if (gender1 === 'f' && gender2 === 'f') {
+							color = sexColors['f'];
+						}
+						if (gender1 === 'm' && gender2 === 'm') {
+							color = sexColors['m'];
+						}
+					}
+
+					gMatrix
+						.append('rect')
+						.attr('width', cellW)
+						.attr('height', cellH)
+						.attr('x', margins[0][0] + cellW * pi1)
+						.attr('y', margins[1][0] + cellH * pi2)
+						.attr('fill', color);
+				});
+			});
+
+			console.log(topPersons);
+			*/
 		});
 	});
 });
