@@ -11,17 +11,42 @@ async function loadEdges() {
 	return await d3.tsv(require('./data/gui/edges.tsv'));
 }
 
-loadNames().then((persons) => {
+loadNames().then((personsAll) => {
 	loadPlaces().then((places) => {
 		loadEdges().then((edges) => {
-			console.log('persons', persons);
+			console.log('persons', personsAll);
 			console.log('places', places);
 			console.log('edges', edges);
+
+			const persons = personsAll.filter((p) => p.dissident_minister === 'no');
+			/*
+				getting edges for persons
+			*/
+			personsAll.forEach((person: any) => {
+				person.edges = [];
+
+				edges.forEach((edge) => {
+					const sourceEdge = edge.Source == person.id_old;
+					const targetEdge = edge.Target == person.id_old;
+
+					if (sourceEdge || targetEdge) {
+						const targetId = sourceEdge ? edge.Target : edge.Source;
+						const targetPerson = persons.find((p) => p.id_old == targetId);
+
+						if (targetPerson) {
+							person.edges.push({
+								to: targetPerson,
+								type: sourceEdge ? 'source' : 'target'
+							});
+						}
+					}
+				});
+			});
 
 			/*
 			 geocode persons
 			*/
-			const personWithPlace = persons.filter((p) => p.dissident_minister === 'no').filter((person: any) => {
+			const personWithPlace = persons.filter((person: any) => {
 				// assigning place name to person
 				const both = person.origin_or_residence;
 				const origin = person.origin;
@@ -53,40 +78,16 @@ loadNames().then((persons) => {
 			});
 
 			/*
-				getting edges for persons with place
-			*/
-			personWithPlace.forEach((person: any) => {
-				person.edges = [];
-
-				edges.forEach((edge) => {
-					const sourceEdge = edge.Source == person.id_old;
-					const targetEdge = edge.Target == person.id_old;
-
-					if (sourceEdge || targetEdge) {
-						const targetId = sourceEdge ? edge.Target : edge.Source;
-						const targetPerson = personWithPlace.find((p) => p.id_old == targetId);
-
-						if (targetPerson) {
-							person.edges.push({
-								to: targetPerson,
-								type: sourceEdge ? 'source' : 'target'
-							});
-						}
-					}
-				});
-			});
-
-			/*
 				group persons based on their locality
 			*/
-			const groups: any = [];
+			const placeGroups: any = [];
 			personWithPlace.forEach((person: any) => {
 				// only known locations
 				if (person.place.x && person.place.y) {
-					if (person.place.name in groups) {
-						groups[person.place.name].persons.push(person);
+					if (person.place.name in placeGroups) {
+						placeGroups[person.place.name].persons.push(person);
 					} else {
-						groups[person.place.name] = {
+						placeGroups[person.place.name] = {
 							x: parseFloat(person.place.x),
 							y: parseFloat(person.place.y),
 							persons: [ person ]
@@ -95,16 +96,14 @@ loadNames().then((persons) => {
 				}
 			});
 
-			console.log(personWithPlace);
-
 			/* 
 				summing edges for groups
 			*/
-			Object.keys(groups).forEach((groupKey) => {
-				const group = groups[groupKey];
+			Object.keys(placeGroups).forEach((groupKey) => {
+				const group = placeGroups[groupKey];
 				group.edges = {};
-				group.persons.forEach((person) => {
-					person.edges.forEach((personEdge) => {
+				group.persons.filter((p) => p.place).forEach((person) => {
+					person.edges.filter((e) => e.to.place).forEach((personEdge) => {
 						if (personEdge.type === 'source') {
 							const targetPlace = personEdge.to.place.name;
 							if (targetPlace in group.edges) {
@@ -116,10 +115,80 @@ loadNames().then((persons) => {
 					});
 				});
 			});
-			console.log(groups);
+
+			/*
+				occupancyGroups
+			*/
+
+			const occupancyGroups = {};
+			personsAll.filter((p) => p.occupation_type).forEach((person) => {
+				const edges = person.edges;
+				const occupationPerson = person.occupation_type;
+				const occupanciesList = edges.map((edge) => edge.to.occupation_type).filter((o) => o);
+
+				// creating occupancies dictionary
+				const occupancies = {};
+				occupanciesList.forEach((occ) => {
+					if (occ in occupancies) {
+						occupancies[occ] += 1;
+					} else {
+						occupancies[occ] = 1;
+					}
+				});
+
+				if (occupationPerson in occupancyGroups) {
+					occupancyGroups[occupationPerson].people.push(person);
+					Object.keys(occupancies).forEach((occ) => {
+						const val = occupancies[occ];
+						if (occ in occupancyGroups[occupationPerson].edges) {
+							occupancyGroups[occupationPerson].edges[occ] += val;
+						} else {
+							occupancyGroups[occupationPerson].edges[occ] = 1;
+						}
+					});
+				} else {
+					occupancyGroups[occupationPerson] = { people: [ person ], edges: occupancies };
+				}
+
+				Object.keys(occupancies).forEach((occ) => {
+					const val = occupancies[occ];
+					if (occ in occupancyGroups) {
+						console.log(occ);
+						if (occupationPerson in occupancyGroups[occ].edges) {
+							occupancyGroups[occ].edges[occupationPerson] += val;
+						} else {
+							occupancyGroups[occ].edges[occupationPerson] = 1;
+						}
+					} else {
+						const edges = {};
+						edges[occupationPerson] = 1;
+						occupancyGroups[occ] = { people: [], edges };
+					}
+				});
+			});
+
+			/*
+			Object.keys(occupancyGroups).forEach((groupKey) => {
+				const group = occupancyGroups[groupKey];
+				Object.keys(group.edges).forEach((eGroupKey) => {
+					const edgeGroup = group.edges[eGroupKey];
+					console.log(edgeGroup);
+					if (edgeGroup) {
+						if (groupKey in occupancyGroups[eGroupKey].edges) {
+							occupancyGroups[eGroupKey].edges[groupKey] += edgeGroup;
+						} else {
+							occupancyGroups[eGroupKey].edges[groupKey] = edgeGroup;
+						}
+					}
+				});
+			});
+			*/
+			console.log(occupancyGroups);
+			console.log(occupancyGroups.churchperson.edges['dissident minister']);
+			console.log(occupancyGroups['dissident minister'].edges.churchperson);
 
 			/* 
-				chart
+				drawing map
 			*/
 			const width = 1500;
 			const height = 800;
@@ -142,6 +211,9 @@ loadNames().then((persons) => {
 			const [ tx, ty ] = tiles.translate;
 			const k = tiles.scale;
 
+			/* 
+				setting tiles
+			*/
 			tiles.map(([ x, y, z ]) => {
 				svg
 					.append('image')
@@ -153,19 +225,20 @@ loadNames().then((persons) => {
 					})
 					.attr('x', (x + tx) * k)
 					.attr('y', (y + ty) * k)
-					.attr('width', k)
-					.attr('height', k)
-					.style('opacity', 0.7);
+					.attr('width', k + 0.2)
+					.attr('height', k + 0.2)
+					.style('opacity', 0.7)
+					.style('mix-blend-mode', 'normal');
 			});
 
 			const gEdges = svg.append('g').attr('class', 'edges');
 			const gCircles = svg.append('g').attr('class', 'circles');
 			const gLabels = svg.append('g').attr('class', 'labels');
 
-			const groupsBySize = Object.keys(groups)
+			const groupsBySize = Object.keys(placeGroups)
 				.map((groupKey) => {
-					groups[groupKey].name = groupKey;
-					return groups[groupKey];
+					placeGroups[groupKey].name = groupKey;
+					return placeGroups[groupKey];
 				})
 				.sort((a, b) => (a.persons.length > b.persons.length ? 1 : -1));
 
@@ -187,8 +260,8 @@ loadNames().then((persons) => {
 
 					Object.keys(group.edges).forEach((edgeKey) => {
 						const edge = group.edges[edgeKey];
-						const targetX = groups[edgeKey].x;
-						const targetY = groups[edgeKey].y;
+						const targetX = placeGroups[edgeKey].x;
+						const targetY = placeGroups[edgeKey].y;
 						if (targetX !== group.x) {
 							const [ ex, ey ] = projection([ targetX, targetY ]);
 							if (ex > 0 && ex < width && ey > 0 && ey < height) {
@@ -249,6 +322,8 @@ loadNames().then((persons) => {
 					}
 				}
 			});
+
+			const gChord = svg.append('g').attr('class', 'chord');
 		});
 	});
 });
