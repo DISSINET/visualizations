@@ -125,61 +125,65 @@ loadNames().then((persons) => {
 			/*
 				occupancyGroups
 			*/
-			const occupancyGroups = {};
-			persons
-				.filter((p) => p.Network === 'd' || p.Network === '')
-				.filter((p) => p.Occupation_type)
-				.forEach((person) => {
-					const edges = person.edges;
-					const occupationPerson = person.Occupation_type;
-					const occupanciesList = edges.map((edge) => edge.to.Occupation_type).filter((o) => o);
+			const occupancyGroups: any = {};
 
-					// creating occupancies dictionary
-					const occupancies = {};
-					occupanciesList.forEach((occ) => {
-						if (occ in occupancies) {
-							occupancies[occ] += 1;
-						} else {
-							occupancies[occ] = 1;
-						}
-					});
+			const getOccupancies = (occ) => {
+				if (occ.indexOf(', ') > -1) {
+					return occ.split(', ');
+				} else {
+					return [ occ ];
+				}
+			};
 
-					if (occupationPerson in occupancyGroups) {
-						occupancyGroups[occupationPerson].people.push(person);
-						Object.keys(occupancies).forEach((occ) => {
-							const val = occupancies[occ];
-							if (occ in occupancyGroups[occupationPerson].edges) {
-								occupancyGroups[occupationPerson].edges[occ] += val;
-							} else {
-								occupancyGroups[occupationPerson].edges[occ] = 1;
+			edges.forEach((edge) => {
+				const targetP = persons.find((p) => p.ID === edge.Target);
+				const sourceP = persons.find((p) => p.ID === edge.Source);
+
+				const allowedNetworks = [ 'd', '' ];
+				if (
+					targetP &&
+					sourceP &&
+					allowedNetworks.includes(targetP.Network) &&
+					allowedNetworks.includes(sourceP.Network)
+				) {
+					const targetOs = getOccupancies(targetP.Occupation_type);
+					const sourceOs = getOccupancies(sourceP.Occupation_type);
+
+					targetOs.forEach((targetO) => {
+						sourceOs.forEach((sourceO) => {
+							if (targetO && sourceO) {
+								// creating new root object
+								if (!(targetO in occupancyGroups)) {
+									occupancyGroups[targetO] = { persons: [] };
+								}
+								if (!(sourceO in occupancyGroups)) {
+									occupancyGroups[sourceO] = { persons: [] };
+								}
+								// creating new list
+								if (!(sourceO in occupancyGroups[targetO])) {
+									occupancyGroups[targetO][sourceO] = 0;
+								}
+								if (!(targetO in occupancyGroups[sourceO])) {
+									occupancyGroups[sourceO][targetO] = 0;
+								}
+
+								// adding new person to the list
+								occupancyGroups[targetO].persons.push(targetP.ID);
+								occupancyGroups[sourceO].persons.push(sourceP.ID);
+								occupancyGroups[targetO][sourceO]++;
+								occupancyGroups[sourceO][targetO]++;
 							}
 						});
-					} else {
-						occupancyGroups[occupationPerson] = { people: [ person ], edges: occupancies };
-					}
-
-					Object.keys(occupancies).forEach((occ) => {
-						const val = occupancies[occ];
-						if (occ in occupancyGroups) {
-							if (occupationPerson in occupancyGroups[occ].edges) {
-								occupancyGroups[occ].edges[occupationPerson] += val;
-							} else {
-								occupancyGroups[occ].edges[occupationPerson] = 1;
-							}
-						} else {
-							const edges = {};
-							edges[occupationPerson] = 1;
-							occupancyGroups[occ] = { people: [], edges };
-						}
 					});
-				});
+				}
+			});
 
 			console.log(occupancyGroups);
 
 			/* 
 				drawing map
 			*/
-			const width = 1500;
+			const width = 2000;
 			const height = 800;
 
 			const tileSize = 256;
@@ -311,7 +315,64 @@ loadNames().then((persons) => {
 				}
 			});
 
-			const gChord = svg.append('g').attr('class', 'chord');
+			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(1200,500)');
+
+			const outerRadius = 200;
+			const innerRadius = 180;
+
+			const ribbon = d3.ribbon().radius(innerRadius);
+			const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
+
+			const chord = d3.chord().padAngle(0.05).sortSubgroups(d3.descending);
+
+			const chordsData = [];
+			const occNames = Object.keys(occupancyGroups);
+
+			Object.keys(occupancyGroups).forEach((occKey) => {
+				const occGroup = occupancyGroups[occKey];
+				const occValues = [];
+				occNames.forEach((occName) => {
+					if (occName in occGroup) {
+						occValues.push(occGroup[occName]);
+					} else {
+						occValues.push(0);
+					}
+				});
+				chordsData.push(occValues);
+			});
+
+			const chords = chord(chordsData);
+
+			const group = gChord.append('g').selectAll('g').data(chords.groups).join('g');
+
+			group.append('path').attr('fill', (d) => '#0000dc').attr('stroke', (d) => 'white').attr('d', arc);
+
+			group
+				.append('g')
+				.attr('fill-opacity', 0.67)
+				.selectAll('path')
+				.data(chords)
+				.join('path')
+				.attr('d', ribbon)
+				.attr('fill', (d) => 'black')
+				.attr('stroke', (d) => 'white');
+
+			group
+				.append('text')
+				.each((d) => {
+					d.angle = (d.startAngle + d.endAngle) / 2;
+				})
+				.attr('dy', '.35em')
+				.attr(
+					'transform',
+					(d) => `
+        rotate(${d.angle * 180 / Math.PI - 90})
+        translate(${innerRadius + 26})
+        ${d.angle > Math.PI ? 'rotate(180)' : ''}
+      `
+				)
+				.attr('text-anchor', (d) => (d.angle > Math.PI ? 'end' : null))
+				.text((d) => occNames[d.index]);
 		});
 	});
 });
