@@ -187,7 +187,7 @@ loadNames().then((persons) => {
 			const height = 800;
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(28000).center([ 2, 43.38 ]);
+			var projection = d3.geoMercator().scale(28000).center([ 1, 43.38 ]);
 
 			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
 			var path = d3.geoPath().projection(projection);
@@ -234,6 +234,11 @@ loadNames().then((persons) => {
 					return placeGroups[groupKey];
 				})
 				.sort((a, b) => (a.persons.length > b.persons.length ? 1 : -1));
+
+			// labels settings
+			const leftLabels = [ 'Toulouse', 'Montesquieu', 'Avignonet', 'Roumens' ];
+			const topLabels = [ 'Lavaur', 'Gascogne', 'Saint-Paul-Cap-de-Joux', 'Roumens' ];
+			const avoidLabels = [ 'Durfort', 'Pech-Luna', 'Blan' ];
 
 			groupsBySize.forEach((group) => {
 				const [ x, y ] = projection([ group.x, group.y ]);
@@ -291,11 +296,10 @@ loadNames().then((persons) => {
 							edgesSum = edgesSum + parseInt(group.edges[e].length);
 						}
 					});
-					if (group.persons.length > 5 || edgesSum > 5) {
+					const label = group.name;
+					if (avoidLabels.indexOf(label) === -1 && (group.persons.length > 5 || edgesSum > 5)) {
 						const textSize = 10 + group.persons.length * 1.5;
-						const leftLabels = [ 'Toulouse', 'Montesquieu', 'Avignonet' ];
-						const topLabels = [ 'Lavaur', 'Gascogne' ];
-						const label = group.name;
+
 						const left = leftLabels.includes(label);
 						const top = topLabels.includes(label);
 						gLabels
@@ -315,7 +319,11 @@ loadNames().then((persons) => {
 				}
 			});
 
-			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(1200,500)');
+			/*
+			chord chart
+			*/
+
+			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(1700,450)');
 
 			const outerRadius = 200;
 			const innerRadius = 180;
@@ -325,37 +333,92 @@ loadNames().then((persons) => {
 
 			const chord = d3.chord().padAngle(0.05).sortSubgroups(d3.descending);
 
+			const colors = [
+				'#8dd3c7',
+				'#ffffb3',
+				'#bebada',
+				'#fb8072',
+				'#80b1d3',
+				'#fdb462',
+				'#b3de69',
+				'#fccde5',
+				'#d9d9d9',
+				'#bc80bd',
+				'#ccebc5',
+				'#ffed6f'
+			];
 			const chordsData = [];
-			const occNames = Object.keys(occupancyGroups);
-
-			Object.keys(occupancyGroups).forEach((occKey) => {
-				const occGroup = occupancyGroups[occKey];
-				const occValues = [];
-				occNames.forEach((occName) => {
-					if (occName in occGroup) {
-						occValues.push(occGroup[occName]);
-					} else {
-						occValues.push(0);
+			Object.keys(occupancyGroups).forEach((oKey) => {
+				const group = occupancyGroups[oKey];
+				let total = 0;
+				Object.keys(group).forEach((gKey) => {
+					if (gKey !== 'persons') {
+						total += group[gKey];
 					}
 				});
-				chordsData.push(occValues);
+				group.total = total;
 			});
 
-			const chords = chord(chordsData);
+			const occNames = Object.keys(occupancyGroups)
+				.map((oName) => {
+					occupancyGroups[oName].name = oName;
+					return occupancyGroups[oName];
+				})
+				.sort((a, b) => (a.total < b.total ? 1 : -1))
+				.map((o) => o.name);
 
+			console.log(occNames);
+
+			occNames.forEach((on1, oi1) => {
+				if (!chordsData[oi1]) {
+					chordsData[oi1] = [];
+				}
+				occNames.forEach((on2, oi2) => {
+					const value = occupancyGroups[on1][on2] || 0;
+					chordsData[oi1][oi2] = value;
+				});
+			});
+
+			console.log(chordsData);
+
+			const chords = chord(chordsData);
 			const group = gChord.append('g').selectAll('g').data(chords.groups).join('g');
 
-			group.append('path').attr('fill', (d) => '#0000dc').attr('stroke', (d) => 'white').attr('d', arc);
-
-			group
+			gChord
 				.append('g')
-				.attr('fill-opacity', 0.67)
 				.selectAll('path')
 				.data(chords)
 				.join('path')
 				.attr('d', ribbon)
-				.attr('fill', (d) => 'black')
-				.attr('stroke', (d) => 'white');
+				.attr('fill', (d) => colors[d.target.index])
+				.attr('fill-opacity', 1)
+				.style('mix-blend-mode', 'normal');
+
+			gChord
+				.append('g')
+				.selectAll('path')
+				.data(chords)
+				.join('path')
+				.attr('d', ribbon)
+				.attr('fill', (d) => colors[d.source.index])
+				//.attr('fill', '#0000dc')
+				.attr('fill-opacity', 1)
+				.style('mix-blend-mode', 'multiply');
+
+			group
+				.append('path')
+				.attr('fill', (d) => colors[d.index])
+				.attr('d', arc)
+				.attr('stroke-width', 2)
+				.attr('fill-opacity', 1)
+				.style('mix-blend-mode', 'normal');
+			group
+				.append('path')
+				.attr('fill', (d) => colors[d.index])
+				.attr('d', arc)
+				.attr('stroke-width', 2)
+				.attr('fill-opacity', 1)
+				.style('mix-blend-mode', 'multiply');
 
 			group
 				.append('text')
@@ -372,7 +435,19 @@ loadNames().then((persons) => {
       `
 				)
 				.attr('text-anchor', (d) => (d.angle > Math.PI ? 'end' : null))
-				.text((d) => occNames[d.index]);
+				.attr('color', 'black')
+				.attr('font-weight', 1000)
+				.attr('stroke-width', 1)
+				.attr('stroke', 'white')
+				.attr('font-family', 'ubuntu')
+				.text((d) => {
+					const name = occNames[d.index];
+					if (name.indexOf('manufacturer') > -1) {
+						return 'manufacturer';
+					} else {
+						return name;
+					}
+				});
 		});
 	});
 });
