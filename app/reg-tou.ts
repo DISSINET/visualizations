@@ -183,7 +183,7 @@ loadNames().then((persons) => {
 			const height = 800;
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(18000).center([ 1.8, 43.74 ]);
+			var projection = d3.geoMercator().scale(28000).center([ 2, 43.38 ]);
 
 			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
 			var path = d3.geoPath().projection(projection);
@@ -287,24 +287,10 @@ loadNames().then((persons) => {
 							edgesSum = edgesSum + parseInt(group.edges[e].length);
 						}
 					});
-					if (group.persons.length > 4 || edgesSum > 1) {
-						const textSize = 8 + group.persons.length * 1.5;
-						const leftLabels = [
-							'Toulouse',
-							'Bouillac',
-							'Tarabel',
-							'Ferrus',
-							'Varennes',
-							'Mirepoix-sur-Tarn',
-							'Beauvais-sur-Tescou'
-						];
-						const topLabels = [
-							'Mirepoix-sur-Tarn',
-							'Saint-Sulpice-la-Pointe',
-							'Azas',
-							'Verdun-Lauragais',
-							'Beauvais-sur-Tescou'
-						];
+					if (group.persons.length > 5 || edgesSum > 5) {
+						const textSize = 10 + group.persons.length * 1.5;
+						const leftLabels = [ 'Toulouse', 'Montesquieu', 'Avignonet' ];
+						const topLabels = [ 'Lavaur', 'Gascogne' ];
 						const label = group.name;
 						const left = leftLabels.includes(label);
 						const top = topLabels.includes(label);
@@ -319,8 +305,8 @@ loadNames().then((persons) => {
 							.attr('stroke-width', textSize / 12)
 							.attr('stroke', 'white')
 							.attr('font-family', 'ubuntu')
-							.attr('x', left ? x - textSize : x + textSize)
-							.attr('y', top ? y - textSize : y + textSize);
+							.attr('x', left ? x - textSize / 2 : x + textSize / 2)
+							.attr('y', top ? y - textSize / 2 : y + textSize / 2);
 					}
 				}
 			});
