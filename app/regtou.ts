@@ -11,6 +11,22 @@ async function loadEdges() {
 	return await d3.csv(require('./data/regtou/edges.csv'));
 }
 
+function sortByFrequency(array) {
+	var frequency = {};
+
+	array.forEach(function(value) {
+		frequency[value] = 0;
+	});
+
+	var uniques = array.filter(function(value) {
+		return ++frequency[value] == 1;
+	});
+
+	return uniques.sort(function(a, b) {
+		return frequency[b] - frequency[a];
+	});
+}
+
 loadNames().then((persons) => {
 	loadPlaces().then((places) => {
 		loadEdges().then((edges) => {
@@ -289,17 +305,20 @@ loadNames().then((persons) => {
 
 				const liner = d3.line().curve(d3.curveBasis).x((d) => d[0]).y((d) => d[1]);
 
-				console.log(group.persons.map((p) => p.Occupation_type));
+				const cityOccs = group.persons.map((p) => p.Occupation_type);
+				const freqs = sortByFrequency(cityOccs).filter((c) => c);
+				console.log(freqs);
+				const colorI = occNames.indexOf(freqs[0]);
 
 				if (x > 0 && x < width && y > 0 && y < height) {
 					const circleSize = 10 + group.persons.length * 2;
 					gCircles
 						.append('circle')
-						.style('fill', 'black')
+						.style('fill', colorI !== -1 ? occupancyColors[colorI] : 'black')
 						.style('opacity', 1)
 						.attr('r', circleSize)
-						.attr('stroke-width', 4)
-						.attr('stroke', 'white')
+						.attr('stroke-width', 5)
+						.attr('stroke', 'black')
 						.attr('cx', x)
 						.attr('cy', y);
 
@@ -367,18 +386,10 @@ loadNames().then((persons) => {
 			chord chart
 			*/
 
-			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(2100,320)');
+			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(2130,350)');
 
-			const outerRadius = 300;
-			const innerRadius = 270;
-			gChord
-				.append('rect')
-				.attr('height', height)
-				.attr('width', 800)
-				.attr('fill', 'white')
-				.attr('opacity', '0.7')
-				.attr('x', -outerRadius - 100)
-				.attr('y', -outerRadius - 20);
+			const outerRadius = 270;
+			const innerRadius = 220;
 
 			const ribbon = d3.ribbon().radius(innerRadius);
 			const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
@@ -386,6 +397,8 @@ loadNames().then((persons) => {
 			const chord = d3.chord().padAngle(0.05).sortSubgroups(d3.descending);
 
 			const chords = chord(chordsData);
+			gChord.append('circle').attr('r', outerRadius + 50).attr('opacity', 0.7).attr('fill', 'white');
+
 			gChord
 				.append('circle')
 				.attr('r', outerRadius)
@@ -412,7 +425,7 @@ loadNames().then((persons) => {
 				.attr('d', ribbon)
 				.attr('fill', (d) => occupancyColors[d.source.index])
 				//.attr('fill', '#0000dc')
-				.attr('fill-opacity', 1)
+				.attr('fill-opacity', 0.5)
 				.style('mix-blend-mode', 'multiply');
 
 			group
@@ -430,7 +443,7 @@ loadNames().then((persons) => {
 				.attr('d', arc)
 				.attr('stroke', 'black')
 				.attr('stroke-width', 4)
-				.attr('fill-opacity', 1)
+				.attr('fill-opacity', 0.5)
 				.style('mix-blend-mode', 'multiply');
 
 			/*
@@ -479,30 +492,32 @@ loadNames().then((persons) => {
 				.attr('fill', 'none')
 				.attr('stroke-width', 8);
 
+			// legend
 			occNames.forEach((name, ni) => {
-				const y = outerRadius + 50 + Math.floor(ni / 2) * 50;
-				const x = (ni - 1) % 2 ? -350 : 0;
+				const y = outerRadius + 70 + Math.floor(ni / 2) * 50;
+				const x = (ni - 1) % 2 ? -280 : 150;
 
 				gChord
 					.append('rect')
-					.attr('x', x)
+					.attr('x', x + 100)
 					.attr('y', y)
 					.attr('width', 70)
 					.attr('height', 40)
 					.attr('fill', occupancyColors[ni])
 					.attr('stroke', 'black')
-					.attr('stroke-width', 3);
+					.attr('stroke-width', 5);
 
 				gChord
 					.append('text')
 					.text(name.split(' ')[0])
 					.attr('x', x + 80)
 					.attr('y', y + 28)
-					.attr('font-size', 30)
+					.attr('font-size', 35)
+					.attr('text-anchor', 'end')
 					.attr('font-family', 'ubuntu')
 					.attr('stroke', 'black')
 					.attr('font-weight', 1000)
-					.attr('stroke-width', 2)
+					.attr('stroke-width', 1.5)
 					.attr('stroke', 'white');
 			});
 
