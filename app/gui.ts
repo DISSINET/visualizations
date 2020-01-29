@@ -19,28 +19,26 @@ loadNames().then((personsAll) => {
 			console.log('edges', edges);
 
 			const persons = personsAll.filter((p) => p.dissident_minister === 'no');
+
+			persons.forEach((p) => (p.edges = []));
 			/*
 				getting edges for persons
 			*/
-			personsAll.forEach((person: any) => {
-				person.edges = [];
+			edges.forEach((edge) => {
+				const targetPerson = persons.find((p) => p.id_old === edge.Target);
+				const sourcePerson = persons.find((p) => p.id_old === edge.Source);
 
-				edges.forEach((edge) => {
-					const sourceEdge = edge.Source == person.id_old;
-					const targetEdge = edge.Target == person.id_old;
+				if (targetPerson && sourcePerson) {
+					sourcePerson.edges.push({
+						to: targetPerson,
+						type: 'source'
+					});
 
-					if (sourceEdge || targetEdge) {
-						const targetId = sourceEdge ? edge.Target : edge.Source;
-						const targetPerson = persons.find((p) => p.id_old == targetId);
-
-						if (targetPerson) {
-							person.edges.push({
-								to: targetPerson,
-								type: sourceEdge ? 'source' : 'target'
-							});
-						}
-					}
-				});
+					targetPerson.edges.push({
+						to: sourcePerson,
+						type: 'target'
+					});
+				}
 			});
 
 			/*
@@ -121,8 +119,9 @@ loadNames().then((personsAll) => {
 			*/
 
 			const occupancyGroups = {};
-			personsAll.filter((p) => p.occupation_type).forEach((person) => {
+			persons.filter((p) => p.occupation_type).forEach((person) => {
 				const edges = person.edges;
+				console.log(person);
 				const occupationPerson = person.occupation_type;
 				const occupanciesList = edges.map((edge) => edge.to.occupation_type).filter((o) => o);
 
@@ -167,25 +166,7 @@ loadNames().then((personsAll) => {
 				});
 			});
 
-			/*
-			Object.keys(occupancyGroups).forEach((groupKey) => {
-				const group = occupancyGroups[groupKey];
-				Object.keys(group.edges).forEach((eGroupKey) => {
-					const edgeGroup = group.edges[eGroupKey];
-					console.log(edgeGroup);
-					if (edgeGroup) {
-						if (groupKey in occupancyGroups[eGroupKey].edges) {
-							occupancyGroups[eGroupKey].edges[groupKey] += edgeGroup;
-						} else {
-							occupancyGroups[eGroupKey].edges[groupKey] = edgeGroup;
-						}
-					}
-				});
-			});
-			*/
 			console.log(occupancyGroups);
-			console.log(occupancyGroups.churchperson.edges['dissident minister']);
-			console.log(occupancyGroups['dissident minister'].edges.churchperson);
 
 			/* 
 				drawing map
