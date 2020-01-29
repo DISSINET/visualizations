@@ -125,7 +125,7 @@ loadNames().then((persons) => {
 			const height = 800;
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(20000).center([ 1.18, 43.8 ]);
+			var projection = d3.geoMercator().scale(30000).center([ 1.8, 43.74 ]);
 
 			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
 			var path = d3.geoPath().projection(projection);
@@ -158,12 +158,18 @@ loadNames().then((persons) => {
 					.style('opacity', 0.7);
 			});
 
-			const gCircles = svg.append('g').attr('class', 'circles');
 			const gEdges = svg.append('g').attr('class', 'edges');
+			const gCircles = svg.append('g').attr('class', 'circles');
 			const gLabels = svg.append('g').attr('class', 'labels');
 
-			Object.keys(groups).forEach((groupName) => {
-				const group = groups[groupName];
+			const groupsBySize = Object.keys(groups)
+				.map((groupKey) => {
+					groups[groupKey].name = groupKey;
+					return groups[groupKey];
+				})
+				.sort((a, b) => (a.persons.length > b.persons.length ? 1 : -1));
+
+			groupsBySize.forEach((group) => {
 				const [ x, y ] = projection([ group.x, group.y ]);
 
 				const liner = d3.line().curve(d3.curveBasis).x((d) => d[0]).y((d) => d[1]);
@@ -171,9 +177,8 @@ loadNames().then((persons) => {
 				if (x > 0 && x < width && y > 0 && y < height) {
 					gCircles
 						.append('circle')
-						.style('fill', 'orange')
-						.style('mix-blend-mode', 'multiply')
-						.style('opacity', 0.7)
+						.style('fill', '#0000dc')
+						.style('opacity', 1)
 						.attr('r', 3 + group.persons.length * 2)
 						.attr('stroke-width', 2)
 						.attr('stroke', 'black')
@@ -196,6 +201,7 @@ loadNames().then((persons) => {
 										.attr('stroke-width', edgeW)
 										.attr('fill', 'none')
 										.attr('stroke', 'black')
+										.attr('stroke-linecap', 'round')
 										.attr('d', function(d) {
 											const dx = x - ex;
 											const dy = y - y;
@@ -206,19 +212,40 @@ loadNames().then((persons) => {
 							}
 						}
 					});
-					if (group.persons.length > 5) {
+					if (group.persons.length > 3) {
 						const textSize = 8 + group.persons.length * 1.5;
+						const leftLabels = [
+							'Toulouse',
+							'Bouillac',
+							'Tarabel',
+							'Ferrus',
+							'Varennes',
+							'Mirepoix-sur-Tarn',
+							'Beauvais-sur-Tescou'
+						];
+						const topLabels = [
+							'Mirepoix-sur-Tarn',
+							'Saint-Sulpice-la-Pointe',
+							'Azas',
+							'Verdun-Lauragais',
+							'Beauvais-sur-Tescou'
+						];
+						const label = group.name;
+						const left = leftLabels.includes(label);
+						const top = topLabels.includes(label);
 						gLabels
 							.append('text')
 							.style('font-size', textSize)
-							.text(groupName)
+							.text(label)
 							.attr('color', 'black')
+							.attr('text-anchor', left ? 'end' : 'start')
+							.attr('alignment-baseline', top ? 'middle' : 'middle')
 							.attr('font-weight', 1000)
 							.attr('stroke-width', textSize / 12)
 							.attr('stroke', 'white')
 							.attr('font-family', 'ubuntu')
-							.attr('x', x + textSize)
-							.attr('y', y + textSize);
+							.attr('x', left ? x - textSize : x + textSize)
+							.attr('y', top ? y - textSize : y + textSize);
 					}
 				}
 			});
