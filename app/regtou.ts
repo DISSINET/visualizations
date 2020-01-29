@@ -231,7 +231,7 @@ loadNames().then((persons) => {
 			const height = 1000;
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(100000).center([ 1.68, 43.65 ]);
+			var projection = d3.geoMercator().scale(100000).center([ 1.65, 43.65 ]);
 
 			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
 			var path = d3.geoPath().projection(projection);
@@ -367,10 +367,18 @@ loadNames().then((persons) => {
 			chord chart
 			*/
 
-			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(2100,400)');
+			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(2100,320)');
 
-			const outerRadius = 350;
-			const innerRadius = 320;
+			const outerRadius = 300;
+			const innerRadius = 270;
+			gChord
+				.append('rect')
+				.attr('height', height)
+				.attr('width', 800)
+				.attr('fill', 'white')
+				.attr('opacity', '0.7')
+				.attr('x', -outerRadius - 100)
+				.attr('y', -outerRadius - 20);
 
 			const ribbon = d3.ribbon().radius(innerRadius);
 			const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
@@ -470,6 +478,33 @@ loadNames().then((persons) => {
 				.attr('stroke', 'black')
 				.attr('fill', 'none')
 				.attr('stroke-width', 8);
+
+			occNames.forEach((name, ni) => {
+				const y = outerRadius + 50 + Math.floor(ni / 2) * 50;
+				const x = (ni - 1) % 2 ? -350 : 0;
+
+				gChord
+					.append('rect')
+					.attr('x', x)
+					.attr('y', y)
+					.attr('width', 70)
+					.attr('height', 40)
+					.attr('fill', occupancyColors[ni])
+					.attr('stroke', 'black')
+					.attr('stroke-width', 3);
+
+				gChord
+					.append('text')
+					.text(name.split(' ')[0])
+					.attr('x', x + 80)
+					.attr('y', y + 28)
+					.attr('font-size', 30)
+					.attr('font-family', 'ubuntu')
+					.attr('stroke', 'black')
+					.attr('font-weight', 1000)
+					.attr('stroke-width', 2)
+					.attr('stroke', 'white');
+			});
 
 			/*
 				matrix chart
