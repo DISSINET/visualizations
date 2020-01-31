@@ -5,7 +5,7 @@ console.log('test');
 
 // svg params
 const svgW = 1000;
-const svgH = 600;
+const svgH = 500;
 const pExtent = [ [ 100, svgW - 100 ], [ 90, svgH - 80 ] ];
 const peW = pExtent[0][1] - pExtent[0][0];
 const peH = pExtent[1][1] - pExtent[1][0];
@@ -25,10 +25,10 @@ async function loadTable(tableUrl: string) {
 var pars = [
 	{ label: 'betweenness', attr: 'nbetweeness' },
 	{ label: 'degree', attr: 'ndegree' },
-	{ label: 'eigenvector', attr: 'neigen' },
+	{ label: 'eigencentrality', attr: 'neigen' },
 	//	{ label: 'ndegree-w', attr: 'ndegree-w' },
 	{ label: 'closenness', attr: 'ncloseness' },
-	{ label: 'eccentricity', attr: 'neccentricity', reverse: true },
+	//{ label: 'eccentricity', attr: 'neccentricity', reverse: true },
 	{ label: 'clustering', attr: 'nclustering', reverse: true }
 ];
 
@@ -82,8 +82,9 @@ getData(url2).then((data2) => {
 	drawChart(svg2, data2);
 });
 
-const drawChart = (svg: any, data: any[]) => {
-	console.log(data);
+const drawChart = (svg: any, dataAll: any[]) => {
+	console.log(dataAll.map((d) => [ d.values.neigen, d.values.ndegree ]));
+	const data = dataAll; //.filter((d) => d.values.ndegree > 0.001 && d.values.neigen > 0.001);
 
 	const y1 = pExtent[1][0];
 	const y2 = pExtent[1][1];
