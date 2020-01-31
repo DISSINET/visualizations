@@ -509,7 +509,7 @@ loadNames().then((persons) => {
 
 				gChord
 					.append('text')
-					.text(name.split(' ')[0])
+					.text(name.split(' ')[0].replace('-', ' '))
 					.attr('x', x + 80)
 					.attr('y', y + 28)
 					.attr('font-size', 35)
