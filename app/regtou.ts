@@ -104,16 +104,23 @@ loadNames().then((persons) => {
 			/*
 			group persons based on their locality
 			*/
-			const placeGroups: any = [];
+			const placeGroups: any = {};
 			personWithPlace.forEach((person: any) => {
 				// only known locations
-				if (person.place.x && person.place.y) {
-					if (person.place.name in placeGroups) {
-						placeGroups[person.place.name].persons.push(person);
+				const { name, x, y } = person.place;
+
+				if (x && y) {
+					const previouslyUsedPlace = Object.keys(placeGroups).find((placeName) => {
+						const place = placeGroups[placeName];
+						return (place.x === x && place.y === y) || placeName === name;
+					});
+					console.log(previouslyUsedPlace);
+					if (previouslyUsedPlace) {
+						placeGroups[previouslyUsedPlace].persons.push(person);
 					} else {
-						placeGroups[person.place.name] = {
-							x: parseFloat(person.place.x),
-							y: parseFloat(person.place.y),
+						placeGroups[name] = {
+							x: x,
+							y: y,
 							persons: [ person ]
 						};
 					}
@@ -293,12 +300,12 @@ loadNames().then((persons) => {
 					placeGroups[groupKey].name = groupKey;
 					return placeGroups[groupKey];
 				})
-				.sort((a, b) => (a.persons.length > b.persons.length ? 1 : -1));
+				.sort((a, b) => (a.persons.length < b.persons.length ? 1 : -1));
 
 			// labels settings
 			const leftLabels = [ 'Montesquieu', 'Roumens' ];
 			const topLabels = [ 'Lavaur', 'Gascogne', 'Saint-Paul-Cap-de-Joux', 'Roumens', 'Lanta' ];
-			const avoidLabels = [ 'Durfort', 'Pech-Luna', 'Blan' ];
+			const avoidLabels = [ 'Durfort', 'Pech-Luna', 'Blan', 'Palleville' ];
 
 			groupsBySize.forEach((group) => {
 				const [ x, y ] = projection([ group.x, group.y ]);
