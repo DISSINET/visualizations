@@ -114,7 +114,6 @@ loadNames().then((persons) => {
 						const place = placeGroups[placeName];
 						return (place.x === x && place.y === y) || placeName === name;
 					});
-					console.log(previouslyUsedPlace);
 					if (previouslyUsedPlace) {
 						placeGroups[previouslyUsedPlace].persons.push(person);
 					} else {
@@ -201,8 +200,6 @@ loadNames().then((persons) => {
 				}
 			});
 
-			console.log(occupancyGroups);
-
 			const occupancyColors = [
 				'#8dd3c7',
 				'#ffffb3',
@@ -215,7 +212,7 @@ loadNames().then((persons) => {
 				'#d9d9d9',
 				'#bc80bd',
 				'#ccebc5',
-				'#ffed6f'
+				'#CCBE59'
 			];
 			const chordsData = [];
 			Object.keys(occupancyGroups).forEach((oKey) => {
@@ -250,13 +247,18 @@ loadNames().then((persons) => {
 			/* 
 				drawing map
 			*/
-			const width = 2500;
+			const width = 2800;
 			const height = 1000;
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(100000).center([ 1.65, 43.65 ]);
+			var projection = d3.geoMercator().scale(100000).center([ 1.3, 43.6 ]);
 
 			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
+			const gTiles = svg.append('g').attr('class', 'tiles');
+			const gEdges = svg.append('g').attr('class', 'edges');
+			const gCircles = svg.append('g').attr('class', 'circles');
+			const gLabels = svg.append('g').attr('class', 'labels');
+
 			var path = d3.geoPath().projection(projection);
 
 			const url = (x, y, z) => `https://stamen-tiles-a.a.ssl.fastly.net/terrain-background/${z}/${x}/${y}.png`;
@@ -275,7 +277,7 @@ loadNames().then((persons) => {
 				setting tiles
 			*/
 			tiles.map(([ x, y, z ]) => {
-				svg
+				gTiles
 					.append('image')
 					.datum(function(d) {
 						return d;
@@ -287,13 +289,9 @@ loadNames().then((persons) => {
 					.attr('y', (y + ty) * k)
 					.attr('width', k + 0.2)
 					.attr('height', k + 0.2)
-					.style('opacity', 0.7)
+					.style('opacity', 1)
 					.style('mix-blend-mode', 'normal');
 			});
-
-			const gEdges = svg.append('g').attr('class', 'edges');
-			const gCircles = svg.append('g').attr('class', 'circles');
-			const gLabels = svg.append('g').attr('class', 'labels');
 
 			const groupsBySize = Object.keys(placeGroups)
 				.map((groupKey) => {
@@ -303,8 +301,17 @@ loadNames().then((persons) => {
 				.sort((a, b) => (a.persons.length < b.persons.length ? 1 : -1));
 
 			// labels settings
-			const leftLabels = [ 'Montesquieu', 'Roumens' ];
-			const topLabels = [ 'Lavaur', 'Gascogne', 'Saint-Paul-Cap-de-Joux', 'Roumens', 'Lanta' ];
+			const leftLabels = [ 'Montesquieu', 'Roumens', 'Saint-Martin-Lalande' ];
+			const topLabels = [
+				'Sorèze',
+				'Lavaur',
+				'Lasbordes',
+				'Gascogne',
+				'Saint-Paul-Cap-de-Joux',
+				'Roumens',
+				'Lanta',
+				'Saint-Martin-Lalande'
+			];
 			const avoidLabels = [ 'Durfort', 'Pech-Luna', 'Blan', 'Palleville' ];
 
 			groupsBySize.forEach((group) => {
@@ -314,7 +321,6 @@ loadNames().then((persons) => {
 
 				const cityOccs = group.persons.map((p) => p.Occupation_type);
 				const freqs = sortByFrequency(cityOccs).filter((c) => c);
-				console.log(freqs);
 				const colorI = occNames.indexOf(freqs[0]);
 
 				if (x > 0 && x < width && y > 0 && y < height) {
@@ -393,9 +399,9 @@ loadNames().then((persons) => {
 			chord chart
 			*/
 
-			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(2130,350)');
+			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(2480,320)');
 
-			const outerRadius = 270;
+			const outerRadius = 265;
 			const innerRadius = 220;
 
 			const ribbon = d3.ribbon().radius(innerRadius);
@@ -404,7 +410,7 @@ loadNames().then((persons) => {
 			const chord = d3.chord().padAngle(0.05).sortSubgroups(d3.descending);
 
 			const chords = chord(chordsData);
-			gChord.append('circle').attr('r', outerRadius + 50).attr('opacity', 0.7).attr('fill', 'white');
+			gChord.append('circle').attr('r', outerRadius + 35).attr('opacity', 0.7).attr('fill', 'white');
 
 			gChord
 				.append('circle')
@@ -499,10 +505,23 @@ loadNames().then((persons) => {
 				.attr('fill', 'none')
 				.attr('stroke-width', 8);
 
+			const legendY = outerRadius + 70;
+			const legendX = -2 * outerRadius - 30;
+
+			gChord
+				.append('rect')
+				.attr('x', legendX)
+				.attr('y', legendY)
+				.attr('width', 320 + 2 * outerRadius)
+				.attr('height', 320)
+				.attr('stroke', 'none')
+				.attr('fill', 'white')
+				.attr('opacity', 0.7);
+
 			// legend
 			occNames.forEach((name, ni) => {
-				const y = outerRadius + 70 + Math.floor(ni / 2) * 50;
-				const x = (ni - 1) % 2 ? -280 : 150;
+				const y = legendY + 15 + Math.floor(ni / 2) * 50;
+				const x = (ni - 1) % 2 ? legendX + 230 : legendX + 650;
 
 				gChord
 					.append('rect')
@@ -529,12 +548,10 @@ loadNames().then((persons) => {
 			});
 
 			/*
-				matrix chart
+				sna chart
 			*/
 
-			/*
 			// sort people
-			console.log(placeGroups);
 			persons.sort((a, b) => (b.edges.length > a.edges.length ? 1 : -1));
 			// threshold
 			const topNo = 100;
@@ -543,6 +560,8 @@ loadNames().then((persons) => {
 			const matrixH = 800;
 			const gMatrix = svg.append('g').attr('class', 'matrix').attr('transform', 'translate(0,0)');
 
+			console.log(topPersons);
+			/*
 			const sexColors = {
 				f: '#ca0020',
 				n: 'grey',
