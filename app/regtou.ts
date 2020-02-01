@@ -1,5 +1,7 @@
 import * as d3 from 'd3';
 import * as d3tile from 'd3-tile';
+import * as d3force from 'd3-force';
+var style = require('./regtou.css');
 
 async function loadPlaces() {
 	return await d3.csv(require('./data/regtou/places.csv'));
@@ -251,7 +253,7 @@ loadNames().then((persons) => {
 			const height = 1000;
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(100000).center([ 1.3, 43.6 ]);
+			var projection = d3.geoMercator().scale(100000).center([ 1.24, 43.572 ]);
 
 			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
 			const gTiles = svg.append('g').attr('class', 'tiles');
@@ -301,11 +303,16 @@ loadNames().then((persons) => {
 				.sort((a, b) => (a.persons.length < b.persons.length ? 1 : -1));
 
 			// labels settings
-			const leftLabels = [ 'Montesquieu', 'Roumens', 'Saint-Martin-Lalande' ];
+			const leftLabels = [
+				'Lasbordes',
+				'Montesquieu',
+				'Saint-Paul-Cap-de-Joux',
+				'Roumens',
+				'Saint-Martin-Lalande'
+			];
 			const topLabels = [
 				'Sorèze',
 				'Lavaur',
-				'Lasbordes',
 				'Gascogne',
 				'Saint-Paul-Cap-de-Joux',
 				'Roumens',
@@ -356,7 +363,7 @@ loadNames().then((persons) => {
 										.attr('stroke-linecap', 'round')
 										.attr('d', function(d) {
 											const dx = x - ex;
-											const dy = y - y;
+											const dy = y - ey;
 											const dr = Math.sqrt(dx * dx + dy * dy);
 											return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
 										});
@@ -554,13 +561,164 @@ loadNames().then((persons) => {
 			// sort people
 			persons.sort((a, b) => (b.edges.length > a.edges.length ? 1 : -1));
 			// threshold
-			const topNo = 100;
+			const topNo = 200;
+			//const topPersons = persons.filter((p) => p.Occupation_type).slice(0, topNo);
 			const topPersons = persons.slice(0, topNo);
-			const matrixW = 800;
-			const matrixH = 800;
-			const gMatrix = svg.append('g').attr('class', 'matrix').attr('transform', 'translate(0,0)');
+			const graphW = 800;
+			const graphH = height;
+			const graphMargin = 30;
 
+			const gGraph = d3
+				.select('body')
+				.append('svg')
+				.attr('class', 'graph')
+				.attr('width', graphW - 2 * (graphMargin + 20))
+				.attr('height', graphH - 2 * (graphMargin + 20))
+				.attr('transform', 'translate(' + graphMargin + ', ' + graphMargin + ')');
+
+			/*
+			const graphWrapper = gGraph
+				.append('rect')
+				.attr('width', graphW - 2 * graphMargin)
+				.attr('height', graphH - 2 * graphMargin)
+				.attr('stroke', 'none')
+				.attr('fill', 'white')
+				.attr('id', 'graph-bg')
+				.attr('opacity', 0.7);
+				*/
+
+			const nodes = [];
+			const links = [];
 			console.log(topPersons);
+
+			topPersons.forEach((person) => {
+				nodes.push({
+					name: person.Label,
+					id: parseInt(person.ID),
+					occupationType: person.Occupation_type,
+					weight: 1,
+					x: 0,
+					y: 0
+				});
+				person.edges.forEach((edge) => {
+					const toNode = parseInt(edge.to.ID);
+					if (topPersons.find((p) => parseInt(p.ID) === toNode)) {
+						links.push({
+							sourceID: parseInt(person.ID),
+							targetID: parseInt(edge.to.ID)
+						});
+					}
+				});
+			});
+
+			links.forEach((link) => {
+				nodes.forEach((node, ni) => {
+					if (node.id === link.sourceID) {
+						link.source = ni;
+					}
+					if (node.id === link.targetID) {
+						link.target = ni;
+					}
+				});
+			});
+			console.log(nodes);
+			console.log(links);
+			const simulation = d3force
+				.forceSimulation(nodes)
+				.force('link', d3.forceLink(links))
+				.force('charge', d3.forceManyBody().strength(-400).distanceMin(15).distanceMax(500))
+				.force('center', d3.forceCenter(graphW / 2, graphH / 2))
+				.force('x', d3.forceX())
+				.force('y', d3.forceY())
+				.stop();
+
+			d3.timeout(function() {
+				for (
+					var i = 0, n = Math.ceil(Math.log(simulation.alphaMin()) / Math.log(1 - simulation.alphaDecay()));
+					i < n;
+					++i
+				) {
+					simulation.tick();
+				}
+
+				gGraph
+					.append('g')
+					.attr('fill', 'none')
+					.attr('opacity', 1)
+					.selectAll('line')
+					.data(links)
+					.enter()
+					.append('path')
+					.attr('stroke-width', function(d) {
+						if (d.target.occupationType && d.source.occupationType) {
+							return 2;
+						} else {
+							return 0.5;
+						}
+					})
+					.attr('stroke-opacity', function(d) {
+						if (d.target.occupationType && d.source.occupationType) {
+							return 1;
+						} else {
+							return 0.5;
+						}
+					})
+					.attr('stroke', function(d) {
+						if (d.target.occupationType && d.source.occupationType) {
+							return 'black';
+						} else {
+							return 'grey';
+						}
+					})
+					.attr('d', function(d) {
+						const x = d.source.x;
+						const y = d.source.y;
+						const ex = d.target.x;
+						const ey = d.target.y;
+						const dx = x - ex;
+						const dy = y - ey;
+						const dr = Math.sqrt(dx * dx + dy * dy);
+						return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
+					});
+				/*
+					.attr('x1', function(d) {
+						return d.source.x;
+					})
+					.attr('y1', function(d) {
+						return d.source.y;
+					})
+					.attr('x2', function(d) {
+						return d.target.x;
+					})
+					.attr('y2', function(d) {
+						return d.target.y;
+					});
+					*/
+
+				gGraph
+					.append('g')
+					.attr('stroke-width', 3)
+					.selectAll('circle')
+					.data(nodes)
+					.enter()
+					.append('circle')
+					.attr('stroke', (d) => (d.occupationType ? 'black' : 'none'))
+					.attr('r', (d) => (d.occupationType ? 3 + topPersons[d.index].edges.length / 6 : 5))
+					.attr('fill', (d) => {
+						if (d.occupationType) {
+							const i = occNames.indexOf(d.occupationType);
+							return occupancyColors[i];
+						} else {
+							return 'grey';
+						}
+					})
+					.attr('cx', function(d) {
+						return d.x;
+					})
+					.attr('cy', function(d) {
+						return d.y;
+					});
+			});
 			/*
 			const sexColors = {
 				f: '#ca0020',
