@@ -3,6 +3,43 @@ import * as d3tile from 'd3-tile';
 import * as d3force from 'd3-force';
 var style = require('./regtou.css');
 
+const width = 2800;
+const height = 1000;
+const m = 20;
+
+const snaW = 800;
+const chordW = 600;
+const legendW = 1000;
+const chordH = 600;
+const mapW = width - snaW - chordW;
+
+const svgs = {
+	map: { id: 'map', h: height, w: width, x: 0, y: 0 },
+	chord: { id: 'chord', h: chordH, w: chordW, x: width - chordW - snaW - 2 * m, y: m },
+	legend: {
+		id: 'legend',
+		h: height - chordH - 3 * m,
+		w: legendW,
+		x: width - snaW - legendW - 2 * m,
+		y: chordH + 2 * m
+	},
+	sna: { id: 'sna', h: height - 2 * m, w: snaW, x: mapW + chordW - m, y: m }
+};
+
+Object.keys(svgs).forEach((svgKey) => {
+	const svg = svgs[svgKey];
+	svg.div = d3
+		.select('body')
+		.append('svg')
+		.attr('id', svg.id)
+		.attr('class', 'svg-wrapper')
+		.attr('width', svg.w)
+		.attr('height', svg.h)
+		.style('position', 'absolute')
+		.style('top', svg.y)
+		.style('left', svg.x);
+});
+
 async function loadPlaces() {
 	return await d3.csv(require('./data/regtou/places.csv'));
 }
@@ -131,6 +168,7 @@ loadNames().then((persons) => {
 			/* 
 				summing edges for groups
 			*/
+			console.log(placeGroups);
 			Object.keys(placeGroups).forEach((groupKey) => {
 				const group = placeGroups[groupKey];
 				group.edges = {};
@@ -211,7 +249,7 @@ loadNames().then((persons) => {
 				'#fdb462',
 				'#b3de69',
 				'#fccde5',
-				'#d9d9d9',
+				'lightblue',
 				'#bc80bd',
 				'#ccebc5',
 				'#CCBE59'
@@ -249,17 +287,15 @@ loadNames().then((persons) => {
 			/* 
 				drawing map
 			*/
-			const width = 2800;
-			const height = 1000;
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(100000).center([ 1.24, 43.572 ]);
+			var projection = d3.geoMercator().scale(70000).center([ 1.7, 43.59 ]);
 
-			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
-			const gTiles = svg.append('g').attr('class', 'tiles');
-			const gEdges = svg.append('g').attr('class', 'edges');
-			const gCircles = svg.append('g').attr('class', 'circles');
-			const gLabels = svg.append('g').attr('class', 'labels');
+			const mapSvg = svgs['map'].div;
+			const gTiles = mapSvg.append('g').attr('class', 'tiles');
+			const gEdges = mapSvg.append('g').attr('class', 'edges');
+			const gCircles = mapSvg.append('g').attr('class', 'circles');
+			const gLabels = mapSvg.append('g').attr('class', 'labels');
 
 			var path = d3.geoPath().projection(projection);
 
@@ -311,7 +347,7 @@ loadNames().then((persons) => {
 				'Saint-Martin-Lalande'
 			];
 			const topLabels = [
-				'Sorèze',
+				'Fanjeaux',
 				'Lavaur',
 				'Gascogne',
 				'Saint-Paul-Cap-de-Joux',
@@ -334,7 +370,7 @@ loadNames().then((persons) => {
 					const circleSize = 10 + group.persons.length * 2;
 					gCircles
 						.append('circle')
-						.style('fill', colorI !== -1 ? occupancyColors[colorI] : 'black')
+						.style('fill', colorI !== -1 ? occupancyColors[colorI] : 'grey')
 						.style('opacity', 1)
 						.attr('r', circleSize)
 						.attr('stroke-width', 5)
@@ -406,7 +442,12 @@ loadNames().then((persons) => {
 			chord chart
 			*/
 
-			const gChord = svg.append('g').attr('class', 'chord').attr('transform', 'translate(2480,320)');
+			const chordSvg = svgs['chord'];
+			const chordSvgDiv = chordSvg.div;
+			const gChord = chordSvgDiv
+				.append('g')
+				.attr('class', 'chord')
+				.attr('transform', 'translate(' + chordSvg.w / 2 + ', ' + chordSvg.h / 2 + ')');
 
 			const outerRadius = 265;
 			const innerRadius = 220;
@@ -417,14 +458,20 @@ loadNames().then((persons) => {
 			const chord = d3.chord().padAngle(0.05).sortSubgroups(d3.descending);
 
 			const chords = chord(chordsData);
-			gChord.append('circle').attr('r', outerRadius + 35).attr('opacity', 0.7).attr('fill', 'white');
 
+			gChord
+				.append('circle')
+				.attr('r', outerRadius + 35)
+				.attr('fill', 'white')
+				.attr('stroke-width', 3)
+				.attr('opacity', 0.7);
 			gChord
 				.append('circle')
 				.attr('r', outerRadius)
 				.attr('stroke', 'black')
 				.attr('fill', 'black')
 				.attr('stroke-width', 3);
+
 			const group = gChord.append('g').selectAll('g').data(chords.groups).join('g');
 
 			gChord
@@ -466,38 +513,6 @@ loadNames().then((persons) => {
 				.attr('fill-opacity', 0.5)
 				.style('mix-blend-mode', 'multiply');
 
-			/*
-			group
-				.append('text')
-				.each((d) => {
-					d.angle = (d.startAngle + d.endAngle) / 2;
-				})
-				.attr('dy', '.35em')
-				.attr('font-size', 30)
-				.attr(
-					'transform',
-					(d) => `
-        rotate(${d.angle * 180 / Math.PI - 90})
-        translate(${innerRadius + 26})
-        ${d.angle > Math.PI ? 'rotate(180)' : ''}
-      `
-				)
-				.attr('text-anchor', (d) => (d.angle > Math.PI ? 'end' : null))
-				.attr('color', 'black')
-				.attr('font-weight', 1000)
-				.attr('stroke-width', 1)
-				.attr('stroke', 'white')
-				.attr('font-family', 'ubuntu')
-				.text((d) => {
-					const name = occNames[d.index];
-					if (name.indexOf('manufacturer') > -1) {
-						return 'manufacturer';
-					} else {
-						return name;
-					}
-				});
-				*/
-
 			gChord
 				.append('circle')
 				.attr('r', innerRadius)
@@ -512,80 +527,56 @@ loadNames().then((persons) => {
 				.attr('fill', 'none')
 				.attr('stroke-width', 8);
 
-			const legendY = outerRadius + 70;
-			const legendX = -2 * outerRadius - 30;
+			/*
+				legend
+			*/
 
-			gChord
-				.append('rect')
-				.attr('x', legendX)
-				.attr('y', legendY)
-				.attr('width', 320 + 2 * outerRadius)
-				.attr('height', 320)
-				.attr('stroke', 'none')
-				.attr('fill', 'white')
-				.attr('opacity', 0.7);
+			const legendSvg = svgs['legend'];
+			const legendSvgDiv = legendSvg.div;
+
+			const rowH = (legendSvg.h - 20) / (occNames.length / 2);
+			const legendRectW = 60;
 
 			// legend
 			occNames.forEach((name, ni) => {
-				const y = legendY + 15 + Math.floor(ni / 2) * 50;
-				const x = (ni - 1) % 2 ? legendX + 230 : legendX + 650;
+				const y = 15 + Math.floor(ni / 2) * rowH;
+				const x = (ni - 1) % 2 ? legendSvg.w / 2 : legendSvg.w - m;
 
-				gChord
+				legendSvgDiv
 					.append('rect')
-					.attr('x', x + 100)
+					.attr('x', x - legendRectW)
 					.attr('y', y)
-					.attr('width', 70)
-					.attr('height', 40)
-					.attr('fill', occupancyColors[ni])
-					.attr('stroke', 'black')
-					.attr('stroke-width', 5);
+					.attr('width', legendRectW)
+					.attr('height', rowH - 10)
+					.attr('class', 'legend-rectangle')
+					.attr('fill', occupancyColors[ni]);
 
-				gChord
+				legendSvgDiv
 					.append('text')
 					.text(name.split(' ')[0].replace('-', ' '))
-					.attr('x', x + 80)
-					.attr('y', y + 28)
-					.attr('font-size', 35)
-					.attr('text-anchor', 'end')
-					.attr('font-family', 'ubuntu')
-					.attr('stroke', 'black')
-					.attr('font-weight', 1000)
-					.attr('stroke-width', 1.5)
-					.attr('stroke', 'white');
+					.attr('x', x - legendRectW - 20)
+					.attr('y', y + rowH / 2)
+					.attr('class', 'legend-label');
 			});
 
 			/*
 				sna chart
 			*/
-
+			const snaSvg = svgs['sna'];
+			const snaSvgDiv = snaSvg.div;
 			// sort people
 			persons.sort((a, b) => (b.edges.length > a.edges.length ? 1 : -1));
 			// threshold
-			const topNo = 200;
+			const topNo = 100;
 			//const topPersons = persons.filter((p) => p.Occupation_type).slice(0, topNo);
 			const topPersons = persons.slice(0, topNo);
-			const graphW = 800;
-			const graphH = height;
-			const graphMargin = 30;
 
-			const gGraph = d3
-				.select('body')
-				.append('svg')
-				.attr('class', 'graph')
-				.attr('width', graphW - 2 * (graphMargin + 20))
-				.attr('height', graphH - 2 * (graphMargin + 20))
-				.attr('transform', 'translate(' + graphMargin + ', ' + graphMargin + ')');
-
-			/*
-			const graphWrapper = gGraph
+			snaSvgDiv
 				.append('rect')
-				.attr('width', graphW - 2 * graphMargin)
-				.attr('height', graphH - 2 * graphMargin)
-				.attr('stroke', 'none')
-				.attr('fill', 'white')
-				.attr('id', 'graph-bg')
-				.attr('opacity', 0.7);
-				*/
+				.attr('width', snaSvg.w)
+				.attr('height', snaSvg.h)
+				.attr('opacity', 0.7)
+				.attr('fill', 'white');
 
 			const nodes = [];
 			const links = [];
@@ -627,7 +618,7 @@ loadNames().then((persons) => {
 				.forceSimulation(nodes)
 				.force('link', d3.forceLink(links))
 				.force('charge', d3.forceManyBody().strength(-400).distanceMin(15).distanceMax(500))
-				.force('center', d3.forceCenter(graphW / 2, graphH / 2))
+				.force('center', d3.forceCenter(snaSvg.w / 2, snaSvg.h / 2))
 				.force('x', d3.forceX())
 				.force('y', d3.forceY())
 				.stop();
@@ -641,7 +632,7 @@ loadNames().then((persons) => {
 					simulation.tick();
 				}
 
-				gGraph
+				snaSvgDiv
 					.append('g')
 					.selectAll('line')
 					.data(links)
@@ -676,7 +667,7 @@ loadNames().then((persons) => {
 					});
 					*/
 
-				gGraph
+				snaSvgDiv
 					.append('g')
 					.attr('stroke-width', 3)
 					.selectAll('circle')
@@ -684,7 +675,7 @@ loadNames().then((persons) => {
 					.enter()
 					.append('circle')
 					.attr('class', (d) => (d.occupationType ? 'node node-important' : 'node'))
-					.attr('r', (d) => (d.occupationType ? 3 + topPersons[d.index].edges.length / 6 : 5))
+					.attr('r', (d) => (d.occupationType ? 3 + topPersons[d.index].edges.length / 3 : 5))
 					.attr('fill', (d) => {
 						if (d.occupationType) {
 							const i = occNames.indexOf(d.occupationType);
