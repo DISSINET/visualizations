@@ -8,3 +8,24 @@ svg.graph {
 	opacity: 0.7;
 	padding: 20px;
 }
+
+.edge {
+	fill: none;
+	stroke-width: 0.5;
+	stroke: #888;
+	mix-blend-mode: multiply;
+}
+
+.edge.edge-important {
+	stroke-width: 1.5;
+	stroke: black;
+}
+
+.node {
+	stroke-width: 0;
+}
+
+.node.node-important {
+	stroke-width: 3;
+	stroke: black;
+}

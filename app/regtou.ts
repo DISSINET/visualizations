@@ -643,33 +643,14 @@ loadNames().then((persons) => {
 
 				gGraph
 					.append('g')
-					.attr('fill', 'none')
-					.attr('opacity', 1)
 					.selectAll('line')
 					.data(links)
 					.enter()
 					.append('path')
-					.attr('stroke-width', function(d) {
-						if (d.target.occupationType && d.source.occupationType) {
-							return 2;
-						} else {
-							return 0.5;
-						}
-					})
-					.attr('stroke-opacity', function(d) {
-						if (d.target.occupationType && d.source.occupationType) {
-							return 1;
-						} else {
-							return 0.5;
-						}
-					})
-					.attr('stroke', function(d) {
-						if (d.target.occupationType && d.source.occupationType) {
-							return 'black';
-						} else {
-							return 'grey';
-						}
-					})
+					.attr(
+						'class',
+						(d) => (d.target.occupationType && d.source.occupationType ? 'edge edge-important' : 'edge')
+					)
 					.attr('d', function(d) {
 						const x = d.source.x;
 						const y = d.source.y;
@@ -702,7 +683,7 @@ loadNames().then((persons) => {
 					.data(nodes)
 					.enter()
 					.append('circle')
-					.attr('stroke', (d) => (d.occupationType ? 'black' : 'none'))
+					.attr('class', (d) => (d.occupationType ? 'node node-important' : 'node'))
 					.attr('r', (d) => (d.occupationType ? 3 + topPersons[d.index].edges.length / 6 : 5))
 					.attr('fill', (d) => {
 						if (d.occupationType) {
