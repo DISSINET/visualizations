@@ -53,15 +53,16 @@ text.axis-label {
 
 .line {
 	fill: none;
-	stroke: #0000dc;
 	stroke-width: 3;
 	stroke-opacity: 0.3;
+}
+
+.line.line-male {
 	mix-blend-mode: multiply;
+	stroke: #0571b0;
 }
 
 .line.line-female {
-	stroke: #dc0000;
-	stroke-opacity: 0.3;
+	stroke: #ca0020;
 	mix-blend-mode: multiply;
-	stroke-width: 3;
 }

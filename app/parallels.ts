@@ -139,7 +139,7 @@ const drawChart = (svg: any, dataAll: any[]) => {
 				})
 			])
 			.attr('d', line)
-			.attr('class', 'line');
+			.attr('class', 'line line-male');
 	});
 	data.filter((d) => d.sex === 'f').forEach((record: any, ri: number) => {
 		svg
