@@ -2,13 +2,13 @@ import * as d3 from 'd3';
 import * as d3tile from 'd3-tile';
 
 async function loadNames() {
-	return await d3.tsv(require('./data/gui/names.tsv'));
+	return await d3.tsv(require('./data/names.tsv'));
 }
 async function loadPlaces() {
-	return await d3.tsv(require('./data/gui/places.tsv'));
+	return await d3.tsv(require('./data/places.tsv'));
 }
 async function loadEdges() {
-	return await d3.tsv(require('./data/gui/edges.tsv'));
+	return await d3.tsv(require('./data/edges.tsv'));
 }
 
 loadNames().then((personsAll) => {

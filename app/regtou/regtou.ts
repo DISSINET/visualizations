@@ -7,24 +7,31 @@ const width = 2800;
 const height = 1000;
 const m = 20;
 
-const snaW = 800;
-const chordW = 600;
-const legendW = 1000;
-const chordH = 600;
+const snaW = 900;
+const chordW = 650;
+const legendW = 850;
+const chordH = 650;
 const mapW = width - snaW - chordW;
 
 const svgs = {
 	map: { id: 'map', h: height, w: width, x: 0, y: 0 },
-	chord: { id: 'chord', h: chordH, w: chordW, x: width - chordW - snaW - 2 * m, y: m },
+	chord: {
+		id: 'chord',
+		h: chordH,
+		w: chordW,
+		x: width - chordW - m,
+		y: height - chordH - m
+	},
 	legend: {
 		id: 'legend',
 		h: height - chordH - 3 * m,
 		w: legendW,
-		x: width - snaW - legendW - 2 * m,
-		y: chordH + 2 * m
+		x: width - legendW - m,
+		y: m
 	},
-	sna: { id: 'sna', h: height - 2 * m, w: snaW, x: mapW + chordW - m, y: m }
+	sna: { id: 'sna', h: height - 2 * m, w: snaW, x: m, y: m }
 };
+var projection = d3.geoMercator().scale(40000).center([ 0.6, 43.6 ]);
 
 Object.keys(svgs).forEach((svgKey) => {
 	const svg = svgs[svgKey];
@@ -41,13 +48,13 @@ Object.keys(svgs).forEach((svgKey) => {
 });
 
 async function loadPlaces() {
-	return await d3.csv(require('./data/regtou/places.csv'));
+	return await d3.csv(require('./data/places.csv'));
 }
 async function loadNames() {
-	return await d3.csv(require('./data/regtou/names.csv'));
+	return await d3.csv(require('./data/names.csv'));
 }
 async function loadEdges() {
-	return await d3.csv(require('./data/regtou/edges.csv'));
+	return await d3.csv(require('./data/edges.csv'));
 }
 
 function sortByFrequency(array) {
@@ -66,12 +73,14 @@ function sortByFrequency(array) {
 	});
 }
 
-loadNames().then((persons) => {
+loadNames().then((allPersons) => {
 	loadPlaces().then((places) => {
 		loadEdges().then((edges) => {
-			console.log('persons', persons);
+			console.log('persons', allPersons);
 			console.log('edges', edges);
 			console.log('places', places);
+
+			const persons = allPersons.filter((p) => p.Network === 'd' || p.Network === '');
 
 			/*
 				getting edges for persons
@@ -94,6 +103,20 @@ loadNames().then((persons) => {
 						type: 'target'
 					});
 				}
+			});
+
+			const getOccupancies = (occ) => {
+				if (!occ) {
+					return [ false ];
+				} else if (occ.indexOf(', ') > -1) {
+					return occ.split(', ');
+				} else {
+					return [ occ ];
+				}
+			};
+
+			persons.forEach((person) => {
+				person.occupations = getOccupancies(person.Occupation_type);
 			});
 
 			/*
@@ -189,14 +212,6 @@ loadNames().then((persons) => {
 			*/
 			const occupancyGroups: any = {};
 
-			const getOccupancies = (occ) => {
-				if (occ.indexOf(', ') > -1) {
-					return occ.split(', ');
-				} else {
-					return [ occ ];
-				}
-			};
-
 			edges.forEach((edge) => {
 				const targetP = persons.find((p) => p.ID === edge.Target);
 				const sourceP = persons.find((p) => p.ID === edge.Source);
@@ -208,8 +223,8 @@ loadNames().then((persons) => {
 					allowedNetworks.includes(targetP.Network) &&
 					allowedNetworks.includes(sourceP.Network)
 				) {
-					const targetOs = getOccupancies(targetP.Occupation_type);
-					const sourceOs = getOccupancies(sourceP.Occupation_type);
+					const targetOs = targetP.occupations;
+					const sourceOs = sourceP.occupations;
 
 					targetOs.forEach((targetO) => {
 						sourceOs.forEach((sourceO) => {
@@ -289,7 +304,6 @@ loadNames().then((persons) => {
 			*/
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(70000).center([ 1.7, 43.59 ]);
 
 			const mapSvg = svgs['map'].div;
 			const gTiles = mapSvg.append('g').attr('class', 'tiles');
@@ -339,30 +353,29 @@ loadNames().then((persons) => {
 				.sort((a, b) => (a.persons.length < b.persons.length ? 1 : -1));
 
 			// labels settings
-			const leftLabels = [
-				'Lasbordes',
-				'Montesquieu',
-				'Saint-Paul-Cap-de-Joux',
-				'Roumens',
-				'Saint-Martin-Lalande'
-			];
+			const leftLabels = [ 'Montesquieu', 'Las Touzeilles', 'Avignonet', 'Pech-Luna' ];
 			const topLabels = [
 				'Fanjeaux',
 				'Lavaur',
+				'Toulouse',
 				'Gascogne',
-				'Saint-Paul-Cap-de-Joux',
-				'Roumens',
 				'Lanta',
-				'Saint-Martin-Lalande'
+				'Blan',
+				'Avignonet',
+				'Montgaillard',
+				'Le Carla',
+				'Caucalières'
 			];
-			const avoidLabels = [ 'Durfort', 'Pech-Luna', 'Blan', 'Palleville' ];
+			const avoidLabels = [ 'Palleville', 'Roumens', 'Saint-Martin-Lalande', 'Durfort' ];
+			const displayLabels = [ 'Le Carla', 'Limoux', 'Caucalières', 'Hautpoul', 'Rabat', 'Merville' ];
 
 			groupsBySize.forEach((group) => {
 				const [ x, y ] = projection([ group.x, group.y ]);
 
 				const liner = d3.line().curve(d3.curveBasis).x((d) => d[0]).y((d) => d[1]);
 
-				const cityOccs = group.persons.map((p) => p.Occupation_type);
+				const cityOccs = [];
+				group.persons.forEach((p) => p.occupations.forEach((occ) => cityOccs.push(occ)));
 				const freqs = sortByFrequency(cityOccs).filter((c) => c);
 				const colorI = occNames.indexOf(freqs[0]);
 
@@ -373,7 +386,7 @@ loadNames().then((persons) => {
 						.style('fill', colorI !== -1 ? occupancyColors[colorI] : 'grey')
 						.style('opacity', 1)
 						.attr('r', circleSize)
-						.attr('stroke-width', 5)
+						.attr('stroke-width', colorI !== -1 ? 5 : 3)
 						.attr('stroke', 'black')
 						.attr('cx', x)
 						.attr('cy', y);
@@ -416,8 +429,11 @@ loadNames().then((persons) => {
 						}
 					});
 					const label = group.name;
-					if (avoidLabels.indexOf(label) === -1 && (group.persons.length > 5 || edgesSum > 5)) {
-						const textSize = 35 + group.persons.length * 1.5;
+					if (
+						displayLabels.indexOf(label) > -1 ||
+						(avoidLabels.indexOf(label) === -1 && (group.persons.length > 7 || edgesSum > 7))
+					) {
+						const textSize = 25 + group.persons.length * 1.5;
 
 						const left = leftLabels.includes(label);
 						const top = topLabels.includes(label);
@@ -444,13 +460,15 @@ loadNames().then((persons) => {
 
 			const chordSvg = svgs['chord'];
 			const chordSvgDiv = chordSvg.div;
+
+			const coordM = 50;
 			const gChord = chordSvgDiv
 				.append('g')
 				.attr('class', 'chord')
 				.attr('transform', 'translate(' + chordSvg.w / 2 + ', ' + chordSvg.h / 2 + ')');
 
-			const outerRadius = 265;
-			const innerRadius = 220;
+			const outerRadius = chordSvg.w / 2 - coordM;
+			const innerRadius = outerRadius - 30;
 
 			const ribbon = d3.ribbon().radius(innerRadius);
 			const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
@@ -459,12 +477,15 @@ loadNames().then((persons) => {
 
 			const chords = chord(chordsData);
 
+			//gChord.append('circle').attr('r', chordSvg.h / 2).attr('class', 'background');
 			gChord
-				.append('circle')
-				.attr('r', outerRadius + 35)
-				.attr('fill', 'white')
-				.attr('stroke-width', 3)
-				.attr('opacity', 0.7);
+				.append('rect')
+				.attr('width', chordSvg.w)
+				.attr('height', chordSvg.h)
+				.attr('y', -chordSvg.w / 2)
+				.attr('x', -chordSvg.h / 2)
+				.attr('class', 'background');
+
 			gChord
 				.append('circle')
 				.attr('r', outerRadius)
@@ -537,6 +558,15 @@ loadNames().then((persons) => {
 			const rowH = (legendSvg.h - 20) / (occNames.length / 2);
 			const legendRectW = 60;
 
+			/*
+			legendSvgDiv
+				.append('rect')
+				.attr('width', legendSvg.w)
+				.attr('height', legendSvg.h)
+				.attr('class', 'background');
+
+			*/
+
 			// legend
 			occNames.forEach((name, ni) => {
 				const y = 15 + Math.floor(ni / 2) * rowH;
@@ -567,26 +597,21 @@ loadNames().then((persons) => {
 			// sort people
 			persons.sort((a, b) => (b.edges.length > a.edges.length ? 1 : -1));
 			// threshold
-			const topNo = 100;
+			const topNo = 300;
 			//const topPersons = persons.filter((p) => p.Occupation_type).slice(0, topNo);
 			const topPersons = persons.slice(0, topNo);
 
-			snaSvgDiv
-				.append('rect')
-				.attr('width', snaSvg.w)
-				.attr('height', snaSvg.h)
-				.attr('opacity', 0.7)
-				.attr('fill', 'white');
+			snaSvgDiv.append('rect').attr('width', snaSvg.w).attr('height', snaSvg.h).attr('class', 'background');
 
 			const nodes = [];
 			const links = [];
-			console.log(topPersons);
+			//console.log(topPersons);
 
 			topPersons.forEach((person) => {
 				nodes.push({
 					name: person.Label,
 					id: parseInt(person.ID),
-					occupationType: person.Occupation_type,
+					occupation: person.occupations[0],
 					weight: 1,
 					x: 0,
 					y: 0
@@ -612,12 +637,16 @@ loadNames().then((persons) => {
 					}
 				});
 			});
+
+			/*
 			console.log(nodes);
 			console.log(links);
+			*/
+
 			const simulation = d3force
 				.forceSimulation(nodes)
 				.force('link', d3.forceLink(links))
-				.force('charge', d3.forceManyBody().strength(-400).distanceMin(15).distanceMax(500))
+				.force('charge', d3.forceManyBody().strength(-400).distanceMin(10).distanceMax(300))
 				.force('center', d3.forceCenter(snaSvg.w / 2, snaSvg.h / 2))
 				.force('x', d3.forceX())
 				.force('y', d3.forceY())
@@ -638,10 +667,7 @@ loadNames().then((persons) => {
 					.data(links)
 					.enter()
 					.append('path')
-					.attr(
-						'class',
-						(d) => (d.target.occupationType && d.source.occupationType ? 'edge edge-important' : 'edge')
-					)
+					.attr('class', (d) => (d.target.occupation && d.source.occupation ? 'edge edge-important' : 'edge'))
 					.attr('d', function(d) {
 						const x = d.source.x;
 						const y = d.source.y;
@@ -652,20 +678,6 @@ loadNames().then((persons) => {
 						const dr = Math.sqrt(dx * dx + dy * dy);
 						return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
 					});
-				/*
-					.attr('x1', function(d) {
-						return d.source.x;
-					})
-					.attr('y1', function(d) {
-						return d.source.y;
-					})
-					.attr('x2', function(d) {
-						return d.target.x;
-					})
-					.attr('y2', function(d) {
-						return d.target.y;
-					});
-					*/
 
 				snaSvgDiv
 					.append('g')
@@ -674,22 +686,32 @@ loadNames().then((persons) => {
 					.data(nodes)
 					.enter()
 					.append('circle')
-					.attr('class', (d) => (d.occupationType ? 'node node-important' : 'node'))
-					.attr('r', (d) => (d.occupationType ? 3 + topPersons[d.index].edges.length / 3 : 5))
+					.attr('class', (d) => (d.occupation ? 'node node-important' : 'node'))
+					.attr('data-label', (d) => d.name)
+					.attr('r', (d) => (d.occupation ? topPersons[d.index].edges.length / 3 : 6))
 					.attr('fill', (d) => {
-						if (d.occupationType) {
-							const i = occNames.indexOf(d.occupationType);
+						if (d.occupation) {
+							const i = occNames.indexOf(d.occupation);
 							return occupancyColors[i];
 						} else {
 							return 'grey';
 						}
 					})
-					.attr('cx', function(d) {
-						return d.x;
+					.attr('cx', (d) => d.x)
+					.attr('cy', (d) => d.y);
+
+				snaSvgDiv
+					.append('g')
+					.selectAll('circle')
+					.data(nodes)
+					.enter()
+					.append('text')
+					.attr('class', (d) => (d.occupation ? 'node-label' : ''))
+					.text((d) => {
+						d.occupation ? d.name : '';
 					})
-					.attr('cy', function(d) {
-						return d.y;
-					});
+					.attr('x', (d) => d.x)
+					.attr('y', (d) => d.y);
 			});
 			/*
 			const sexColors = {

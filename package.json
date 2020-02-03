@@ -4,7 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "parcel app/index.html --no-cache",
+		"parallels": "parcel app/parallels/index.html",
+		"gui": "parcel app/gui/index.html",
+		"regtou": "parcel app/regtou/index.html",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -25,6 +27,7 @@
 		"@types/d3": "^5.7.2",
 		"@types/node": "^13.5.0",
 		"d3": "^5.15.0",
+		"d3-force": "^2.0.1",
 		"d3-geo": "^1.11.9",
 		"d3-tile": "^1.0.0"
 	}

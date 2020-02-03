@@ -1,0 +1,49 @@
+.edge {
+	fill: none;
+	stroke-width: 0.5;
+	stroke: #888;
+	mix-blend-mode: multiply;
+}
+
+.edge.edge-important {
+	stroke-width: 1.5;
+	stroke: black;
+}
+
+.node {
+	stroke-width: 0;
+	mix-blend-mode: multiply;
+}
+
+.node.node-important {
+	stroke-width: 4;
+	stroke: black;
+	mix-blend-mode: normal;
+}
+
+.tiles {
+	opacity: 0.7;
+}
+
+.legend-label {
+	dominant-baseline: middle;
+	font-size: 35;
+	text-anchor: end;
+	font-family: ubuntu;
+	stroke: black;
+	font-weight: 1000;
+	stroke-width: 2;
+	stroke: white;
+	font-style: italic;
+}
+
+.legend-rectangle {
+	stroke: black;
+	stroke-width: 5;
+}
+
+.background {
+	fill: white;
+	opacity: 0.75;
+	mix-blend-mode: color;
+}
