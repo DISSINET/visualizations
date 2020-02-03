@@ -1,1 +1,35 @@
+svg {
+	.edge {
+		stroke-width: 2;
+		mix-blend-mode: multiply;
+		stroke-opacity: 0.5;
 
+		&.edge-hetero {
+			stroke: lightgrey;
+		}
+		&.edge-male {
+			stroke: #91bfdb;
+		}
+		&.edge-female {
+			stroke: #fc8d59;
+		}
+	}
+	.node {
+		stroke: black;
+		//stroke-width: 2;
+		&.node-female {
+			fill: #fdae61;
+		}
+		&.node-male {
+			fill: #abd9e9;
+		}
+	}
+	.node-deponent {
+		&.node-female {
+			fill: #d7191c;
+		}
+		&.node-male {
+			fill: #2c7bb6;
+		}
+	}
+}
