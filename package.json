@@ -7,6 +7,7 @@
 		"parallels": "parcel app/parallels/index.html",
 		"gui": "parcel app/gui/index.html",
 		"regtou": "parcel app/regtou/index.html",
+		"coventry": "parcel app/coventry/index.html",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -21,6 +22,7 @@
 	"homepage": "https://github.com/adammertel/parallel-coordinates#readme",
 	"devDependencies": {
 		"parcel-bundler": "^1.12.4",
+		"sass": "^1.25.0",
 		"typescript": "^3.7.5"
 	},
 	"dependencies": {
