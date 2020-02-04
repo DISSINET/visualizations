@@ -14,21 +14,46 @@ svg {
 		stroke-width: 2;
 	}
 
+	.legend-type-rect,
+	.legend-family-circle {
+		stroke: black;
+		stroke-width: 2;
+	}
 	text {
 		color: black;
 		alignment-baseline: middle;
 		font-weight: 1000;
+		font-size: 17;
 		stroke: white;
 		font-family: ubuntu;
 		&.legend-name-label {
 		}
-
-		&.legend-type-rect {
-			stroke: black;
-			stroke-width: 2;
+		&.legend-type-label {
 		}
+		&.legend-family-label {
+		}
+
+		&.legend-title {
+			stroke: none;
+			font-weight: 900;
+			font-size: 22;
+		}
+
 		&.node-label {
+			font-size: 18;
 			text-anchor: middle;
 		}
+	}
+	.legend-name-circle {
+		stroke: black;
+		stroke-width: 1.5;
+	}
+
+	.legend-type-line-hl {
+		stroke-width: 7;
+	}
+	.legend-type-line-aux {
+		stroke-width: 2;
+		stroke: black;
 	}
 }

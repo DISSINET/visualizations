@@ -75,7 +75,7 @@ getSSData(tableEdgesId).then((links) => {
 		console.log(familyNamesGroups);
 
 		// drawing
-		const height = 600;
+		const height = 450;
 		const width = 2000;
 		const svg = d3
 			.select('body')
@@ -86,21 +86,48 @@ getSSData(tableEdgesId).then((links) => {
 
 		const simulation = d3force
 			.forceSimulation(gNodes)
+			.alphaDecay(0.05)
 			.force(
 				'link',
 				d3
 					.forceLink(gLinks)
 					.strength((link) => link.edges.length / 4)
-					.distance((link) => link.edges.length / 4)
-					.iterations(1)
+					.distance((link) => link.edges.length / 4 * 20)
+					.iterations(5)
 			)
 			//.force('many', d3.forceManyBody().strength(10).distanceMax(10).distanceMin(5))
-			.force('charge', d3.forceCollide().radius(80).strength(0.1))
-			.force('center', d3.forceCenter(400, height / 2))
-			.force('x', d3.forceX(width / 2))
-			.force('y', d3.forceY(height / 2).strength(1))
-			.stop()
-			.tick(100);
+			.force('charge', d3.forceCollide().radius(40).strength(1))
+			.force('center', d3.forceCenter(380, height / 2))
+			//.force('x', d3.forceX(width / 2))
+			//.force('y', d3.forceY(height / 2).strength(1))
+			.on('tick', () => {
+				gNodes.forEach((node) => {
+					if (node.y < 20) {
+						node.y = 20;
+					}
+					if (node.y > height - 20) {
+						node.y = height - 20;
+					}
+					if (node.x > 600) {
+						node.x = 600;
+					}
+					if (node.x < 20) {
+						node.x = 20;
+					}
+				});
+				nodesGs.attr('cx', (d) => d.x).attr('cy', (d) => d.y);
+				labelsGs.attr('x', (d) => d.x).attr('y', (d) => d.y);
+				edgesGs
+					.attr('x1', (d) => d.source.x)
+					.attr('x2', (d) => d.target.x)
+					.attr('y1', (d) => d.source.y)
+					.attr('y2', (d) => d.target.y);
+				edgesGsHalo
+					.attr('x1', (d) => d.source.x)
+					.attr('x2', (d) => d.target.x)
+					.attr('y1', (d) => d.source.y)
+					.attr('y2', (d) => d.target.y);
+			});
 
 		const typesToDisplay = [
 			'instruction in heretical beliefs',
@@ -131,11 +158,7 @@ getSSData(tableEdgesId).then((links) => {
 					}
 				});
 				return color;
-			})
-			.attr('x1', (d) => d.source.x)
-			.attr('x2', (d) => d.target.x)
-			.attr('y1', (d) => d.source.y)
-			.attr('y2', (d) => d.target.y);
+			});
 
 		const edgesGs = svg
 			.append('g')
@@ -144,13 +167,9 @@ getSSData(tableEdgesId).then((links) => {
 			.enter()
 			.append('line')
 			.attr('class', (d) => 'edge')
-			.attr('stroke-width', (d) => d.edges.length)
-			.attr('x1', (d) => d.source.x)
-			.attr('x2', (d) => d.target.x)
-			.attr('y1', (d) => d.source.y)
-			.attr('y2', (d) => d.target.y);
+			.attr('stroke-width', (d) => d.edges.length);
 
-		const radius = (val) => 10 + Math.pow(val, 0.8);
+		const radius = (val) => 12 + Math.pow(val, 0.8);
 
 		const nodesGs = svg
 			.append('g')
@@ -169,9 +188,7 @@ getSSData(tableEdgesId).then((links) => {
 				return classes.join(' ');
 			})
 			.attr('data-label', (d) => d.name)
-			.attr('r', (d) => radius(d.degree))
-			.attr('cx', (d) => d.x)
-			.attr('cy', (d) => d.y);
+			.attr('r', (d) => radius(d.degree));
 
 		const labelsGs = svg
 			.append('g')
@@ -181,39 +198,73 @@ getSSData(tableEdgesId).then((links) => {
 			.append('text')
 			.text((d, di) => di + 1)
 			.attr('class', 'node-label')
-			.attr('data-label', (d) => d.name)
-			.attr('x', (d) => d.x)
-			.attr('y', (d) => d.y + 2);
+			.attr('data-label', (d) => d.name);
 
+		/*
+			legend
+		*/
 		// labels legend
-		const lNamesXs = [ 1100, 1300 ];
+		const legendYStart = 50;
+		const legendXStart = 700;
+		const lNamesXs = [ legendXStart, legendXStart + 230 ];
+		svg
+			.append('text')
+			.attr('x', lNamesXs[0] - 20)
+			.attr('y', legendYStart - 20)
+			.text('Names of actors')
+			.attr('class', 'legend-title');
+
 		gNodes.forEach((node, ni) => {
-			const y = 50 + height / gNodes.length * Math.floor(ni / 2);
+			const y = legendYStart + height / (gNodes.length / 2 + 3) * Math.floor(ni / 2) + 10;
 			const x = (ni + 1) % 2 ? lNamesXs[0] : lNamesXs[1];
+			const familyI = familyNamesGroups.indexOf(node.familyname);
+			svg
+				.append('circle')
+				.attr('class', 'legend-name-circle')
+				.attr('fill', familyI > -1 ? familyColors[familyI] : familyColors[5])
+				.attr('cx', x - 10)
+				.attr('cy', y - 2)
+				.attr('r', 7);
+
 			svg
 				.append('text')
 				.attr('class', 'legend-name-label')
-				.text(ni + 1 + ' - ' + node.label)
+				.text(ni + 1 + ' ' + node.label)
 				.attr('x', x)
 				.attr('y', y);
 		});
 
-		// edge type legend
-		const ltypesX = 800;
+		const ltypesX = legendXStart + 450;
 		const lineH = 30;
 		const rectW = 40;
-		const rectH = lineH - 10;
-		const typeYStart = 50;
+		const rectH = lineH - 5;
+
+		// edge type legend
+		svg
+			.append('text')
+			.attr('x', ltypesX)
+			.attr('y', legendYStart - 20)
+			.text('Type of interaction')
+			.attr('class', 'legend-title');
+
 		typesToDisplay.forEach((type, ti) => {
-			const y = typeYStart + lineH * ti;
+			const y = legendYStart + lineH * ti;
 			svg
-				.append('rect')
-				.attr('x', ltypesX)
-				.attr('y', y)
-				.attr('width', rectW)
-				.attr('height', rectH)
-				.attr('fill', typeColors[ti])
-				.attr('class', 'legend-type-rect');
+				.append('line')
+				.attr('x1', ltypesX)
+				.attr('y1', y + rectW / 4)
+				.attr('x2', ltypesX + rectW)
+				.attr('y2', y + rectW / 4)
+				.attr('stroke', typeColors[ti])
+				.attr('class', 'legend-type-line-hl');
+			svg
+				.append('line')
+				.attr('x1', ltypesX)
+				.attr('y1', y + rectW / 4)
+				.attr('x2', ltypesX + rectW)
+				.attr('y2', y + rectW / 4)
+				.attr('class', 'legend-type-line-aux');
+
 			svg
 				.append('text')
 				.attr('x', ltypesX + rectW + 5)
@@ -221,5 +272,49 @@ getSSData(tableEdgesId).then((links) => {
 				.text(type)
 				.attr('class', 'legend-type-label');
 		});
+
+		// edge family legend
+
+		const familyYStart = legendYStart + typesToDisplay.length * lineH + 50;
+
+		svg
+			.append('text')
+			.attr('x', ltypesX)
+			.attr('y', familyYStart - 20)
+			.text('Family name')
+			.attr('class', 'legend-title');
+
+		familyNamesGroups.forEach((family, ti) => {
+			const y = familyYStart + lineH * ti;
+			svg
+				.append('circle')
+				.attr('cx', ltypesX + rectW / 2)
+				.attr('cy', y + rectH / 2)
+				.attr('r', rectH / 2)
+				.attr('fill', familyColors[ti])
+				.attr('class', 'legend-family-circle');
+
+			svg
+				.append('text')
+				.attr('x', ltypesX + rectW + 5)
+				.attr('y', y + rectH / 2)
+				.text(family)
+				.attr('class', 'legend-family-label');
+		});
+
+		// others
+		svg
+			.append('circle')
+			.attr('cx', ltypesX + rectW / 2)
+			.attr('cy', familyYStart + familyNamesGroups.length * lineH + rectH / 2)
+			.attr('r', rectH / 2)
+			.attr('fill', 'grey')
+			.attr('class', 'legend-family-circle');
+		svg
+			.append('text')
+			.attr('x', ltypesX + rectW + 5)
+			.attr('y', familyYStart + familyNamesGroups.length * lineH + rectH / 2)
+			.text('other families and unknown')
+			.attr('class', 'legend-family-label');
 	});
 });
