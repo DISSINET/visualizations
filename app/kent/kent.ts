@@ -23,8 +23,13 @@ getSSData(tableEdgesId).then((links) => {
       setting data into sna form
     */
 
-		const typeColors = [ '#66c2a5', '#fc8d62', '#8da0cb', '#e78ac3', '#a6d854' ];
-		const familyColors = [ '#e41a1c', '#377eb8', '#4daf4a', '#ffff33', '#a65628', 'dimgrey' ];
+		const typeColors = {
+			reading: '#4daf4a',
+			'accommodation and reading': '#377eb8',
+			'instruction in heretical beliefs': '#e41a1c',
+			'other ties': 'white'
+		};
+		const familyColors = [ '#8dd3c7', '#ffffb3', '#bc80bd', '#fdb462', '#b3de69', 'dimgrey' ];
 
 		const gNodes = nodes.filter((n) => n.degree !== '0').map((node) => {
 			return { ...node, id: parseInt(node.idold) };
@@ -32,6 +37,10 @@ getSSData(tableEdgesId).then((links) => {
 
 		const linksFiltered = links
 			.map((link) => {
+				// merge public readings to readings
+				if (link.classificationlevel1 === 'public reading') {
+					link.classificationlevel1 = 'reading';
+				}
 				const source = gNodes.find((n) => n.id == link.source);
 				const target = gNodes.find((n) => n.id == link.target);
 				if (source && target) {
@@ -92,12 +101,19 @@ getSSData(tableEdgesId).then((links) => {
 				d3
 					.forceLink(gLinks)
 					.strength((link) => link.edges.length / 4)
-					.distance((link) => link.edges.length / 4 * 20)
-					.iterations(5)
+					.distance((link) => {
+						if (link.source.familyname === link.target.familyName) {
+							return 20;
+						} else {
+							return 1 / link.edges.length * 20;
+						}
+					})
+					.iterations(200)
 			)
 			//.force('many', d3.forceManyBody().strength(10).distanceMax(10).distanceMin(5))
-			.force('charge', d3.forceCollide().radius(40).strength(1))
-			.force('center', d3.forceCenter(380, height / 2))
+
+			.force('charge', d3.forceCollide().radius(50).strength(0.8))
+			.force('center', d3.forceCenter(350, height / 2))
 			//.force('x', d3.forceX(width / 2))
 			//.force('y', d3.forceY(height / 2).strength(1))
 			.on('tick', () => {
@@ -108,8 +124,8 @@ getSSData(tableEdgesId).then((links) => {
 					if (node.y > height - 20) {
 						node.y = height - 20;
 					}
-					if (node.x > 600) {
-						node.x = 600;
+					if (node.x > 700) {
+						node.x = 700;
 					}
 					if (node.x < 20) {
 						node.x = 20;
@@ -129,13 +145,7 @@ getSSData(tableEdgesId).then((links) => {
 					.attr('y2', (d) => d.target.y);
 			});
 
-		const typesToDisplay = [
-			'instruction in heretical beliefs',
-			'public reading',
-			'accommodation',
-			'reading',
-			'servant'
-		];
+		const typesToDisplay = [ 'instruction in heretical beliefs', 'accommodation', 'reading' ];
 
 		const edgesGsHalo = svg
 			.append('g')
@@ -146,18 +156,18 @@ getSSData(tableEdgesId).then((links) => {
 			.attr('class', 'edge-halo')
 			.attr('stroke-width', (d) => d.edges.length + 5)
 			.attr('stroke', (d) => {
-				let color = 'white';
-				let index = 5;
-				d.edges.forEach((e) => {
-					if (typesToDisplay.includes(e.classificationlevel1)) {
-						const i = typesToDisplay.indexOf(e.classificationlevel1);
-						if (i < index) {
-							color = typeColors[i];
-							index = i;
+				const types = d.edges.map((e) => e.classificationlevel1);
+				if (types.includes('accommodation') && types.includes('reading')) {
+					return typeColors['accommodation and reading'];
+				} else {
+					let color = 'white';
+					Object.keys(typeColors).find((key) => {
+						if (types.includes(key)) {
+							color = typeColors[key];
 						}
-					}
-				});
-				return color;
+					});
+					return color;
+				}
 			});
 
 		const edgesGs = svg
@@ -169,7 +179,7 @@ getSSData(tableEdgesId).then((links) => {
 			.attr('class', (d) => 'edge')
 			.attr('stroke-width', (d) => d.edges.length);
 
-		const radius = (val) => 12 + Math.pow(val, 0.8);
+		const radius = (val) => 12 + Math.pow(val, 0.7);
 
 		const nodesGs = svg
 			.append('g')
@@ -211,12 +221,14 @@ getSSData(tableEdgesId).then((links) => {
 			.append('text')
 			.attr('x', lNamesXs[0] - 20)
 			.attr('y', legendYStart - 20)
-			.text('Names of actors')
+			.text('Names')
 			.attr('class', 'legend-title');
 
 		gNodes.forEach((node, ni) => {
-			const y = legendYStart + height / (gNodes.length / 2 + 3) * Math.floor(ni / 2) + 10;
-			const x = (ni + 1) % 2 ? lNamesXs[0] : lNamesXs[1];
+			const firstCol = ni < gNodes.length / 2;
+			const y = 10 + legendYStart + height / (gNodes.length / 2 + 3) * (firstCol ? ni : ni - gNodes.length / 2);
+
+			const x = firstCol ? lNamesXs[0] : lNamesXs[1];
 			const familyI = familyNamesGroups.indexOf(node.familyname);
 			svg
 				.append('circle')
@@ -244,10 +256,10 @@ getSSData(tableEdgesId).then((links) => {
 			.append('text')
 			.attr('x', ltypesX)
 			.attr('y', legendYStart - 20)
-			.text('Type of interaction')
+			.text('Type of tie')
 			.attr('class', 'legend-title');
 
-		typesToDisplay.forEach((type, ti) => {
+		Object.keys(typeColors).forEach((type, ti) => {
 			const y = legendYStart + lineH * ti;
 			svg
 				.append('line')
@@ -255,7 +267,7 @@ getSSData(tableEdgesId).then((links) => {
 				.attr('y1', y + rectW / 4)
 				.attr('x2', ltypesX + rectW)
 				.attr('y2', y + rectW / 4)
-				.attr('stroke', typeColors[ti])
+				.attr('stroke', typeColors[type])
 				.attr('class', 'legend-type-line-hl');
 			svg
 				.append('line')
@@ -274,15 +286,9 @@ getSSData(tableEdgesId).then((links) => {
 		});
 
 		// edge family legend
+		const familyYStart = legendYStart + typesToDisplay.length * lineH + 100;
 
-		const familyYStart = legendYStart + typesToDisplay.length * lineH + 50;
-
-		svg
-			.append('text')
-			.attr('x', ltypesX)
-			.attr('y', familyYStart - 20)
-			.text('Family name')
-			.attr('class', 'legend-title');
+		svg.append('text').attr('x', ltypesX).attr('y', familyYStart - 20).text('Family').attr('class', 'legend-title');
 
 		familyNamesGroups.forEach((family, ti) => {
 			const y = familyYStart + lineH * ti;
@@ -314,7 +320,7 @@ getSSData(tableEdgesId).then((links) => {
 			.append('text')
 			.attr('x', ltypesX + rectW + 5)
 			.attr('y', familyYStart + familyNamesGroups.length * lineH + rectH / 2)
-			.text('other families and unknown')
+			.text('other and unknown')
 			.attr('class', 'legend-family-label');
 	});
 });
