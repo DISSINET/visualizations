@@ -3,20 +3,21 @@ svg {
 		stroke-width: 2;
 		mix-blend-mode: multiply;
 		stroke-opacity: 0.5;
+		stroke: black;
 
-		&.edge-hetero {
+		&.mixed {
 			stroke: lightgrey;
 		}
-		&.edge-male {
+		&.male {
 			stroke: #91bfdb;
 		}
-		&.edge-female {
+		&.female {
 			stroke: #fc8d59;
 		}
 	}
 	.node {
 		stroke: black;
-		//stroke-width: 2;
+		stroke-width: 2;
 		&.node-female {
 			fill: #fdae61;
 		}

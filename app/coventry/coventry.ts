@@ -15,48 +15,66 @@ const tableEdgesId = '1ABeHDLXde59akcKwsToldnW04nJU9lpdmt6wPfstnqM/1';
 const tableNodesId = '1FdWb1A7lwW2j1tf9Fswj6C7LxFrb4MXbY7KTHrIjqh8/1';
 
 getSSData(tableEdgesId).then((links) => {
-	getSSData(tableNodesId).then((nodes) => {
+	getSSData(tableNodesId).then((nodesRaw) => {
 		console.log('links', links);
-		console.log('nodes', nodes);
+		console.log('nodes', nodesRaw);
 
 		/*
       setting data into sna form
     */
 
-		const colors = [
-			'#8dd3c7',
-			'#ffffb3',
-			'#bebada',
-			'#fb8072',
-			'#80b1d3',
-			'#fdb462',
-			'#b3de69',
-			'#fccde5',
-			'#d9d9d9',
-			'#bc80bd',
-			'#ccebc5',
-			'#ffed6f'
-		];
-
-		const linkTypes = links.map((l) => l.classificationlevel1).filter((v, i, a) => a.indexOf(v) === i);
-		console.log(linkTypes);
-
-		const gNodes = nodes.filter((n) => n.degree !== '0').map((node) => {
-			return { ...node, id: parseInt(node.idold) };
+		links.forEach((link) => {
+			const source = nodesRaw.find((n) => n.idold == link.source);
+			const target = nodesRaw.find((n) => n.idold == link.target);
+			if (source.sex === 'm' && target.sex === 'm') {
+				link.type = 'male';
+			} else if (source.sex === 'f' && target.sex === 'f') {
+				link.type = 'female';
+			} else {
+				link.type = 'mixed';
+			}
 		});
 
-		const gLinks = links
-			.map((link) => {
-				const source = gNodes.find((n) => n.id == link.source);
-				const target = gNodes.find((n) => n.id == link.target);
-				if (source && target) {
-					return { ...link, source: gNodes.indexOf(source), target: gNodes.indexOf(target) };
-				} else return false;
-			})
-			.filter((l) => l);
+		const nodes = nodesRaw.filter((n) => n.degree !== '0' && (n.sex === 'f' || n.sex === 'm')).map((node) => {
+			node.edges = links
+				.filter((link) => {
+					if (link.source === node.idold || link.target === node.idold) {
+						return true;
+					}
+				})
+				.map((edge) => {
+					return {
+						target: edge.target === node.idold ? edge.source : edge.target,
+						type: edge.type
+					};
+				});
 
-		console.log(gNodes.map((n) => n.sex));
-		console.log(gLinks);
+			const edgeTypes = node.edges.map((e) => e.type);
+			let homo = 0;
+			edgeTypes.forEach((eType) => {
+				if (eType === 'male') {
+					homo++;
+				} else if (eType === 'female') {
+					homo--;
+				}
+			});
+			homo = homo / edgeTypes.length;
+			node.homo = homo;
+			return node;
+		});
+
+		nodes.sort((a, b) => {
+			if (a.sex === b.sex) {
+				return a.homo > b.homo ? -1 : 1;
+			}
+			if (a.sex === 'm') {
+				return -1;
+			} else {
+				return 1;
+			}
+		});
+
+		nodes.forEach((n, ni) => (n.index = ni));
 
 		// drawing
 		const height = 800;
@@ -68,146 +86,45 @@ getSSData(tableEdgesId).then((links) => {
 			.attr('width', width)
 			.attr('height', height);
 
-		const simulation = d3force
-			.forceSimulation(gNodes)
-			.alphaDecay(0.05)
-			//.force('charge', d3.forceManyBody().strength(-2000).distanceMin(200).distanceMax(200))
-			.force('link', d3.forceLink(gLinks))
-			//.force('many', d3.forceManyBody().strength(30).distanceMax(100).distanceMin(50))
-			.force('charge', d3.forceCollide().radius(25))
-			.force('r', d3.forceRadial(height / 2 - 80, width / 2, height / 2).strength(100))
-			//.force('center', d3.forceCenter(width / 2, height / 2))
-			.on('tick', () => {
-				gNodes.forEach((node) => {
-					if (node.sex === 'f') {
-						if (node.x > width / 2) {
-							node.x = width / 2 - 300;
-							node.y = height / 2;
-						}
-					}
-					if (node.sex === 'm') {
-						if (node.x < width / 2 + 20) {
-							node.x = width / 2 + 300;
-							node.y = height / 2;
-						}
-					}
-					if (node.y - 50 < 0 || node.y + 50 > height) {
-						node.y = height / 2;
-					} else if (node.x - 50 < 0 || node.x + 50 > width) {
-						node.x = width / 2;
-					}
-				});
-				nodesGs.attr('cx', (d) => d.x).attr('cy', (d) => d.y);
-				edgesGs
-					.attr('x1', (d) => d.source.x)
-					.attr('x2', (d) => d.target.x)
-					.attr('y1', (d) => d.source.y)
-					.attr('y2', (d) => d.target.y);
-			})
-			.on('end', function() {
-				console.log('simulation done');
-				gNodes.forEach((node) => {
-					if (node.sex === 'f') {
-						node.x -= 200;
-					}
-					if (node.sex === 'm') {
-						node.x += 200;
-					}
-				});
-				nodesGs.attr('cx', (d) => d.x).attr('cy', (d) => d.y);
-				edgesGs
-					.attr('x1', (d) => d.source.x)
-					.attr('x2', (d) => d.target.x)
-					.attr('y1', (d) => d.source.y)
-					.attr('y2', (d) => d.target.y);
-			});
+		const y1 = 200;
+		const y2 = height - 200;
+		const x = (i) => 10 + (width - 20) / nodes.length * i;
 
-		/*
-			.tick(300);
-			.force('x', d3.forceX())
-			.force('collide', d3.forceCollide(3))
-			.force('y', d3.forceY())
-      */
+		const radius = (val) => 2 + Math.pow(val, 0.7);
+		nodes.forEach((node, ni) => {
+			node.edges.forEach((edge) => {
+				const target = nodes.find((n) => n.idold === edge.target);
 
-		/*
-				});
-				nodesGs.attr('cx', (d) => d.x).attr('cy', (d) => d.y);
-				edgesGs.attr('d', (d) => {
-					const x = d.source.x;
-					const y = d.source.y;
-					const ex = d.target.x;
-					const ey = d.target.y;
-					const dx = x - ex;
-					const dy = y - ey;
-					const dr = Math.sqrt(dx * dx + dy * dy);
-					return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
-				});
-
-      });
-      */
-
-		/*
-		const edgesGs = svg
-			.append('g')
-			.selectAll('line')
-			.data(gLinks)
-			.enter()
-			.append('path')
-			.attr('class', (d) => 'edge')
-			.attr('stroke', 'black')
-			.attr('d', (d) => {
-				console.log(d);
-				const x = d.source.x;
-				const y = d.source.y;
-				const ex = d.target.x;
-				const ey = d.target.y;
-				const dx = x - ex;
-				const dy = y - ey;
-				const dr = Math.sqrt(dx * dx + dy * dy);
-				return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
-      });
-      */
-		const edgesGs = svg
-			.append('g')
-			.selectAll('line')
-			.data(gLinks)
-			.enter()
-			.append('line')
-			.attr('class', (d) => {
-				const classes = [ 'edge' ];
-				const sSex = d.source.sex;
-				const tSex = d.target.sex;
-				if (sSex === tSex) {
-					if (sSex === 'm') {
-						classes.push('edge-male');
-					} else {
-						classes.push('edge-female');
-					}
-				} else {
-					classes.push('edge-hetero');
+				if (target) {
+					svg
+						.append('line')
+						.attr('y1', y1)
+						.attr('x1', x(ni))
+						.attr('y2', y2)
+						.attr('x2', x(target.index))
+						.attr('class', 'edge ' + edge.type);
 				}
-				return classes.join(' ');
-			})
-			.attr('x1', (d) => d.source.x)
-			.attr('x2', (d) => d.target.x)
-			.attr('y1', (d) => d.source.y)
-			.attr('y2', (d) => d.target.y);
+			});
+		});
+		nodes.forEach((node, ni) => {
+			let cs = [ 'node' ];
+			node.sex === 'f' ? cs.push('node-female') : cs.push('node-male');
+			node.deponent === '1' ? cs.push('node-deponent') : false;
+			const classes = cs.join(' ');
 
-		const radius = (val) => 5 + Math.pow(val, 0.7);
+			const appendCircle = (y) => {
+				svg
+					.append('circle')
+					.attr('cy', y)
+					.attr('cx', x(ni))
+					.attr('r', radius(node.degree))
+					.attr('class', classes);
+			};
+			const yT = y1 - (ni % 2 ? 45 : 15);
+			const yB = y2 + (ni % 2 ? 45 : 15);
 
-		const nodesGs = svg
-			.append('g')
-			.selectAll('circle')
-			.data(gNodes)
-			.enter()
-			.append('circle')
-			.attr('class', (d) => {
-				const classes = [ 'node' ];
-				d.sex === 'f' ? classes.push('node-female') : classes.push('node-male');
-				d.deponent === '1' ? classes.push('node-deponent') : false;
-				return classes.join(' ');
-			})
-			.attr('data-label', (d) => d.name)
-			.attr('r', (d) => radius(d.degree));
+			appendCircle(yT);
+			appendCircle(yB);
+		});
 	});
 });
