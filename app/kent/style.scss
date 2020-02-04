@@ -1,0 +1,25 @@
+svg {
+	.edge {
+		mix-blend-mode: multiply;
+		stroke: black;
+		fill: none;
+	}
+	.edge-halo {
+		mix-blend-mode: multiply;
+		stroke-opacity: 1;
+		fill: none;
+	}
+	.node {
+		stroke: black;
+		stroke-width: 2;
+	}
+
+	.label {
+		color: black;
+		text-anchor: middle;
+		alignment-baseline: middle;
+		font-weight: 1000;
+		stroke: white;
+		font-family: ubuntu;
+	}
+}

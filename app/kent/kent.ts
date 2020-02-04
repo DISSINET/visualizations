@@ -92,37 +92,15 @@ getSSData(tableEdgesId).then((links) => {
 					.forceLink(gLinks)
 					.strength((link) => link.edges.length / 4)
 					.distance((link) => link.edges.length / 4)
-					.iterations(100)
+					.iterations(1)
 			)
 			//.force('many', d3.forceManyBody().strength(10).distanceMax(10).distanceMin(5))
-			.force('charge', d3.forceCollide().radius(60).strength(0.1))
+			.force('charge', d3.forceCollide().radius(80).strength(0.1))
 			.force('center', d3.forceCenter(width / 2, height / 2))
 			.force('x', d3.forceX(width / 2))
 			.force('y', d3.forceY(height / 2).strength(1))
 			.stop()
-			.tick(500);
-
-		/*
-		const edgesGs = svg
-			.append('g')
-			.selectAll('line')
-			.data(gLinks)
-			.enter()
-			.append('path')
-			.attr('class', (d) => 'edge')
-			.attr('stroke', 'black')
-			.attr('d', (d) => {
-				console.log(d);
-				const x = d.source.x;
-				const y = d.source.y;
-				const ex = d.target.x;
-				const ey = d.target.y;
-				const dx = x - ex;
-				const dy = y - ey;
-				const dr = Math.sqrt(dx * dx + dy * dy);
-				return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
-      });
-      */
+			.tick(100);
 
 		const typesToDisplay = [
 			'accommodation',
@@ -143,7 +121,6 @@ getSSData(tableEdgesId).then((links) => {
 			.attr('stroke', (d) => {
 				let color = 'white';
 				let index = 5;
-				console.log(d.edges.filter((e) => typesToDisplay.includes(e.classificationlevel1)));
 				d.edges.forEach((e) => {
 					if (typesToDisplay.includes(e.classificationlevel1)) {
 						const i = typesToDisplay.indexOf(e.classificationlevel1);
@@ -173,7 +150,7 @@ getSSData(tableEdgesId).then((links) => {
 			.attr('y1', (d) => d.source.y)
 			.attr('y2', (d) => d.target.y);
 
-		const radius = (val) => 5 + Math.pow(val, 0.8);
+		const radius = (val) => 10 + Math.pow(val, 0.8);
 
 		const nodesGs = svg
 			.append('g')
@@ -195,5 +172,17 @@ getSSData(tableEdgesId).then((links) => {
 			.attr('r', (d) => radius(d.degree))
 			.attr('cx', (d) => d.x)
 			.attr('cy', (d) => d.y);
+
+		const labelsGs = svg
+			.append('g')
+			.selectAll('text')
+			.data(gNodes)
+			.enter()
+			.append('text')
+			.text((d) => d.id)
+			.attr('class', 'label')
+			.attr('data-label', (d) => d.name)
+			.attr('x', (d) => d.x)
+			.attr('y', (d) => d.y + 2);
 	});
 });
