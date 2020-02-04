@@ -14,12 +14,21 @@ svg {
 		stroke-width: 2;
 	}
 
-	.label {
+	text {
 		color: black;
-		text-anchor: middle;
 		alignment-baseline: middle;
 		font-weight: 1000;
 		stroke: white;
 		font-family: ubuntu;
+		&.legend-name-label {
+		}
+
+		&.legend-type-rect {
+			stroke: black;
+			stroke-width: 2;
+		}
+		&.node-label {
+			text-anchor: middle;
+		}
 	}
 }

@@ -75,7 +75,7 @@ getSSData(tableEdgesId).then((links) => {
 		console.log(familyNamesGroups);
 
 		// drawing
-		const height = 800;
+		const height = 600;
 		const width = 2000;
 		const svg = d3
 			.select('body')
@@ -96,17 +96,17 @@ getSSData(tableEdgesId).then((links) => {
 			)
 			//.force('many', d3.forceManyBody().strength(10).distanceMax(10).distanceMin(5))
 			.force('charge', d3.forceCollide().radius(80).strength(0.1))
-			.force('center', d3.forceCenter(width / 2, height / 2))
+			.force('center', d3.forceCenter(400, height / 2))
 			.force('x', d3.forceX(width / 2))
 			.force('y', d3.forceY(height / 2).strength(1))
 			.stop()
 			.tick(100);
 
 		const typesToDisplay = [
+			'instruction in heretical beliefs',
+			'public reading',
 			'accommodation',
 			'reading',
-			'public reading',
-			'instruction in heretical beliefs',
 			'servant'
 		];
 
@@ -179,10 +179,47 @@ getSSData(tableEdgesId).then((links) => {
 			.data(gNodes)
 			.enter()
 			.append('text')
-			.text((d) => d.id)
-			.attr('class', 'label')
+			.text((d, di) => di + 1)
+			.attr('class', 'node-label')
 			.attr('data-label', (d) => d.name)
 			.attr('x', (d) => d.x)
 			.attr('y', (d) => d.y + 2);
+
+		// labels legend
+		const lNamesXs = [ 1100, 1300 ];
+		gNodes.forEach((node, ni) => {
+			const y = 50 + height / gNodes.length * Math.floor(ni / 2);
+			const x = (ni + 1) % 2 ? lNamesXs[0] : lNamesXs[1];
+			svg
+				.append('text')
+				.attr('class', 'legend-name-label')
+				.text(ni + 1 + ' - ' + node.label)
+				.attr('x', x)
+				.attr('y', y);
+		});
+
+		// edge type legend
+		const ltypesX = 800;
+		const lineH = 30;
+		const rectW = 40;
+		const rectH = lineH - 10;
+		const typeYStart = 50;
+		typesToDisplay.forEach((type, ti) => {
+			const y = typeYStart + lineH * ti;
+			svg
+				.append('rect')
+				.attr('x', ltypesX)
+				.attr('y', y)
+				.attr('width', rectW)
+				.attr('height', rectH)
+				.attr('fill', typeColors[ti])
+				.attr('class', 'legend-type-rect');
+			svg
+				.append('text')
+				.attr('x', ltypesX + rectW + 5)
+				.attr('y', y + rectH / 2)
+				.text(type)
+				.attr('class', 'legend-type-label');
+		});
 	});
 });
