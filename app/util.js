@@ -7,3 +7,10 @@ export var d3Load = (data, next) => {
 		d3.tsv(data).then((res) => next(res));
 	}
 };
+
+export var curvedPath = (x1, x2, y1, y2) => {
+	const dx = x1 - x2;
+	const dy = y1 - y2;
+	const dr = Math.sqrt(dx * dx + dy * dy);
+	return 'M' + x1 + ',' + y1 + 'A' + dr + ',' + dr + ' 0 0,1 ' + x2 + ',' + y2;
+};

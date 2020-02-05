@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import * as d3tile from 'd3-tile';
 
-import { d3Load } from './../util';
+import { d3Load, curvedPath } from './../util';
 
 d3Load(require('./data/names.tsv'), (personsAll) => {
 	d3Load(require('/data/places.tsv'), (places) => {
@@ -217,8 +217,6 @@ d3Load(require('./data/names.tsv'), (personsAll) => {
 			groupsBySize.forEach((group) => {
 				const [ x, y ] = projection([ group.x, group.y ]);
 
-				const liner = d3.line().curve(d3.curveBasis).x((d) => d[0]).y((d) => d[1]);
-
 				if (x > 0 && x < width && y > 0 && y < height) {
 					gCircles
 						.append('circle')
@@ -237,8 +235,6 @@ d3Load(require('./data/names.tsv'), (personsAll) => {
 						if (targetX !== group.x) {
 							const [ ex, ey ] = projection([ targetX, targetY ]);
 							if (ex > 0 && ex < width && ey > 0 && ey < height) {
-								const d = liner([ [ x, y ], [ ex, ey + 20 ] ]);
-
 								const edgeW = edge.length - 0.5;
 								if (edgeW) {
 									gEdges
@@ -248,12 +244,7 @@ d3Load(require('./data/names.tsv'), (personsAll) => {
 										.attr('stroke', 'black')
 										.style('mix-blend-mode', 'multiply')
 										.attr('stroke-linecap', 'round')
-										.attr('d', function(d) {
-											const dx = x - ex;
-											const dy = y - ey;
-											const dr = Math.sqrt(dx * dx + dy * dy);
-											return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
-										});
+										.attr('d', curvedPath(x, ex, y, ey));
 								}
 							}
 						}
@@ -298,8 +289,6 @@ d3Load(require('./data/names.tsv'), (personsAll) => {
 					}
 				}
 			});
-
-			const gChord = svg.append('g').attr('class', 'chord');
 		});
 	});
 });
