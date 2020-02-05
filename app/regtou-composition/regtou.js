@@ -1,6 +1,6 @@
 import * as d3 from 'd3';
 import * as d3tile from 'd3-tile';
-import { d3Load, sortByFrequency, curvedPath } from './../util';
+import { d3Load, sortByFrequency, curvedPath } from '../util';
 
 require('./regtou.scss');
 
@@ -353,7 +353,7 @@ d3Load(require('./data/places.csv'), (places) => {
 				const freqs = sortByFrequency(cityOccs).filter((c) => c);
 				const colorI = occNames.indexOf(freqs[0]);
 
-				if (x > 0 && x < width && y > 0 && y < height) {
+				if (x > svgs.sna.w && x < width && y > 0 && y < height) {
 					const circleSize = 10 + group.persons.length * 2;
 					gCircles
 						.append('circle')
@@ -610,9 +610,7 @@ d3Load(require('./data/places.csv'), (places) => {
 					.enter()
 					.append('path')
 					.attr('class', 'edge')
-					.attr('d', (d) => {
-						return curvedPath(d.source.x, d.target.x, d.source.y, d.target.y);
-					});
+					.attr('d', (d) => curvedPath(d.source.x, d.target.x, d.source.y, d.target.y));
 
 				snaSvgDiv
 					.append('g')
@@ -634,9 +632,7 @@ d3Load(require('./data/places.csv'), (places) => {
 					.enter()
 					.append('path')
 					.attr('class', 'edge edge-important')
-					.attr('d', (d) => {
-						return curvedPath(d.source.x, d.target.x, d.source.y, d.target.y);
-					});
+					.attr('d', (d) => curvedPath(d.source.x, d.target.x, d.source.y, d.target.y));
 
 				snaSvgDiv
 					.append('g')

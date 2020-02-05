@@ -1,8 +1,8 @@
 import * as d3 from 'd3';
 require('./parallels.css');
 
-import { getSSData } from './../spreadsheet';
-import urls from './../urls';
+import { getSSData } from '../spreadsheet';
+import urls from '../urls';
 
 // svg params
 const svgW = 1000;

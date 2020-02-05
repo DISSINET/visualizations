@@ -4,12 +4,11 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"parallels": "parcel app/parallels/index.html",
-		"gui": "parcel app/gui/index.html",
-		"regtou": "parcel app/regtou/index.html",
-		"coventry": "parcel app/coventry/index.html",
-		"kent": "parcel app/kent/index.html",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"centralities-parallels": "parcel app/centralities-parallels/index.html",
+		"gui-map": "parcel app/gui-map/index.html",
+		"regtou-composition": "parcel app/regtou-composition/index.html",
+		"coventry-homophily": "parcel app/coventry-homophily/index.html",
+		"kent-sna": "parcel app/kent-sna/index.html"
 	},
 	"repository": {
 		"type": "git",
@@ -24,10 +23,12 @@
 	"devDependencies": {
 		"babel-core": "^6.26.3",
 		"parcel-bundler": "^1.12.4",
-		"sass": "^1.25.0"
+		"sass": "^1.25.0",
+		"typescript": "^3.7.5"
 	},
 	"dependencies": {
 		"d3": "^5.15.0",
+		"d3-force": "^2.0.1",
 		"d3-geo": "^1.11.9",
 		"d3-tile": "^1.0.0"
 	}

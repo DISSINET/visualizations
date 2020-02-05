@@ -141,10 +141,8 @@ d3Load(require('./data/names.tsv'), (personsAll) => {
 				}
 
 				Object.keys(occupancies).forEach((occ) => {
-					console.log(occ);
 					const val = occupancies[occ];
 					if (occ in occupancyGroups) {
-						console.log(occ);
 						if (occupationPerson in occupancyGroups[occ].edges) {
 							occupancyGroups[occ].edges[occupationPerson] += val;
 						} else {
@@ -157,8 +155,6 @@ d3Load(require('./data/names.tsv'), (personsAll) => {
 					}
 				});
 			});
-
-			console.log(occupancyGroups);
 
 			/* 
 				drawing map
@@ -249,6 +245,7 @@ d3Load(require('./data/names.tsv'), (personsAll) => {
 							}
 						}
 					});
+
 					if (group.persons.length > 3) {
 						const textSize = 8 + group.persons.length * 1.5;
 						const leftLabels = [

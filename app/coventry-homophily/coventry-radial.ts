@@ -1,6 +1,6 @@
 import * as d3 from 'd3';
 import { getSSData } from '../spreadsheet';
-import urls from './../urls';
+import urls from '../urls';
 
 require('./style.scss');
 
