@@ -1,42 +1,19 @@
 import * as d3 from 'd3';
-import * as d3force from 'd3-force';
-var style = require('./style.scss');
-
 import { getSSData } from '../spreadsheet';
+import urls from './../urls';
+
+require('./style.scss');
 
 console.log('coventry start');
 
-// edges
-// docs.google.com/spreadsheets/d/1oU4fwqaUgSnbv9NTjAQbSIooF9J5axzt5MfYCPWEhWE/edit#gid=1338507045
-const tableEdgesId = '1ABeHDLXde59akcKwsToldnW04nJU9lpdmt6wPfstnqM/1';
-
-// nodes
-// docs.google.com/spreadsheets/d/1rIcda6bQeEallBHNzjQvvaedReqtW5DWxoUw30dCecQ/edit#gid=1016955786
-const tableNodesId = '1FdWb1A7lwW2j1tf9Fswj6C7LxFrb4MXbY7KTHrIjqh8/1';
-
-getSSData(tableEdgesId).then((links) => {
-	getSSData(tableNodesId).then((nodes) => {
+getSSData(urls.coventry.edges).then((links) => {
+	getSSData(urls.coventry.nodes).then((nodes) => {
 		console.log('links', links);
 		console.log('nodes', nodes);
 
 		/*
       setting data into sna form
     */
-
-		const colors = [
-			'#8dd3c7',
-			'#ffffb3',
-			'#bebada',
-			'#fb8072',
-			'#80b1d3',
-			'#fdb462',
-			'#b3de69',
-			'#fccde5',
-			'#d9d9d9',
-			'#bc80bd',
-			'#ccebc5',
-			'#ffed6f'
-		];
 
 		const linkTypes = links.map((l) => l.classificationlevel1).filter((v, i, a) => a.indexOf(v) === i);
 		console.log(linkTypes);

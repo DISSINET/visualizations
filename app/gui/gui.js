@@ -1,26 +1,18 @@
 import * as d3 from 'd3';
 import * as d3tile from 'd3-tile';
 
-async function loadNames() {
-	return await d3.tsv(require('./data/names.tsv'));
-}
-async function loadPlaces() {
-	return await d3.tsv(require('./data/places.tsv'));
-}
-async function loadEdges() {
-	return await d3.tsv(require('./data/edges.tsv'));
-}
+import { d3Load } from './../util';
 
-loadNames().then((personsAll) => {
-	loadPlaces().then((places) => {
-		loadEdges().then((edges) => {
+d3Load(require('./data/names.tsv'), (personsAll) => {
+	d3Load(require('/data/places.tsv'), (places) => {
+		d3Load(require('/data/edges.tsv'), (edges) => {
 			console.log('persons', personsAll);
 			console.log('places', places);
 			console.log('edges', edges);
 
 			const persons = personsAll.filter((p) => p.dissident_minister === 'no');
-
 			persons.forEach((p) => (p.edges = []));
+
 			/*
 				getting edges for persons
 			*/
@@ -42,9 +34,9 @@ loadNames().then((personsAll) => {
 			});
 
 			/*
-			 geocode persons
+				geocode persons
 			*/
-			const personWithPlace = persons.filter((person: any) => {
+			const personWithPlace = persons.filter((person) => {
 				// assigning place name to person
 				const both = person.origin_or_residence;
 				const origin = person.origin;
@@ -63,7 +55,7 @@ loadNames().then((personsAll) => {
 					personPlace = origin;
 				}
 
-				const place = places.find((place: any) => place.name === personPlace);
+				const place = places.find((place) => place.name === personPlace);
 				if (place) {
 					person.place = {
 						name: place.name,
@@ -78,8 +70,8 @@ loadNames().then((personsAll) => {
 			/*
 				group persons based on their locality
 			*/
-			const placeGroups: any = [];
-			personWithPlace.forEach((person: any) => {
+			const placeGroups = [];
+			personWithPlace.forEach((person) => {
 				// only known locations
 				if (person.place.x && person.place.y) {
 					if (person.place.name in placeGroups) {
@@ -117,11 +109,10 @@ loadNames().then((personsAll) => {
 			/*
 				occupancyGroups
 			*/
-
 			const occupancyGroups = {};
 			persons.filter((p) => p.occupation_type).forEach((person) => {
 				const edges = person.edges;
-				console.log(person);
+
 				const occupationPerson = person.occupation_type;
 				const occupanciesList = edges.map((edge) => edge.to.occupation_type).filter((o) => o);
 
@@ -150,6 +141,7 @@ loadNames().then((personsAll) => {
 				}
 
 				Object.keys(occupancies).forEach((occ) => {
+					console.log(occ);
 					const val = occupancies[occ];
 					if (occ in occupancyGroups) {
 						console.log(occ);
@@ -175,10 +167,13 @@ loadNames().then((personsAll) => {
 			const height = 800;
 
 			const tileSize = 256;
-			var projection = d3.geoMercator().scale(30000).center([ 1.8, 43.74 ]);
+			var projection = d3.geoMercator().scale(30000).center([ 1.8, 43.76 ]);
 
 			const svg = d3.select('body').append('svg').attr('width', width).attr('height', height);
-			var path = d3.geoPath().projection(projection);
+			const gTiles = svg.append('g').attr('class', 'tiles');
+			const gEdges = svg.append('g').attr('class', 'edges');
+			const gCircles = svg.append('g').attr('class', 'circles');
+			const gLabels = svg.append('g').attr('class', 'labels');
 
 			const url = (x, y, z) => `https://stamen-tiles-a.a.ssl.fastly.net/terrain-background/${z}/${x}/${y}.png`;
 			const tiler = d3tile
@@ -196,7 +191,7 @@ loadNames().then((personsAll) => {
 				setting tiles
 			*/
 			tiles.map(([ x, y, z ]) => {
-				svg
+				gTiles
 					.append('image')
 					.datum(function(d) {
 						return d;
@@ -212,16 +207,12 @@ loadNames().then((personsAll) => {
 					.style('mix-blend-mode', 'normal');
 			});
 
-			const gEdges = svg.append('g').attr('class', 'edges');
-			const gCircles = svg.append('g').attr('class', 'circles');
-			const gLabels = svg.append('g').attr('class', 'labels');
-
 			const groupsBySize = Object.keys(placeGroups)
 				.map((groupKey) => {
 					placeGroups[groupKey].name = groupKey;
 					return placeGroups[groupKey];
 				})
-				.sort((a, b) => (a.persons.length > b.persons.length ? 1 : -1));
+				.sort((a, b) => (a.persons.length > b.persons.length ? -1 : 1));
 
 			groupsBySize.forEach((group) => {
 				const [ x, y ] = projection([ group.x, group.y ]);
@@ -232,7 +223,7 @@ loadNames().then((personsAll) => {
 					gCircles
 						.append('circle')
 						.style('fill', '#0000dc')
-						.style('opacity', 1)
+						.style('fill-opacity', 1)
 						.attr('r', 3 + group.persons.length * 2)
 						.attr('stroke-width', 2)
 						.attr('stroke', 'black')
@@ -255,10 +246,11 @@ loadNames().then((personsAll) => {
 										.attr('stroke-width', edgeW)
 										.attr('fill', 'none')
 										.attr('stroke', 'black')
+										.style('mix-blend-mode', 'multiply')
 										.attr('stroke-linecap', 'round')
 										.attr('d', function(d) {
 											const dx = x - ex;
-											const dy = y - y;
+											const dy = y - ey;
 											const dr = Math.sqrt(dx * dx + dy * dy);
 											return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
 										});
@@ -277,6 +269,7 @@ loadNames().then((personsAll) => {
 							'Mirepoix-sur-Tarn',
 							'Beauvais-sur-Tescou'
 						];
+
 						const topLabels = [
 							'Mirepoix-sur-Tarn',
 							'Saint-Sulpice-la-Pointe',
@@ -284,9 +277,11 @@ loadNames().then((personsAll) => {
 							'Verdun-Lauragais',
 							'Beauvais-sur-Tescou'
 						];
+
 						const label = group.name;
 						const left = leftLabels.includes(label);
 						const top = topLabels.includes(label);
+
 						gLabels
 							.append('text')
 							.style('font-size', textSize)

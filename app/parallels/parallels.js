@@ -1,5 +1,5 @@
 import * as d3 from 'd3';
-var style = require('./parallels.css');
+require('./parallels.css');
 
 console.log('test');
 
@@ -61,11 +61,11 @@ async function getData(url) {
 
 // Kent
 // docs.google.com/spreadsheets/d/1oU4fwqaUgSnbv9NTjAQbSIooF9J5axzt5MfYCPWEhWE/edit#gid=1338507045
-https: const data1Id = '1oU4fwqaUgSnbv9NTjAQbSIooF9J5axzt5MfYCPWEhWE/2';
+const data1Id = '1oU4fwqaUgSnbv9NTjAQbSIooF9J5axzt5MfYCPWEhWE/2';
 
 // Guglielmites
 // docs.google.com/spreadsheets/d/1rIcda6bQeEallBHNzjQvvaedReqtW5DWxoUw30dCecQ/edit#gid=1016955786
-https: const data2Id = '1rIcda6bQeEallBHNzjQvvaedReqtW5DWxoUw30dCecQ/2';
+const data2Id = '1rIcda6bQeEallBHNzjQvvaedReqtW5DWxoUw30dCecQ/2';
 
 const url1 = 'https://spreadsheets.google.com/feeds/list/' + data1Id + '/public/values?alt=json';
 const url2 = 'https://spreadsheets.google.com/feeds/list/' + data2Id + '/public/values?alt=json';
