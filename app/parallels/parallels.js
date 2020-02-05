@@ -1,7 +1,8 @@
 import * as d3 from 'd3';
 require('./parallels.css');
 
-console.log('test');
+import { getSSData } from './../spreadsheet';
+import urls from './../urls';
 
 // svg params
 const svgW = 1000;
@@ -10,13 +11,10 @@ const pExtent = [ [ 100, svgW - 100 ], [ 90, svgH - 80 ] ];
 const peW = pExtent[0][1] - pExtent[0][0];
 const peH = pExtent[1][1] - pExtent[1][0];
 
-const lineCurved = d3.line().x((d: any) => d.x).y((d: any) => d.y).curve(d3.curveCardinal);
-const line = d3.line().x((d: any) => d.x).y((d: any) => d.y);
-
-const parW = 40;
+const line = d3.line().x((d) => d.x).y((d) => d.y);
 const parX = (i) => pExtent[0][0] + peW / (pars.length - 1) * i;
 
-async function loadTable(tableUrl: string) {
+async function loadTable(tableUrl) {
 	const response = await fetch(tableUrl);
 	let data = await response.json();
 	return data;
@@ -32,58 +30,19 @@ var pars = [
 	{ label: 'clustering', attr: 'nclustering', reverse: true }
 ];
 
-async function getData(url) {
-	const res = await loadTable(url);
-	const records: {}[] = [];
-	res.feed.entry.map((entry: any) => {
-		const record: any = {};
-
-		Object.keys(entry).forEach((key: string) => {
-			if (key.indexOf('gsx$') > -1) {
-				const keyName = key.replace('gsx$', '');
-				const value = entry[key].$t;
-				record[keyName] = value;
-			}
-		});
-		records.push(record);
-	});
-
-	records.forEach((dataRecord: any) => {
-		dataRecord.values = {};
-		pars.forEach((par) => {
-			const value = parseFloat(dataRecord[par['attr']]);
-			dataRecord.values[par.attr] = value;
-		});
-	});
-
-	return records;
-}
-
-// Kent
-// docs.google.com/spreadsheets/d/1oU4fwqaUgSnbv9NTjAQbSIooF9J5axzt5MfYCPWEhWE/edit#gid=1338507045
-const data1Id = '1oU4fwqaUgSnbv9NTjAQbSIooF9J5axzt5MfYCPWEhWE/2';
-
-// Guglielmites
-// docs.google.com/spreadsheets/d/1rIcda6bQeEallBHNzjQvvaedReqtW5DWxoUw30dCecQ/edit#gid=1016955786
-const data2Id = '1rIcda6bQeEallBHNzjQvvaedReqtW5DWxoUw30dCecQ/2';
-
-const url1 = 'https://spreadsheets.google.com/feeds/list/' + data1Id + '/public/values?alt=json';
-const url2 = 'https://spreadsheets.google.com/feeds/list/' + data2Id + '/public/values?alt=json';
-
-getData(url1).then((data1) => {
+getSSData(urls.kent.nodes).then((data1) => {
 	const svg1 = d3.select('body').append('svg').attr('width', svgW).attr('height', svgH);
 	drawChart(svg1, data1);
 	svg1.append('text').attr('x', 30).attr('y', 60).text('Kent').attr('class', 'title');
 });
 
-getData(url2).then((data2) => {
+getSSData(urls.gugliemites.nodes).then((data2) => {
 	const svg2 = d3.select('body').append('svg').attr('width', svgW).attr('height', svgH);
 	svg2.append('text').attr('x', 30).attr('y', 60).text('Guglielmites').attr('class', 'title');
 	drawChart(svg2, data2);
 });
 
-const drawChart = (svg: any, dataAll: any[]) => {
-	console.log(dataAll.map((d) => [ d.values.neigen, d.values.ndegree ]));
+const drawChart = (svg, dataAll) => {
 	const data = dataAll; //.filter((d) => d.values.ndegree > 0.001 && d.values.neigen > 0.001);
 
 	const y1 = pExtent[1][0];
@@ -92,14 +51,14 @@ const drawChart = (svg: any, dataAll: any[]) => {
 	pars.forEach((par, pi) => {
 		const x = parX(pi);
 
-		//svg.append('rect').attr('x', x).attr('height', peH).attr('y', y1).attr('width', parW);
-
-		//
+		/*
+			axes
+		*/
 		if (pi % 2) {
 			svg
 				.append('line')
-				.attr('x1', parX(pi))
-				.attr('x2', parX(pi))
+				.attr('x1', x)
+				.attr('x2', x)
 				.attr('y1', y2 + 10)
 				.attr('y2', y2 + 30)
 				.attr('stroke-width', 1)
@@ -108,7 +67,7 @@ const drawChart = (svg: any, dataAll: any[]) => {
 
 		svg
 			.append('text')
-			.attr('x', parX(pi))
+			.attr('x', x)
 			.attr('y', pExtent[1][1] + (pi % 2 ? 55 : 30))
 			.text(par.label)
 			.attr('class', 'axis-label par-label')
@@ -118,10 +77,9 @@ const drawChart = (svg: any, dataAll: any[]) => {
 	/*
     calculating positions
 		*/
-	data.map((record: any, ri: number) => {
-		record.posM = Object.keys(record.values).map((key, vi) => {
-			const value = record.values[key];
-			const par = pars.find((par) => par.attr === key);
+	data.map((record, ri) => {
+		record.posM = pars.map((par, vi) => {
+			const value = record[par.attr];
 			par.scale = d3.scaleLinear().range([ y2, y1 ]).domain(par.reverse ? [ 1, 0 ] : [ 0, 1 ]);
 			return par.scale(value);
 		});
@@ -130,7 +88,7 @@ const drawChart = (svg: any, dataAll: any[]) => {
 	/*
     drawing lines
   */
-	data.filter((d) => d.sex === 'm').forEach((record: any, ri: number) => {
+	data.filter((d) => d.sex === 'm').forEach((record, ri) => {
 		svg
 			.append('path')
 			.data([
@@ -141,7 +99,7 @@ const drawChart = (svg: any, dataAll: any[]) => {
 			.attr('d', line)
 			.attr('class', 'line line-male');
 	});
-	data.filter((d) => d.sex === 'f').forEach((record: any, ri: number) => {
+	data.filter((d) => d.sex === 'f').forEach((record, ri) => {
 		svg
 			.append('path')
 			.data([

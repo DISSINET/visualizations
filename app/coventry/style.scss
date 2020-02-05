@@ -33,4 +33,30 @@ svg {
 			fill: #2c7bb6;
 		}
 	}
+
+	.axis {
+		stroke: black;
+		stroke-width: 2;
+	}
+	.axis-legend {
+		stroke: black;
+		stroke-width: 6;
+	}
+
+	.axis-label {
+		font-family: ubuntu;
+		font-size: 30px;
+	}
+
+	.gender-area {
+		opacity: 0.2;
+		&.gender-area-males {
+			mix-blend-mode: multiply;
+			fill: #2c7bb6;
+		}
+		&.gender-area-females {
+			mix-blend-mode: multiply;
+			fill: #d7191c;
+		}
+	}
 }
