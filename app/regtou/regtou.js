@@ -1,7 +1,8 @@
 import * as d3 from 'd3';
 import * as d3tile from 'd3-tile';
-import * as d3force from 'd3-force';
-var style = require('./regtou.css');
+import { d3Load, sortByFrequency, curvedPath } from './../util';
+
+require('./regtou.scss');
 
 const width = 2800;
 const height = 1000;
@@ -47,35 +48,9 @@ Object.keys(svgs).forEach((svgKey) => {
 		.style('left', svg.x);
 });
 
-async function loadPlaces() {
-	return await d3.csv(require('./data/places.csv'));
-}
-async function loadNames() {
-	return await d3.csv(require('./data/names.csv'));
-}
-async function loadEdges() {
-	return await d3.csv(require('./data/edges.csv'));
-}
-
-function sortByFrequency(array) {
-	var frequency = {};
-
-	array.forEach(function(value) {
-		frequency[value] = 0;
-	});
-
-	var uniques = array.filter(function(value) {
-		return ++frequency[value] == 1;
-	});
-
-	return uniques.sort(function(a, b) {
-		return frequency[b] - frequency[a];
-	});
-}
-
-loadNames().then((allPersons) => {
-	loadPlaces().then((places) => {
-		loadEdges().then((edges) => {
+d3Load(require('./data/places.csv'), (places) => {
+	d3Load(require('./data/names.csv'), (allPersons) => {
+		d3Load(require('./data/edges.csv'), (edges) => {
 			console.log('persons', allPersons);
 			console.log('edges', edges);
 			console.log('places', places);
@@ -85,7 +60,6 @@ loadNames().then((allPersons) => {
 			/*
 				getting edges for persons
 			*/
-
 			persons.forEach((p) => (p.edges = []));
 
 			edges.forEach((edge) => {
@@ -122,7 +96,7 @@ loadNames().then((allPersons) => {
 			/*
 			 geocode persons
 			*/
-			const personWithPlace = persons.filter((person: any) => {
+			const personWithPlace = persons.filter((person) => {
 				// assigning place name to person
 				const both = person.Origin_or_residence;
 				const origin = person.Origin;
@@ -145,12 +119,13 @@ loadNames().then((allPersons) => {
 					personPlace = personPlace.split(' ')[0];
 				}
 
-				const place = places.find((place: any) => place.Place === personPlace);
+				const place = places.find((place) => place.Place === personPlace);
 
 				// logging places that are not geocoded
 				if (!place && personPlace) {
 					//console.log(personPlace);
 				}
+				console.log(place);
 
 				if (place) {
 					person.place = {
@@ -166,8 +141,9 @@ loadNames().then((allPersons) => {
 			/*
 			group persons based on their locality
 			*/
-			const placeGroups: any = {};
-			personWithPlace.forEach((person: any) => {
+			console.log(personWithPlace);
+			const placeGroups = {};
+			personWithPlace.forEach((person) => {
 				// only known locations
 				const { name, x, y } = person.place;
 
@@ -210,7 +186,7 @@ loadNames().then((allPersons) => {
 			/*
 				occupancyGroups
 			*/
-			const occupancyGroups: any = {};
+			const occupancyGroups = {};
 
 			edges.forEach((edge) => {
 				const targetP = persons.find((p) => p.ID === edge.Target);
@@ -311,8 +287,6 @@ loadNames().then((allPersons) => {
 			const gCircles = mapSvg.append('g').attr('class', 'circles');
 			const gLabels = mapSvg.append('g').attr('class', 'labels');
 
-			var path = d3.geoPath().projection(projection);
-
 			const url = (x, y, z) => `https://stamen-tiles-a.a.ssl.fastly.net/terrain-background/${z}/${x}/${y}.png`;
 			const tiler = d3tile
 				.tile()
@@ -410,12 +384,7 @@ loadNames().then((allPersons) => {
 										.attr('fill', 'none')
 										.attr('stroke', 'black')
 										.attr('stroke-linecap', 'round')
-										.attr('d', function(d) {
-											const dx = x - ex;
-											const dy = y - ey;
-											const dr = Math.sqrt(dx * dx + dy * dy);
-											return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
-										});
+										.attr('d', curvedPath(x, ex, y, ey));
 								}
 								//	}
 							}
@@ -477,7 +446,6 @@ loadNames().then((allPersons) => {
 
 			const chords = chord(chordsData);
 
-			//gChord.append('circle').attr('r', chordSvg.h / 2).attr('class', 'background');
 			gChord
 				.append('rect')
 				.attr('width', chordSvg.w)
@@ -502,8 +470,7 @@ loadNames().then((allPersons) => {
 				.join('path')
 				.attr('d', ribbon)
 				.attr('fill', (d) => occupancyColors[d.target.index])
-				.attr('fill-opacity', 1)
-				.style('mix-blend-mode', 'normal');
+				.attr('class', 'ribbon ribbon-bottom');
 
 			gChord
 				.append('g')
@@ -512,27 +479,19 @@ loadNames().then((allPersons) => {
 				.join('path')
 				.attr('d', ribbon)
 				.attr('fill', (d) => occupancyColors[d.source.index])
-				//.attr('fill', '#0000dc')
-				.attr('fill-opacity', 0.5)
-				.style('mix-blend-mode', 'multiply');
+				.attr('class', 'ribbon ribbon-top');
 
 			group
 				.append('path')
 				.attr('fill', (d) => occupancyColors[d.index])
 				.attr('d', arc)
-				.attr('stroke', 'black')
-				.attr('stroke-width', 4)
-				.attr('fill-opacity', 1)
-				.style('mix-blend-mode', 'normal');
+				.attr('class', 'ribbon ribbon-bottom ribbon-start');
 
 			group
 				.append('path')
 				.attr('fill', (d) => occupancyColors[d.index])
 				.attr('d', arc)
-				.attr('stroke', 'black')
-				.attr('stroke-width', 4)
-				.attr('fill-opacity', 0.5)
-				.style('mix-blend-mode', 'multiply');
+				.attr('class', 'ribbon ribbon-top ribbon-start');
 
 			gChord
 				.append('circle')
@@ -551,23 +510,12 @@ loadNames().then((allPersons) => {
 			/*
 				legend
 			*/
-
 			const legendSvg = svgs['legend'];
 			const legendSvgDiv = legendSvg.div;
 
 			const rowH = (legendSvg.h - 20) / (occNames.length / 2);
 			const legendRectW = 60;
 
-			/*
-			legendSvgDiv
-				.append('rect')
-				.attr('width', legendSvg.w)
-				.attr('height', legendSvg.h)
-				.attr('class', 'background');
-
-			*/
-
-			// legend
 			occNames.forEach((name, ni) => {
 				const y = 15 + Math.floor(ni / 2) * rowH;
 				const x = (ni - 1) % 2 ? legendSvg.w / 2 : legendSvg.w - m;
@@ -594,28 +542,26 @@ loadNames().then((allPersons) => {
 			*/
 			const snaSvg = svgs['sna'];
 			const snaSvgDiv = snaSvg.div;
-			// sort people
+
+			// sort people by number of edges
 			persons.sort((a, b) => (b.edges.length > a.edges.length ? 1 : -1));
-			// threshold
+			// threshold for number of top person
 			const topNo = 300;
-			//const topPersons = persons.filter((p) => p.Occupation_type).slice(0, topNo);
 			const topPersons = persons.slice(0, topNo);
 
 			snaSvgDiv.append('rect').attr('width', snaSvg.w).attr('height', snaSvg.h).attr('class', 'background');
 
 			const nodes = [];
 			const links = [];
-			//console.log(topPersons);
 
 			topPersons.forEach((person) => {
 				nodes.push({
 					name: person.Label,
 					id: parseInt(person.ID),
 					occupation: person.occupations[0],
-					weight: 1,
-					x: 0,
-					y: 0
+					weight: 1
 				});
+
 				person.edges.forEach((edge) => {
 					const toNode = parseInt(edge.to.ID);
 					if (topPersons.find((p) => parseInt(p.ID) === toNode)) {
@@ -638,12 +584,7 @@ loadNames().then((allPersons) => {
 				});
 			});
 
-			/*
-			console.log(nodes);
-			console.log(links);
-			*/
-
-			const simulation = d3force
+			const simulation = d3
 				.forceSimulation(nodes)
 				.force('link', d3.forceLink(links))
 				.force('charge', d3.forceManyBody().strength(-400).distanceMin(10).distanceMax(300))
@@ -661,98 +602,58 @@ loadNames().then((allPersons) => {
 					simulation.tick();
 				}
 
+				// nodes and edges without importance
 				snaSvgDiv
 					.append('g')
 					.selectAll('line')
-					.data(links)
+					.data(links.filter((d) => !(d.target.occupation && d.source.occupation)))
 					.enter()
 					.append('path')
-					.attr('class', (d) => (d.target.occupation && d.source.occupation ? 'edge edge-important' : 'edge'))
-					.attr('d', function(d) {
-						const x = d.source.x;
-						const y = d.source.y;
-						const ex = d.target.x;
-						const ey = d.target.y;
-						const dx = x - ex;
-						const dy = y - ey;
-						const dr = Math.sqrt(dx * dx + dy * dy);
-						return 'M' + x + ',' + y + 'A' + dr + ',' + dr + ' 0 0,1 ' + ex + ',' + ey;
+					.attr('class', 'edge')
+					.attr('d', (d) => {
+						return curvedPath(d.source.x, d.target.x, d.source.y, d.target.y);
 					});
 
 				snaSvgDiv
 					.append('g')
 					.attr('stroke-width', 3)
 					.selectAll('circle')
-					.data(nodes)
+					.data(nodes.filter((d) => !d.occupation))
 					.enter()
 					.append('circle')
-					.attr('class', (d) => (d.occupation ? 'node node-important' : 'node'))
-					.attr('data-label', (d) => d.name)
-					.attr('r', (d) => (d.occupation ? topPersons[d.index].edges.length / 3 : 6))
-					.attr('fill', (d) => {
-						if (d.occupation) {
-							const i = occNames.indexOf(d.occupation);
-							return occupancyColors[i];
-						} else {
-							return 'grey';
-						}
-					})
+					.attr('class', 'node')
+					.attr('r', '6')
 					.attr('cx', (d) => d.x)
 					.attr('cy', (d) => d.y);
 
+				// nodes and edges with the importance
 				snaSvgDiv
 					.append('g')
-					.selectAll('circle')
-					.data(nodes)
+					.selectAll('line')
+					.data(links.filter((d) => d.target.occupation && d.source.occupation))
 					.enter()
-					.append('text')
-					.attr('class', (d) => (d.occupation ? 'node-label' : ''))
-					.text((d) => {
-						d.occupation ? d.name : '';
+					.append('path')
+					.attr('class', 'edge edge-important')
+					.attr('d', (d) => {
+						return curvedPath(d.source.x, d.target.x, d.source.y, d.target.y);
+					});
+
+				snaSvgDiv
+					.append('g')
+					.attr('stroke-width', 3)
+					.selectAll('circle')
+					.data(nodes.filter((d) => d.occupation))
+					.enter()
+					.append('circle')
+					.attr('class', 'node node-important')
+					.attr('r', (d) => topPersons[d.index].edges.length / 3)
+					.attr('fill', (d) => {
+						const i = occNames.indexOf(d.occupation);
+						return occupancyColors[i];
 					})
-					.attr('x', (d) => d.x)
-					.attr('y', (d) => d.y);
+					.attr('cx', (d) => d.x)
+					.attr('cy', (d) => d.y);
 			});
-			/*
-			const sexColors = {
-				f: '#ca0020',
-				n: 'grey',
-				m: '#0571b0'
-			};
-			const margins = [ [ 20, 20 ], [ 20, 20 ] ];
-			const cellW = (matrixW - margins[0][0] - margins[0][1]) / topNo;
-			const cellH = (matrixH - margins[1][0] - margins[1][1]) / topNo;
-
-			topPersons.forEach((person1, pi1) => {
-				topPersons.forEach((person2, pi2) => {
-					const interaction = !!person1.edges.find((e) => e.to.ID === person2.ID);
-
-					const gender1 = person1.Sex;
-					const gender2 = person2.Sex;
-
-					let color = interaction ? sexColors['n'] : 'white';
-
-					if (interaction) {
-						if (gender1 === 'f' && gender2 === 'f') {
-							color = sexColors['f'];
-						}
-						if (gender1 === 'm' && gender2 === 'm') {
-							color = sexColors['m'];
-						}
-					}
-
-					gMatrix
-						.append('rect')
-						.attr('width', cellW)
-						.attr('height', cellH)
-						.attr('x', margins[0][0] + cellW * pi1)
-						.attr('y', margins[1][0] + cellH * pi2)
-						.attr('fill', color);
-				});
-			});
-
-			console.log(topPersons);
-			*/
 		});
 	});
 });

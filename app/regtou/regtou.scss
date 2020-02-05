@@ -1,28 +1,44 @@
 .edge {
 	fill: none;
 	stroke-width: 0.5;
+	stroke-opacity: 0.7;
 	stroke: #888;
-	mix-blend-mode: multiply;
-}
+	mix-blend-mode: normal;
 
-.edge.edge-important {
-	stroke-width: 1.5;
-	stroke: black;
+	&.edge-important {
+		stroke-width: 1.5;
+		stroke: black;
+	}
 }
 
 .node {
 	stroke-width: 0;
+	fill-opacity: 0.4;
 	mix-blend-mode: multiply;
-}
 
-.node.node-important {
-	stroke-width: 4;
-	stroke: black;
-	mix-blend-mode: normal;
+	&.node-important {
+		stroke-width: 4;
+		fill-opacity: 1;
+		stroke: black;
+		mix-blend-mode: normal;
+	}
 }
 
 .tiles {
 	opacity: 0.7;
+}
+
+.ribbon {
+	&.ribbon-bottom {
+		fill-opacity: 1;
+		mix-blend-mode: normal;
+	}
+	&.ribbon-top {
+		fill-opacity: 0.5;
+		mix-blend-mode: multiply;
+	}
+	&.ribbon-start {
+	}
 }
 
 .legend-label {
